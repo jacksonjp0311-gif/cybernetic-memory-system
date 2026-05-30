@@ -9,8 +9,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.1.2aa - Mini README Audit Repair**  
-Previous seal: **CMS-SA v0.1.2a - RCC-N README and Mini README Enhancement**
+Current checkpoint: **CMS-SA v0.2a - Mini README Audit Repair**  
+Previous seal: **CMS-SA v0.2 - RCC-N README and Mini README Enhancement**
 
 Cybernetic Memory System is a local-first Python/RCC runtime scaffold for executable repository memory. It observes repository state, measures drift, emits lifecycle-tracked feedback, plans next versions, validates corrections, promotes only control-useful memory, audits README/RCC/public surfaces, and emits release/evidence packages.
 
@@ -40,7 +40,7 @@ Current public finding: CMS can be structured as a feedback-governed repository-
 
 | Surface | Current result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.1.2a |
+| Current checkpoint | CMS-SA v0.2 |
 | Previous seal | CMS-SA v0.1.1 |
 | Runtime package | scaffolded |
 | RCC-N mini README coverage | target 1.0 |
@@ -71,7 +71,7 @@ This repo does **not** prove AGI, consciousness, sentience, autonomous self-modi
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.1.2a |
+| Current checkpoint | CMS-SA v0.2 |
 | Version registry | `outputs/version_registry/cms_version_registry.json` |
 | Lineage ledger | `outputs/lineage/cms_lineage_ledger.jsonl` |
 | Injection ledger | `outputs/injections/cms_injection_ledger.jsonl` |
@@ -317,3 +317,31 @@ When any folder purpose, files, routes, evidence surfaces, validation commands, 
 
 Non-claim lock: navigation is not validation, but stale navigation is repository drift.
 <!-- MINI_README_UPDATE_RULE_END -->
+---
+
+## CMS-SA v0.2 — Runtime Observation and Metric Contract Engine
+
+v0.2 is the first executable measurement layer.
+
+Primary outputs:
+
+```text
+outputs/state/latest_observation_manifest.json
+outputs/metrics/latest_metric_evaluation.json
+outputs/drift/latest_drift_report.json
+outputs/evidence/latest_evidence_package.json
+reports/runtime_observation/latest_observation_manifest.md
+reports/metric_contracts/latest_metric_evaluation.md
+reports/drift/latest_drift_report.md
+reports/evidence/latest_evidence_package.md
+```
+
+Run:
+
+```powershell
+$env:PYTHONPATH = ".\src"
+python -m cms cycle --repo . --profile CMS-Core
+python scripts/validation/validate_runtime_observation_v0_2.py
+```
+
+Non-claim lock: measurement is repository-bound and does not prove correctness.

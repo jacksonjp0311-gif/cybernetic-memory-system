@@ -2,35 +2,31 @@
 
 ## Current
 
-CMS-SA v0.1.2 — RCC-N README and Mini README Enhancement.
+CMS-SA v0.2 — Runtime Observation and Metric Contract Engine.
 
 ## Next
 
-CMS-SA v0.2 — Runtime Observation and Metric Contract Engine.
+CMS-SA v0.3 — Feedback Quality and Lifecycle Engine.
 
-### v0.2 Goal
+### v0.3 Goal
 
-Turn the scaffold into a real first runtime by implementing:
+Turn drift findings into typed feedback items with quality scores and lifecycle
+states.
 
-1. repository observer,
-2. file surface inventory,
-3. metric contract loader,
-4. drift report writer,
-5. state/evidence package writer,
-6. validation command.
+Planned v0.3 surfaces:
 
-### Why v0.2 Comes Next
-
-v0.1 created the architecture and scaffold.  
-v0.1.1 created version/injection recording.  
-v0.1.2 created navigable README and mini README surfaces.  
-v0.2 must make the first executable measurement layer real.
+1. feedback item model,
+2. feedback generator,
+3. feedback quality scorer,
+4. lifecycle state machine,
+5. orphan feedback detector,
+6. feedback report writer,
+7. tests and validation command.
 
 ## Later
 
 | Version | Target |
 |---|---|
-| v0.2 | Observation + metric contracts |
 | v0.3 | Feedback quality + lifecycle engine |
 | v0.4 | Memory promotion + correction ledger |
 | v0.5 | README/RCC/public drift guard |
