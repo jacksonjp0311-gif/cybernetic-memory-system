@@ -119,3 +119,33 @@ python -m unittest discover -s tests
 - Validation is repository-bound unless external evidence is supplied.
 - Surface alignment is not code correctness.
 - Public-surface alignment is not empirical validation.
+---
+
+## CMS-SA v0.1.1 — Lineage / Injection Recorder Patch
+
+Every CMS version must now be recorded as:
+
+1. canonical document,
+2. injection record,
+3. version registry entry,
+4. lineage ledger entry,
+5. release seal,
+6. roadmap next-anchor.
+
+Primary registry:
+
+```text
+outputs/version_registry/cms_version_registry.json
+```
+
+Primary next anchor:
+
+```text
+docs/roadmap/CMS_ROADMAP.md
+```
+
+Non-claim lock:
+
+```text
+Version recording improves traceability. It does not prove correctness, truth, AGI, consciousness, or external validation.
+```
