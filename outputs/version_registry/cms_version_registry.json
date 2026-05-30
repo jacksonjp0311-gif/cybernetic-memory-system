@@ -1,50 +1,48 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.2b",
+    "schema":  "CMS-SA-version-registry-v0.2b1",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.2b",
+    "current_version":  "v0.2b1",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, and next anchor.",
     "versions":  [
                      {
                          "version":  "v0.1",
                          "class":  "software_architecture_genesis",
-                         "document":  "docs/architecture/cms_sa_v0_1_software_architecture.tex",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_release_seal.md"
+                         "document":  "docs/architecture/cms_sa_v0_1_software_architecture.tex"
                      },
                      {
                          "version":  "v0.1.1",
                          "class":  "lineage_injection_recorder_patch",
-                         "document":  "docs/versions/v0_1_1/cms_sa_v0_1_1_lineage_injection_recorder.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_1_release_seal.md"
+                         "document":  "docs/versions/v0_1_1/cms_sa_v0_1_1_lineage_injection_recorder.md"
                      },
                      {
                          "version":  "v0.1.2",
                          "class":  "rcc_readme_mini_readme_enhancement",
-                         "document":  "docs/versions/v0_1_2/cms_sa_v0_1_2_rcc_readme_enhancement.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_2_release_seal.md"
+                         "document":  "docs/versions/v0_1_2/cms_sa_v0_1_2_rcc_readme_enhancement.md"
                      },
                      {
                          "version":  "v0.1.2a",
                          "class":  "mini_readme_audit_repair",
-                         "document":  "docs/versions/v0_1_2a/cms_sa_v0_1_2a_mini_readme_audit_repair.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_2a_release_seal.md"
+                         "document":  "docs/versions/v0_1_2a/cms_sa_v0_1_2a_mini_readme_audit_repair.md"
                      },
                      {
                          "version":  "v0.2",
                          "class":  "runtime_observation_metric_contract_engine",
-                         "document":  "docs/versions/v0_2/cms_sa_v0_2_runtime_observation_metric_contract_engine.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_2_release_seal.md"
+                         "document":  "docs/versions/v0_2/cms_sa_v0_2_runtime_observation_metric_contract_engine.md"
                      },
                      {
                          "version":  "v0.2a",
                          "class":  "readme_audit_anchor_synchronization",
-                         "document":  "docs/versions/v0_2a/cms_sa_v0_2a_readme_audit_anchor_sync.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_2a_release_seal.md"
+                         "document":  "docs/versions/v0_2a/cms_sa_v0_2a_readme_audit_anchor_sync.md"
                      },
                      {
                          "version":  "v0.2b",
                          "class":  "public_format_directory_box_lock",
-                         "document":  "docs/versions/v0_2b/cms_sa_v0_2b_public_format_directory_box_lock.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_2b_release_seal.md"
+                         "document":  "docs/versions/v0_2b/cms_sa_v0_2b_public_format_directory_box_lock.md"
+                     },
+                     {
+                         "version":  "v0.2b1",
+                         "class":  "public_anchor_directory_table_repair",
+                         "document":  "docs/versions/v0_2b1/cms_sa_v0_2b1_public_anchor_directory_table_repair.md"
                      }
                  ],
     "next_anchor":  "CMS-SA v0.3 — Feedback Quality and Lifecycle Engine",

@@ -10,3 +10,5 @@
 
 {"version":"v0.2b","document":"docs/versions/v0_2b/cms_sa_v0_2b_public_format_directory_box_lock.md","directory_manifest":"docs/directory/cms_full_directory_box_v0_2b.json","ts":"2026-05-30T09:41:11.5894567-04:00","non_claim_lock":"directory-box lock is not code correctness","release_seal":"docs/release_seals/cms_sa_v0_2b_release_seal.md","event":"public_format_directory_box_lock","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","injection":"docs/injections/v0_2b/cms_sa_v0_2b_injection_record.md"}
 
+{"version":"v0.2b1","document":"docs/versions/v0_2b1/cms_sa_v0_2b1_public_anchor_directory_table_repair.md","directory_manifest":"docs/directory/cms_full_directory_box_v0_2b1.json","ts":"2026-05-30T09:43:27.8707490-04:00","non_claim_lock":"audit repair is not code correctness","release_seal":"docs/release_seals/cms_sa_v0_2b1_release_seal.md","event":"public_anchor_directory_table_render_repair","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","injection":"docs/injections/v0_2b1/cms_sa_v0_2b1_injection_record.md"}
+

@@ -8,7 +8,7 @@ README = ROOT / "README.md"
 readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
 
 checkpoint_pattern = re.compile(
-    r"Current checkpoint:\s*\*\*CMS-SA v0\.2b[\s\-–—][^*]+\*\*"
+    r"Current checkpoint:\s*\*\*CMS-SA v0\.2b1?[\s\-–—][^*]+\*\*"
 )
 
 required_root_tokens = [
@@ -23,13 +23,13 @@ required_root_tokens = [
     "Process Alignment Layer",
     "AI Rule - Directory Box and Mini README Synchronization",
     "Full Directory Box",
-    "CMS-SA v0.2b - Public Format Alignment and Directory Box Lock",
+    "CMS-SA v0.2b1 - Public Anchor and Directory Table Render Repair",
     "MINI_README_UPDATE_RULE_START",
 ]
 
 missing_root_tokens = []
 if not checkpoint_pattern.search(readme):
-    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2b ...**")
+    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2b or v0.2b1 ...**")
 
 for token in required_root_tokens:
     if token not in readme:
@@ -48,12 +48,17 @@ for p in mini_readmes:
 passed = not missing_root_tokens and not mini_missing_rule
 
 report = {
-    "schema": "CMS-SA-v0.2b-readme-mini-repo-audit",
+    "schema": "CMS-SA-v0.2b1-readme-mini-repo-audit",
     "passed": passed,
     "errors": len(missing_root_tokens) + len(mini_missing_rule),
     "warnings": 0,
-    "accepted_checkpoint_pattern": "CMS-SA v0.2b",
+    "accepted_checkpoint_pattern": "CMS-SA v0.2b or v0.2b1",
     "required_public_format_anchors": [
+        "PART I - Human README",
+        "PART II - RCC Nexus README",
+        "PART III - AI Agent README",
+        "README + Mini Repo Audit Map",
+        "AI Failure Learning Ledger",
         "Human Director Box",
         "Current Public Metrics",
         "Agent Geometry Layer",
@@ -75,7 +80,7 @@ out_md.write_text(
     f"- passed: `{passed}`\n"
     f"- errors: `{report['errors']}`\n"
     f"- warnings: `0`\n"
-    f"- accepted_checkpoint_pattern: `CMS-SA v0.2b`\n"
+    f"- accepted_checkpoint_pattern: `CMS-SA v0.2b or v0.2b1`\n"
     f"- mini READMEs scanned: `{len(mini_readmes)}`\n"
     f"- public format anchors required: `{len(report['required_public_format_anchors'])}`\n\n"
     "Non-claim lock: README audit is not runtime correctness.\n",

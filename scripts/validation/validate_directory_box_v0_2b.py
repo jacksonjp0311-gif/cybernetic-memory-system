@@ -1,14 +1,16 @@
 from pathlib import Path
 import json
-import re
-import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
-MANIFEST = ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b.json"
+MANIFEST_CANDIDATES = [
+    ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b1.json",
+    ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b.json",
+]
 
+manifest_path = next((p for p in MANIFEST_CANDIDATES if p.exists()), MANIFEST_CANDIDATES[0])
 readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
-manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
 required_anchors = [
     "## Human Director Box",
@@ -44,9 +46,10 @@ for row in manifest.get("rows", []):
 passed = not missing_anchors and not missing_directory_rows and not duplicate_rows and not missing_paths_on_disk
 
 report = {
-    "schema": "CMS-SA-v0.2b-directory-box-validation",
+    "schema": "CMS-SA-v0.2b1-directory-box-validation",
     "passed": passed,
     "errors": len(missing_anchors) + len(missing_directory_rows) + len(duplicate_rows) + len(missing_paths_on_disk),
+    "manifest": str(manifest_path.relative_to(ROOT)).replace("\\", "/"),
     "missing_anchors": missing_anchors,
     "missing_directory_rows": missing_directory_rows,
     "duplicate_rows": duplicate_rows,
@@ -60,9 +63,10 @@ out_md = ROOT / "reports" / "directory" / "latest_directory_box_validation.md"
 out_json.parent.mkdir(parents=True, exist_ok=True)
 out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
 out_md.write_text(
-    "# CMS-SA v0.2b Directory Box Validation\n\n"
+    "# CMS-SA v0.2b1 Directory Box Validation\n\n"
     f"- passed: `{passed}`\n"
     f"- errors: `{report['errors']}`\n"
+    f"- manifest: `{report['manifest']}`\n"
     f"- row_count: `{report['row_count']}`\n"
     f"- missing_anchors: `{missing_anchors}`\n"
     f"- missing_directory_rows: `{missing_directory_rows}`\n"
