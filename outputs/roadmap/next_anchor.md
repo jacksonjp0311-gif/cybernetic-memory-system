@@ -2,7 +2,19 @@
 
 ## Current
 
-CMS-SA v0.2 — Runtime Observation and Metric Contract Engine.
+CMS-SA v0.2a — README / Audit Anchor Synchronization Patch.
+
+## Current Lock State
+
+```text
+runtime geometry      = locked
+metric geometry       = locked
+drift geometry        = locked
+evidence geometry     = locked
+version geometry      = locked
+RCC-N navigation      = locked
+README/audit grammar  = synchronized by v0.2a
+```
 
 ## Next
 

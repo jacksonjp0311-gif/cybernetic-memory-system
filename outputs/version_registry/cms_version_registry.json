@@ -1,7 +1,7 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.2",
+    "schema":  "CMS-SA-version-registry-v0.2a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.2",
+    "current_version":  "v0.2a",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, and next anchor.",
     "versions":  [
                      {
@@ -38,13 +38,20 @@
                          "document":  "docs/versions/v0_2/cms_sa_v0_2_runtime_observation_metric_contract_engine.md",
                          "injection":  "docs/injections/v0_2/cms_sa_v0_2_injection_record.md",
                          "release_seal":  "docs/release_seals/cms_sa_v0_2_release_seal.md"
+                     },
+                     {
+                         "version":  "v0.2a",
+                         "class":  "readme_audit_anchor_synchronization",
+                         "document":  "docs/versions/v0_2a/cms_sa_v0_2a_readme_audit_anchor_sync.md",
+                         "injection":  "docs/injections/v0_2a/cms_sa_v0_2a_injection_record.md",
+                         "release_seal":  "docs/release_seals/cms_sa_v0_2a_release_seal.md"
                      }
                  ],
     "next_anchor":  "CMS-SA v0.3 — Feedback Quality and Lifecycle Engine",
     "non_claim_locks":  {
                             "version_registry_is_not_truth":  true,
+                            "readme_audit_is_not_runtime_correctness":  true,
                             "metric_pass_is_not_code_correctness":  true,
-                            "observation_is_not_external_validation":  true,
                             "release_seal_is_not_external_validation":  true
                         }
 }

@@ -9,8 +9,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.2a - Mini README Audit Repair**  
-Previous seal: **CMS-SA v0.2 - RCC-N README and Mini README Enhancement**
+Current checkpoint: **CMS-SA v0.2a - README / Audit Anchor Synchronization**  
+Previous seal: **CMS-SA v0.2 - Runtime Observation and Metric Contract Engine**
 
 Cybernetic Memory System is a local-first Python/RCC runtime scaffold for executable repository memory. It observes repository state, measures drift, emits lifecycle-tracked feedback, plans next versions, validates corrections, promotes only control-useful memory, audits README/RCC/public surfaces, and emits release/evidence packages.
 
@@ -40,7 +40,7 @@ Current public finding: CMS can be structured as a feedback-governed repository-
 
 | Surface | Current result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.2 |
+| Current checkpoint | CMS-SA v0.2a |
 | Previous seal | CMS-SA v0.1.1 |
 | Runtime package | scaffolded |
 | RCC-N mini README coverage | target 1.0 |
@@ -71,7 +71,7 @@ This repo does **not** prove AGI, consciousness, sentience, autonomous self-modi
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.2 |
+| Current checkpoint | CMS-SA v0.2a |
 | Version registry | `outputs/version_registry/cms_version_registry.json` |
 | Lineage ledger | `outputs/lineage/cms_lineage_ledger.jsonl` |
 | Injection ledger | `outputs/injections/cms_injection_ledger.jsonl` |
@@ -319,7 +319,7 @@ Non-claim lock: navigation is not validation, but stale navigation is repository
 <!-- MINI_README_UPDATE_RULE_END -->
 ---
 
-## CMS-SA v0.2 — Runtime Observation and Metric Contract Engine
+## CMS-SA v0.2 â€” Runtime Observation and Metric Contract Engine
 
 v0.2 is the first executable measurement layer.
 
@@ -345,3 +345,45 @@ python scripts/validation/validate_runtime_observation_v0_2.py
 ```
 
 Non-claim lock: measurement is repository-bound and does not prove correctness.
+---
+
+## CMS-SA v0.2a — README / Audit Anchor Synchronization
+
+v0.2a repairs public narrative drift after the v0.2 runtime measurement layer.
+
+What was already locked:
+
+```text
+runtime geometry      = locked
+metric geometry       = locked
+drift geometry        = locked
+evidence geometry     = locked
+version geometry      = locked
+RCC-N navigation      = locked
+```
+
+What v0.2a repairs:
+
+```text
+README checkpoint grammar
+README previous-seal grammar
+README audit root-token grammar
+release readiness report grammar
+version registry current checkpoint
+```
+
+Primary validation:
+
+```powershell
+$env:PYTHONPATH = ".\src"
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python scripts/validation/validate_runtime_observation_v0_2.py
+python -m cms cycle --repo . --profile CMS-Core
+python -m unittest discover -s tests
+```
+
+Non-claim lock: README/audit synchronization improves traceability. It does not
+prove code correctness, truth, AGI, consciousness, production readiness, or
+external validation.
