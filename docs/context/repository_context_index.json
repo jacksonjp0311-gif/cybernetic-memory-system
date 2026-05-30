@@ -1,0 +1,9 @@
+{
+  "schema": "CMS-SA-v0.1-repository-context-index",
+  "repository": "cybernetic-memory-system",
+  "purpose": "Executable cybernetic repository-memory governance scaffold.",
+  "primary_architecture": "docs/architecture/cms_sa_v0_1_software_architecture.tex",
+  "primary_runtime": "src/cms/core/runtime.py",
+  "primary_cli": "src/cms/cli.py",
+  "primary_route_map": "rcc/nexus/route_map.json"
+}
