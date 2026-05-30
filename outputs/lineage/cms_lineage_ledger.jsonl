@@ -8,3 +8,5 @@
 
 {"injection":"docs/injections/v0_2a/cms_sa_v0_2a_injection_record.md","version":"v0.2a","release_seal":"docs/release_seals/cms_sa_v0_2a_release_seal.md","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","ts":"2026-05-30T09:33:29.3202341-04:00","non_claim_lock":"README/audit synchronization is not code correctness","document":"docs/versions/v0_2a/cms_sa_v0_2a_readme_audit_anchor_sync.md","event":"readme_audit_anchor_synchronization"}
 
+{"version":"v0.2b","document":"docs/versions/v0_2b/cms_sa_v0_2b_public_format_directory_box_lock.md","directory_manifest":"docs/directory/cms_full_directory_box_v0_2b.json","ts":"2026-05-30T09:41:11.5894567-04:00","non_claim_lock":"directory-box lock is not code correctness","release_seal":"docs/release_seals/cms_sa_v0_2b_release_seal.md","event":"public_format_directory_box_lock","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","injection":"docs/injections/v0_2b/cms_sa_v0_2b_injection_record.md"}
+

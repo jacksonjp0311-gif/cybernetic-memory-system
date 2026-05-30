@@ -7,10 +7,8 @@ README = ROOT / "README.md"
 
 readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
 
-# Version-aware checkpoint rule:
-# Accept current CMS-SA v0.2 or v0.2a public checkpoint grammar.
 checkpoint_pattern = re.compile(
-    r"Current checkpoint:\s*\*\*CMS-SA v0\.2a?[\s\-–—][^*]+\*\*"
+    r"Current checkpoint:\s*\*\*CMS-SA v0\.2b[\s\-–—][^*]+\*\*"
 )
 
 required_root_tokens = [
@@ -19,12 +17,19 @@ required_root_tokens = [
     "PART III - AI Agent README",
     "README + Mini Repo Audit Map",
     "AI Failure Learning Ledger",
+    "Human Director Box",
+    "Current Public Metrics",
+    "Agent Geometry Layer",
+    "Process Alignment Layer",
+    "AI Rule - Directory Box and Mini README Synchronization",
+    "Full Directory Box",
+    "CMS-SA v0.2b - Public Format Alignment and Directory Box Lock",
     "MINI_README_UPDATE_RULE_START",
 ]
 
 missing_root_tokens = []
 if not checkpoint_pattern.search(readme):
-    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2 or v0.2a ...**")
+    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2b ...**")
 
 for token in required_root_tokens:
     if token not in readme:
@@ -43,11 +48,19 @@ for p in mini_readmes:
 passed = not missing_root_tokens and not mini_missing_rule
 
 report = {
-    "schema": "CMS-SA-v0.2a-readme-mini-repo-audit",
+    "schema": "CMS-SA-v0.2b-readme-mini-repo-audit",
     "passed": passed,
     "errors": len(missing_root_tokens) + len(mini_missing_rule),
     "warnings": 0,
-    "accepted_checkpoint_pattern": "CMS-SA v0.2 or v0.2a",
+    "accepted_checkpoint_pattern": "CMS-SA v0.2b",
+    "required_public_format_anchors": [
+        "Human Director Box",
+        "Current Public Metrics",
+        "Agent Geometry Layer",
+        "Process Alignment Layer",
+        "AI Rule - Directory Box and Mini README Synchronization",
+        "Full Directory Box",
+    ],
     "missing_root_tokens": missing_root_tokens,
     "mini_readmes_missing_update_rule": mini_missing_rule,
     "non_claim_lock": "README audits improve context alignment but do not prove runtime correctness."
@@ -62,8 +75,9 @@ out_md.write_text(
     f"- passed: `{passed}`\n"
     f"- errors: `{report['errors']}`\n"
     f"- warnings: `0`\n"
-    f"- accepted_checkpoint_pattern: `CMS-SA v0.2 or v0.2a`\n"
-    f"- mini READMEs scanned: `{len(mini_readmes)}`\n\n"
+    f"- accepted_checkpoint_pattern: `CMS-SA v0.2b`\n"
+    f"- mini READMEs scanned: `{len(mini_readmes)}`\n"
+    f"- public format anchors required: `{len(report['required_public_format_anchors'])}`\n\n"
     "Non-claim lock: README audit is not runtime correctness.\n",
     encoding="utf-8",
 )

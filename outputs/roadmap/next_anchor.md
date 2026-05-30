@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.2a — README / Audit Anchor Synchronization Patch.
+CMS-SA v0.2b — Public Format Alignment and Directory Box Lock.
 
 ## Current Lock State
 
@@ -13,7 +13,9 @@ drift geometry        = locked
 evidence geometry     = locked
 version geometry      = locked
 RCC-N navigation      = locked
-README/audit grammar  = synchronized by v0.2a
+README/audit grammar  = locked
+directory box         = locked by v0.2b
+public process rules  = locked by v0.2b
 ```
 
 ## Next
