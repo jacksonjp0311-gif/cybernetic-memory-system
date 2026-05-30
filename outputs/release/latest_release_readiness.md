@@ -1,5 +1,5 @@
-# CMS Release Readiness
+# CMS-SA Release Readiness
 
-- Release allowed: `True`
-- Release hold reasons: `[]`
+- Passed: `True`
+- Missing: `[]`
 - Non-claim lock: validation is repository-bound.

@@ -1,11 +1,12 @@
 # CMS Task Routing Matrix
 
-| Task | Read first | Validate |
+| Change type | Read first | Validate |
 |---|---|---|
-| Runtime patch | `src/cms/core/README.md`, `src/cms/core/runtime.py` | `python -m py_compile src/cms/core/runtime.py` |
-| CLI patch | `src/cms/cli.py` | `python -m cms cycle --repo . --profile CMS-Core` |
-| Architecture patch | `docs/architecture/` | README/RCC review |
-| RCC patch | `rcc/nexus/` | `python scripts/validate_release.py` |
-| README patch | `README.md`, `AGENTS.md` | surface alignment review |
-| Memory patch | `src/cms/memory/` | memory promotion tests |
-| Release patch | `outputs/release/` | `python scripts/validate_release.py` |
+| Runtime patch | `src/cms/README.md`, `src/cms/core/README.md`, `tests/` | compile + import + unit tests |
+| Metric patch | `src/cms/metrics/README.md` | architecture validator + tests |
+| Feedback patch | `src/cms/feedback/README.md` | runtime cycle + feedback tests |
+| Memory patch | `src/cms/memory/README.md` | memory tests + non-claim review |
+| RCC patch | `README.md`, `docs/context/`, `rcc/nexus/` | `python scripts/rcc/check_rcc_nexus.py` |
+| README patch | root and target mini README | `python scripts/rcc/audit_readme_surface.py` |
+| Architecture patch | `docs/architecture/`, `docs/protocols/` | `python scripts/validation/validate_architecture_contracts.py` |
+| Release patch | `docs/release_seals/`, `reports/release/` | release validator |

@@ -1,2 +1,4 @@
 ﻿{"injection":"docs/injections/v0_1_1/cms_sa_v0_1_1_injection_record.md","version":"v0.1.1","release_seal":"docs/release_seals/cms_sa_v0_1_1_release_seal.md","next_anchor":"CMS-SA v0.2 — Runtime Observation and Metric Contract Engine","ts":"2026-05-30T09:17:09.8841972-04:00","non_claim_lock":"lineage recording is not proof of correctness","document":"docs/versions/v0_1_1/cms_sa_v0_1_1_lineage_injection_recorder.md","event":"lineage_injection_recorder_patch"}
 
+{"injection":"docs/injections/v0_1_2/cms_sa_v0_1_2_injection_record.md","version":"v0.1.2","release_seal":"docs/release_seals/cms_sa_v0_1_2_release_seal.md","next_anchor":"CMS-SA v0.2 — Runtime Observation and Metric Contract Engine","ts":"2026-05-30T09:20:17.9585134-04:00","non_claim_lock":"navigation is not validation","document":"docs/versions/v0_1_2/cms_sa_v0_1_2_rcc_readme_enhancement.md","event":"rcc_readme_mini_readme_enhancement"}
+

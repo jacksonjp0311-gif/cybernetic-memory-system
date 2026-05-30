@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.1.1 — Lineage and Injection Recorder Patch.
+CMS-SA v0.1.2 — RCC-N README and Mini README Enhancement.
 
 ## Next
 
@@ -23,6 +23,7 @@ Turn the scaffold into a real first runtime by implementing:
 
 v0.1 created the architecture and scaffold.  
 v0.1.1 created version/injection recording.  
+v0.1.2 created navigable README and mini README surfaces.  
 v0.2 must make the first executable measurement layer real.
 
 ## Later

@@ -1,26 +1,30 @@
 {
-  "schema": "CMS-SA-v0.1-rcc-route-map",
+  "schema": "CMS-SA-v0.1.2-rcc-route-map",
   "repository": "cybernetic-memory-system",
   "read_order": [
     "README.md",
     "README_90_SECONDS.md",
     "AGENTS.md",
-    "docs/architecture/cms_sa_v0_1_software_architecture.tex",
+    "docs/context/repository_context_index.json",
+    "docs/context/rcc_nexus_index.json",
     "rcc/nexus/route_map.json"
   ],
   "routes": {
     "architecture": ["docs/architecture/", "docs/protocols/"],
-    "runtime": ["src/cms/core/", "src/cms/cli.py"],
+    "runtime": ["src/cms/", "tests/"],
     "feedback": ["src/cms/feedback/", "outputs/feedback/"],
     "memory": ["src/cms/memory/", "outputs/memory/"],
-    "validation": ["src/cms/validation/", "scripts/validate_release.py", "outputs/validation/"],
-    "surface_alignment": ["rcc/nexus/", "outputs/surface_alignment/"],
-    "evidence": ["src/cms/evidence/", "outputs/evidence/"]
+    "validation": ["src/cms/validation/", "scripts/validation/", "reports/architecture/"],
+    "readme_audit": ["scripts/rcc/audit_readme_surface.py", "reports/readme/"],
+    "rcc_nexus": ["rcc/nexus/", "docs/context/", "reports/rcc_nexus/"],
+    "release": ["docs/release_seals/", "reports/release/", "outputs/release/"],
+    "version_memory": ["docs/versions/", "docs/injections/", "outputs/version_registry/", "outputs/lineage/"]
   },
   "non_claim_locks": [
+    "navigation_is_not_validation",
+    "documentation_is_not_correctness",
+    "validation_remains_required",
     "feedback_is_not_truth",
-    "memory_is_not_consciousness",
-    "surface_alignment_is_not_code_correctness",
-    "validation_is_repository_bound"
+    "memory_is_not_consciousness"
   ]
 }

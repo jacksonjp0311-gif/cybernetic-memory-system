@@ -1,33 +1,36 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.1.1",
+    "schema":  "CMS-SA-version-registry-v0.1.2",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.1.1",
-    "purpose":  "Record every CMS version as document, injection, state, ledger, and release seal.",
-    "version_rule":  "Every version must have a canonical document or injection record before release.",
+    "current_version":  "v0.1.2",
+    "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, and next anchor.",
     "versions":  [
                      {
                          "version":  "v0.1",
                          "class":  "software_architecture_genesis",
-                         "status":  "anchored",
-                         "canonical_document":  "docs/architecture/cms_sa_v0_1_software_architecture.tex",
-                         "injection_record":  "docs/injections/v0_1/cms_sa_v0_1_genesis_injection.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_release_seal.md",
-                         "notes":  "Architecture scaffold and minimal runtime grammar."
+                         "document":  "docs/architecture/cms_sa_v0_1_software_architecture.tex",
+                         "injection":  "docs/injections/v0_1/cms_sa_v0_1_genesis_injection.md",
+                         "release_seal":  "docs/release_seals/cms_sa_v0_1_release_seal.md"
                      },
                      {
                          "version":  "v0.1.1",
                          "class":  "lineage_injection_recorder_patch",
-                         "status":  "anchored",
-                         "canonical_document":  "docs/versions/v0_1_1/cms_sa_v0_1_1_lineage_injection_recorder.md",
-                         "injection_record":  "docs/injections/v0_1_1/cms_sa_v0_1_1_injection_record.md",
-                         "release_seal":  "docs/release_seals/cms_sa_v0_1_1_release_seal.md",
-                         "notes":  "Adds version registry, injection discipline, document ledger, and next-anchor roadmap."
+                         "document":  "docs/versions/v0_1_1/cms_sa_v0_1_1_lineage_injection_recorder.md",
+                         "injection":  "docs/injections/v0_1_1/cms_sa_v0_1_1_injection_record.md",
+                         "release_seal":  "docs/release_seals/cms_sa_v0_1_1_release_seal.md"
+                     },
+                     {
+                         "version":  "v0.1.2",
+                         "class":  "rcc_readme_mini_readme_enhancement",
+                         "document":  "docs/versions/v0_1_2/cms_sa_v0_1_2_rcc_readme_enhancement.md",
+                         "injection":  "docs/injections/v0_1_2/cms_sa_v0_1_2_injection_record.md",
+                         "release_seal":  "docs/release_seals/cms_sa_v0_1_2_release_seal.md"
                      }
                  ],
+    "next_anchor":  "CMS-SA v0.2 — Runtime Observation and Metric Contract Engine",
     "non_claim_locks":  {
                             "version_registry_is_not_truth":  true,
-                            "injection_record_is_not_code_correctness":  true,
-                            "release_seal_is_not_external_validation":  true,
-                            "lineage_is_not_provenance_proof":  true
+                            "navigation_is_not_validation":  true,
+                            "documentation_is_not_correctness":  true,
+                            "release_seal_is_not_external_validation":  true
                         }
 }

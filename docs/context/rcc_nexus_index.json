@@ -1,0 +1,25 @@
+{
+  "schema": "CMS-SA-v0.1.2-rcc-nexus-index",
+  "repository": "cybernetic-memory-system",
+  "version": "RCC-N-v1.7-inspired",
+  "ttl_days": 180,
+  "shells": {
+    "center": ["README.md", "AGENTS.md", "docs/context", "rcc/nexus"],
+    "inner": ["src/cms", "configs", "tests"],
+    "middle": ["scripts", "examples", "docs/architecture", "docs/protocols"],
+    "outer": ["outputs", "reports", "docs/versions", "docs/injections", "docs/release_seals", "docs/roadmap"]
+  },
+  "meridians": [
+    "source",
+    "validation",
+    "evidence",
+    "drift",
+    "agent",
+    "safety",
+    "runtime",
+    "memory",
+    "release",
+    "documentation"
+  ],
+  "non_claim_lock": "RCC-N navigation is not validation."
+}
