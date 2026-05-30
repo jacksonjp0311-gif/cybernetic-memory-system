@@ -9,8 +9,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.1.2 - RCC-N README and Mini README Enhancement**  
-Previous seal: **CMS-SA v0.1.1 - Lineage / Injection Recorder Patch**
+Current checkpoint: **CMS-SA v0.1.2aa - Mini README Audit Repair**  
+Previous seal: **CMS-SA v0.1.2a - RCC-N README and Mini README Enhancement**
 
 Cybernetic Memory System is a local-first Python/RCC runtime scaffold for executable repository memory. It observes repository state, measures drift, emits lifecycle-tracked feedback, plans next versions, validates corrections, promotes only control-useful memory, audits README/RCC/public surfaces, and emits release/evidence packages.
 
@@ -40,7 +40,7 @@ Current public finding: CMS can be structured as a feedback-governed repository-
 
 | Surface | Current result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.1.2 |
+| Current checkpoint | CMS-SA v0.1.2a |
 | Previous seal | CMS-SA v0.1.1 |
 | Runtime package | scaffolded |
 | RCC-N mini README coverage | target 1.0 |
@@ -71,7 +71,7 @@ This repo does **not** prove AGI, consciousness, sentience, autonomous self-modi
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.1.2 |
+| Current checkpoint | CMS-SA v0.1.2a |
 | Version registry | `outputs/version_registry/cms_version_registry.json` |
 | Lineage ledger | `outputs/lineage/cms_lineage_ledger.jsonl` |
 | Injection ledger | `outputs/injections/cms_injection_ledger.jsonl` |

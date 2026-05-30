@@ -1,7 +1,7 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.1.2",
+    "schema":  "CMS-SA-version-registry-v0.1.2a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.1.2",
+    "current_version":  "v0.1.2a",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, and next anchor.",
     "versions":  [
                      {
@@ -24,6 +24,13 @@
                          "document":  "docs/versions/v0_1_2/cms_sa_v0_1_2_rcc_readme_enhancement.md",
                          "injection":  "docs/injections/v0_1_2/cms_sa_v0_1_2_injection_record.md",
                          "release_seal":  "docs/release_seals/cms_sa_v0_1_2_release_seal.md"
+                     },
+                     {
+                         "version":  "v0.1.2a",
+                         "class":  "mini_readme_audit_repair",
+                         "document":  "docs/versions/v0_1_2a/cms_sa_v0_1_2a_mini_readme_audit_repair.md",
+                         "injection":  "docs/injections/v0_1_2a/cms_sa_v0_1_2a_injection_record.md",
+                         "release_seal":  "docs/release_seals/cms_sa_v0_1_2a_release_seal.md"
                      }
                  ],
     "next_anchor":  "CMS-SA v0.2 — Runtime Observation and Metric Contract Engine",
