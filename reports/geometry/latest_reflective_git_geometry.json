@@ -1,12 +1,14 @@
 {
-  "schema": "CMS-SA-v0.3a1-reflective-git-geometry",
-  "version": "v0.3a1",
-  "current_registry_version": "v0.3a1",
+  "schema": "CMS-SA-v0.3a2-reflective-git-geometry",
+  "version": "v0.3a2",
+  "current_registry_version": "v0.3a2",
   "node_count": 12,
   "core_law": "A commit is not only a change; it is a routed event in repository geometry.",
   "secondary_law": "A repository learns when repeated routed events become constraints, validators, evidence surfaces, and future routing rules.",
   "stable_geometry_boundary": true,
   "report_refresh_commits_excluded": true,
+  "pure_validation_boundary": true,
+  "emission_validation_split": true,
   "skipped_report_refresh_commits": [
     "0b340e1",
     "b6fe932",
@@ -20,16 +22,83 @@
     "c765917"
   ],
   "release_truth": {
-    "registry_current_version": "v0.3a1",
+    "registry_current_version": "v0.3a2",
     "head_origin_match": true,
     "readme_checkpoint_present": true,
-    "release_tag_exists": true,
-    "release_tag_is_ancestor_of_head": true,
+    "release_tag_exists": false,
+    "release_tag_is_ancestor_of_head": false,
     "stable_geometry_boundary": true,
     "report_refresh_commits_excluded": true,
+    "pure_validation_boundary": true,
     "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
   },
   "nodes": [
+    {
+      "commit_hash": "f6a25fa573417917c86dc53ac63d5f07350eb5de",
+      "short_hash": "f6a25fa",
+      "parents": [
+        "5af636ff7bfd747a8c5577eed0d807b4e51dd02f"
+      ],
+      "tag": null,
+      "message": "chore: seal CMS-SA v0.3a1 final geometry reflection",
+      "changed_files": [
+        "outputs/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md"
+      ],
+      "surface_classes": [
+        {
+          "path": "outputs/geometry/latest_reflective_git_geometry.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        }
+      ],
+      "shells": [
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence"
+      ],
+      "sectors": [
+        "reports",
+        "unclassified"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md"
+      ],
+      "evidence_reports_touched": [],
+      "release_truth": {
+        "registry_current_version": "v0.3a2",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
+        "stable_geometry_boundary": true,
+        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
     {
       "commit_hash": "5af636ff7bfd747a8c5577eed0d807b4e51dd02f",
       "short_hash": "5af636f",
@@ -95,13 +164,14 @@
       ],
       "evidence_reports_touched": [],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -425,13 +495,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -571,13 +642,14 @@
         "reports/evidence/latest_evidence_package.json"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -717,13 +789,14 @@
         "reports/evidence/latest_evidence_package.json"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -1082,13 +1155,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -1379,13 +1453,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -1676,13 +1751,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -1961,13 +2037,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -2012,13 +2089,14 @@
       "validator_reports_touched": [],
       "evidence_reports_touched": [],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -2414,13 +2492,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     },
@@ -2832,367 +2911,14 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3a1",
+        "registry_current_version": "v0.3a2",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "5982e595273cbbe5f1c85bd381baf557b7fd8373",
-      "short_hash": "5982e59",
-      "parents": [
-        "8793d179082d5c2b347565a4064cf1ffb65283c3"
-      ],
-      "tag": "v0.2b2",
-      "message": "fix: add CMS-SA v0.2b2 README render hygiene badge guard",
-      "changed_files": [
-        "README.md",
-        "docs/directory/cms_full_directory_box_v0_2b2.json",
-        "docs/injections/v0_2b2/cms_sa_v0_2b2_injection_record.md",
-        "docs/process/badge_status_render_hygiene_rule_v0_2b2.md",
-        "docs/release_seals/cms_sa_v0_2b2_release_seal.md",
-        "docs/roadmap/CMS_ROADMAP.md",
-        "docs/versions/v0_2b2/cms_sa_v0_2b2_readme_render_hygiene_badge_guard.md",
-        "outputs/directory/cms_full_directory_box_v0_2b2.json",
-        "outputs/documents/v0_2b2/cms_sa_v0_2b2_readme_render_hygiene_badge_guard.md",
-        "outputs/evidence/latest_evidence_package.json",
-        "outputs/injections/cms_injection_ledger.jsonl",
-        "outputs/lineage/cms_lineage_ledger.jsonl",
-        "outputs/metrics/latest_metric_evaluation.json",
-        "outputs/release_seals/cms_sa_v0_2b2_release_seal.md",
-        "outputs/roadmap/next_anchor.md",
-        "outputs/state/latest_observation_manifest.json",
-        "outputs/version_registry/cms_version_registry.json",
-        "reports/directory/latest_directory_box_validation.json",
-        "reports/directory/latest_directory_box_validation.md",
-        "reports/evidence/latest_evidence_package.json",
-        "reports/metric_contracts/latest_metric_evaluation.json",
-        "reports/metric_contracts/latest_metric_evaluation.md",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md",
-        "reports/release/latest_release_readiness_v0_2b2.json",
-        "reports/release/latest_release_readiness_v0_2b2.md",
-        "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.json",
-        "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.md",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "reports/runtime_observation/latest_observation_manifest.json",
-        "reports/runtime_observation/latest_observation_manifest.md",
-        "scripts/rcc/audit_readme_surface.py",
-        "scripts/validation/validate_directory_box_v0_2b.py",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py"
-      ],
-      "surface_classes": [
-        {
-          "path": "README.md",
-          "pattern": "README.md",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "public"
-        },
-        {
-          "path": "docs/directory/cms_full_directory_box_v0_2b2.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "docs/injections/v0_2b2/cms_sa_v0_2b2_injection_record.md",
-          "pattern": "docs/injections/",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "injections"
-        },
-        {
-          "path": "docs/process/badge_status_render_hygiene_rule_v0_2b2.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "docs/release_seals/cms_sa_v0_2b2_release_seal.md",
-          "pattern": "docs/release_seals/",
-          "shell": "outer",
-          "meridian": "release",
-          "sector": "seal"
-        },
-        {
-          "path": "docs/roadmap/CMS_ROADMAP.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "docs/versions/v0_2b2/cms_sa_v0_2b2_readme_render_hygiene_badge_guard.md",
-          "pattern": "docs/versions/",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "versions"
-        },
-        {
-          "path": "outputs/directory/cms_full_directory_box_v0_2b2.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/documents/v0_2b2/cms_sa_v0_2b2_readme_render_hygiene_badge_guard.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/evidence/latest_evidence_package.json",
-          "pattern": "outputs/evidence/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "outputs/injections/cms_injection_ledger.jsonl",
-          "pattern": "outputs/injections/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "outputs/lineage/cms_lineage_ledger.jsonl",
-          "pattern": "outputs/lineage/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "outputs/metrics/latest_metric_evaluation.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/release_seals/cms_sa_v0_2b2_release_seal.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/roadmap/next_anchor.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/state/latest_observation_manifest.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/version_registry/cms_version_registry.json",
-          "pattern": "outputs/version_registry/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "reports/directory/latest_directory_box_validation.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/directory/latest_directory_box_validation.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/evidence/latest_evidence_package.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/metric_contracts/latest_metric_evaluation.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/metric_contracts/latest_metric_evaluation.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/readme/latest_readme_mini_repo_audit.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/readme/latest_readme_mini_repo_audit.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/release/latest_release_readiness_v0_2b2.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/release/latest_release_readiness_v0_2b2.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/runtime_observation/latest_observation_manifest.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/runtime_observation/latest_observation_manifest.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "scripts/rcc/audit_readme_surface.py",
-          "pattern": "scripts/rcc/",
-          "shell": "middle",
-          "meridian": "agent",
-          "sector": "rcc"
-        },
-        {
-          "path": "scripts/validation/validate_directory_box_v0_2b.py",
-          "pattern": "scripts/validation/",
-          "shell": "middle",
-          "meridian": "validation",
-          "sector": "validator"
-        },
-        {
-          "path": "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
-          "pattern": "scripts/validation/",
-          "shell": "middle",
-          "meridian": "validation",
-          "sector": "validator"
-        }
-      ],
-      "shells": [
-        "center",
-        "middle",
-        "outer"
-      ],
-      "meridians": [
-        "agent",
-        "documentation",
-        "evidence",
-        "memory",
-        "release",
-        "validation"
-      ],
-      "sectors": [
-        "injections",
-        "lineage",
-        "public",
-        "rcc",
-        "reports",
-        "seal",
-        "unclassified",
-        "validator",
-        "versions"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/directory/latest_directory_box_validation.json",
-        "reports/directory/latest_directory_box_validation.md",
-        "reports/evidence/latest_evidence_package.json",
-        "reports/metric_contracts/latest_metric_evaluation.json",
-        "reports/metric_contracts/latest_metric_evaluation.md",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md",
-        "reports/release/latest_release_readiness_v0_2b2.json",
-        "reports/release/latest_release_readiness_v0_2b2.md",
-        "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.json",
-        "reports/render_hygiene/cms_sa_v0_2b2_readme_render_hygiene_badge_status_report.md",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "reports/runtime_observation/latest_observation_manifest.json",
-        "reports/runtime_observation/latest_observation_manifest.md",
-        "scripts/rcc/audit_readme_surface.py",
-        "scripts/validation/validate_directory_box_v0_2b.py",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py"
-      ],
-      "evidence_reports_touched": [
-        "outputs/evidence/latest_evidence_package.json",
-        "reports/evidence/latest_evidence_package.json",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md"
-      ],
-      "release_truth": {
-        "registry_current_version": "v0.3a1",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
-        "stable_geometry_boundary": true,
-        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
       }
     }

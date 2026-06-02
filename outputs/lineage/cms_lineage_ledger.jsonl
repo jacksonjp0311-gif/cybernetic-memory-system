@@ -34,3 +34,5 @@
 
 {"event":"stable_geometry_readme_api_alignment","version":"v0.3a1","next_anchor":"v0.3b","timestamp":"2026-06-02T07:19:55.6188662-04:00","previous":"v0.3a","lesson":"Committed reflective geometry must exclude report-only refresh commits; API transmission must be evidence-bound and validator-gated."}
 
+{"event":"pure_geometry_validation_boundary","version":"v0.3a2","next_anchor":"v0.3b","timestamp":"2026-06-02T07:33:22.3820417-04:00","previous":"v0.3a1","lesson":"Observation and validation must be separated from evidence emission."}
+

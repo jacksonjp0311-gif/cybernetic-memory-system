@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a1-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a2-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3a1 - Stable Reflective Geometry Evidence Boundary**  
+Current checkpoint: **CMS-SA v0.3a2 - Pure Geometry Validation Boundary**  
 Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -74,8 +74,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3a1 |
-| Previous seal | CMS-SA v0.3a |
+| Current checkpoint | CMS-SA v0.3a2 |
+| Previous seal | CMS-SA v0.3a1 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -111,6 +111,7 @@ python scripts/validation/validate_directory_box_v0_2b.py
 python scripts/validation/validate_readme_render_hygiene_v0_2b2.py
 python scripts/validation/validate_markdown_structure_v0_2b3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
+python scripts/geometry/emit_reflective_git_geometry.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
 python scripts/validate_release.py
@@ -345,6 +346,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-012 | Commit history contained repair structure but CMS did not yet extract it as geometry. | Git was treated as version storage rather than route-bearing repository memory. | Every commit should be interpretable as a routed geometry event with shell, meridian, sector, evidence, and release-truth context. |
 | CMS-L-013 | v0.3a geometry reports became dirty after final report-refresh commit. | Reflective geometry included report-only refresh commits, causing the report to rewrite itself after commit. | Committed reflective geometry must exclude report-only refresh commits from semantic geometry nodes. |
 | CMS-L-014 | README carried stale public metrics and older checkpoint framing after geometry advanced. | Runtime/report surfaces advanced faster than README summary and API-readiness rules. | README metrics, snapshot, quick-start, directory, and API boundary sections must advance with geometry/runtime layers. |
+| CMS-L-015 | Geometry validation kept rewriting latest geometry artifacts after every semantic commit. | The validator was also the emitter, so observing geometry mutated the geometry evidence surface. | Observation and validation must be separated from evidence emission; a read-only validator must not mutate the artifact it validates. |
 
 ### Failure Response Protocol
 
@@ -409,6 +411,8 @@ Rules:
 - No geometry-free commit interpretation.
 - Report-only refresh commits are excluded from semantic geometry nodes.
 - Latest geometry reports must not self-invalidate after report refresh commits.
+- A validator must not mutate the geometry it validates.
+- Geometry emission and geometry validation must remain separate phases.
 - Every geometry node must include commit, route, changed files, and release-truth context.
 - Feedback lifecycle objects must attach to Git geometry coordinates.
 - Geometry classification is repository orientation, not proof of correctness.
@@ -510,6 +514,7 @@ python scripts/validation/validate_directory_box_v0_2b.py
 python scripts/validation/validate_readme_render_hygiene_v0_2b2.py
 python scripts/validation/validate_markdown_structure_v0_2b3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
+python scripts/geometry/emit_reflective_git_geometry.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
 python scripts/validate_release.py

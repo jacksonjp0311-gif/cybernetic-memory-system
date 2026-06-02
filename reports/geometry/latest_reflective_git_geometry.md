@@ -1,20 +1,23 @@
-# CMS-SA v0.3a1 Reflective Git Geometry Report
+# CMS-SA v0.3a2 Reflective Git Geometry Report
 
 | Field | Value |
 |---|---|
-| schema | `CMS-SA-v0.3a1-reflective-git-geometry` |
+| schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.3a1` |
+| current registry version | `v0.3a2` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
+| pure validation boundary | `true` |
+| emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `true` |
-| release tag ancestor | `true` |
+| release tag exists | `false` |
+| release tag ancestor | `false` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `f6a25fa` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: seal CMS-SA v0.3a1 final geometry reflection |
 | `5af636f` | `` | `middle, outer` | `evidence, validation` | `reports, validator` | fix: clamp CMS-SA v0.3a1 render hygiene version token |
 | `d927c12` | `v0.3a1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: stabilize CMS-SA v0.3a geometry and align README API boundary |
 | `fec1db7` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
@@ -26,7 +29,10 @@
 | `cd41181` | `v0.2b3b` | `center` | `memory` | `lineage` | fix: stabilize CMS-SA v0.2b3 public sync evidence boundary |
 | `5c39180` | `v0.2b3a` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 README structure validator |
 | `bdaf0a9` | `` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | docs: add CMS-SA v0.2b3 README structure public sync tau lessons |
-| `5982e59` | `v0.2b2` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: add CMS-SA v0.2b2 README render hygiene badge guard |
+
+## Pure Validation Boundary
+
+Reflective geometry emission writes geometry artifacts. Reflective geometry validation reads existing artifacts and must not rewrite them.
 
 ## Stable Boundary Rule
 

@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[3]
 SURFACE_RULES = [
     ("README.md", "outer", "documentation", "public"),
     ("scripts/validation/", "middle", "validation", "validator"),
+    ("scripts/geometry/", "middle", "validation", "emitter"),
     ("scripts/rcc/", "middle", "agent", "rcc"),
     ("outputs/evidence/", "outer", "evidence", "reports"),
     ("reports/", "outer", "evidence", "reports"),
@@ -161,6 +162,7 @@ def release_truth_state(version: str) -> dict[str, Any]:
         "release_tag_is_ancestor_of_head": tag_is_ancestor,
         "stable_geometry_boundary": True,
         "report_refresh_commits_excluded": True,
+        "pure_validation_boundary": True,
         "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness.",
     }
 
@@ -226,14 +228,16 @@ def build_reflective_git_geometry(limit: int = 12) -> dict[str, Any]:
             break
 
     return {
-        "schema": "CMS-SA-v0.3a1-reflective-git-geometry",
-        "version": "v0.3a1",
+        "schema": "CMS-SA-v0.3a2-reflective-git-geometry",
+        "version": "v0.3a2",
         "current_registry_version": version,
         "node_count": len(nodes),
         "core_law": "A commit is not only a change; it is a routed event in repository geometry.",
         "secondary_law": "A repository learns when repeated routed events become constraints, validators, evidence surfaces, and future routing rules.",
         "stable_geometry_boundary": True,
         "report_refresh_commits_excluded": True,
+        "pure_validation_boundary": True,
+        "emission_validation_split": True,
         "skipped_report_refresh_commits": skipped_report_refresh_commits,
         "release_truth": truth,
         "nodes": nodes,
@@ -241,22 +245,9 @@ def build_reflective_git_geometry(limit: int = 12) -> dict[str, Any]:
     }
 
 
-def write_geometry(limit: int = 12) -> dict[str, Any]:
-    geometry = build_reflective_git_geometry(limit=limit)
-
-    out_json = ROOT / "outputs" / "geometry" / "latest_reflective_git_geometry.json"
-    report_json = ROOT / "reports" / "geometry" / "latest_reflective_git_geometry.json"
-    report_md = ROOT / "reports" / "geometry" / "latest_reflective_git_geometry.md"
-
-    out_json.parent.mkdir(parents=True, exist_ok=True)
-    report_json.parent.mkdir(parents=True, exist_ok=True)
-
-    text = json.dumps(geometry, indent=2) + "\n"
-    out_json.write_text(text, encoding="utf-8")
-    report_json.write_text(text, encoding="utf-8")
-
+def geometry_to_markdown(geometry: dict[str, Any]) -> str:
     rows = [
-        "# CMS-SA v0.3a1 Reflective Git Geometry Report",
+        "# CMS-SA v0.3a2 Reflective Git Geometry Report",
         "",
         "| Field | Value |",
         "|---|---|",
@@ -265,6 +256,8 @@ def write_geometry(limit: int = 12) -> dict[str, Any]:
         f"| current registry version | `{geometry['current_registry_version']}` |",
         f"| stable geometry boundary | `{str(geometry['stable_geometry_boundary']).lower()}` |",
         f"| report refresh commits excluded | `{str(geometry['report_refresh_commits_excluded']).lower()}` |",
+        f"| pure validation boundary | `{str(geometry['pure_validation_boundary']).lower()}` |",
+        f"| emission validation split | `{str(geometry['emission_validation_split']).lower()}` |",
         f"| head/origin match | `{str(geometry['release_truth'].get('head_origin_match')).lower()}` |",
         f"| release tag exists | `{str(geometry['release_truth'].get('release_tag_exists')).lower()}` |",
         f"| release tag ancestor | `{str(geometry['release_truth'].get('release_tag_is_ancestor_of_head')).lower()}` |",
@@ -285,6 +278,10 @@ def write_geometry(limit: int = 12) -> dict[str, Any]:
 
     rows.extend([
         "",
+        "## Pure Validation Boundary",
+        "",
+        "Reflective geometry emission writes geometry artifacts. Reflective geometry validation reads existing artifacts and must not rewrite them.",
+        "",
         "## Stable Boundary Rule",
         "",
         "Report-only refresh commits are excluded from semantic geometry nodes to prevent latest geometry reports from self-invalidating after report-refresh commits.",
@@ -299,7 +296,29 @@ def write_geometry(limit: int = 12) -> dict[str, Any]:
         "",
     ])
 
-    report_md.write_text("\n".join(rows), encoding="utf-8")
+    return "\n".join(rows)
+
+
+def write_geometry(limit: int = 12) -> dict[str, Any]:
+    """Emit geometry artifacts.
+
+    This function is intentionally write-capable. Validators should not call it.
+    """
+
+    geometry = build_reflective_git_geometry(limit=limit)
+
+    out_json = ROOT / "outputs" / "geometry" / "latest_reflective_git_geometry.json"
+    report_json = ROOT / "reports" / "geometry" / "latest_reflective_git_geometry.json"
+    report_md = ROOT / "reports" / "geometry" / "latest_reflective_git_geometry.md"
+
+    out_json.parent.mkdir(parents=True, exist_ok=True)
+    report_json.parent.mkdir(parents=True, exist_ok=True)
+
+    text = json.dumps(geometry, indent=2) + "\n"
+    out_json.write_text(text, encoding="utf-8")
+    report_json.write_text(text, encoding="utf-8")
+    report_md.write_text(geometry_to_markdown(geometry), encoding="utf-8")
+
     return geometry
 
 
