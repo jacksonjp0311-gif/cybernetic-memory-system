@@ -1,8 +1,8 @@
 {
   "schema": "CMS-SA-v0.2-observation-manifest",
   "repository": "cybernetic-memory-system",
-  "observed_at": "2026-06-02T17:51:03.649157+00:00",
-  "git_head": "28aa2ab0c4b434b17fd7fef7a2cc3c87f3a0293b",
+  "observed_at": "2026-06-02T17:52:57.337981+00:00",
+  "git_head": "ae0ec36ff820871535cec96aa2a5a7d2ff6d18da",
   "file_count": 361,
   "role_counts": {
     "other": 5,
@@ -1104,7 +1104,7 @@
       "path": "outputs/evidence/latest_evidence_package.json",
       "suffix": ".json",
       "bytes": 3410,
-      "sha256": "7e1d74210da4da77f21d1b6ada583c5f5260698887ba11c6b6845b4713368b4c",
+      "sha256": "6d689352b445d4d5bb62853f0030e7aafa0544066075fcef857fe7c7b8e430f1",
       "role": "json_artifact"
     },
     {
@@ -1377,7 +1377,7 @@
       "path": "outputs/state/latest_observation_manifest.json",
       "suffix": ".json",
       "bytes": 89035,
-      "sha256": "029e95ff36e91e9d4dfa5d1671a65dcd2df870e3d749f66345a637ac95bd9eeb",
+      "sha256": "53442021fe0232fd0cf8a0d627b72237daa38619b109818b01f70ba98ed6e384",
       "role": "json_artifact"
     },
     {
@@ -1580,7 +1580,7 @@
       "path": "reports/evidence/latest_evidence_package.json",
       "suffix": ".json",
       "bytes": 3410,
-      "sha256": "7e1d74210da4da77f21d1b6ada583c5f5260698887ba11c6b6845b4713368b4c",
+      "sha256": "6d689352b445d4d5bb62853f0030e7aafa0544066075fcef857fe7c7b8e430f1",
       "role": "json_artifact"
     },
     {
@@ -1930,14 +1930,14 @@
       "path": "reports/runtime_observation/latest_observation_manifest.json",
       "suffix": ".json",
       "bytes": 89035,
-      "sha256": "029e95ff36e91e9d4dfa5d1671a65dcd2df870e3d749f66345a637ac95bd9eeb",
+      "sha256": "53442021fe0232fd0cf8a0d627b72237daa38619b109818b01f70ba98ed6e384",
       "role": "json_artifact"
     },
     {
       "path": "reports/runtime_observation/latest_observation_manifest.md",
       "suffix": ".md",
       "bytes": 224,
-      "sha256": "1201bca5bb1e5d05539ea9784fedfed5ba97d403f5a2aab25229439ee974c956",
+      "sha256": "b9e58a859df3c32e33e5b381cb70f1a624d270eb33a27a4ace999105ae2c4317",
       "role": "documentation"
     },
     {
