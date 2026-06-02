@@ -32,3 +32,5 @@
 
 {"event":"reflective_git_geometry_contract","version":"v0.3a","next_anchor":"v0.3b","timestamp":"2026-06-02T07:16:35.3763835-04:00","previous":"v0.2b3e","lesson":"A commit is not only a change; it is a routed event in repository geometry."}
 
+{"event":"stable_geometry_readme_api_alignment","version":"v0.3a1","next_anchor":"v0.3b","timestamp":"2026-06-02T07:19:55.6188662-04:00","previous":"v0.3a","lesson":"Committed reflective geometry must exclude report-only refresh commits; API transmission must be evidence-bound and validator-gated."}
+

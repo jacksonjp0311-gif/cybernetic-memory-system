@@ -29,27 +29,25 @@ SURFACE_RULES = [
 ]
 
 
+REPORT_REFRESH_PREFIXES = (
+    "outputs/geometry/",
+    "reports/geometry/",
+    "reports/readme/",
+    "reports/render_hygiene/",
+    "reports/public_sync/",
+    "reports/release/",
+)
+
+
 def run_git(args: list[str]) -> str:
-    completed = subprocess.run(
-        ["git", *args],
-        cwd=ROOT,
-        check=False,
-        capture_output=True,
-        text=True,
-    )
+    completed = subprocess.run(["git", *args], cwd=ROOT, check=False, capture_output=True, text=True)
     if completed.returncode != 0:
         raise RuntimeError((completed.stderr or completed.stdout).strip())
     return completed.stdout.strip()
 
 
 def git_ok(args: list[str]) -> bool:
-    completed = subprocess.run(
-        ["git", *args],
-        cwd=ROOT,
-        check=False,
-        capture_output=True,
-        text=True,
-    )
+    completed = subprocess.run(["git", *args], cwd=ROOT, check=False, capture_output=True, text=True)
     return completed.returncode == 0
 
 
@@ -81,20 +79,8 @@ def classify_path(path: str) -> dict[str, str]:
     normalized = path.replace("\\", "/")
     for pattern, shell, meridian, sector in SURFACE_RULES:
         if normalized == pattern.rstrip("/") or normalized.startswith(pattern):
-            return {
-                "path": path,
-                "pattern": pattern,
-                "shell": shell,
-                "meridian": meridian,
-                "sector": sector,
-            }
-    return {
-        "path": path,
-        "pattern": "unclassified",
-        "shell": "middle",
-        "meridian": "documentation",
-        "sector": "unclassified",
-    }
+            return {"path": path, "pattern": pattern, "shell": shell, "meridian": meridian, "sector": sector}
+    return {"path": path, "pattern": "unclassified", "shell": "middle", "meridian": "documentation", "sector": "unclassified"}
 
 
 def commit_tags() -> dict[str, str]:
@@ -131,6 +117,30 @@ def detect_lessons(text: str, changed_files: list[str]) -> list[str]:
     return sorted(set(re.findall(r"CMS-L-\d{3}", joined)))
 
 
+def is_report_refresh_commit(message: str, changed_files: list[str]) -> bool:
+    """True when a commit only refreshes volatile report artifacts.
+
+    These commits are real Git points, but excluding them from semantic
+    geometry nodes prevents committed latest geometry reports from rewriting
+    themselves after every report-refresh commit.
+    """
+
+    msg = message.lower().strip()
+    if not (
+        msg.startswith("chore: refresh")
+        or msg.startswith("chore: record")
+        or "validation reports" in msg
+        or "report refresh" in msg
+    ):
+        return False
+
+    if not changed_files:
+        return False
+
+    normalized = [path.replace("\\", "/") for path in changed_files]
+    return all(path.startswith(REPORT_REFRESH_PREFIXES) for path in normalized)
+
+
 def release_truth_state(version: str) -> dict[str, Any]:
     head = run_git(["rev-parse", "HEAD"])
     origin = run_git(["rev-parse", "origin/main"])
@@ -149,7 +159,9 @@ def release_truth_state(version: str) -> dict[str, Any]:
         "readme_checkpoint_present": version != "unknown" and version in readme_text,
         "release_tag_exists": tag_exists,
         "release_tag_is_ancestor_of_head": tag_is_ancestor,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+        "stable_geometry_boundary": True,
+        "report_refresh_commits_excluded": True,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness.",
     }
 
 
@@ -158,15 +170,24 @@ def build_reflective_git_geometry(limit: int = 12) -> dict[str, Any]:
     version = current_version(registry)
     truth = release_truth_state(version)
 
-    log_raw = run_git(["log", f"-{limit}", "--pretty=format:%H%x1f%s"])
+    raw_limit = max(limit * 4, limit)
+    log_raw = run_git(["log", f"-{raw_limit}", "--pretty=format:%H%x1f%s"])
     tag_map = commit_tags()
 
     nodes: list[dict[str, Any]] = []
+    skipped_report_refresh_commits: list[str] = []
+
     for line in log_raw.splitlines():
         if not line.strip():
             continue
+
         commit, message = line.split("\x1f", 1)
         changed = changed_files_for_commit(commit)
+
+        if is_report_refresh_commit(message, changed):
+            skipped_report_refresh_commits.append(commit[:7])
+            continue
+
         classes = [classify_path(path) for path in changed]
         shells = sorted({item["shell"] for item in classes})
         meridians = sorted({item["meridian"] for item in classes})
@@ -174,9 +195,7 @@ def build_reflective_git_geometry(limit: int = 12) -> dict[str, Any]:
 
         validator_reports = [
             path for path in changed
-            if path.startswith("reports/")
-            or path.startswith("scripts/validation/")
-            or path.startswith("scripts/rcc/")
+            if path.startswith("reports/") or path.startswith("scripts/validation/") or path.startswith("scripts/rcc/")
         ]
         evidence_reports = [
             path for path in changed
@@ -203,18 +222,23 @@ def build_reflective_git_geometry(limit: int = 12) -> dict[str, Any]:
             "release_truth": truth,
         })
 
-    geometry = {
-        "schema": "CMS-SA-v0.3a-reflective-git-geometry",
-        "version": "v0.3a",
+        if len(nodes) >= limit:
+            break
+
+    return {
+        "schema": "CMS-SA-v0.3a1-reflective-git-geometry",
+        "version": "v0.3a1",
         "current_registry_version": version,
         "node_count": len(nodes),
         "core_law": "A commit is not only a change; it is a routed event in repository geometry.",
         "secondary_law": "A repository learns when repeated routed events become constraints, validators, evidence surfaces, and future routing rules.",
+        "stable_geometry_boundary": True,
+        "report_refresh_commits_excluded": True,
+        "skipped_report_refresh_commits": skipped_report_refresh_commits,
         "release_truth": truth,
         "nodes": nodes,
-        "non_claim_lock": "Reflective Git geometry improves repository orientation, routing, and evidence traceability. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness."
+        "non_claim_lock": "Reflective Git geometry improves repository orientation, routing, and evidence traceability. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
     }
-    return geometry
 
 
 def write_geometry(limit: int = 12) -> dict[str, Any]:
@@ -232,13 +256,15 @@ def write_geometry(limit: int = 12) -> dict[str, Any]:
     report_json.write_text(text, encoding="utf-8")
 
     rows = [
-        "# CMS-SA v0.3a Reflective Git Geometry Report",
+        "# CMS-SA v0.3a1 Reflective Git Geometry Report",
         "",
         "| Field | Value |",
         "|---|---|",
         f"| schema | `{geometry['schema']}` |",
         f"| node count | `{geometry['node_count']}` |",
         f"| current registry version | `{geometry['current_registry_version']}` |",
+        f"| stable geometry boundary | `{str(geometry['stable_geometry_boundary']).lower()}` |",
+        f"| report refresh commits excluded | `{str(geometry['report_refresh_commits_excluded']).lower()}` |",
         f"| head/origin match | `{str(geometry['release_truth'].get('head_origin_match')).lower()}` |",
         f"| release tag exists | `{str(geometry['release_truth'].get('release_tag_exists')).lower()}` |",
         f"| release tag ancestor | `{str(geometry['release_truth'].get('release_tag_is_ancestor_of_head')).lower()}` |",
@@ -255,11 +281,13 @@ def write_geometry(limit: int = 12) -> dict[str, Any]:
         meridians = ", ".join(node.get("meridians", []))
         sectors = ", ".join(node.get("sectors", []))
         message = str(node.get("message", "")).replace("|", "/")
-        rows.append(
-            f"| `{node['short_hash']}` | `{tag}` | `{shells}` | `{meridians}` | `{sectors}` | {message} |"
-        )
+        rows.append(f"| `{node['short_hash']}` | `{tag}` | `{shells}` | `{meridians}` | `{sectors}` | {message} |")
 
     rows.extend([
+        "",
+        "## Stable Boundary Rule",
+        "",
+        "Report-only refresh commits are excluded from semantic geometry nodes to prevent latest geometry reports from self-invalidating after report-refresh commits.",
         "",
         "## Core Law",
         "",

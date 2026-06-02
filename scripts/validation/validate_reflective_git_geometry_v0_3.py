@@ -16,11 +16,17 @@ def main() -> int:
 
     geometry = write_geometry(limit=12)
 
-    if geometry.get("schema") != "CMS-SA-v0.3a-reflective-git-geometry":
+    if geometry.get("schema") != "CMS-SA-v0.3a1-reflective-git-geometry":
         findings.append("schema_mismatch")
 
     if geometry.get("node_count", 0) < 1:
         findings.append("no_geometry_nodes")
+
+    if geometry.get("stable_geometry_boundary") is not True:
+        findings.append("stable_geometry_boundary_missing")
+
+    if geometry.get("report_refresh_commits_excluded") is not True:
+        findings.append("report_refresh_exclusion_missing")
 
     truth = geometry.get("release_truth", {})
     if truth.get("head_origin_match") is not True:
@@ -31,20 +37,32 @@ def main() -> int:
 
     nodes = geometry.get("nodes", [])
     for index, node in enumerate(nodes):
-        for key in ("commit_hash", "short_hash", "message", "changed_files", "surface_classes", "shells", "meridians", "sectors", "release_truth"):
+        for key in (
+            "commit_hash",
+            "short_hash",
+            "message",
+            "changed_files",
+            "surface_classes",
+            "shells",
+            "meridians",
+            "sectors",
+            "release_truth",
+        ):
             if key not in node:
                 findings.append(f"node_{index}_missing_{key}")
 
     report = {
-        "schema": "CMS-SA-v0.3a-reflective-git-geometry-validation",
+        "schema": "CMS-SA-v0.3a1-reflective-git-geometry-validation",
         "passed": len(findings) == 0,
         "errors": len(findings),
         "warnings": 0,
         "findings": findings,
         "node_count": geometry.get("node_count", 0),
         "current_registry_version": geometry.get("current_registry_version"),
+        "stable_geometry_boundary": geometry.get("stable_geometry_boundary"),
+        "report_refresh_commits_excluded": geometry.get("report_refresh_commits_excluded"),
         "core_law_present": geometry.get("core_law") == "A commit is not only a change; it is a routed event in repository geometry.",
-        "non_claim_lock": "Reflective Git geometry validation checks repository-route artifacts only. It does not prove runtime correctness."
+        "non_claim_lock": "Reflective Git geometry validation checks repository-route artifacts only. It does not prove runtime correctness.",
     }
 
     out_json = ROOT / "reports" / "geometry" / "latest_reflective_git_geometry_validation.json"
@@ -53,7 +71,7 @@ def main() -> int:
     out_json.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 
     md = [
-        "# CMS-SA v0.3a Reflective Git Geometry Validation",
+        "# CMS-SA v0.3a1 Reflective Git Geometry Validation",
         "",
         "| Field | Value |",
         "|---|---|",
@@ -62,6 +80,8 @@ def main() -> int:
         f"| warnings | `0` |",
         f"| node count | `{report['node_count']}` |",
         f"| current registry version | `{report['current_registry_version']}` |",
+        f"| stable geometry boundary | `{str(report['stable_geometry_boundary']).lower()}` |",
+        f"| report refresh commits excluded | `{str(report['report_refresh_commits_excluded']).lower()}` |",
         f"| core law present | `{str(report['core_law_present']).lower()}` |",
         "",
         "Non-claim lock: reflective Git geometry validation checks repository-route artifacts only. It does not prove runtime correctness.",

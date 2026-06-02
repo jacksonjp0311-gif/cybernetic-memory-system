@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a1-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3a - Reflective Git Geometry Contract**  
+Current checkpoint: **CMS-SA v0.3a1 - Stable Reflective Geometry Evidence Boundary**  
 Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -74,29 +74,26 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3a |
-| Previous seal | CMS-SA v0.2b3 |
-| Git head before repair | `bdaf0a9` |
-| Origin main before repair | `5982e59` |
-| Metric evaluation before repair | `True` |
-| README / mini repo audit before repair | `False` |
+| Current checkpoint | CMS-SA v0.3a1 |
+| Previous seal | CMS-SA v0.3a |
+| README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
-| Directory box validation before repair | `False` |
-| Render hygiene before repair | `False` |
+| Directory box validation | `True` |
+| Render hygiene | `True` |
+| Markdown structure validation | `True` |
+| Public sync validation | `True` |
+| Reflective Git geometry validation | `True` |
+| Release validator | `True` |
 | CMS coherence K_CMS | `1.0` |
 | CMS drift D_CMS | `0.0` |
 | Evidence classification | `CMS-B` |
-| Release allowed | `True` |
 | Latest observation manifest | `outputs/state/latest_observation_manifest.json` |
 | Latest metric evaluation | `outputs/metrics/latest_metric_evaluation.json` |
 | Latest drift report | `outputs/drift/latest_drift_report.json` |
 | Latest evidence package | `outputs/evidence/latest_evidence_package.json` |
-| Directory box manifest | `docs/directory/cms_full_directory_box_v0_2b3a.json` |
-| Directory box validation | `reports/directory/latest_directory_box_validation.md` |
-| Render hygiene validation | `reports/render_hygiene/latest_readme_render_hygiene.md` |
-| Markdown structure validation | `reports/markdown_structure/latest_markdown_structure.md` |
-| Public sync validation | `reports/public_sync/latest_public_sync_report.md` |
+| Latest reflective Git geometry | `outputs/geometry/latest_reflective_git_geometry.json` |
+| Geometry validation report | `reports/geometry/latest_reflective_git_geometry_validation.md` |
 
 ## Quick Start
 
@@ -239,7 +236,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.2b3a / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3a1 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -346,6 +343,8 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-010 | v0.2b3c public sync was stable but README validators still failed. | Validator expected checkpoint and badge tokens were pinned to older v0.2b3a public strings. | Validators must advance their expected public tokens whenever checkpoint badges and README status advance. |
 | CMS-L-011 | v0.2b3d ended with clean Git status even though README audit still returned passed:false. | The release script checked Git cleanliness but did not parse validator truth. | Release gates must parse validator JSON and block on passed:false; clean Git status alone is not release readiness. |
 | CMS-L-012 | Commit history contained repair structure but CMS did not yet extract it as geometry. | Git was treated as version storage rather than route-bearing repository memory. | Every commit should be interpretable as a routed geometry event with shell, meridian, sector, evidence, and release-truth context. |
+| CMS-L-013 | v0.3a geometry reports became dirty after final report-refresh commit. | Reflective geometry included report-only refresh commits, causing the report to rewrite itself after commit. | Committed reflective geometry must exclude report-only refresh commits from semantic geometry nodes. |
+| CMS-L-014 | README carried stale public metrics and older checkpoint framing after geometry advanced. | Runtime/report surfaces advanced faster than README summary and API-readiness rules. | README metrics, snapshot, quick-start, directory, and API boundary sections must advance with geometry/runtime layers. |
 
 ### Failure Response Protocol
 
@@ -408,6 +407,8 @@ Primary artifacts:
 Rules:
 
 - No geometry-free commit interpretation.
+- Report-only refresh commits are excluded from semantic geometry nodes.
+- Latest geometry reports must not self-invalidate after report refresh commits.
 - Every geometry node must include commit, route, changed files, and release-truth context.
 - Feedback lifecycle objects must attach to Git geometry coordinates.
 - Geometry classification is repository orientation, not proof of correctness.
@@ -446,6 +447,35 @@ latest validation reports
 ```
 
 Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, truth, security, AGI, consciousness, or external validation.
+
+
+## Two-Way API Transmission Readiness Box
+
+CMS is preparing for an eventual two-way API transmission process:
+
+```text
+external request -> intent packet -> route classification -> dry-run plan
+-> diff proposal -> validation stack -> evidence package
+-> human authorization -> write action -> commit/push/tag -> public sync
+```
+
+Inbound API rules:
+
+- No direct write without route classification.
+- No direct write without dry-run diff.
+- No direct write without validator binding.
+- No direct write without evidence package.
+- No direct write without human authorization unless explicitly running in a future constrained automation profile.
+- No API response may claim correctness beyond repository-bound validation.
+
+Outbound API rules:
+
+- Outbound state must cite version registry, release seal, validation reports, and evidence package.
+- Outbound state must include non-claim locks.
+- Outbound state must distinguish observation, recommendation, patch plan, and committed fact.
+- Outbound state must never treat memory, geometry, or validator agreement as external truth.
+
+Non-claim lock: two-way API transmission is a future integration pattern. It is not yet an autonomous write authority, production deployment, security boundary, AGI, consciousness, or external validation.
 
 ## Process Alignment Layer
 

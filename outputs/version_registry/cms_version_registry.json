@@ -1,7 +1,7 @@
 {
     "schema":  "CMS-SA-version-registry-v0.2b3a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.3a",
+    "current_version":  "v0.3a1",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
     "versions":  [
                      {
@@ -86,6 +86,14 @@
                          "previous":  "v0.2b3e",
                          "next":  "v0.3b",
                          "non_claim_lock":  "Reflective Git geometry is not code correctness."
+                     },
+                     {
+                         "version":  "v0.3a1",
+                         "name":  "Stable Reflective Geometry Evidence Boundary",
+                         "status":  "geometry-readme-api-alignment-repair",
+                         "previous":  "v0.3a",
+                         "next":  "v0.3b",
+                         "non_claim_lock":  "Stable reflective geometry and API-readiness alignment are not code correctness."
                      }
                  ],
     "next_anchor":  "CMS-SA v0.3b - Feedback Quality and Lifecycle Engine",
@@ -95,7 +103,7 @@
                             "markdown_structure_is_not_code_correctness":  true,
                             "public_sync_is_not_external_validation":  true
                         },
-    "latest_version":  "v0.3a",
-    "current_checkpoint":  "CMS-SA v0.3a - Reflective Git Geometry Contract",
-    "updated_at":  "2026-06-02T07:16:35.3763835-04:00"
+    "latest_version":  "v0.3a1",
+    "current_checkpoint":  "CMS-SA v0.3a1 - Stable Reflective Geometry Evidence Boundary",
+    "updated_at":  "2026-06-02T07:19:55.6188662-04:00"
 }

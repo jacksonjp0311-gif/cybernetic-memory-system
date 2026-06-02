@@ -32,3 +32,5 @@
 
 {"timestamp":"2026-06-02T07:16:35.3763835-04:00","injection":"reflective_git_geometry_contract","version":"v0.3a","surfaces":["README.md","configs/geometry","schemas/reflective_git_node.schema.json","src/cms/geometry","reports/geometry"]}
 
+{"timestamp":"2026-06-02T07:19:55.6188662-04:00","injection":"stable_geometry_readme_api_alignment","version":"v0.3a1","surfaces":["README.md","src/cms/geometry/git_geometry.py","scripts/validation/validate_reflective_git_geometry_v0_3.py","reports/geometry"]}
+
