@@ -15,6 +15,150 @@
   },
   "nodes": [
     {
+      "commit_hash": "c76a4d9bca03d88c15c9373d14b07e0ddfc2d685",
+      "short_hash": "c76a4d9",
+      "parents": [
+        "36afbb91f8ed98218798cdeb42070256c33b41d6"
+      ],
+      "tag": null,
+      "message": "feat: add CMS-SA v0.3a reflective git geometry contract",
+      "changed_files": [
+        "docs/roadmap/CMS_ROADMAP.md",
+        "outputs/evidence/latest_evidence_package.json",
+        "outputs/geometry/latest_reflective_git_geometry.json",
+        "outputs/injections/cms_injection_ledger.jsonl",
+        "outputs/lineage/cms_lineage_ledger.jsonl",
+        "outputs/state/latest_observation_manifest.json",
+        "outputs/version_registry/cms_version_registry.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "surface_classes": [
+        {
+          "path": "docs/roadmap/CMS_ROADMAP.md",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/evidence/latest_evidence_package.json",
+          "pattern": "outputs/evidence/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "outputs/geometry/latest_reflective_git_geometry.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/injections/cms_injection_ledger.jsonl",
+          "pattern": "outputs/injections/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "outputs/lineage/cms_lineage_ledger.jsonl",
+          "pattern": "outputs/lineage/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "outputs/state/latest_observation_manifest.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/version_registry/cms_version_registry.json",
+          "pattern": "outputs/version_registry/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "reports/evidence/latest_evidence_package.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        }
+      ],
+      "shells": [
+        "center",
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence",
+        "memory"
+      ],
+      "sectors": [
+        "lineage",
+        "reports",
+        "unclassified"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "evidence_reports_touched": [
+        "outputs/evidence/latest_evidence_package.json",
+        "reports/evidence/latest_evidence_package.json"
+      ],
+      "release_truth": {
+        "registry_current_version": "v0.3a",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": true,
+        "release_tag_is_ancestor_of_head": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
+    {
       "commit_hash": "36afbb91f8ed98218798cdeb42070256c33b41d6",
       "short_hash": "36afbb9",
       "parents": [
@@ -1608,61 +1752,6 @@
       "short_hash": "ab696aa",
       "parents": [
         "c765917c7173e9cb37ea01cb2368e664580fd69c"
-      ],
-      "tag": null,
-      "message": "chore: refresh CMS-SA v0.2b3a post-push public sync reports",
-      "changed_files": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "surface_classes": [
-        {
-          "path": "reports/public_sync/latest_public_sync_report.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/public_sync/latest_public_sync_report.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        }
-      ],
-      "shells": [
-        "outer"
-      ],
-      "meridians": [
-        "evidence"
-      ],
-      "sectors": [
-        "reports"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "evidence_reports_touched": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "release_truth": {
-        "registry_current_version": "v0.3a",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "c765917c7173e9cb37ea01cb2368e664580fd69c",
-      "short_hash": "c765917",
-      "parents": [
-        "5c39180acadcfdfd2dd9ade0d1e877aa134b8b2f"
       ],
       "tag": null,
       "message": "chore: refresh CMS-SA v0.2b3a post-push public sync reports",
