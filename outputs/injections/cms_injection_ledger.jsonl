@@ -20,3 +20,5 @@
 
 {"timestamp":"2026-06-01T22:00:29.2800801-04:00","injection":"stable_public_sync_evidence_boundary","version":"v0.2b3b","surfaces":["README.md","scripts/validation/validate_public_sync_v0_2b3.py","reports/public_sync","outputs/version_registry"]}
 
+{"timestamp":"2026-06-01T22:02:26.9144763-04:00","injection":"root_anchored_stable_public_sync_repair","version":"v0.2b3c","surfaces":["README.md","scripts/validation/validate_public_sync_v0_2b3.py","reports/public_sync","outputs/version_registry"]}
+

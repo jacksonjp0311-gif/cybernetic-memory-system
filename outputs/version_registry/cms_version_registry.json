@@ -1,7 +1,7 @@
 {
     "schema":  "CMS-SA-version-registry-v0.2b3a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.2b3a",
+    "current_version":  "v0.2b3c",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
     "versions":  [
                      {
@@ -47,13 +47,31 @@
                      {
                          "version":  "v0.2b3a",
                          "class":  "readme_structure_validator_repair_public_sync_phase_split"
+                     },
+                     {
+                         "version":  "v0.2b3b",
+                         "name":  "Failed Stable Public Sync Attempt",
+                         "status":  "failed-useful-tagged-layer",
+                         "lesson":  "Relative path writes and line-by-line execution caused incomplete repair.",
+                         "next":  "v0.2b3c"
+                     },
+                     {
+                         "version":  "v0.2b3c",
+                         "name":  "Root-Anchored Stable Public Sync Repair",
+                         "status":  "repair-layer",
+                         "previous":  "v0.2b3b",
+                         "next":  "v0.3",
+                         "non_claim_lock":  "Repository-state sync is not runtime correctness."
                      }
                  ],
-    "next_anchor":  "CMS-SA v0.3 — Feedback Quality and Lifecycle Engine",
+    "next_anchor":  "CMS-SA v0.3 - Feedback Quality and Lifecycle Engine",
     "non_claim_locks":  {
                             "release_seal_is_not_external_validation":  true,
                             "version_registry_is_not_truth":  true,
                             "markdown_structure_is_not_code_correctness":  true,
                             "public_sync_is_not_external_validation":  true
-                        }
+                        },
+    "latest_version":  "v0.2b3c",
+    "current_checkpoint":  "CMS-SA v0.2b3c - Root-Anchored Stable Public Sync Repair",
+    "updated_at":  "2026-06-01T22:02:26.9144763-04:00"
 }

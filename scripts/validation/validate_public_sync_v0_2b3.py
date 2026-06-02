@@ -1,88 +1,149 @@
-from pathlib import Path
+from __future__ import annotations
+
 import json
 import subprocess
+from pathlib import Path
+
 
 ROOT = Path(__file__).resolve().parents[2]
-README = ROOT / "README.md"
+REPORT_JSON = ROOT / "reports" / "public_sync" / "latest_public_sync_report.json"
+REPORT_MD = ROOT / "reports" / "public_sync" / "latest_public_sync_report.md"
 REGISTRY = ROOT / "outputs" / "version_registry" / "cms_version_registry.json"
+README = ROOT / "README.md"
 
-def run(cmd):
+
+def run_git(args: list[str]) -> tuple[bool, str]:
+    completed = subprocess.run(
+        ["git", *args],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    return completed.returncode == 0, (completed.stdout or completed.stderr).strip()
+
+
+def load_json(path: Path) -> dict:
+    if not path.exists():
+        return {}
     try:
-        return subprocess.check_output(cmd, cwd=ROOT, text=True, stderr=subprocess.STDOUT).strip()
-    except Exception as exc:
-        return f"ERROR:{exc}"
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
 
-readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
-registry = json.loads(REGISTRY.read_text(encoding="utf-8")) if REGISTRY.exists() else {}
 
-head = run(["git", "rev-parse", "HEAD"])
-origin = run(["git", "rev-parse", "origin/main"])
-short_head = run(["git", "rev-parse", "--short", "HEAD"])
-tags = run(["git", "tag", "--list"])
+def current_version(registry: dict) -> str:
+    for key in ("current_version", "latest_version", "version"):
+        value = registry.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
 
-errors = []
-warnings = []
+    current = registry.get("current")
+    if isinstance(current, dict):
+        for key in ("version", "current_version", "latest_version"):
+            value = current.get(key)
+            if isinstance(value, str) and value.strip():
+                return value.strip()
 
-if head.startswith("ERROR"):
-    errors.append("git_head_unavailable")
-if origin.startswith("ERROR"):
-    warnings.append("origin_main_unavailable_pre_push_or_offline")
+    versions = registry.get("versions")
+    if isinstance(versions, list) and versions:
+        last = versions[-1]
+        if isinstance(last, dict):
+            value = last.get("version")
+            if isinstance(value, str) and value.strip():
+                return value.strip()
 
-# Before push, local may be ahead. That is a warning, not a pre-push failure.
-if not head.startswith("ERROR") and not origin.startswith("ERROR") and head != origin:
-    warnings.append("local_head_not_equal_origin_main_pre_push_expected_until_push")
+    return "unknown"
 
-checkpoint = "CMS-SA v0.2b3a"
-if checkpoint not in readme:
-    errors.append("readme_missing_v0.2b3a_checkpoint")
 
-if registry.get("current_version") != "v0.2b3a":
-    errors.append(f"registry_current_version_mismatch:{registry.get('current_version')}")
+def main() -> int:
+    findings: list[str] = []
+    warnings: list[str] = []
 
-if "CMS--SA-v0.2b3a" not in readme:
-    errors.append("badge_missing_v0.2b3a")
+    registry = load_json(REGISTRY)
+    version = current_version(registry)
 
-for stale in ["CMS--SA-v0.1.2", "CMS-SA v0.2a", "CMS-SA v0.2b2 - README Render Hygiene and Badge Status Guard**  \nPrevious seal"]:
-    if stale in readme:
-        errors.append(f"stale_public_surface:{stale}")
+    ok_head, head = run_git(["rev-parse", "HEAD"])
+    ok_origin, origin = run_git(["rev-parse", "origin/main"])
+    head_origin_match = bool(ok_head and ok_origin and head == origin)
+    if not head_origin_match:
+        findings.append("head_not_equal_origin_main")
 
-if "v0.2b3a" not in tags:
-    warnings.append("tag_v0.2b3a_not_created_yet")
+    readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
+    readme_checkpoint_present = version != "unknown" and version in readme
+    if not readme_checkpoint_present:
+        findings.append("readme_checkpoint_missing_current_version")
 
-passed = not errors
+    tag_exists = False
+    tag_is_ancestor = False
+    tag_status = "not_checked"
 
-report = {
-    "schema": "CMS-SA-v0.2b3a-public-sync",
-    "passed": passed,
-    "errors": len(errors),
-    "warnings": len(warnings),
-    "findings": errors,
-    "warning_findings": warnings,
-    "head": head,
-    "origin_main": origin,
-    "short_head": short_head,
-    "registry_current_version": registry.get("current_version"),
-    "non_claim_lock": "Public sync validation checks repository state agreement but does not prove runtime correctness."
-}
+    if version == "unknown":
+        findings.append("registry_current_version_unknown")
+        tag_status = "unknown_current_version"
+    else:
+        ok_tag, _ = run_git(["rev-parse", f"{version}^{{}}"])
+        tag_exists = ok_tag
+        if not tag_exists:
+            findings.append("release_tag_missing")
+            tag_status = "missing"
+        else:
+            ok_ancestor, _ = run_git(["merge-base", "--is-ancestor", f"{version}^{{}}", "HEAD"])
+            tag_is_ancestor = ok_ancestor
+            if tag_is_ancestor:
+                tag_status = "present_and_ancestor_of_head"
+            else:
+                findings.append("release_tag_not_ancestor_of_head")
+                tag_status = "present_but_not_ancestor_of_head"
 
-out_json = ROOT / "reports" / "public_sync" / "latest_public_sync_report.json"
-out_md = ROOT / "reports" / "public_sync" / "latest_public_sync_report.md"
-out_json.parent.mkdir(parents=True, exist_ok=True)
-out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
-out_md.write_text(
-    "# CMS-SA v0.2b3a Public Sync Report\n\n"
-    f"- passed: `{passed}`\n"
-    f"- errors: `{len(errors)}`\n"
-    f"- warnings: `{len(warnings)}`\n"
-    f"- short_head: `{short_head}`\n"
-    f"- registry_current_version: `{registry.get('current_version')}`\n\n"
-    "## Findings\n\n"
-    + ("\n".join(f"- `{e}`" for e in errors) if errors else "- none\n")
-    + "\n\n## Warnings\n\n"
-    + ("\n".join(f"- `{w}`" for w in warnings) if warnings else "- none\n")
-    + "\n\nNon-claim lock: public sync validation is not runtime correctness.\n",
-    encoding="utf-8",
-)
+    report = {
+        "schema": "CMS-SA-v0.2b3c-public-sync-stable",
+        "passed": len(findings) == 0,
+        "errors": len(findings),
+        "warnings": len(warnings),
+        "findings": findings,
+        "warning_findings": warnings,
+        "registry_current_version": version,
+        "head_origin_match": head_origin_match,
+        "readme_checkpoint_present": readme_checkpoint_present,
+        "release_tag": version,
+        "release_tag_status": tag_status,
+        "release_tag_exists": tag_exists,
+        "release_tag_is_ancestor_of_head": tag_is_ancestor,
+        "stable_evidence_boundary": True,
+        "volatile_commit_hashes_omitted": True,
+        "policy": "Committed public-sync reports omit volatile commit hashes. Runtime validation still checks HEAD/origin agreement and release-tag ancestry.",
+        "non_claim_lock": "Public sync validation checks repository-state agreement but does not prove runtime correctness, truth, AGI, consciousness, production readiness, security, or external validation."
+    }
 
-print(json.dumps(report, indent=2))
-raise SystemExit(0 if passed else 1)
+    REPORT_JSON.parent.mkdir(parents=True, exist_ok=True)
+    REPORT_JSON.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+
+    md = [
+        "# CMS-SA v0.2b3c Public Sync Report",
+        "",
+        "| Field | Value |",
+        "|---|---|",
+        f"| schema | `{report['schema']}` |",
+        f"| passed | `{str(report['passed']).lower()}` |",
+        f"| errors | `{report['errors']}` |",
+        f"| warnings | `{report['warnings']}` |",
+        f"| registry current version | `{version}` |",
+        f"| HEAD equals origin/main | `{str(head_origin_match).lower()}` |",
+        f"| README checkpoint present | `{str(readme_checkpoint_present).lower()}` |",
+        f"| release tag | `{version}` |",
+        f"| release tag status | `{tag_status}` |",
+        f"| stable evidence boundary | `true` |",
+        f"| volatile commit hashes omitted | `true` |",
+        "",
+        "Non-claim lock: public sync validation checks repository-state agreement only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
+        "",
+    ]
+    REPORT_MD.write_text("\n".join(md), encoding="utf-8")
+
+    print(json.dumps(report, indent=2))
+    return 0 if report["passed"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

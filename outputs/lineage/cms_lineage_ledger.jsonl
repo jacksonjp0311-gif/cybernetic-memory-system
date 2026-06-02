@@ -20,3 +20,5 @@
 
 {"event":"stable_public_sync_evidence_boundary","version":"v0.2b3b","next_anchor":"v0.3","timestamp":"2026-06-01T22:00:29.2800801-04:00","previous":"v0.2b3a","lesson":"Committed public-sync reports must not store volatile commit hashes."}
 
+{"event":"root_anchored_stable_public_sync_repair","version":"v0.2b3c","next_anchor":"v0.3","timestamp":"2026-06-01T22:02:26.9144763-04:00","previous":"v0.2b3b","lesson":"All orchestrator writes must be root-anchored; committed public-sync reports must omit volatile commit hashes."}
+

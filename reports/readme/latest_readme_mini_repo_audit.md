@@ -1,9 +1,9 @@
 # CMS README / Mini Repo Audit
 
-- passed: `True`
-- errors: `0`
+- passed: `False`
+- errors: `1`
 - warnings: `0`
-- accepted_checkpoint_pattern: `CMS-SA v0.2b3a`
+- accepted_checkpoint_pattern: `CMS-SA v0.2b3c`
 - mini READMEs scanned: `33`
 
 Non-claim lock: README audit is not runtime correctness.
