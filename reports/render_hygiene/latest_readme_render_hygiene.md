@@ -1,12 +1,9 @@
-# CMS-SA v0.2b2 README Render Hygiene
+# CMS-SA v0.2b3 README Render Hygiene
 
-- passed: `True`
-- errors: `0`
-- checked_badges: `10`
+- passed: `False`
+- errors: `2`
 
 ## Findings
 
-- none
-
-
-Non-claim lock: render hygiene is not runtime correctness.
+- `control_character:3853:9`
+- `missing_section:## Repository Layers`

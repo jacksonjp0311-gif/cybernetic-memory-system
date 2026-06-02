@@ -1,0 +1,144 @@
+# CMS-SA v0.2b3 Markdown Structure Validation
+
+- passed: `False`
+- errors: `134`
+- line_count: `408`
+
+## Findings
+
+- `missing_isolated_section:## Current Public Metrics`
+- `missing_isolated_section:## Quick Start`
+- `missing_isolated_section:## Repository Layers`
+- `missing_isolated_section:## AI Failure Learning Ledger`
+- `table_header_without_separator:line_42:| v0.1 Runtime Scaffold | What package/CLI surfaces exist? | `src/cms/`, `pyproj`
+- `table_header_without_separator:line_43:| v0.1.1 Lineage Recorder | Where are versions and injections recorded? | `outpu`
+- `table_header_without_separator:line_44:| v0.1.2 RCC-N README Enhancement | Are root and mini README surfaces navigable?`
+- `table_header_without_separator:line_45:| v0.2 Runtime Observation and Metric Contracts | Does the runtime emit observat`
+- `table_header_without_separator:line_46:| v0.2a README/Audit Anchor Sync | Does README audit grammar agree with runtime `
+- `table_header_without_separator:line_47:| v0.2b Public Format / Directory Lock | Is the public directory contract presen`
+- `table_header_without_separator:line_48:| v0.2b1 Anchor/Table Repair | Are public anchors and directory rows inspectable`
+- `table_header_without_separator:line_49:| v0.2b2 Render Hygiene / Badge Guard | Are badges, status, and README rendering`
+- `table_header_without_separator:line_50:| v0.2b3 Markdown/Public Sync/Tau Lessons | Are Markdown structure, public sync,`
+- `table_header_without_separator:line_89:| RCC-N navigation | Agent and human orientation, routing, handoff, context inde`
+- `table_header_without_separator:line_90:| Public surface governance | README audit, render hygiene, Markdown structure, `
+- `table_header_without_separator:line_91:| Evidence observability | Latest state, metrics, drift, evidence packages | `ou`
+- `table_header_without_separator:line_92:| Version and injection memory | Version registry, lineage ledger, injection led`
+- `table_header_without_separator:line_93:| Reflection and process rules | Bounded process lessons, Law of Sufficient Form`
+- `table_header_without_separator:line_102:| `docs/injections/` | Version injection records |`
+- `table_header_without_separator:line_103:| `docs/release_seals/` | Release boundary seals |`
+- `table_header_without_separator:line_104:| `docs/roadmap/CMS_ROADMAP.md` | Current and next anchors |`
+- `table_header_without_separator:line_105:| `outputs/version_registry/cms_version_registry.json` | Machine-readable versio`
+- `table_header_without_separator:line_106:| `outputs/lineage/cms_lineage_ledger.jsonl` | Append-only lineage ledger |`
+- `table_header_without_separator:line_107:| `outputs/injections/cms_injection_ledger.jsonl` | Append-only injection ledger`
+- `table_header_without_separator:line_108:| `reports/readme/latest_readme_mini_repo_audit.md` | Current README/mini README`
+- `table_header_without_separator:line_109:| `reports/rcc_nexus/latest_rcc_nexus_check.md` | Current RCC-N navigation check`
+- `table_header_without_separator:line_110:| `reports/architecture/latest_architecture_contract_validation.md` | Current ar`
+- `table_header_without_separator:line_111:| `reports/directory/latest_directory_box_validation.md` | Current directory-box`
+- `table_header_without_separator:line_112:| `reports/render_hygiene/latest_readme_render_hygiene.md` | Current render hygi`
+- `table_header_without_separator:line_113:| `reports/markdown_structure/latest_markdown_structure.md` | Current Markdown s`
+- `table_header_without_separator:line_114:| `reports/public_sync/latest_public_sync_report.md` | Current public sync valid`
+- `table_header_without_separator:line_115:| `reports/release/latest_release_readiness.md` | Current release readiness repo`
+- `table_header_without_separator:line_116:| `docs/reflection/law_of_sufficient_form_v0_2b3.md` | Bounded reflection on gov`
+- `table_header_without_separator:line_125:| `readme_rcc_drift_seed.json` | Tests README/RCC surface drift. |`
+- `table_header_without_separator:line_126:| `feedback_lifecycle_seed.json` | Tests feedback lifecycle closure. |`
+- `table_header_without_separator:line_127:| `memory_promotion_seed.json` | Tests control-utility memory promotion. |`
+- `table_header_without_separator:line_128:| `baseline_utility_seed.json` | Tests CMS against a baseline workflow. |`
+- `table_header_without_separator:line_129:| `public_surface_drift_seed.json` | Tests local/public surface mismatch. |`
+- `table_header_without_separator:line_159:| inner | Runtime primitives: observer, metric contracts, drift reports, evidenc`
+- `table_header_without_separator:line_160:| middle | Processes: CLI flow, examples, tests, scripts, validation workflows. `
+- `table_header_without_separator:line_161:| outer | Evidence and reflection: outputs, ledgers, reports, visuals, release n`
+- `table_header_without_separator:line_176:| `docs/context/rcc_nexus_index.json` | Nexus route and coverage index. |`
+- `table_header_without_separator:line_177:| `docs/context/validation_surface.md` | Validation commands and claim boundarie`
+- `table_header_without_separator:line_178:| `rcc/nexus/README.md` | RCC-N local orientation. |`
+- `table_header_without_separator:line_179:| `rcc/nexus/route_map.json` | Machine-readable routing map. |`
+- `table_header_without_separator:line_180:| `rcc/nexus/task_routing_matrix.md` | Task-to-validation routing. |`
+- `table_header_without_separator:line_181:| `scripts/rcc/check_rcc_nexus.py` | RCC-N checker. |`
+- `table_header_without_separator:line_182:| `scripts/rcc/audit_readme_surface.py` | README / mini repo audit scanner. |`
+- `table_header_without_separator:line_183:| `scripts/validation/validate_markdown_structure_v0_2b3.py` | Markdown table/he`
+- `table_header_without_separator:line_184:| `scripts/validation/validate_public_sync_v0_2b3.py` | Local/origin/version reg`
+- `table_header_without_separator:line_191:| Meridians | source, validation, evidence, safety, agent, runtime, memory |`
+- `table_header_without_separator:line_192:| Sector | rcc |`
+- `table_header_without_separator:line_193:| Version / TTL | CMS-RCC-N-v0.2b3 / 180 days |`
+- `table_header_without_separator:line_194:| Last verified | 2026-06-02 |`
+- `table_header_without_separator:line_195:| Local role | Root orientation surface for humans, RCC Nexus navigation, and AI`
+- `table_header_without_separator:line_220:| Metric patch | `configs/metrics/`, `src/cms/metrics/` | metric evaluation + CM`
+- `table_header_without_separator:line_221:| Drift/evidence patch | `src/cms/comparator/`, `src/cms/evidence/` | CMS cycle `
+- `table_header_without_separator:line_222:| README / mini README patch | `README.md`, target mini README, route maps | REA`
+- `table_header_without_separator:line_223:| Directory structure patch | root Full Directory Box, affected mini READMEs, co`
+- `table_header_without_separator:line_224:| Badge/status patch | `README.md`, latest reports, version registry | render hy`
+- `table_header_without_separator:line_225:| Public sync patch | `README.md`, version registry, Git state | public sync + M`
+- `table_header_without_separator:line_226:| Release/docs patch | `docs/`, `reports/release/`, version registry | release v`
+- `table_header_without_separator:line_241:| 2 | `AGENTS.md` | Agent entry order, patch discipline, and validation expectat`
+- `table_header_without_separator:line_242:| 3 | `README_90_SECONDS.md` | Compressed onboarding is not stale. |`
+- `table_header_without_separator:line_243:| 4 | `docs/context/repository_context_index.json` | Repo meaning and route desc`
+- `table_header_without_separator:line_244:| 5 | `docs/context/rcc_nexus_index.json` | Nexus shell/meridian/sector mapping.`
+- `table_header_without_separator:line_245:| 6 | `rcc/nexus/route_map.json` | Task routing and target surfaces. |`
+- `table_header_without_separator:line_246:| 7 | `rcc/nexus/task_routing_matrix.md` | Human-readable task routing. |`
+- `table_header_without_separator:line_247:| 8 | Target folder `README.md` | Local folder role, inputs, outputs, and valida`
+- `table_header_without_separator:line_248:| 9 | Sibling mini READMEs | Adjacent surfaces if routing or folder meaning chan`
+- `table_header_without_separator:line_249:| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/`
+- `table_header_without_separator:line_256:| Mini README drift | Did a folder change without its README changing? | Patch t`
+- `table_header_without_separator:line_257:| Route drift | Did task routing or folder purpose change? | Patch context index`
+- `table_header_without_separator:line_258:| Validation drift | Do public claims lack fresh validation reports? | Rerun val`
+- `table_header_without_separator:line_259:| Runtime drift | Did Python code change without compile/import/test proof? | Ru`
+- `table_header_without_separator:line_260:| Evidence drift | Could one run overwrite another? | Verify collision-proof run`
+- `table_header_without_separator:line_261:| Claim drift | Does language imply stronger proof than evidence allows? | Resto`
+- `table_header_without_separator:line_262:| Encoding drift | Do headings, arrows, paths, or code fences show mojibake? | R`
+- `table_header_without_separator:line_263:| Markdown structure drift | Do tables or lists collapse into single-line public`
+- `table_header_without_separator:line_264:| Public sync drift | Does local state differ from origin/main, tag, version reg`
+- `table_header_without_separator:line_279:| CMS-L-002 | v0.2b README audit failed after adding public-format layer. | Requ`
+- `table_header_without_separator:line_280:| CMS-L-003 | v0.2b directory-box validation could not see 33 rows. | The genera`
+- `table_header_without_separator:line_281:| CMS-L-004 | v0.2b1 passed anchor/directory checks while README render showed b`
+- `table_header_without_separator:line_282:| CMS-L-005 | v0.2b2 passed render hygiene but GitHub/raw extraction still showe`
+- `table_header_without_separator:line_283:| CMS-L-006 | Public state can appear stale even when local validation passes. |`
+- `table_header_without_separator:line_322:| Badge/status rule | README badges and Current Public Metrics must update whene`
+- `table_header_without_separator:line_323:| Render-hygiene rule | Public README must not contain control characters, malfo`
+- `table_header_without_separator:line_324:| Markdown-structure rule | Public README tables, headings, and code blocks must`
+- `table_header_without_separator:line_325:| Public-sync rule | Local HEAD, origin/main, README checkpoint, version registr`
+- `table_header_without_separator:line_326:| Release-readiness rule | Release readiness and relevant validators are the fin`
+- `table_header_without_separator:line_327:| Warning-inspection rule | A passing validator with warnings is not ignored; wa`
+- `table_header_without_separator:line_328:| Directory-box rule | The Full Directory Box must not contain duplicate durable`
+- `table_header_without_separator:line_329:| File-run rule | Large repair scripts must be run with `powershell -ExecutionPo`
+- `table_header_without_separator:line_330:| Evidence-refresh rule | If a runtime cycle changes latest artifacts, commit or`
+- `table_header_without_separator:line_331:| Boundary rule | Process alignment is repository hygiene. It is not code correc`
+- `table_header_without_separator:line_364:| `configs/metrics/` | Metric contract declarations for repository-bound measure`
+- `table_header_without_separator:line_365:| `configs/seeds/` | CMS test seeds and future runtime examples. |`
+- `table_header_without_separator:line_366:| `docs/context/` | Repository context indexes, validation surface, RCC-N meanin`
+- `table_header_without_separator:line_367:| `docs/architecture/` | Software architecture contracts and architecture valida`
+- `table_header_without_separator:line_368:| `docs/protocols/` | Process protocols, operating rules, and governance procedu`
+- `table_header_without_separator:line_369:| `docs/theory/` | Theory and conceptual boundary documents. |`
+- `table_header_without_separator:line_370:| `docs/versions/` | Versioned CMS documents for each evolution layer. |`
+- `table_header_without_separator:line_371:| `docs/injections/` | Injection records showing what changed, why, and where. |`
+- `table_header_without_separator:line_372:| `docs/release_seals/` | Release seals for checkpointed repository states. |`
+- `table_header_without_separator:line_373:| `docs/roadmap/` | Current and future CMS development anchors. |`
+- `table_header_without_separator:line_374:| `docs/directory/` | Directory-box manifests, directory-lock reports, and publi`
+- `table_header_without_separator:line_375:| `docs/process/` | Public process rules, status-refresh discipline, render hygi`
+- `table_header_without_separator:line_376:| `docs/reflection/` | Bounded process reflections such as Law of Sufficient For`
+- `table_header_without_separator:line_377:| `rcc/nexus/` | RCC-N route maps, task routing, agent handoff, echo location, a`
+- `table_header_without_separator:line_378:| `scripts/rcc/` | README audit scanner, RCC-N checker, render hygiene scanner, `
+- `table_header_without_separator:line_379:| `scripts/validation/` | Architecture, runtime, directory, render, public sync,`
+- `table_header_without_separator:line_380:| `outputs/state/` | Latest observation state emitted by the CMS runtime. |`
+- `table_header_without_separator:line_381:| `outputs/metrics/` | Latest metric evaluation artifacts. |`
+- `table_header_without_separator:line_382:| `outputs/drift/` | Latest CMS drift reports and K/D coherence measures. |`
+- `table_header_without_separator:line_383:| `outputs/evidence/` | Latest evidence packages emitted by the runtime. |`
+- `table_header_without_separator:line_384:| `outputs/lineage/` | Append-only lineage ledger entries for version continuity`
+- `table_header_without_separator:line_385:| `outputs/injections/` | Append-only injection ledger entries for repository ev`
+- `table_header_without_separator:line_386:| `outputs/version_registry/` | Machine-readable version registry and next-ancho`
+- `table_header_without_separator:line_387:| `outputs/directory/` | Machine-readable full directory box and validation repo`
+- `table_header_without_separator:line_388:| `outputs/roadmap/` | Machine-readable or mirrored next-anchor roadmaps. |`
+- `table_header_without_separator:line_389:| `reports/runtime_observation/` | Human-readable and JSON runtime observation r`
+- `table_header_without_separator:line_390:| `reports/metric_contracts/` | Human-readable and JSON metric-contract reports.`
+- `table_header_without_separator:line_391:| `reports/drift/` | Human-readable and JSON drift reports. |`
+- `table_header_without_separator:line_392:| `reports/evidence/` | Human-readable and JSON evidence package reports. |`
+- `table_header_without_separator:line_393:| `reports/readme/` | README and mini README audit reports. |`
+- `table_header_without_separator:line_394:| `reports/rcc_nexus/` | RCC-N navigation check reports. |`
+- `table_header_without_separator:line_395:| `reports/architecture/` | Architecture validation reports. |`
+- `table_header_without_separator:line_396:| `reports/directory/` | Directory box and durable surface validation reports. |`
+- `table_header_without_separator:line_397:| `reports/render_hygiene/` | README render hygiene and badge/status validation `
+- `table_header_without_separator:line_398:| `reports/markdown_structure/` | Markdown line structure and public table rende`
+- `table_header_without_separator:line_399:| `reports/public_sync/` | Local/origin/public checkpoint sync reports. |`
+- `table_header_without_separator:line_400:| `reports/release/` | Release readiness reports and checkpoint validation outpu`
+- `table_header_without_separator:line_401:| `tests/` | Unit tests for runtime observation, metrics, drift, and evidence cy`
+- `table_header_without_separator:line_402:| `examples/` | Future examples and walkthrough surfaces. |`
+
+Non-claim lock: Markdown structure validation is not runtime correctness.

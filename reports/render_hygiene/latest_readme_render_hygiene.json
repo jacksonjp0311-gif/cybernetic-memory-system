@@ -1,8 +1,11 @@
 {
-  "schema": "CMS-SA-v0.2b2-readme-render-hygiene",
-  "passed": true,
-  "errors": 0,
-  "findings": [],
-  "checked_badges": 10,
-  "non_claim_lock": "README render hygiene improves readability and traceability but does not prove runtime correctness."
+  "schema": "CMS-SA-v0.2b3-readme-render-hygiene",
+  "passed": false,
+  "errors": 2,
+  "findings": [
+    "control_character:3853:9",
+    "missing_section:## Repository Layers"
+  ],
+  "checked_badges": 11,
+  "non_claim_lock": "README render hygiene is not runtime correctness."
 }

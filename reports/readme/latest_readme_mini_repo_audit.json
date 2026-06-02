@@ -1,10 +1,13 @@
 {
-  "schema": "CMS-SA-v0.2b2-readme-mini-repo-audit",
-  "passed": true,
-  "errors": 0,
+  "schema": "CMS-SA-v0.2b3-readme-mini-repo-audit",
+  "passed": false,
+  "errors": 2,
   "warnings": 0,
-  "accepted_checkpoint_pattern": "CMS-SA v0.2b2",
-  "missing_root_tokens": [],
+  "accepted_checkpoint_pattern": "CMS-SA v0.2b3",
+  "missing_root_tokens": [
+    "AI Failure Learning Ledger",
+    "Repository Layers"
+  ],
   "mini_readmes_missing_update_rule": [],
   "non_claim_lock": "README audits improve context alignment but do not prove runtime correctness."
 }
