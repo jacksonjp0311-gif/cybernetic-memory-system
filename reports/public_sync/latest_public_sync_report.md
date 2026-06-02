@@ -1,19 +1,17 @@
-# CMS-SA v0.2b3a Public Sync Report
+# CMS-SA v0.2b3c Public Sync Report
 
-- passed: `True`
-- errors: `0`
-- warnings: `0`
-- short_head: `cd41181`
-- registry_current_version: `v0.2b3a`
+| Field | Value |
+|---|---|
+| schema | `CMS-SA-v0.2b3c-public-sync-stable` |
+| passed | `true` |
+| errors | `0` |
+| warnings | `0` |
+| registry current version | `v0.2b3c` |
+| HEAD equals origin/main | `true` |
+| README checkpoint present | `true` |
+| release tag | `v0.2b3c` |
+| release tag status | `present_and_ancestor_of_head` |
+| stable evidence boundary | `true` |
+| volatile commit hashes omitted | `true` |
 
-## Findings
-
-- none
-
-
-## Warnings
-
-- none
-
-
-Non-claim lock: public sync validation is not runtime correctness.
+Non-claim lock: public sync validation checks repository-state agreement only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
