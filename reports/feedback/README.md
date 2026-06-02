@@ -1,4 +1,4 @@
-# Feedback Lifecycle Runtime
+# Feedback Reports
 
 Echo Location:
 
@@ -12,20 +12,20 @@ Echo Location:
 
 ## Purpose
 
-Implements typed feedback lifecycle objects and emits lifecycle reports used by reflective feedback governance.
+Stores human-readable and JSON validation surfaces for typed feedback lifecycle governance.
 
 ## Inputs
 
-Repository findings, geometry route context, and feedback contract rules.
+outputs/feedback/latest_feedback_lifecycle_report.json
 
 ## Outputs
 
-Feedback lifecycle report objects and report serialization.
+latest_feedback_lifecycle_report.md and latest_feedback_lifecycle_validation.md
 
 ## Validation
 
 `powershell
-python scripts/feedback/emit_feedback_lifecycle_v0_3b.py; python scripts/validation/validate_feedback_lifecycle_v0_3b.py
+python scripts/validation/validate_feedback_lifecycle_v0_3b.py
 `
 
 ## Alignment Rule

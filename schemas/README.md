@@ -1,4 +1,4 @@
-# Feedback Lifecycle Runtime
+# CMS Schemas
 
 Echo Location:
 
@@ -12,20 +12,20 @@ Echo Location:
 
 ## Purpose
 
-Implements typed feedback lifecycle objects and emits lifecycle reports used by reflective feedback governance.
+Stores machine-readable JSON schemas for typed CMS objects including feedback items and reflective geometry nodes.
 
 ## Inputs
 
-Repository findings, geometry route context, and feedback contract rules.
+Runtime contract requirements.
 
 ## Outputs
 
-Feedback lifecycle report objects and report serialization.
+feedback_item.schema.json and reflective_git_node.schema.json.
 
 ## Validation
 
 `powershell
-python scripts/feedback/emit_feedback_lifecycle_v0_3b.py; python scripts/validation/validate_feedback_lifecycle_v0_3b.py
+python scripts/validation/validate_surface_alignment_v0_3b1.py
 `
 
 ## Alignment Rule

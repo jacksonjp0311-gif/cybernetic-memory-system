@@ -3,7 +3,7 @@
   "passed": true,
   "errors": 0,
   "findings": [],
-  "line_count": 611,
+  "line_count": 634,
   "table_blocks": 15,
   "non_claim_lock": "Markdown structure validation improves public rendering but does not prove runtime correctness."
 }

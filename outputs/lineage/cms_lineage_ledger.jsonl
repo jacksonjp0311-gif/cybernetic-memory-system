@@ -38,3 +38,5 @@
 
 {"event":"feedback_quality_lifecycle_engine","version":"v0.3b","next_anchor":"v0.3c","timestamp":"2026-06-02T07:38:11.1208514-04:00","previous":"v0.3a2","lesson":"Feedback must be typed, scored, classified, downgrade-safe, and validator-bound before promotion."}
 
+{"event":"readme_mini_readme_reflective_feedback_alignment_lock","version":"v0.3b1","next_anchor":"CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock","timestamp":"2026-06-02T07:43:21.8789582-04:00","previous":"v0.3b","lesson":"Root README sections, mini READMEs, reports, validators, and registry must advance together."}
+

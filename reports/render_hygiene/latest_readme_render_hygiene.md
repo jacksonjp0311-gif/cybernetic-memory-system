@@ -1,12 +1,11 @@
-# CMS-SA v0.3b README Render Hygiene
+# CMS-SA v0.3b1 README Render Hygiene
 
-- passed: `True`
-- errors: `0`
+- passed: `False`
+- errors: `1`
 - checked_badges: `12`
 
 ## Findings
 
-- none
-
+- `missing_badge:CMS--SA-v0.3b11`
 
 Non-claim lock: render hygiene is not runtime correctness.
