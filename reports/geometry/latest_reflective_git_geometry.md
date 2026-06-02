@@ -6,13 +6,14 @@
 | node count | `12` |
 | current registry version | `v0.3a` |
 | head/origin match | `true` |
-| release tag exists | `false` |
-| release tag ancestor | `false` |
+| release tag exists | `true` |
+| release tag ancestor | `true` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `7e70010` | `v0.3a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `ab1b194` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3e validation reports |
 | `710926b` | `v0.2b3e` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: enforce CMS-SA release gate validator truth |
 | `e61767c` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3d validation reports |
@@ -24,7 +25,6 @@
 | `ab696aa` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3a post-push public sync reports |
 | `c765917` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3a post-push public sync reports |
 | `5c39180` | `v0.2b3a` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 README structure validator |
-| `bdaf0a9` | `` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | docs: add CMS-SA v0.2b3 README structure public sync tau lessons |
 
 ## Core Law
 
