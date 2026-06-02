@@ -1,22 +1,9 @@
 {
-  "schema": "CMS-SA-v0.2b1-readme-mini-repo-audit",
+  "schema": "CMS-SA-v0.2b2-readme-mini-repo-audit",
   "passed": true,
   "errors": 0,
   "warnings": 0,
-  "accepted_checkpoint_pattern": "CMS-SA v0.2b or v0.2b1",
-  "required_public_format_anchors": [
-    "PART I - Human README",
-    "PART II - RCC Nexus README",
-    "PART III - AI Agent README",
-    "README + Mini Repo Audit Map",
-    "AI Failure Learning Ledger",
-    "Human Director Box",
-    "Current Public Metrics",
-    "Agent Geometry Layer",
-    "Process Alignment Layer",
-    "AI Rule - Directory Box and Mini README Synchronization",
-    "Full Directory Box"
-  ],
+  "accepted_checkpoint_pattern": "CMS-SA v0.2b2",
   "missing_root_tokens": [],
   "mini_readmes_missing_update_rule": [],
   "non_claim_lock": "README audits improve context alignment but do not prove runtime correctness."

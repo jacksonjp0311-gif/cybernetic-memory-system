@@ -4,6 +4,7 @@ import json
 ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
 MANIFEST_CANDIDATES = [
+    ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b2.json",
     ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b1.json",
     ROOT / "docs" / "directory" / "cms_full_directory_box_v0_2b.json",
 ]
@@ -46,7 +47,7 @@ for row in manifest.get("rows", []):
 passed = not missing_anchors and not missing_directory_rows and not duplicate_rows and not missing_paths_on_disk
 
 report = {
-    "schema": "CMS-SA-v0.2b1-directory-box-validation",
+    "schema": "CMS-SA-v0.2b2-directory-box-validation",
     "passed": passed,
     "errors": len(missing_anchors) + len(missing_directory_rows) + len(duplicate_rows) + len(missing_paths_on_disk),
     "manifest": str(manifest_path.relative_to(ROOT)).replace("\\", "/"),
@@ -63,7 +64,7 @@ out_md = ROOT / "reports" / "directory" / "latest_directory_box_validation.md"
 out_json.parent.mkdir(parents=True, exist_ok=True)
 out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
 out_md.write_text(
-    "# CMS-SA v0.2b1 Directory Box Validation\n\n"
+    "# CMS-SA v0.2b2 Directory Box Validation\n\n"
     f"- passed: `{passed}`\n"
     f"- errors: `{report['errors']}`\n"
     f"- manifest: `{report['manifest']}`\n"

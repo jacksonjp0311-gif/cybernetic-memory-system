@@ -1,8 +1,8 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.2b1",
+    "schema":  "CMS-SA-version-registry-v0.2b2",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.2b1",
-    "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, and next anchor.",
+    "current_version":  "v0.2b2",
+    "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, and public status.",
     "versions":  [
                      {
                          "version":  "v0.1",
@@ -43,13 +43,19 @@
                          "version":  "v0.2b1",
                          "class":  "public_anchor_directory_table_repair",
                          "document":  "docs/versions/v0_2b1/cms_sa_v0_2b1_public_anchor_directory_table_repair.md"
+                     },
+                     {
+                         "version":  "v0.2b2",
+                         "class":  "readme_render_hygiene_badge_status_guard",
+                         "document":  "docs/versions/v0_2b2/cms_sa_v0_2b2_readme_render_hygiene_badge_guard.md"
                      }
                  ],
     "next_anchor":  "CMS-SA v0.3 — Feedback Quality and Lifecycle Engine",
     "non_claim_locks":  {
                             "version_registry_is_not_truth":  true,
                             "directory_box_is_not_code_correctness":  true,
-                            "public_format_is_not_external_validation":  true,
+                            "badge_status_is_not_external_validation":  true,
+                            "render_hygiene_is_not_runtime_correctness":  true,
                             "release_seal_is_not_external_validation":  true
                         }
 }

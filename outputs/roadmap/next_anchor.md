@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.2b — Public Format Alignment and Directory Box Lock.
+CMS-SA v0.2b2 — README Render Hygiene and Badge Status Guard.
 
 ## Current Lock State
 
@@ -14,8 +14,10 @@ evidence geometry     = locked
 version geometry      = locked
 RCC-N navigation      = locked
 README/audit grammar  = locked
-directory box         = locked by v0.2b
-public process rules  = locked by v0.2b
+directory box         = locked
+public process rules  = locked
+render hygiene        = locked by v0.2b2
+badge/status sync     = locked by v0.2b2
 ```
 
 ## Next

@@ -1,0 +1,8 @@
+{
+  "schema": "CMS-SA-v0.2b2-readme-render-hygiene",
+  "passed": true,
+  "errors": 0,
+  "findings": [],
+  "checked_badges": 10,
+  "non_claim_lock": "README render hygiene improves readability and traceability but does not prove runtime correctness."
+}
