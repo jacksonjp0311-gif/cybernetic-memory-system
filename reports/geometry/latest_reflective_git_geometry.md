@@ -13,6 +13,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `36afbb9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: refresh CMS-SA v0.3a geometry validation reports |
 | `7e70010` | `v0.3a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `ab1b194` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3e validation reports |
 | `710926b` | `v0.2b3e` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: enforce CMS-SA release gate validator truth |
@@ -24,7 +25,6 @@
 | `cd41181` | `v0.2b3b` | `center` | `memory` | `lineage` | fix: stabilize CMS-SA v0.2b3 public sync evidence boundary |
 | `ab696aa` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3a post-push public sync reports |
 | `c765917` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3a post-push public sync reports |
-| `5c39180` | `v0.2b3a` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 README structure validator |
 
 ## Core Law
 
