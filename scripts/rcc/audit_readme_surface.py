@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
 readme = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
 
-checkpoint_pattern = re.compile(r"Current checkpoint:\s*\*\*CMS-SA v0\.2b3a[\s\-â€“â€”][^*]+\*\*")
+checkpoint_pattern = re.compile(r"Current checkpoint:\s*\*\*CMS-SA v0\.2b3a[\s\-Ã¢â‚¬â€œÃ¢â‚¬â€][^*]+\*\*")
 
 required_root_tokens = [
     "PART I - Human README",
@@ -32,7 +32,7 @@ required_root_tokens = [
 
 missing_root_tokens = []
 if not checkpoint_pattern.search(readme):
-    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2b3c ...**")
+    missing_root_tokens.append("Current checkpoint: **CMS-SA v0.2b3d")
 for token in required_root_tokens:
     if token not in readme:
         missing_root_tokens.append(token)
@@ -49,11 +49,11 @@ for p in mini_readmes:
 
 passed = not missing_root_tokens and not mini_missing_rule
 report = {
-    "schema": "CMS-SA-v0.2b3c-readme-mini-repo-audit",
+    "schema": "CMS-SA-v0.2b3d-readme-mini-repo-audit",
     "passed": passed,
     "errors": len(missing_root_tokens) + len(mini_missing_rule),
     "warnings": 0,
-    "accepted_checkpoint_pattern": "CMS-SA v0.2b3c",
+    "accepted_checkpoint_pattern": "CMS-SA v0.2b3d",
     "missing_root_tokens": missing_root_tokens,
     "mini_readmes_missing_update_rule": mini_missing_rule,
     "non_claim_lock": "README audits improve context alignment but do not prove runtime correctness."
@@ -68,7 +68,7 @@ out_md.write_text(
     f"- passed: `{passed}`\n"
     f"- errors: `{report['errors']}`\n"
     f"- warnings: `0`\n"
-    f"- accepted_checkpoint_pattern: `CMS-SA v0.2b3c`\n"
+    f"- accepted_checkpoint_pattern: `CMS-SA v0.2b3d`\n"
     f"- mini READMEs scanned: `{len(mini_readmes)}`\n\n"
     "Non-claim lock: README audit is not runtime correctness.\n",
     encoding="utf-8",

@@ -22,3 +22,5 @@
 
 {"timestamp":"2026-06-01T22:02:26.9144763-04:00","injection":"root_anchored_stable_public_sync_repair","version":"v0.2b3c","surfaces":["README.md","scripts/validation/validate_public_sync_v0_2b3.py","reports/public_sync","outputs/version_registry"]}
 
+{"timestamp":"2026-06-01T22:04:52.2495810-04:00","injection":"validator_expectation_alignment","version":"v0.2b3d","surfaces":["README.md","scripts/rcc/audit_readme_surface.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py"]}
+

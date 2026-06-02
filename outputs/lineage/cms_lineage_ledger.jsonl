@@ -22,3 +22,5 @@
 
 {"event":"root_anchored_stable_public_sync_repair","version":"v0.2b3c","next_anchor":"v0.3","timestamp":"2026-06-01T22:02:26.9144763-04:00","previous":"v0.2b3b","lesson":"All orchestrator writes must be root-anchored; committed public-sync reports must omit volatile commit hashes."}
 
+{"event":"validator_expectation_alignment","version":"v0.2b3d","next_anchor":"v0.3","timestamp":"2026-06-01T22:04:52.2495810-04:00","previous":"v0.2b3c","lesson":"Validators must advance expected public tokens when checkpoint badges and README status advance."}
+

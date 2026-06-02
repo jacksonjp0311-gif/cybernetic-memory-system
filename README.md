@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.2b3c-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.2b3d-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.2b3c - Root-Anchored Stable Public Sync Repair**  
+Current checkpoint: **CMS-SA v0.2b3d - Validator Expectation Alignment**  
 Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -74,7 +74,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.2b3c |
+| Current checkpoint | CMS-SA v0.2b3d |
 | Previous seal | CMS-SA v0.2b3 |
 | Git head before repair | `bdaf0a9` |
 | Origin main before repair | `5982e59` |
@@ -343,6 +343,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-007 | v0.2b3 Markdown validator flagged normal table data rows as missing separators. | Validator logic checked every row as if it were a header. | Markdown validators must parse table blocks, not treat normal data rows as headers. |
 | CMS-L-008 | v0.2b3a post-push public-sync reports changed again after being committed. | The committed report stored volatile HEAD-specific evidence, so the next commit made it stale. | Committed public-sync reports must use stable status fields and omit volatile commit hashes; runtime validation may still check HEAD/origin/tag agreement. |
 | CMS-L-009 | v0.2b3b repair failed to overwrite files even while the script continued. | PowerShell was pasted line-by-line and .NET WriteAllText resolved relative paths outside the repo root. | Large repair scripts must run from a file and all file writes must join paths against the repository root. |
+| CMS-L-010 | v0.2b3c public sync was stable but README validators still failed. | Validator expected checkpoint and badge tokens were pinned to older v0.2b3a public strings. | Validators must advance their expected public tokens whenever checkpoint badges and README status advance. |
 
 ### Failure Response Protocol
 

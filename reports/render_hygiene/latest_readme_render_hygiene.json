@@ -1,11 +1,8 @@
 {
-  "schema": "CMS-SA-v0.2b3a-readme-render-hygiene",
-  "passed": false,
-  "errors": 2,
-  "findings": [
-    "missing_badge:CMS--SA-v0.2b3a",
-    "missing_badge:public%20sync-local--guard"
-  ],
+  "schema": "CMS-SA-v0.2b3d-readme-render-hygiene",
+  "passed": true,
+  "errors": 0,
+  "findings": [],
   "checked_badges": 12,
   "non_claim_lock": "README render hygiene is not runtime correctness."
 }
