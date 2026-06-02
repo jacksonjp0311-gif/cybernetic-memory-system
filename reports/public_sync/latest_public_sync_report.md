@@ -3,7 +3,7 @@
 - passed: `True`
 - errors: `0`
 - warnings: `0`
-- short_head: `c765917`
+- short_head: `cd41181`
 - registry_current_version: `v0.2b3a`
 
 ## Findings
