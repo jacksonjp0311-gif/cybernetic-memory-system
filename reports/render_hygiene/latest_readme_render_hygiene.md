@@ -1,4 +1,4 @@
-# CMS-SA v0.3a2 README Render Hygiene
+# CMS-SA v0.3b README Render Hygiene
 
 - passed: `True`
 - errors: `0`

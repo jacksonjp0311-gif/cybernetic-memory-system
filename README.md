@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a2-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3a2 - Pure Geometry Validation Boundary**  
+Current checkpoint: **CMS-SA v0.3b - Feedback Quality and Lifecycle Engine**  
 Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -74,8 +74,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3a2 |
-| Previous seal | CMS-SA v0.3a1 |
+| Current checkpoint | CMS-SA v0.3b |
+| Previous seal | CMS-SA v0.3a2 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -347,6 +347,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-013 | v0.3a geometry reports became dirty after final report-refresh commit. | Reflective geometry included report-only refresh commits, causing the report to rewrite itself after commit. | Committed reflective geometry must exclude report-only refresh commits from semantic geometry nodes. |
 | CMS-L-014 | README carried stale public metrics and older checkpoint framing after geometry advanced. | Runtime/report surfaces advanced faster than README summary and API-readiness rules. | README metrics, snapshot, quick-start, directory, and API boundary sections must advance with geometry/runtime layers. |
 | CMS-L-015 | Geometry validation kept rewriting latest geometry artifacts after every semantic commit. | The validator was also the emitter, so observing geometry mutated the geometry evidence surface. | Observation and validation must be separated from evidence emission; a read-only validator must not mutate the artifact it validates. |
+| CMS-L-016 | Feedback could be discussed narratively without typed lifecycle status. | Findings lacked a formal scoring, classification, downgrade, negative-control, and falsification surface. | Feedback must become a typed lifecycle object before promotion to memory, release, or API-write status. |
 
 ### Failure Response Protocol
 
@@ -453,6 +454,14 @@ latest validation reports
 Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, truth, security, AGI, consciousness, or external validation.
 
 
+
+Feedback lifecycle rule:
+
+```text
+No feedback item may promote to memory, release, or API-write status without
+route classification, evidence, validator binding, lifecycle state,
+downgrade path, falsification condition, and non-claim lock.
+```
 ## Two-Way API Transmission Readiness Box
 
 CMS is preparing for an eventual two-way API transmission process:

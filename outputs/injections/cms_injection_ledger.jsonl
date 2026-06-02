@@ -36,3 +36,5 @@
 
 {"timestamp":"2026-06-02T07:33:22.3820417-04:00","injection":"pure_geometry_validation_boundary","version":"v0.3a2","surfaces":["scripts/geometry/emit_reflective_git_geometry.py","scripts/validation/validate_reflective_git_geometry_v0_3.py","src/cms/geometry/git_geometry.py","README.md"]}
 
+{"timestamp":"2026-06-02T07:38:11.1208514-04:00","injection":"feedback_quality_lifecycle_engine","version":"v0.3b","surfaces":["configs/feedback","schemas/feedback_item.schema.json","src/cms/feedback","scripts/feedback","reports/feedback","outputs/feedback"]}
+

@@ -36,3 +36,5 @@
 
 {"event":"pure_geometry_validation_boundary","version":"v0.3a2","next_anchor":"v0.3b","timestamp":"2026-06-02T07:33:22.3820417-04:00","previous":"v0.3a1","lesson":"Observation and validation must be separated from evidence emission."}
 
+{"event":"feedback_quality_lifecycle_engine","version":"v0.3b","next_anchor":"v0.3c","timestamp":"2026-06-02T07:38:11.1208514-04:00","previous":"v0.3a2","lesson":"Feedback must be typed, scored, classified, downgrade-safe, and validator-bound before promotion."}
+

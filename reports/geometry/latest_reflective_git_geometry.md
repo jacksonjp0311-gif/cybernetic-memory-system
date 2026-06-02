@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.3a2` |
+| current registry version | `v0.3b` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
@@ -17,6 +17,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `0f5ff53` | `v0.3a2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, emitter, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: separate CMS-SA geometry emission from read-only validation |
 | `f6a25fa` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: seal CMS-SA v0.3a1 final geometry reflection |
 | `5af636f` | `` | `middle, outer` | `evidence, validation` | `reports, validator` | fix: clamp CMS-SA v0.3a1 render hygiene version token |
 | `d927c12` | `v0.3a1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: stabilize CMS-SA v0.3a geometry and align README API boundary |
@@ -28,7 +29,6 @@
 | `15d2234` | `v0.2b3c` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 stable public sync with root anchoring |
 | `cd41181` | `v0.2b3b` | `center` | `memory` | `lineage` | fix: stabilize CMS-SA v0.2b3 public sync evidence boundary |
 | `5c39180` | `v0.2b3a` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 README structure validator |
-| `bdaf0a9` | `` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | docs: add CMS-SA v0.2b3 README structure public sync tau lessons |
 
 ## Pure Validation Boundary
 
