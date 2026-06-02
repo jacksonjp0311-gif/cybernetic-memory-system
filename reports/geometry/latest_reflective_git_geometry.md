@@ -13,6 +13,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `169f326` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: refresh CMS-SA v0.3a geometry validation reports |
 | `c76a4d9` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `36afbb9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: refresh CMS-SA v0.3a geometry validation reports |
 | `7e70010` | `v0.3a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3a reflective git geometry contract |
@@ -24,7 +25,6 @@
 | `15d2234` | `v0.2b3c` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 stable public sync with root anchoring |
 | `f78a6ca` | `` | `outer` | `evidence` | `reports` | chore: record CMS-SA v0.2b3b stable public sync evidence |
 | `cd41181` | `v0.2b3b` | `center` | `memory` | `lineage` | fix: stabilize CMS-SA v0.2b3 public sync evidence boundary |
-| `ab696aa` | `` | `outer` | `evidence` | `reports` | chore: refresh CMS-SA v0.2b3a post-push public sync reports |
 
 ## Core Law
 
