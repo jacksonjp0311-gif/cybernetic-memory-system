@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.2b3e-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3a-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.2b3e - Release Gate Truth Enforcement**  
+Current checkpoint: **CMS-SA v0.3a - Reflective Git Geometry Contract**  
 Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -74,7 +74,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.2b3e |
+| Current checkpoint | CMS-SA v0.3a |
 | Previous seal | CMS-SA v0.2b3 |
 | Git head before repair | `bdaf0a9` |
 | Origin main before repair | `5982e59` |
@@ -345,6 +345,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-009 | v0.2b3b repair failed to overwrite files even while the script continued. | PowerShell was pasted line-by-line and .NET WriteAllText resolved relative paths outside the repo root. | Large repair scripts must run from a file and all file writes must join paths against the repository root. |
 | CMS-L-010 | v0.2b3c public sync was stable but README validators still failed. | Validator expected checkpoint and badge tokens were pinned to older v0.2b3a public strings. | Validators must advance their expected public tokens whenever checkpoint badges and README status advance. |
 | CMS-L-011 | v0.2b3d ended with clean Git status even though README audit still returned passed:false. | The release script checked Git cleanliness but did not parse validator truth. | Release gates must parse validator JSON and block on passed:false; clean Git status alone is not release readiness. |
+| CMS-L-012 | Commit history contained repair structure but CMS did not yet extract it as geometry. | Git was treated as version storage rather than route-bearing repository memory. | Every commit should be interpretable as a routed geometry event with shell, meridian, sector, evidence, and release-truth context. |
 
 ### Failure Response Protocol
 
@@ -362,6 +363,56 @@ Any AI patch that causes a failure must update this section before the repair is
 <!-- MINI_README_UPDATE_RULE_START -->
 Mini README update rule: if a patch changes a folder purpose, folder contents, routing meaning, validation command, evidence surface, or public interpretation, the affected folder-level README must be updated in the same commit.
 <!-- MINI_README_UPDATE_RULE_END -->
+
+
+## Reflective Git Geometry Box
+
+CMS now treats Git history as a repository geometry surface.
+
+```text
+commit hash      = point
+parent link      = edge
+branch           = active trajectory
+tag              = sealed boundary
+commit message   = semantic intent
+changed files    = affected surfaces
+validator output = truth boundary
+report artifacts = evidence shell
+README/registry  = public reflection surface
+```
+
+Core rule:
+
+```text
+A commit is not only a change; it is a routed event in repository geometry.
+```
+
+Reflection route:
+
+```text
+Git history -> version lineage -> patch route -> changed surfaces
+-> validators -> evidence -> lessons -> next anchor
+```
+
+Primary artifacts:
+
+| Surface | Role |
+|---|---|
+| `configs/geometry/reflective_git_geometry_contract.json` | Reflective Git geometry contract. |
+| `schemas/reflective_git_node.schema.json` | Machine-readable node schema. |
+| `src/cms/geometry/git_geometry.py` | Runtime extractor for commit-route geometry. |
+| `outputs/geometry/latest_reflective_git_geometry.json` | Latest machine-readable Git geometry field. |
+| `reports/geometry/latest_reflective_git_geometry.md` | Human-readable Git geometry report. |
+| `scripts/validation/validate_reflective_git_geometry_v0_3.py` | Geometry validation gate. |
+
+Rules:
+
+- No geometry-free commit interpretation.
+- Every geometry node must include commit, route, changed files, and release-truth context.
+- Feedback lifecycle objects must attach to Git geometry coordinates.
+- Geometry classification is repository orientation, not proof of correctness.
+
+Non-claim lock: reflective Git geometry improves repository orientation, routing, and evidence traceability. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
 ## Agent Geometry Layer
 

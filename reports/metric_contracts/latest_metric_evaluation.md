@@ -2,6 +2,6 @@
 
 - passed: `True`
 - findings: `0`
-- metrics: `{'required_surface_coverage': 1.0, 'mini_readme_presence': 1.0, 'version_memory_presence': 1.0, 'python_source_presence': 0.12301587301587301}`
+- metrics: `{'required_surface_coverage': 1.0, 'mini_readme_presence': 1.0, 'version_memory_presence': 1.0, 'python_source_presence': 0.12734082397003746}`
 
 Non-claim lock: metric pass is not code correctness.

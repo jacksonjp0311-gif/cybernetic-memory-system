@@ -1,0 +1,11 @@
+{
+  "schema": "CMS-SA-v0.3a-reflective-git-geometry-validation",
+  "passed": true,
+  "errors": 0,
+  "warnings": 0,
+  "findings": [],
+  "node_count": 12,
+  "current_registry_version": "v0.3a",
+  "core_law_present": true,
+  "non_claim_lock": "Reflective Git geometry validation checks repository-route artifacts only. It does not prove runtime correctness."
+}

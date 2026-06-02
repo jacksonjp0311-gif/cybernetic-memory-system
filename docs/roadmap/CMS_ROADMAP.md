@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.2b3a ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â README Structure Validator Repair and Public Sync Phase Split.
+CMS-SA v0.2b3a ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â README Structure Validator Repair and Public Sync Phase Split.
 
 ## Current Lock State
 
@@ -24,7 +24,7 @@ Tau-style lessons       = embedded
 
 ## Next
 
-CMS-SA v0.3 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Feedback Quality and Lifecycle Engine.
+CMS-SA v0.3 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Feedback Quality and Lifecycle Engine.
 ## CMS-SA v0.2b3c - Root-Anchored Stable Public Sync Repair
 
 Status: repair layer.
@@ -46,3 +46,10 @@ Status: repair layer.
 Purpose: enforce validator truth before v0.3.
 
 Next anchor: CMS-SA v0.3 - Feedback Quality and Lifecycle Engine.
+## CMS-SA v0.3a - Reflective Git Geometry Contract
+
+Status: active geometry layer.
+
+Purpose: extract reflective route geometry from Git history and make commit events addressable by shell, meridian, sector, evidence, and release truth.
+
+Next anchor: CMS-SA v0.3b - Feedback Quality and Lifecycle Engine.

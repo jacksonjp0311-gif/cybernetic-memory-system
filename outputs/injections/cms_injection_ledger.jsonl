@@ -26,3 +26,5 @@
 
 {"timestamp":"2026-06-01T22:06:37.8867671-04:00","injection":"release_gate_truth_enforcement","version":"v0.2b3e","surfaces":["README.md","scripts/rcc/audit_readme_surface.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py"]}
 
+{"timestamp":"2026-06-02T07:10:47.2346089-04:00","injection":"reflective_git_geometry_contract","version":"v0.3a","surfaces":["README.md","configs/geometry","schemas/reflective_git_node.schema.json","src/cms/geometry","reports/geometry"]}
+

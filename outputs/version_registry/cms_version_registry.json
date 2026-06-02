@@ -1,7 +1,7 @@
 {
     "schema":  "CMS-SA-version-registry-v0.2b3a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.2b3e",
+    "current_version":  "v0.3a",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
     "versions":  [
                      {
@@ -78,16 +78,24 @@
                          "previous":  "v0.2b3d",
                          "next":  "v0.3",
                          "non_claim_lock":  "Release-gate truth is not runtime correctness."
+                     },
+                     {
+                         "version":  "v0.3a",
+                         "name":  "Reflective Git Geometry Contract",
+                         "status":  "geometry-contract-layer",
+                         "previous":  "v0.2b3e",
+                         "next":  "v0.3b",
+                         "non_claim_lock":  "Reflective Git geometry is not code correctness."
                      }
                  ],
-    "next_anchor":  "CMS-SA v0.3 - Feedback Quality and Lifecycle Engine",
+    "next_anchor":  "CMS-SA v0.3b - Feedback Quality and Lifecycle Engine",
     "non_claim_locks":  {
                             "release_seal_is_not_external_validation":  true,
                             "version_registry_is_not_truth":  true,
                             "markdown_structure_is_not_code_correctness":  true,
                             "public_sync_is_not_external_validation":  true
                         },
-    "latest_version":  "v0.2b3e",
-    "current_checkpoint":  "CMS-SA v0.2b3e - Release Gate Truth Enforcement",
-    "updated_at":  "2026-06-01T22:06:37.8867671-04:00"
+    "latest_version":  "v0.3a",
+    "current_checkpoint":  "CMS-SA v0.3a - Reflective Git Geometry Contract",
+    "updated_at":  "2026-06-02T07:10:47.2346089-04:00"
 }
