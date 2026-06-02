@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.3b2a1` |
+| current registry version | `v0.3b2a2` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
@@ -17,6 +17,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `ba6e1a4` | `v0.3b2a1` | `center, middle, outer` | `documentation, evidence, memory, release, validation` | `injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b2a1 README documentation coherence |
 | `1fd9dae` | `v0.3b2a` | `center, middle, outer` | `documentation, evidence, memory, release` | `injections, lineage, reports, seal, unclassified, versions` | docs: seal CMS-SA v0.3b2a README documentation coherence |
 | `d73e1fc` | `v0.3b2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b2 multi-level alignment lock |
 | `87fbe81` | `` | `outer` | `documentation, evidence` | `public, reports` | fix: seal CMS-SA v0.3b1a pre-API alignment token |
@@ -28,7 +29,6 @@
 | `5af636f` | `` | `middle, outer` | `evidence, validation` | `reports, validator` | fix: clamp CMS-SA v0.3a1 render hygiene version token |
 | `d927c12` | `v0.3a1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: stabilize CMS-SA v0.3a geometry and align README API boundary |
 | `fec1db7` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
-| `c76a4d9` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 
 ## Pure Validation Boundary
 

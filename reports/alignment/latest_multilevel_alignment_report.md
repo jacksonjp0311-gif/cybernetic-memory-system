@@ -1,11 +1,11 @@
-# CMS-SA v0.3b2 Multi-Level Alignment Report
+# CMS-SA v0.3b2a2 Multi-Level Alignment Report
 
 | Field | Value |
 |---|---|
-| schema | `CMS-SA-v0.3b2-multilevel-alignment-report` |
-| version | `v0.3b2` |
+| schema | `CMS-SA-v0.3b2a2-multilevel-alignment-report` |
+| version | `v0.3b2a2` |
 | passed | `true` |
-| current registry version | `v0.3b2a1` |
+| current registry version | `v0.3b2a2` |
 | feedback items checked | `3` |
 | feedback items aligned | `3` |
 

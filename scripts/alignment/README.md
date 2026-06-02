@@ -7,7 +7,7 @@ Echo Location:
 | Shell | center |
 | Meridian | geometry, feedback, validation, evidence |
 | Sector | alignment |
-| Version / TTL | CMS-RCC-N-v0.3b2 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b2a2 / 180 days |
 | Last verified | 2026-06-02 |
 
 ## Purpose
@@ -35,3 +35,4 @@ This mini README must update when this folder's purpose, files, routing meaning,
 ## Non-claim Lock
 
 This folder supports repository-bound multi-level geometric alignment. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+Current checkpoint: CMS-SA v0.3b2a2

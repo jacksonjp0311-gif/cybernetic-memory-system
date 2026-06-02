@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2a1-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2a2-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b2a1 - README Documentation Coherence Repair**  
-Previous seal: **CMS-SA v0.3b2a - README Documentation Coherence Seal**
+Current checkpoint: **CMS-SA v0.3b2a2 - Surface Validator Compatibility Seal**  
+Previous seal: **CMS-SA v0.3b2a1 - README Documentation Coherence Repair**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -80,8 +80,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b2a1 |
-| Previous seal | CMS-SA v0.3b2a |
+| Current checkpoint | CMS-SA v0.3b2a2 |
+| Previous seal | CMS-SA v0.3b2a1 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -267,7 +267,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b2a1 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b2a2 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -384,6 +384,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-020 | Multi-level alignment was evaluated before the new version's public-sync report could exist. | Internal alignment and post-tag public synchronization are different temporal phases. | Multi-level alignment must require public-sync report presence, while the dedicated public-sync validator verifies HEAD/origin/tag/registry agreement after commit/tag/push. |
 | CMS-L-021 | v0.3b2 locked runtime alignment but README still carried malformed multiline paths and stale validator references. | Runtime correctness and public explanation are separate surfaces; a sealed runtime can still have public documentation drift. | After a major lock, run a documentation coherence seal that repairs README path render, Quick Start commands, public metrics, and future-boundary language. |
 | CMS-L-022 | v0.3b2a was pasted/run interactively and the README normalizer failed on a regex replacement escape before README/registry updates landed. | Python regex replacement strings treated backslashes in PowerShell paths as escape templates, while the script continued after a blocked step. | Documentation coherence scripts must use literal replacement functions for README code blocks and must not continue after a failed normalizer. |
+| CMS-L-023 | v0.3b2a1 advanced README/registry but alignment mini READMEs and multi-level alignment version surfaces still pointed at earlier lock tokens. | Documentation patches changed public version state without updating every validator-bound mini README and alignment report version surface. | A documentation checkpoint is not sealed until mini README tokens, registry version, alignment report version, and validator expectations all agree. |
 
 ### Failure Response Protocol
 
@@ -727,3 +728,25 @@ What v0.3b2a1 repairs:
 - public checkpoint/tag agreement for the documentation repair.
 
 Non-claim lock: v0.3b2a1 improves public readability and repository navigation. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+## CMS-SA v0.3b2a2 - Surface Validator Compatibility Seal
+
+v0.3b2a2 repairs the remaining documentation-seal compatibility boundary after v0.3b2a1.
+
+The remaining failures were validator-surface mismatches, not runtime collapse:
+
+```text
+surface alignment failed because alignment mini READMEs did not carry CMS-RCC-N-v0.3b2a1
+multi-level alignment failed because the registry advanced beyond the alignment report version
+```
+
+Repair rule:
+
+```text
+If a documentation patch advances the public checkpoint, all validator-bound mini
+README tokens and alignment report version surfaces must advance with it, or the
+seal is incomplete.
+```
+
+Non-claim lock: v0.3b2a2 repairs repository documentation and validator compatibility only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
