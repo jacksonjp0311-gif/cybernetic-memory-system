@@ -40,3 +40,5 @@
 
 {"event":"readme_mini_readme_reflective_feedback_alignment_lock","version":"v0.3b1","next_anchor":"CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock","timestamp":"2026-06-02T07:43:21.8789582-04:00","previous":"v0.3b","lesson":"Root README sections, mini READMEs, reports, validators, and registry must advance together."}
 
+{"event":"surface_alignment_repair_file_run_guard","version":"v0.3b1a","next_anchor":"CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock","timestamp":"2026-06-02T07:46:53.4206090-04:00","previous":"v0.3b1","lesson":"Alignment repair scripts must be file-run and version-token updates must be idempotent."}
+

@@ -40,3 +40,5 @@
 
 {"timestamp":"2026-06-02T07:43:21.8789582-04:00","injection":"surface_alignment_lock","version":"v0.3b1","surfaces":["README.md","configs/feedback/README.md","src/cms/feedback/README.md","scripts/feedback/README.md","outputs/feedback/README.md","reports/feedback/README.md","schemas/README.md","scripts/validation/validate_surface_alignment_v0_3b1.py"]}
 
+{"timestamp":"2026-06-02T07:46:53.4206090-04:00","injection":"surface_alignment_repair","version":"v0.3b1a","surfaces":["README.md","scripts/validation/validate_surface_alignment_v0_3b1a.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py","feedback mini READMEs","reports/surface_alignment"]}
+

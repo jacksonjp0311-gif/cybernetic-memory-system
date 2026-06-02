@@ -6,7 +6,7 @@
 | errors | `0` |
 | warnings | `0` |
 | node count | `12` |
-| current registry version | `v0.3b1` |
+| current registry version | `v0.3b1a` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |

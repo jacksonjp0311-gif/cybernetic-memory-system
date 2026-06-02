@@ -1,7 +1,7 @@
 {
     "schema":  "CMS-SA-version-registry-v0.2b3a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.3b1",
+    "current_version":  "v0.3b1a",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
     "versions":  [
                      {
@@ -118,6 +118,14 @@
                          "previous":  "v0.3b",
                          "next":  "v0.3b2",
                          "non_claim_lock":  "Surface alignment is not code correctness."
+                     },
+                     {
+                         "version":  "v0.3b1a",
+                         "name":  "Surface Alignment Repair and File-Run Guard",
+                         "status":  "alignment-repair-layer",
+                         "previous":  "v0.3b1",
+                         "next":  "v0.3b2",
+                         "non_claim_lock":  "Surface alignment repair is not code correctness."
                      }
                  ],
     "next_anchor":  "CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock",
@@ -127,7 +135,7 @@
                             "markdown_structure_is_not_code_correctness":  true,
                             "public_sync_is_not_external_validation":  true
                         },
-    "latest_version":  "v0.3b1",
-    "current_checkpoint":  "CMS-SA v0.3b1 - README and Mini README Reflective Feedback Alignment Lock",
-    "updated_at":  "2026-06-02T07:43:21.8789582-04:00"
+    "latest_version":  "v0.3b1a",
+    "current_checkpoint":  "CMS-SA v0.3b1a - Surface Alignment Repair and File-Run Guard",
+    "updated_at":  "2026-06-02T07:46:53.4206090-04:00"
 }

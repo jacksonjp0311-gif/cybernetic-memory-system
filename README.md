@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b1-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b1a-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b1 - README and Mini README Reflective Feedback Alignment Lock**  
-Previous seal: **CMS-SA v0.3b - Feedback Quality and Lifecycle Engine**
+Current checkpoint: **CMS-SA v0.3b1a - Surface Alignment Repair and File-Run Guard**  
+Previous seal: **CMS-SA v0.3b1 - README and Mini README Reflective Feedback Alignment Lock**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -50,6 +50,10 @@ outputs/feedback/latest_evidence_package.json` |
 | v0.2b2 Render Hygiene / Badge Guard | Are badges, status, and README rendering clean? | `reports/render_hygiene/latest_readme_render_hygiene.md` |
 | v0.2b3 Tau Lessons / Public Sync | Are Tau-style README lessons and public sync surfaces embedded? | `reports/public_sync/latest_public_sync_report.md` |
 | v0.2b3a Validator Repair | Does Markdown structure validation avoid false positives on data rows? | `reports/markdown_structure/latest_markdown_structure.md` |
+| v0.3a Reflective Git Geometry | Can Git commits be interpreted as routed geometry events? | `reports/geometry/latest_reflective_git_geometry.md` |
+| v0.3a2 Pure Geometry Validation Boundary | Can geometry be emitted intentionally and validated read-only? | `reports/geometry/latest_reflective_git_geometry_validation.md` |
+| v0.3b Feedback Lifecycle Engine | Can findings become typed, scored, downgrade-safe feedback objects? | `reports/feedback/latest_feedback_lifecycle_report.md` |
+| v0.3b1a Surface Alignment Repair | Does section-level README, mini README, validator, report, and registry alignment hold? | `reports/surface_alignment/latest_surface_alignment_report.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
 
@@ -75,8 +79,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b1 |
-| Previous seal | CMS-SA v0.3b |
+| Current checkpoint | CMS-SA v0.3b1a |
+| Previous seal | CMS-SA v0.3b1 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -96,6 +100,9 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 outputs/feedback/latest_evidence_package.json` |
 | Latest reflective Git geometry | `outputs/geometry/latest_reflective_git_geometry.json` |
 | Geometry validation report | `reports/geometry/latest_reflective_git_geometry_validation.md` |
+| Latest feedback lifecycle report | `outputs/feedback/latest_feedback_lifecycle_report.json` |
+| Feedback validation report | `reports/feedback/latest_feedback_lifecycle_validation.md` |
+| Surface alignment report | `reports/surface_alignment/latest_surface_alignment_report.md` |
 
 ## Quick Start
 
@@ -115,6 +122,10 @@ python scripts/validation/validate_markdown_structure_v0_2b3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python scripts/geometry/emit_reflective_git_geometry.py
 python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
+python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
+python scripts/validation/validate_feedback_lifecycle_v0_3b.py
+python scripts/validation/validate_surface_alignment_v0_3b1a.py
+
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
 python scripts/validation/validate_surface_alignment_v0_3b1.py
@@ -132,6 +143,8 @@ python scripts/validate_release.py
 outputs/feedback/` |
 | Version and injection memory | Version registry, lineage ledger, injection ledger, release seals | `outputs/version_registry/`, `outputs/lineage/`, `docs/release_seals/` |
 | Reflection and process rules | Bounded process lessons, Law of Sufficient Form, badge/status discipline | `docs/reflection/`, `docs/process/` |
+| Reflective geometry | Git route geometry, geometry emission, read-only validation | `configs/geometry/`, `src/cms/geometry/`, `scripts/geometry/`, `outputs/geometry/`, `reports/geometry/` |
+| Feedback lifecycle | Typed feedback items, scoring, classification, downgrade paths, lifecycle reports | `configs/feedback/`, `src/cms/feedback/`, `scripts/feedback/`, `outputs/feedback/`, `reports/feedback/` |
 
 ## Historical Report Archive
 
@@ -239,6 +252,9 @@ Validation tells the agent whether the repository-bound checks agreed.
 | `scripts/rcc/audit_readme_surface.py` | README / mini repo audit scanner. |
 | `scripts/validation/validate_markdown_structure_v0_2b3.py` | Markdown table/heading structure validator. |
 | `scripts/validation/validate_public_sync_v0_2b3.py` | Local/origin/version registry sync validator. |
+| `scripts/feedback/emit_feedback_lifecycle_v0_3b.py` | Feedback lifecycle emitter. |
+| `scripts/validation/validate_feedback_lifecycle_v0_3b.py` | Feedback lifecycle validator. |
+| `scripts/validation/validate_surface_alignment_v0_3b1a.py` | Root and mini README alignment validator. |
 
 ### RCC Nexus Echo Location
 
@@ -247,7 +263,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b1 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b1a / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -363,6 +379,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-015 | Geometry validation kept rewriting latest geometry artifacts after every semantic commit. | The validator was also the emitter, so observing geometry mutated the geometry evidence surface. | Observation and validation must be separated from evidence emission; a read-only validator must not mutate the artifact it validates. |
 | CMS-L-016 | Feedback could be discussed narratively without typed lifecycle status. | Findings lacked a formal scoring, classification, downgrade, negative-control, and falsification surface. | Feedback must become a typed lifecycle object before promotion to memory, release, or API-write status. |
 | CMS-L-017 | v0.3b added feedback lifecycle surfaces while root README sections and mini README surfaces still carried stale or incomplete state. | Existing validators checked badges and broad README anchors but did not enforce section-level currentness across root README, mini READMEs, reports, and registry. | If a version adds a durable surface, root README sections, affected mini READMEs, reports, validators, and version registry must advance together or surface alignment must fail. |
+| CMS-L-018 | v0.3b1 alignment repair was pasted line-by-line and the expected version token self-mutated to v0.3b11 while section rows drifted. | The script was not run as a file, regex replacement was not idempotent, and section-level currentness was not fully normalized before validation. | Alignment repair scripts must be file-run, version-token updates must be idempotent, and stale root/mini README surfaces must fail surface alignment before release. |
 
 ### Failure Response Protocol
 
@@ -603,6 +620,7 @@ This box is the durable public navigation spine. The full repository is validate
 | `outputs/state/` | Latest observation state emitted by the CMS runtime. |
 | `outputs/metrics/` | Latest metric evaluation artifacts. |
 | `outputs/drift/` | Latest CMS drift reports and K/D coherence measures. |
+| `outputs/evidence/` | Latest evidence packages emitted by the runtime. |
 | `outputs/evidence/
 outputs/feedback/` | Latest evidence packages emitted by the runtime. |
 | `outputs/lineage/` | Append-only lineage ledger entries for version continuity. |
@@ -610,6 +628,15 @@ outputs/feedback/` | Latest evidence packages emitted by the runtime. |
 | `outputs/version_registry/` | Machine-readable version registry and next-anchor record. |
 | `outputs/directory/` | Machine-readable full directory box and validation reports. |
 | `outputs/roadmap/` | Machine-readable or mirrored next-anchor roadmaps. |
+| `configs/feedback/` | Feedback lifecycle contracts and promotion/downgrade rules. |
+| `schemas/` | JSON schemas for geometry nodes, feedback items, and future typed CMS exchange objects. |
+| `scripts/geometry/` | Reflective geometry emitters separated from read-only validators. |
+| `scripts/feedback/` | Feedback lifecycle emitters separated from validators. |
+| `outputs/geometry/` | Latest reflective Git geometry outputs. |
+| `outputs/feedback/` | Latest typed feedback lifecycle reports. |
+| `reports/geometry/` | Reflective Git geometry reports and validation outputs. |
+| `reports/feedback/` | Feedback lifecycle reports and validation outputs. |
+| `reports/surface_alignment/` | Root README and mini README alignment validation reports. |
 | `reports/runtime_observation/` | Human-readable and JSON runtime observation reports. |
 | `reports/metric_contracts/` | Human-readable and JSON metric-contract reports. |
 | `reports/drift/` | Human-readable and JSON drift reports. |
@@ -632,3 +659,12 @@ reports/surface_alignment/` | Release readiness reports and checkpoint validatio
 v0.2b3a repairs v0.2b3 by restoring missing public sections and fixing the Markdown structure validator so normal table rows are not misclassified as table headers.
 
 Non-claim lock: README structure, public sync, and Tau-derived lessons improve traceability. They do not prove code correctness, truth, AGI, consciousness, production readiness, security, or external validation.
+| `reports/geometry/latest_reflective_git_geometry.md` | Current reflective Git geometry report |
+| `reports/geometry/latest_reflective_git_geometry_validation.md` | Current reflective Git geometry validation |
+| `reports/feedback/latest_feedback_lifecycle_report.md` | Current feedback lifecycle report |
+| `reports/feedback/latest_feedback_lifecycle_validation.md` | Current feedback lifecycle validation |
+| `reports/surface_alignment/latest_surface_alignment_report.md` | Current root/mini README alignment report |
+
+| Feedback lifecycle patch | `configs/feedback/`, `src/cms/feedback/`, `scripts/feedback/`, feedback mini READMEs | feedback lifecycle validation + README audit + surface alignment |
+
+| `reports/release/` | Release readiness reports and checkpoint validation outputs. |
