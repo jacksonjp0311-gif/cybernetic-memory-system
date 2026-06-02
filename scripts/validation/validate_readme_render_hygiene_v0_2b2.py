@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -7,7 +7,7 @@ text = README.read_text(encoding="utf-8", errors="replace") if README.exists() e
 
 errors = []
 required_badges = [
-    "CMS--SA-v0.3a11",
+    "CMS--SA-v0.3a1",
     "RCC--N-passing",
     "architecture-passing",
     "lineage-recorded",

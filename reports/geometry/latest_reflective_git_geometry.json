@@ -8,6 +8,7 @@
   "stable_geometry_boundary": true,
   "report_refresh_commits_excluded": true,
   "skipped_report_refresh_commits": [
+    "0b340e1",
     "b6fe932",
     "169f326",
     "36afbb9",
