@@ -44,3 +44,4 @@
 
 {"timestamp":"2026-06-02T11:23:18.9036996-04:00","injection":"multilevel_alignment_lock","version":"v0.3b2","surfaces":["configs/alignment","src/cms/alignment","scripts/alignment","outputs/alignment","reports/alignment","README.md"]}
 
+{"timestamp":"2026-06-02T11:39:22.7271528-04:00","version":"v0.3b2a","injection":"readme_documentation_coherence_seal","surfaces":["README.md","scripts/rcc/audit_readme_surface.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py","scripts/validation/validate_surface_alignment_v0_3b2.py"]}

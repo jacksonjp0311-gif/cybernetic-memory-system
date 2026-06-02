@@ -10,13 +10,14 @@
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `false` |
-| release tag ancestor | `false` |
+| release tag exists | `true` |
+| release tag ancestor | `true` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `d73e1fc` | `v0.3b2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b2 multi-level alignment lock |
 | `87fbe81` | `` | `outer` | `documentation, evidence` | `public, reports` | fix: seal CMS-SA v0.3b1a pre-API alignment token |
 | `b32c307` | `v0.3b1a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b1 surface alignment lock |
 | `21ce1c0` | `v0.3b1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | fix: lock CMS-SA v0.3b1 README and mini README alignment |
@@ -28,7 +29,6 @@
 | `fec1db7` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `c76a4d9` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `7e70010` | `v0.3a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3a reflective git geometry contract |
-| `710926b` | `v0.2b3e` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: enforce CMS-SA release gate validator truth |
 
 ## Pure Validation Boundary
 
