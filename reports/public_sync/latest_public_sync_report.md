@@ -2,8 +2,8 @@
 
 - passed: `True`
 - errors: `0`
-- warnings: `2`
-- short_head: `bdaf0a9`
+- warnings: `0`
+- short_head: `5c39180`
 - registry_current_version: `v0.2b3a`
 
 ## Findings
@@ -13,7 +13,7 @@
 
 ## Warnings
 
-- `local_head_not_equal_origin_main_pre_push_expected_until_push`
-- `tag_v0.2b3a_not_created_yet`
+- none
+
 
 Non-claim lock: public sync validation is not runtime correctness.
