@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.2b3-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.2b3a-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**  
-Previous seal: **CMS-SA v0.2b2 - README Render Hygiene and Badge Status Guard**
+Current checkpoint: **CMS-SA v0.2b3a - README Structure Validator Repair and Public Sync Phase Split**  
+Previous seal: **CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -47,7 +47,8 @@ Core law:
 | v0.2b Public Format / Directory Lock | Is the public directory contract present? | `docs/directory/cms_full_directory_box_v0_2b.json` |
 | v0.2b1 Anchor/Table Repair | Are public anchors and directory rows inspectable? | `reports/directory/latest_directory_box_validation.md` |
 | v0.2b2 Render Hygiene / Badge Guard | Are badges, status, and README rendering clean? | `reports/render_hygiene/latest_readme_render_hygiene.md` |
-| v0.2b3 Markdown/Public Sync/Tau Lessons | Are Markdown structure, public sync, archive layers, and lessons embedded? | `reports/markdown_structure/latest_markdown_structure.md` |
+| v0.2b3 Tau Lessons / Public Sync | Are Tau-style README lessons and public sync surfaces embedded? | `reports/public_sync/latest_public_sync_report.md` |
+| v0.2b3a Validator Repair | Does Markdown structure validation avoid false positives on data rows? | `reports/markdown_structure/latest_markdown_structure.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
 
@@ -57,14 +58,51 @@ Current public finding: CMS can be structured as a feedback-governed repository-
 
 This repo is a local-first cybernetic repository-memory runtime:
 
-`	ext
+```text
 repository -> observation manifest -> metric contracts -> metric evaluation
 -> drift report -> evidence package -> validation report
 -> lineage / release surface -> README/RCC/status sync
+```
+
+CMS is designed to make repository state observable, measurable, auditable, and easier for humans and AI agents to maintain without relying on implicit memory.
+
+### What this repository is not
+
+This repo does **not** prove code correctness, security, truth, AGI, consciousness, production readiness, external validation, or real-world correctness. It is a repository-bound governance and measurement runtime.
+
+## Current Public Metrics
+
+| Surface | Result |
+|---|---:|
+| Current checkpoint | CMS-SA v0.2b3a |
+| Previous seal | CMS-SA v0.2b3 |
+| Git head before repair | `bdaf0a9` |
+| Origin main before repair | `5982e59` |
+| Metric evaluation before repair | `True` |
+| README / mini repo audit before repair | `False` |
+| RCC-N checker | `True` |
+| Runtime observation validation | `True` |
+| Directory box validation before repair | `False` |
+| Render hygiene before repair | `False` |
+| CMS coherence K_CMS | `1.0` |
+| CMS drift D_CMS | `0.0` |
+| Evidence classification | `CMS-B` |
+| Release allowed | `True` |
+| Latest observation manifest | `outputs/state/latest_observation_manifest.json` |
+| Latest metric evaluation | `outputs/metrics/latest_metric_evaluation.json` |
+| Latest drift report | `outputs/drift/latest_drift_report.json` |
+| Latest evidence package | `outputs/evidence/latest_evidence_package.json` |
+| Directory box manifest | `docs/directory/cms_full_directory_box_v0_2b3a.json` |
+| Directory box validation | `reports/directory/latest_directory_box_validation.md` |
+| Render hygiene validation | `reports/render_hygiene/latest_readme_render_hygiene.md` |
+| Markdown structure validation | `reports/markdown_structure/latest_markdown_structure.md` |
+| Public sync validation | `reports/public_sync/latest_public_sync_report.md` |
+
+## Quick Start
 
 Run the local validation stack:
 
-`powershell
+```powershell
 cd "$env:USERPROFILE\OneDrive\Desktop\cybernetic-memory-system"
 $env:PYTHONPATH = ".\src"
 
@@ -79,9 +117,9 @@ python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
 python scripts/validate_release.py
-`"
-L "
-L 
+```
+
+## Repository Layers
 
 | Layer | Purpose | Main paths |
 |---|---|---|
@@ -134,14 +172,25 @@ CMS rewards bounded evidence emission, not confident overclaiming.
 
 Primary runtime artifacts are written under:
 
-`	ext
+```text
 outputs/state/
 outputs/metrics/
 outputs/drift/
 outputs/evidence/
-`"
-L "
-L 
+```
+
+Release and validation surfaces are written under:
+
+```text
+reports/readme/
+reports/rcc_nexus/
+reports/architecture/
+reports/directory/
+reports/render_hygiene/
+reports/markdown_structure/
+reports/public_sync/
+reports/release/
+```
 
 ## PART II - RCC Nexus README
 
@@ -190,7 +239,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.2b3 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.2b3a / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -265,11 +314,21 @@ A patch is incomplete if it changes code, folders, reports, evidence state, vali
 
 ### Executable README / Mini Repo Audit
 
-`powershell
+Run:
+
+```powershell
 python scripts/rcc/audit_readme_surface.py
-`"
-L "
-L 
+```
+
+Expected pass:
+
+```text
+passed: true
+errors: 0
+warnings: 0
+```
+
+## AI Failure Learning Ledger
 
 This section is repository memory. When a patch fails, compress the failure into a durable lesson so the next human or AI maintainer does not repeat it.
 
@@ -281,6 +340,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-004 | v0.2b1 passed anchor/directory checks while README render showed broken tokens like `cc/nexus`, `eports/`, and malformed code fences. | Anchor checks validated presence, not public readability or encoding hygiene. | Every checkpoint must run README render hygiene validation and refresh badges/status before promotion. |
 | CMS-L-005 | v0.2b2 passed render hygiene but GitHub/raw extraction still showed collapsed tables and low line count. | Render hygiene checked bad tokens, not Markdown table/heading line structure. | Public README releases must pass Markdown structure validation with line-count and table isolation checks. |
 | CMS-L-006 | Public state can appear stale even when local validation passes. | Local validation does not prove origin/main, tag, version registry, and README checkpoint agree. | Every public checkpoint must run a public sync guard before promotion. |
+| CMS-L-007 | v0.2b3 Markdown validator flagged normal table data rows as missing separators. | Validator logic checked every row as if it were a header. | Markdown validators must parse table blocks, not treat normal data rows as headers. |
 
 ### Failure Response Protocol
 
@@ -301,18 +361,40 @@ Mini README update rule: if a patch changes a folder purpose, folder contents, r
 
 ## Agent Geometry Layer
 
-`	ext
+CMS treats the repository as a navigable coherence field:
+
+```text
 center  = source boundaries, non-claim locks, architecture, context indexes
 inner   = runtime primitives, observation, metric contracts, drift, evidence
 middle  = CLI flows, tests, scripts, validators, route maps
 outer   = reports, ledgers, release seals, public README surfaces
-`"
-L "
-L 
+```
+
+Every patch must preserve route coherence:
+
+```text
+intent -> shell -> meridian -> sector -> files -> validation -> evidence -> lesson
+```
+
+A patch is coherent only when these surfaces agree:
+
+```text
+README.md
+AGENTS.md
+README_90_SECONDS.md
+docs/context/repository_context_index.json
+docs/context/rcc_nexus_index.json
+rcc/nexus/route_map.json
+rcc/nexus/task_routing_matrix.md
+target folder README.md
+latest validation reports
+```
 
 Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, truth, security, AGI, consciousness, or external validation.
 
 ## Process Alignment Layer
+
+This layer keeps CMS synchronized after every evolution step.
 
 ### Alignment Rules
 
@@ -323,6 +405,7 @@ Non-claim lock: geometric routing improves repository orientation. It is not AI 
 | Render-hygiene rule | Public README must not contain control characters, malformed code fences, damaged paths, or literal unresolved variables. |
 | Markdown-structure rule | Public README tables, headings, and code blocks must render as isolated Markdown lines. |
 | Public-sync rule | Local HEAD, origin/main, README checkpoint, version registry, and release tag surface must agree before public promotion. |
+| Public-sync phase rule | Before push, local ahead of origin is a warning; after push, local and origin must match. |
 | Release-readiness rule | Release readiness and relevant validators are the final local gates before commit/push. |
 | Warning-inspection rule | A passing validator with warnings is not ignored; warnings must be repaired or explicitly classified as non-blocking. |
 | Directory-box rule | The Full Directory Box must not contain duplicate durable entries and must reflect durable top-level and child surfaces. |
@@ -330,7 +413,26 @@ Non-claim lock: geometric routing improves repository orientation. It is not AI 
 | Evidence-refresh rule | If a runtime cycle changes latest artifacts, commit or intentionally discard those artifacts before declaring the repo clean. |
 | Boundary rule | Process alignment is repository hygiene. It is not code correctness, external validation, AGI, consciousness, security, or production readiness. |
 
+### Pre-Push Checklist
+
+```powershell
+$env:PYTHONPATH = ".\src"
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python scripts/validation/validate_runtime_observation_v0_2.py
+python scripts/validation/validate_directory_box_v0_2b.py
+python scripts/validation/validate_readme_render_hygiene_v0_2b2.py
+python scripts/validation/validate_markdown_structure_v0_2b3.py
+python scripts/validation/validate_public_sync_v0_2b3.py
+python -m cms cycle --repo . --profile CMS-Core
+python -m unittest discover -s tests
+python scripts/validate_release.py
+```
+
 ## AI Rule - Directory Box and Mini README Synchronization
+
+CMS uses RCC-N style navigation. Repository structure is part of the public interface.
 
 Any AI or human patch that adds, removes, renames, or repurposes a folder must update these surfaces in the same commit:
 
@@ -341,6 +443,8 @@ Any AI or human patch that adds, removes, renames, or repurposes a folder must u
 5. `rcc/nexus/route_map.json` if task routing changes.
 6. `rcc/nexus/task_routing_matrix.md` if agent workflow changes.
 7. Relevant validation reports after rerunning checks.
+
+Non-claim lock: directory navigation is not correctness, but stale navigation is repository drift.
 
 ## Law of Sufficient Form
 
@@ -401,8 +505,8 @@ This box is the durable public navigation spine. The full repository is validate
 | `tests/` | Unit tests for runtime observation, metrics, drift, and evidence cycle. |
 | `examples/` | Future examples and walkthrough surfaces. |
 
-## CMS-SA v0.2b3 - README Structure, Public Sync Guard, and Tau Lesson Embedding
+## CMS-SA v0.2b3a - README Structure Validator Repair and Public Sync Phase Split
 
-v0.2b3 embeds the missing mature README lessons from the Tau-style format: repository layers, historical archive, gap classes, Nexus echo location, primary Nexus files, Law of Sufficient Form, Markdown structure validation, and public sync discipline.
+v0.2b3a repairs v0.2b3 by restoring missing public sections and fixing the Markdown structure validator so normal table rows are not misclassified as table headers.
 
 Non-claim lock: README structure, public sync, and Tau-derived lessons improve traceability. They do not prove code correctness, truth, AGI, consciousness, production readiness, security, or external validation.

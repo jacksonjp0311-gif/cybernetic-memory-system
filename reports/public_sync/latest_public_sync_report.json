@@ -1,15 +1,16 @@
 {
-  "schema": "CMS-SA-v0.2b3-public-sync",
+  "schema": "CMS-SA-v0.2b3a-public-sync",
   "passed": true,
   "errors": 0,
-  "warnings": 1,
+  "warnings": 2,
   "findings": [],
   "warning_findings": [
-    "tag_v0.2b3_not_created_yet"
+    "local_head_not_equal_origin_main_pre_push_expected_until_push",
+    "tag_v0.2b3a_not_created_yet"
   ],
-  "head": "5982e595273cbbe5f1c85bd381baf557b7fd8373",
+  "head": "bdaf0a92bd819d73d16ce93da16b34762edb8071",
   "origin_main": "5982e595273cbbe5f1c85bd381baf557b7fd8373",
-  "short_head": "5982e59",
-  "registry_current_version": "v0.2b3",
+  "short_head": "bdaf0a9",
+  "registry_current_version": "v0.2b3a",
   "non_claim_lock": "Public sync validation checks repository state agreement but does not prove runtime correctness."
 }

@@ -16,3 +16,5 @@
 
 {"version":"v0.2b3","document":"docs/versions/v0_2b3/cms_sa_v0_2b3_readme_structure_public_sync_tau_lessons.md","ts":"2026-06-01T21:39:02.6143794-04:00","non_claim_lock":"Markdown structure and public sync are not code correctness","release_seal":"docs/release_seals/cms_sa_v0_2b3_release_seal.md","event":"readme_structure_public_sync_tau_lessons","public_sync_validator":"scripts/validation/validate_public_sync_v0_2b3.py","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","markdown_validator":"scripts/validation/validate_markdown_structure_v0_2b3.py","injection":"docs/injections/v0_2b3/cms_sa_v0_2b3_injection_record.md"}
 
+{"injection":"docs/injections/v0_2b3a/cms_sa_v0_2b3a_injection_record.md","version":"v0.2b3a","release_seal":"docs/release_seals/cms_sa_v0_2b3a_release_seal.md","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","ts":"2026-06-01T21:42:10.7789236-04:00","non_claim_lock":"validator repair is not code correctness","document":"docs/versions/v0_2b3a/cms_sa_v0_2b3a_readme_structure_validator_repair.md","event":"readme_structure_validator_repair_public_sync_phase_split"}
+

@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.2b3 — README Structure, Public Sync Guard, and Tau Lesson Embedding.
+CMS-SA v0.2b3a — README Structure Validator Repair and Public Sync Phase Split.
 
 ## Current Lock State
 
@@ -15,23 +15,13 @@ version geometry        = locked
 RCC-N navigation        = locked
 README/audit grammar    = locked
 directory box           = locked
-public process rules    = locked
 render hygiene          = locked
 badge/status sync       = locked
-Markdown structure      = locked by v0.2b3
-public sync guard       = locked by v0.2b3
-Tau-style lessons       = embedded by v0.2b3
+Markdown structure      = repaired by v0.2b3a
+public sync guard       = phase-split by v0.2b3a
+Tau-style lessons       = embedded
 ```
 
 ## Next
 
 CMS-SA v0.3 — Feedback Quality and Lifecycle Engine.
-
-Planned v0.3 surfaces:
-1. feedback item model,
-2. feedback generator,
-3. feedback quality scorer,
-4. lifecycle state machine,
-5. orphan feedback detector,
-6. feedback report writer,
-7. tests and validation command.
