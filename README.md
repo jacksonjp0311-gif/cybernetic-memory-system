@@ -498,7 +498,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.3b1. API work begins only after multi-level geometric alignment confirms root README, mini READMEs, route maps, validators, reports, geometry, feedback lifecycle, and release surfaces agree.
+API is not active in v0.3b1a. API work begins only after multi-level geometric alignment confirms root README, mini READMEs, route maps, validators, reports, geometry, feedback lifecycle, and release surfaces agree.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan

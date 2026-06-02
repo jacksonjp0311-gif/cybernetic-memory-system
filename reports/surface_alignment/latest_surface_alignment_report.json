@@ -1,12 +1,9 @@
 {
   "schema": "CMS-SA-v0.3b1a-surface-alignment-validation",
-  "passed": false,
-  "errors": 2,
+  "passed": true,
+  "errors": 0,
   "warnings": 0,
-  "findings": [
-    "root_missing:API is not active in v0.3b1a",
-    "root_stale_token_present:API is not active in v0.3b1. API work begins"
-  ],
+  "findings": [],
   "warning_findings": [],
   "current_version": "v0.3b1a",
   "previous_version": "v0.3b1",
