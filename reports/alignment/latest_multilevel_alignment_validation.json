@@ -1,0 +1,11 @@
+{
+  "schema": "CMS-SA-v0.3b2-multilevel-alignment-validation",
+  "passed": true,
+  "errors": 0,
+  "warnings": 0,
+  "findings": [],
+  "feedback_items_checked": 3,
+  "feedback_items_aligned": 3,
+  "layer_count": 10,
+  "non_claim_lock": "Multi-level alignment validation checks repository-bound alignment only. It does not prove code correctness."
+}

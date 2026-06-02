@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b1a-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,7 +15,7 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b1a - Surface Alignment Repair and File-Run Guard**  
+Current checkpoint: **CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock**  
 Previous seal: **CMS-SA v0.3b1 - README and Mini README Reflective Feedback Alignment Lock**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
@@ -54,6 +54,7 @@ outputs/feedback/latest_evidence_package.json` |
 | v0.3a2 Pure Geometry Validation Boundary | Can geometry be emitted intentionally and validated read-only? | `reports/geometry/latest_reflective_git_geometry_validation.md` |
 | v0.3b Feedback Lifecycle Engine | Can findings become typed, scored, downgrade-safe feedback objects? | `reports/feedback/latest_feedback_lifecycle_report.md` |
 | v0.3b1a Surface Alignment Repair | Does section-level README, mini README, validator, report, and registry alignment hold? | `reports/surface_alignment/latest_surface_alignment_report.md` |
+| v0.3b2 Multi-Level Geometric Alignment | Do feedback items bind to geometry, validators, evidence, routes, registry, and public surfaces? | `reports/alignment/latest_multilevel_alignment_report.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
 
@@ -79,8 +80,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b1a |
-| Previous seal | CMS-SA v0.3b1 |
+| Current checkpoint | CMS-SA v0.3b2 |
+| Previous seal | CMS-SA v0.3b1a |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -103,6 +104,8 @@ outputs/feedback/latest_evidence_package.json` |
 | Latest feedback lifecycle report | `outputs/feedback/latest_feedback_lifecycle_report.json` |
 | Feedback validation report | `reports/feedback/latest_feedback_lifecycle_validation.md` |
 | Surface alignment report | `reports/surface_alignment/latest_surface_alignment_report.md` |
+| Multi-level alignment report | `outputs/alignment/latest_multilevel_alignment_report.json` |
+| Multi-level alignment validation | `reports/alignment/latest_multilevel_alignment_validation.md` |
 
 ## Quick Start
 
@@ -125,6 +128,9 @@ python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
 python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
 python scripts/validation/validate_feedback_lifecycle_v0_3b.py
 python scripts/validation/validate_surface_alignment_v0_3b1a.py
+python scripts/validation/validate_surface_alignment_v0_3b2.py
+python scripts/validation/validate_multilevel_alignment_v0_3b2.py
+python scripts/alignment/emit_multilevel_alignment_v0_3b2.py
 
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -145,6 +151,7 @@ outputs/feedback/` |
 | Reflection and process rules | Bounded process lessons, Law of Sufficient Form, badge/status discipline | `docs/reflection/`, `docs/process/` |
 | Reflective geometry | Git route geometry, geometry emission, read-only validation | `configs/geometry/`, `src/cms/geometry/`, `scripts/geometry/`, `outputs/geometry/`, `reports/geometry/` |
 | Feedback lifecycle | Typed feedback items, scoring, classification, downgrade paths, lifecycle reports | `configs/feedback/`, `src/cms/feedback/`, `scripts/feedback/`, `outputs/feedback/`, `reports/feedback/` |
+| Multi-level alignment | Binds README, mini READMEs, route maps, validators, reports, geometry, feedback, registry, public sync, and release state | `configs/alignment/`, `src/cms/alignment/`, `scripts/alignment/`, `outputs/alignment/`, `reports/alignment/` |
 
 ## Historical Report Archive
 
@@ -263,7 +270,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b1a / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b2 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -380,6 +387,8 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-016 | Feedback could be discussed narratively without typed lifecycle status. | Findings lacked a formal scoring, classification, downgrade, negative-control, and falsification surface. | Feedback must become a typed lifecycle object before promotion to memory, release, or API-write status. |
 | CMS-L-017 | v0.3b added feedback lifecycle surfaces while root README sections and mini README surfaces still carried stale or incomplete state. | Existing validators checked badges and broad README anchors but did not enforce section-level currentness across root README, mini READMEs, reports, and registry. | If a version adds a durable surface, root README sections, affected mini READMEs, reports, validators, and version registry must advance together or surface alignment must fail. |
 | CMS-L-018 | v0.3b1 alignment repair was pasted line-by-line and the expected version token self-mutated to v0.3b11 while section rows drifted. | The script was not run as a file, regex replacement was not idempotent, and section-level currentness was not fully normalized before validation. | Alignment repair scripts must be file-run, version-token updates must be idempotent, and stale root/mini README surfaces must fail surface alignment before release. |
+| CMS-L-019 | Feedback lifecycle and reflective Git geometry existed as adjacent surfaces but were not yet bound into one runtime alignment check. | Geometry, feedback, README, mini READMEs, reports, registry, route maps, and release state could each pass locally without proving cross-surface binding. | No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces. |
+| CMS-L-020 | Multi-level alignment was evaluated before the new version's public-sync report could exist. | Internal alignment and post-tag public synchronization are different temporal phases. | Multi-level alignment must require public-sync report presence, while the dedicated public-sync validator verifies HEAD/origin/tag/registry agreement after commit/tag/push. |
 
 ### Failure Response Protocol
 
@@ -637,6 +646,11 @@ outputs/feedback/` | Latest evidence packages emitted by the runtime. |
 | `reports/geometry/` | Reflective Git geometry reports and validation outputs. |
 | `reports/feedback/` | Feedback lifecycle reports and validation outputs. |
 | `reports/surface_alignment/` | Root README and mini README alignment validation reports. |
+| `reports/alignment/` | Multi-level alignment reports and validation outputs. |
+| `outputs/alignment/` | Latest machine-readable multi-level alignment reports. |
+| `scripts/alignment/` | Multi-level alignment emitters separated from validators. |
+| `src/cms/alignment/` | Multi-level alignment runtime. |
+| `configs/alignment/` | Multi-level alignment contracts for runtime coherence. |
 | `reports/runtime_observation/` | Human-readable and JSON runtime observation reports. |
 | `reports/metric_contracts/` | Human-readable and JSON metric-contract reports. |
 | `reports/drift/` | Human-readable and JSON drift reports. |
@@ -664,7 +678,27 @@ Non-claim lock: README structure, public sync, and Tau-derived lessons improve t
 | `reports/feedback/latest_feedback_lifecycle_report.md` | Current feedback lifecycle report |
 | `reports/feedback/latest_feedback_lifecycle_validation.md` | Current feedback lifecycle validation |
 | `reports/surface_alignment/latest_surface_alignment_report.md` | Current root/mini README alignment report |
+| `reports/alignment/latest_multilevel_alignment_report.md` | Current multi-level geometric feedback alignment report |
+| `reports/alignment/latest_multilevel_alignment_validation.md` | Current multi-level alignment validation |
 
 | Feedback lifecycle patch | `configs/feedback/`, `src/cms/feedback/`, `scripts/feedback/`, feedback mini READMEs | feedback lifecycle validation + README audit + surface alignment |
+| Multi-level alignment patch | `configs/alignment/`, `src/cms/alignment/`, `scripts/alignment/`, alignment mini READMEs | multi-level alignment validation + geometry + feedback + surface alignment |
 
 | `reports/release/` | Release readiness reports and checkpoint validation outputs. |
+
+
+## CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock
+
+v0.3b2 keeps API inactive and strengthens the core/runtime by binding root README, mini READMEs, route maps, validators, reports, reflective Git geometry, feedback lifecycle, version registry, public sync, and release state into one internal alignment surface.
+
+Core rule:
+
+```text
+No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
+```
+
+API remains inactive. This layer is internal runtime coherence only.
+
+Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
+
+Non-claim lock: multi-level alignment improves repository-bound cybernetic runtime coherence. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.

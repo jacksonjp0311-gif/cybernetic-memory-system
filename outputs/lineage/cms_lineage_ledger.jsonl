@@ -42,3 +42,5 @@
 
 {"event":"surface_alignment_repair_file_run_guard","version":"v0.3b1a","next_anchor":"CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock","timestamp":"2026-06-02T07:46:53.4206090-04:00","previous":"v0.3b1","lesson":"Alignment repair scripts must be file-run and version-token updates must be idempotent."}
 
+{"event":"multilevel_geometric_alignment_feedback_lock","version":"v0.3b2","next_anchor":"CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger","timestamp":"2026-06-02T11:23:18.9036996-04:00","previous":"v0.3b1a","lesson":"Feedback items must bind to geometry, evidence, validators, and current public surfaces before promotion."}
+

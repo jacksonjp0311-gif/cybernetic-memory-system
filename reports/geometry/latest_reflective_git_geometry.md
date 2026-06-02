@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.3b1a` |
+| current registry version | `v0.3b2` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
@@ -17,6 +17,8 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `87fbe81` | `` | `outer` | `documentation, evidence` | `public, reports` | fix: seal CMS-SA v0.3b1a pre-API alignment token |
+| `b32c307` | `v0.3b1a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b1 surface alignment lock |
 | `21ce1c0` | `v0.3b1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | fix: lock CMS-SA v0.3b1 README and mini README alignment |
 | `c62d19e` | `v0.3b` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b feedback lifecycle engine |
 | `0f5ff53` | `v0.3a2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, emitter, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: separate CMS-SA geometry emission from read-only validation |
@@ -27,8 +29,6 @@
 | `c76a4d9` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `7e70010` | `v0.3a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `710926b` | `v0.2b3e` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: enforce CMS-SA release gate validator truth |
-| `0f959fc` | `v0.2b3d` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: align CMS-SA v0.2b3 validators with active public checkpoint |
-| `15d2234` | `v0.2b3c` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 stable public sync with root anchoring |
 
 ## Pure Validation Boundary
 

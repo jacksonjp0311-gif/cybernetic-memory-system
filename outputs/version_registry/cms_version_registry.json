@@ -1,7 +1,7 @@
 {
     "schema":  "CMS-SA-version-registry-v0.2b3a",
     "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.3b1a",
+    "current_version":  "v0.3b2",
     "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
     "versions":  [
                      {
@@ -126,16 +126,24 @@
                          "previous":  "v0.3b1",
                          "next":  "v0.3b2",
                          "non_claim_lock":  "Surface alignment repair is not code correctness."
+                     },
+                     {
+                         "version":  "v0.3b2",
+                         "name":  "Multi-Level Geometric Alignment Feedback Lock",
+                         "status":  "core-runtime-alignment-layer",
+                         "previous":  "v0.3b1a",
+                         "next":  "v0.3b3",
+                         "non_claim_lock":  "Multi-level alignment is not code correctness."
                      }
                  ],
-    "next_anchor":  "CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock",
+    "next_anchor":  "CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger",
     "non_claim_locks":  {
                             "release_seal_is_not_external_validation":  true,
                             "version_registry_is_not_truth":  true,
                             "markdown_structure_is_not_code_correctness":  true,
                             "public_sync_is_not_external_validation":  true
                         },
-    "latest_version":  "v0.3b1a",
-    "current_checkpoint":  "CMS-SA v0.3b1a - Surface Alignment Repair and File-Run Guard",
-    "updated_at":  "2026-06-02T07:46:53.4206090-04:00"
+    "latest_version":  "v0.3b2",
+    "current_checkpoint":  "CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock",
+    "updated_at":  "2026-06-02T11:23:18.9036996-04:00"
 }
