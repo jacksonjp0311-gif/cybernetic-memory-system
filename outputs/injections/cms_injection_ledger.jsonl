@@ -24,3 +24,5 @@
 
 {"timestamp":"2026-06-01T22:04:52.2495810-04:00","injection":"validator_expectation_alignment","version":"v0.2b3d","surfaces":["README.md","scripts/rcc/audit_readme_surface.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py"]}
 
+{"timestamp":"2026-06-01T22:06:37.8867671-04:00","injection":"release_gate_truth_enforcement","version":"v0.2b3e","surfaces":["README.md","scripts/rcc/audit_readme_surface.py","scripts/validation/validate_readme_render_hygiene_v0_2b2.py"]}
+

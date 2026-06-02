@@ -2,7 +2,7 @@
 
 ## Current
 
-CMS-SA v0.2b3a Ã¢â‚¬â€ README Structure Validator Repair and Public Sync Phase Split.
+CMS-SA v0.2b3a ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â README Structure Validator Repair and Public Sync Phase Split.
 
 ## Current Lock State
 
@@ -24,7 +24,7 @@ Tau-style lessons       = embedded
 
 ## Next
 
-CMS-SA v0.3 Ã¢â‚¬â€ Feedback Quality and Lifecycle Engine.
+CMS-SA v0.3 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Feedback Quality and Lifecycle Engine.
 ## CMS-SA v0.2b3c - Root-Anchored Stable Public Sync Repair
 
 Status: repair layer.
@@ -37,5 +37,12 @@ Next anchor: CMS-SA v0.3 - Feedback Quality and Lifecycle Engine.
 Status: repair layer.
 
 Purpose: align README-facing validators with active public checkpoint and badge semantics before v0.3.
+
+Next anchor: CMS-SA v0.3 - Feedback Quality and Lifecycle Engine.
+## CMS-SA v0.2b3e - Release Gate Truth Enforcement
+
+Status: repair layer.
+
+Purpose: enforce validator truth before v0.3.
 
 Next anchor: CMS-SA v0.3 - Feedback Quality and Lifecycle Engine.

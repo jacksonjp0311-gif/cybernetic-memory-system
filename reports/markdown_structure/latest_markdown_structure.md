@@ -2,7 +2,7 @@
 
 - passed: `True`
 - errors: `0`
-- line_count: `515`
+- line_count: `516`
 - table_blocks: `14`
 
 ## Findings

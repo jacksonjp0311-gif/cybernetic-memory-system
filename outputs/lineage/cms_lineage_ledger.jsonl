@@ -24,3 +24,5 @@
 
 {"event":"validator_expectation_alignment","version":"v0.2b3d","next_anchor":"v0.3","timestamp":"2026-06-01T22:04:52.2495810-04:00","previous":"v0.2b3c","lesson":"Validators must advance expected public tokens when checkpoint badges and README status advance."}
 
+{"event":"release_gate_truth_enforcement","version":"v0.2b3e","next_anchor":"v0.3","timestamp":"2026-06-01T22:06:37.8867671-04:00","previous":"v0.2b3d","lesson":"Clean Git status is not release readiness; release gates must parse validator truth."}
+
