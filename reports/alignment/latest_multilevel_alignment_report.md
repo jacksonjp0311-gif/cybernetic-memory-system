@@ -5,7 +5,7 @@
 | schema | `CMS-SA-v0.3b2-multilevel-alignment-report` |
 | version | `v0.3b2` |
 | passed | `true` |
-| current registry version | `v0.3b2` |
+| current registry version | `v0.3b2a1` |
 | feedback items checked | `3` |
 | feedback items aligned | `3` |
 

@@ -1,9 +1,11 @@
 {
   "schema": "CMS-SA-v0.3b2-multilevel-alignment-validation",
-  "passed": true,
-  "errors": 0,
+  "passed": false,
+  "errors": 1,
   "warnings": 0,
-  "findings": [],
+  "findings": [
+    "registry_version_mismatch:v0.3b2a1"
+  ],
   "feedback_items_checked": 3,
   "feedback_items_aligned": 3,
   "layer_count": 10,

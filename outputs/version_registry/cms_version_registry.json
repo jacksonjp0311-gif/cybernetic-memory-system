@@ -1,149 +1,158 @@
 {
-    "schema":  "CMS-SA-version-registry-v0.2b3a",
-    "repository":  "cybernetic-memory-system",
-    "current_version":  "v0.3b2",
-    "purpose":  "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
-    "versions":  [
-                     {
-                         "version":  "v0.1",
-                         "class":  "software_architecture_genesis"
-                     },
-                     {
-                         "version":  "v0.1.1",
-                         "class":  "lineage_injection_recorder_patch"
-                     },
-                     {
-                         "version":  "v0.1.2",
-                         "class":  "rcc_readme_mini_readme_enhancement"
-                     },
-                     {
-                         "version":  "v0.1.2a",
-                         "class":  "mini_readme_audit_repair"
-                     },
-                     {
-                         "version":  "v0.2",
-                         "class":  "runtime_observation_metric_contract_engine"
-                     },
-                     {
-                         "version":  "v0.2a",
-                         "class":  "readme_audit_anchor_synchronization"
-                     },
-                     {
-                         "version":  "v0.2b",
-                         "class":  "public_format_directory_box_lock"
-                     },
-                     {
-                         "version":  "v0.2b1",
-                         "class":  "public_anchor_directory_table_repair"
-                     },
-                     {
-                         "version":  "v0.2b2",
-                         "class":  "readme_render_hygiene_badge_status_guard"
-                     },
-                     {
-                         "version":  "v0.2b3",
-                         "class":  "readme_structure_public_sync_tau_lessons"
-                     },
-                     {
-                         "version":  "v0.2b3a",
-                         "class":  "readme_structure_validator_repair_public_sync_phase_split"
-                     },
-                     {
-                         "version":  "v0.2b3b",
-                         "name":  "Failed Stable Public Sync Attempt",
-                         "status":  "failed-useful-tagged-layer",
-                         "lesson":  "Relative path writes and line-by-line execution caused incomplete repair.",
-                         "next":  "v0.2b3c"
-                     },
-                     {
-                         "version":  "v0.2b3c",
-                         "name":  "Root-Anchored Stable Public Sync Repair",
-                         "status":  "repair-layer",
-                         "previous":  "v0.2b3b",
-                         "next":  "v0.3",
-                         "non_claim_lock":  "Repository-state sync is not runtime correctness."
-                     },
-                     {
-                         "version":  "v0.2b3d",
-                         "name":  "Validator Expectation Alignment",
-                         "status":  "repair-layer",
-                         "previous":  "v0.2b3c",
-                         "next":  "v0.3",
-                         "non_claim_lock":  "Validator alignment is not runtime correctness."
-                     },
-                     {
-                         "version":  "v0.2b3e",
-                         "name":  "Release Gate Truth Enforcement",
-                         "status":  "repair-layer",
-                         "previous":  "v0.2b3d",
-                         "next":  "v0.3",
-                         "non_claim_lock":  "Release-gate truth is not runtime correctness."
-                     },
-                     {
-                         "version":  "v0.3a",
-                         "name":  "Reflective Git Geometry Contract",
-                         "status":  "geometry-contract-layer",
-                         "previous":  "v0.2b3e",
-                         "next":  "v0.3b",
-                         "non_claim_lock":  "Reflective Git geometry is not code correctness."
-                     },
-                     {
-                         "version":  "v0.3a1",
-                         "name":  "Stable Reflective Geometry Evidence Boundary",
-                         "status":  "geometry-readme-api-alignment-repair",
-                         "previous":  "v0.3a",
-                         "next":  "v0.3b",
-                         "non_claim_lock":  "Stable reflective geometry and API-readiness alignment are not code correctness."
-                     },
-                     {
-                         "version":  "v0.3a2",
-                         "name":  "Pure Geometry Validation Boundary",
-                         "status":  "pure-validation-boundary",
-                         "previous":  "v0.3a1",
-                         "next":  "v0.3b",
-                         "non_claim_lock":  "Pure validation boundary is not code correctness."
-                     },
-                     {
-                         "version":  "v0.3b",
-                         "name":  "Feedback Quality and Lifecycle Engine",
-                         "status":  "feedback-lifecycle-layer",
-                         "previous":  "v0.3a2",
-                         "next":  "v0.3c",
-                         "non_claim_lock":  "Feedback lifecycle governance is not code correctness."
-                     },
-                     {
-                         "version":  "v0.3b1",
-                         "name":  "README and Mini README Reflective Feedback Alignment Lock",
-                         "status":  "surface-alignment-lock",
-                         "previous":  "v0.3b",
-                         "next":  "v0.3b2",
-                         "non_claim_lock":  "Surface alignment is not code correctness."
-                     },
-                     {
-                         "version":  "v0.3b1a",
-                         "name":  "Surface Alignment Repair and File-Run Guard",
-                         "status":  "alignment-repair-layer",
-                         "previous":  "v0.3b1",
-                         "next":  "v0.3b2",
-                         "non_claim_lock":  "Surface alignment repair is not code correctness."
-                     },
-                     {
-                         "version":  "v0.3b2",
-                         "name":  "Multi-Level Geometric Alignment Feedback Lock",
-                         "status":  "core-runtime-alignment-layer",
-                         "previous":  "v0.3b1a",
-                         "next":  "v0.3b3",
-                         "non_claim_lock":  "Multi-level alignment is not code correctness."
-                     }
-                 ],
-    "next_anchor":  "CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger",
-    "non_claim_locks":  {
-                            "release_seal_is_not_external_validation":  true,
-                            "version_registry_is_not_truth":  true,
-                            "markdown_structure_is_not_code_correctness":  true,
-                            "public_sync_is_not_external_validation":  true
-                        },
-    "latest_version":  "v0.3b2",
-    "current_checkpoint":  "CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock",
-    "updated_at":  "2026-06-02T11:23:18.9036996-04:00"
+  "schema": "CMS-SA-version-registry-v0.2b3a",
+  "repository": "cybernetic-memory-system",
+  "current_version": "v0.3b2a1",
+  "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
+  "versions": [
+    {
+      "version": "v0.1",
+      "class": "software_architecture_genesis"
+    },
+    {
+      "version": "v0.1.1",
+      "class": "lineage_injection_recorder_patch"
+    },
+    {
+      "version": "v0.1.2",
+      "class": "rcc_readme_mini_readme_enhancement"
+    },
+    {
+      "version": "v0.1.2a",
+      "class": "mini_readme_audit_repair"
+    },
+    {
+      "version": "v0.2",
+      "class": "runtime_observation_metric_contract_engine"
+    },
+    {
+      "version": "v0.2a",
+      "class": "readme_audit_anchor_synchronization"
+    },
+    {
+      "version": "v0.2b",
+      "class": "public_format_directory_box_lock"
+    },
+    {
+      "version": "v0.2b1",
+      "class": "public_anchor_directory_table_repair"
+    },
+    {
+      "version": "v0.2b2",
+      "class": "readme_render_hygiene_badge_status_guard"
+    },
+    {
+      "version": "v0.2b3",
+      "class": "readme_structure_public_sync_tau_lessons"
+    },
+    {
+      "version": "v0.2b3a",
+      "class": "readme_structure_validator_repair_public_sync_phase_split"
+    },
+    {
+      "version": "v0.2b3b",
+      "name": "Failed Stable Public Sync Attempt",
+      "status": "failed-useful-tagged-layer",
+      "lesson": "Relative path writes and line-by-line execution caused incomplete repair.",
+      "next": "v0.2b3c"
+    },
+    {
+      "version": "v0.2b3c",
+      "name": "Root-Anchored Stable Public Sync Repair",
+      "status": "repair-layer",
+      "previous": "v0.2b3b",
+      "next": "v0.3",
+      "non_claim_lock": "Repository-state sync is not runtime correctness."
+    },
+    {
+      "version": "v0.2b3d",
+      "name": "Validator Expectation Alignment",
+      "status": "repair-layer",
+      "previous": "v0.2b3c",
+      "next": "v0.3",
+      "non_claim_lock": "Validator alignment is not runtime correctness."
+    },
+    {
+      "version": "v0.2b3e",
+      "name": "Release Gate Truth Enforcement",
+      "status": "repair-layer",
+      "previous": "v0.2b3d",
+      "next": "v0.3",
+      "non_claim_lock": "Release-gate truth is not runtime correctness."
+    },
+    {
+      "version": "v0.3a",
+      "name": "Reflective Git Geometry Contract",
+      "status": "geometry-contract-layer",
+      "previous": "v0.2b3e",
+      "next": "v0.3b",
+      "non_claim_lock": "Reflective Git geometry is not code correctness."
+    },
+    {
+      "version": "v0.3a1",
+      "name": "Stable Reflective Geometry Evidence Boundary",
+      "status": "geometry-readme-api-alignment-repair",
+      "previous": "v0.3a",
+      "next": "v0.3b",
+      "non_claim_lock": "Stable reflective geometry and API-readiness alignment are not code correctness."
+    },
+    {
+      "version": "v0.3a2",
+      "name": "Pure Geometry Validation Boundary",
+      "status": "pure-validation-boundary",
+      "previous": "v0.3a1",
+      "next": "v0.3b",
+      "non_claim_lock": "Pure validation boundary is not code correctness."
+    },
+    {
+      "version": "v0.3b",
+      "name": "Feedback Quality and Lifecycle Engine",
+      "status": "feedback-lifecycle-layer",
+      "previous": "v0.3a2",
+      "next": "v0.3c",
+      "non_claim_lock": "Feedback lifecycle governance is not code correctness."
+    },
+    {
+      "version": "v0.3b1",
+      "name": "README and Mini README Reflective Feedback Alignment Lock",
+      "status": "surface-alignment-lock",
+      "previous": "v0.3b",
+      "next": "v0.3b2",
+      "non_claim_lock": "Surface alignment is not code correctness."
+    },
+    {
+      "version": "v0.3b1a",
+      "name": "Surface Alignment Repair and File-Run Guard",
+      "status": "alignment-repair-layer",
+      "previous": "v0.3b1",
+      "next": "v0.3b2",
+      "non_claim_lock": "Surface alignment repair is not code correctness."
+    },
+    {
+      "version": "v0.3b2",
+      "name": "Multi-Level Geometric Alignment Feedback Lock",
+      "status": "core-runtime-alignment-layer",
+      "previous": "v0.3b1a",
+      "next": "v0.3b3",
+      "non_claim_lock": "Multi-level alignment is not code correctness."
+    },
+    {
+      "version": "v0.3b2a1",
+      "name": "README Documentation Coherence Repair",
+      "status": "documentation-coherence-repair",
+      "previous": "v0.3b2a",
+      "next": "v0.3b3",
+      "non_claim_lock": "Documentation coherence is not code correctness."
+    }
+  ],
+  "next_anchor": "CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger",
+  "non_claim_locks": {
+    "release_seal_is_not_external_validation": true,
+    "version_registry_is_not_truth": true,
+    "markdown_structure_is_not_code_correctness": true,
+    "public_sync_is_not_external_validation": true
+  },
+  "latest_version": "v0.3b2a1",
+  "current_checkpoint": "CMS-SA v0.3b2a1 - README Documentation Coherence Repair",
+  "updated_at": "2026-06-02T13:34:23.6082341-04:00",
+  "previous_version": "v0.3b2a"
 }

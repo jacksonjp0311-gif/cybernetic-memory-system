@@ -4,7 +4,7 @@
     "required_surface_coverage": 1.0,
     "mini_readme_presence": 1.0,
     "version_memory_presence": 1.0,
-    "python_source_presence": 0.14285714285714285
+    "python_source_presence": 0.14326647564469913
   },
   "contracts": [
     {

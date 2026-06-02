@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2a1-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b2 - Multi-Level Geometric Alignment Feedback Lock**  
-Previous seal: **CMS-SA v0.3b1 - README and Mini README Reflective Feedback Alignment Lock**
+Current checkpoint: **CMS-SA v0.3b2a1 - README Documentation Coherence Repair**  
+Previous seal: **CMS-SA v0.3b2a - README Documentation Coherence Seal**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -42,8 +42,7 @@ Core law:
 | v0.1 Runtime Scaffold | What package/CLI surfaces exist? | `src/cms/`, `pyproject.toml` |
 | v0.1.1 Lineage Recorder | Where are versions and injections recorded? | `outputs/version_registry/cms_version_registry.json` |
 | v0.1.2 RCC-N README Enhancement | Are root and mini README surfaces navigable? | `reports/readme/latest_readme_mini_repo_audit.md` |
-| v0.2 Runtime Observation and Metric Contracts | Does the runtime emit observation, metric, drift, and evidence artifacts? | `outputs/evidence/
-outputs/feedback/latest_evidence_package.json` |
+| v0.2 Runtime Observation and Metric Contracts | Does the runtime emit observation, metric, drift, and evidence artifacts? | `outputs/evidence/latest_evidence_package.json` |
 | v0.2a README/Audit Anchor Sync | Does README audit grammar agree with runtime state? | `reports/readme/latest_readme_mini_repo_audit.md` |
 | v0.2b Public Format / Directory Lock | Is the public directory contract present? | `docs/directory/cms_full_directory_box_v0_2b.json` |
 | v0.2b1 Anchor/Table Repair | Are public anchors and directory rows inspectable? | `reports/directory/latest_directory_box_validation.md` |
@@ -55,6 +54,7 @@ outputs/feedback/latest_evidence_package.json` |
 | v0.3b Feedback Lifecycle Engine | Can findings become typed, scored, downgrade-safe feedback objects? | `reports/feedback/latest_feedback_lifecycle_report.md` |
 | v0.3b1a Surface Alignment Repair | Does section-level README, mini README, validator, report, and registry alignment hold? | `reports/surface_alignment/latest_surface_alignment_report.md` |
 | v0.3b2 Multi-Level Geometric Alignment | Do feedback items bind to geometry, validators, evidence, routes, registry, and public surfaces? | `reports/alignment/latest_multilevel_alignment_report.md` |
+| v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
 
@@ -80,8 +80,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b2 |
-| Previous seal | CMS-SA v0.3b1a |
+| Current checkpoint | CMS-SA v0.3b2a1 |
+| Previous seal | CMS-SA v0.3b2a |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -97,8 +97,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Latest observation manifest | `outputs/state/latest_observation_manifest.json` |
 | Latest metric evaluation | `outputs/metrics/latest_metric_evaluation.json` |
 | Latest drift report | `outputs/drift/latest_drift_report.json` |
-| Latest evidence package | `outputs/evidence/
-outputs/feedback/latest_evidence_package.json` |
+| Latest evidence package | `outputs/evidence/latest_evidence_package.json` |
 | Latest reflective Git geometry | `outputs/geometry/latest_reflective_git_geometry.json` |
 | Geometry validation report | `reports/geometry/latest_reflective_git_geometry_validation.md` |
 | Latest feedback lifecycle report | `outputs/feedback/latest_feedback_lifecycle_report.json` |
@@ -106,6 +105,10 @@ outputs/feedback/latest_evidence_package.json` |
 | Surface alignment report | `reports/surface_alignment/latest_surface_alignment_report.md` |
 | Multi-level alignment report | `outputs/alignment/latest_multilevel_alignment_report.json` |
 | Multi-level alignment validation | `reports/alignment/latest_multilevel_alignment_validation.md` |
+| Runtime decision kernel | `planned: v0.3b3` |
+| Alignment layer count | `10` |
+| Feedback items aligned | `3` |
+| Feedback items checked | `3` |
 
 ## Quick Start
 
@@ -122,19 +125,16 @@ python scripts/validation/validate_runtime_observation_v0_2.py
 python scripts/validation/validate_directory_box_v0_2b.py
 python scripts/validation/validate_readme_render_hygiene_v0_2b2.py
 python scripts/validation/validate_markdown_structure_v0_2b3.py
-python scripts/validation/validate_public_sync_v0_2b3.py
 python scripts/geometry/emit_reflective_git_geometry.py
 python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
-python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
+python scripts/alignment/emit_multilevel_alignment_v0_3b2.py
+python scripts/validation/validate_reflective_git_geometry_v0_3.py
 python scripts/validation/validate_feedback_lifecycle_v0_3b.py
-python scripts/validation/validate_surface_alignment_v0_3b1a.py
 python scripts/validation/validate_surface_alignment_v0_3b2.py
 python scripts/validation/validate_multilevel_alignment_v0_3b2.py
-python scripts/alignment/emit_multilevel_alignment_v0_3b2.py
-
+python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
-python scripts/validation/validate_surface_alignment_v0_3b1.py
 python scripts/validate_release.py
 ```
 
@@ -145,8 +145,7 @@ python scripts/validate_release.py
 | CMS runtime | Observation, metric contracts, drift, evidence, CLI cycle | `src/cms/`, `configs/metrics/`, `tests/` |
 | RCC-N navigation | Agent and human orientation, routing, handoff, context indexes | `rcc/nexus/`, `docs/context/` |
 | Public surface governance | README audit, render hygiene, Markdown structure, public sync | `scripts/rcc/`, `scripts/validation/`, `reports/readme/` |
-| Evidence observability | Latest state, metrics, drift, evidence packages | `outputs/state/`, `outputs/metrics/`, `outputs/drift/`, `outputs/evidence/
-outputs/feedback/` |
+| Evidence observability | Latest state, metrics, drift, evidence packages | `outputs/state/`, `outputs/metrics/`, `outputs/drift/`, `outputs/evidence/`, `outputs/feedback/` |
 | Version and injection memory | Version registry, lineage ledger, injection ledger, release seals | `outputs/version_registry/`, `outputs/lineage/`, `docs/release_seals/` |
 | Reflection and process rules | Bounded process lessons, Law of Sufficient Form, badge/status discipline | `docs/reflection/`, `docs/process/` |
 | Reflective geometry | Git route geometry, geometry emission, read-only validation | `configs/geometry/`, `src/cms/geometry/`, `scripts/geometry/`, `outputs/geometry/`, `reports/geometry/` |
@@ -173,9 +172,7 @@ Historical detail should live in archive reports, version docs, injections, and 
 | `reports/render_hygiene/latest_readme_render_hygiene.md` | Current render hygiene validation |
 | `reports/markdown_structure/latest_markdown_structure.md` | Current Markdown structure validation |
 | `reports/public_sync/latest_public_sync_report.md` | Current public sync validation |
-| `reports/release/
-reports/feedback/
-reports/surface_alignment/latest_release_readiness.md` | Current release readiness report |
+| `reports/release/latest_release_readiness.md` | Current release readiness report |
 | `docs/reflection/law_of_sufficient_form_v0_2b3.md` | Bounded reflection on governed form |
 
 ## PART I - Human README
@@ -261,7 +258,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | `scripts/validation/validate_public_sync_v0_2b3.py` | Local/origin/version registry sync validator. |
 | `scripts/feedback/emit_feedback_lifecycle_v0_3b.py` | Feedback lifecycle emitter. |
 | `scripts/validation/validate_feedback_lifecycle_v0_3b.py` | Feedback lifecycle validator. |
-| `scripts/validation/validate_surface_alignment_v0_3b1a.py` | Root and mini README alignment validator. |
+| `scripts/validation/validate_surface_alignment_v0_3b2.py` | Root and mini README alignment validator. |
 
 ### RCC Nexus Echo Location
 
@@ -270,7 +267,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b2 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b2a1 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -303,9 +300,7 @@ After editing, run the validation command associated with the changed surface.
 | Directory structure patch | root Full Directory Box, affected mini READMEs, context indexes | directory validator + README audit + RCC-N |
 | Badge/status patch | `README.md`, latest reports, version registry | render hygiene + README audit + release validation |
 | Public sync patch | `README.md`, version registry, Git state | public sync + Markdown structure + README audit |
-| Release/docs patch | `docs/`, `reports/release/
-reports/feedback/
-reports/surface_alignment/`, version registry | release validation + README audit |
+| Release/docs patch | `docs/`, `reports/release/`, `reports/feedback/`, `reports/surface_alignment/`, version registry | release validation + README audit |
 
 ## README + Mini Repo Audit Map
 
@@ -328,9 +323,7 @@ A patch is incomplete if it changes code, folders, reports, evidence state, vali
 | 7 | `rcc/nexus/task_routing_matrix.md` | Human-readable task routing. |
 | 8 | Target folder `README.md` | Local folder role, inputs, outputs, and validation command. |
 | 9 | Sibling mini READMEs | Adjacent surfaces if routing or folder meaning changed. |
-| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/readme/`, `reports/directory/`, `reports/render_hygiene/`, `reports/markdown_structure/`, `reports/public_sync/`, and `reports/release/
-reports/feedback/
-reports/surface_alignment/`. |
+| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/readme/`, `reports/directory/`, `reports/render_hygiene/`, `reports/markdown_structure/`, `reports/public_sync/`, and `reports/release/`, `reports/feedback/`, `reports/surface_alignment/`. |
 
 ### Gap Classes the AI Must Detect
 
@@ -389,6 +382,8 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-018 | v0.3b1 alignment repair was pasted line-by-line and the expected version token self-mutated to v0.3b11 while section rows drifted. | The script was not run as a file, regex replacement was not idempotent, and section-level currentness was not fully normalized before validation. | Alignment repair scripts must be file-run, version-token updates must be idempotent, and stale root/mini README surfaces must fail surface alignment before release. |
 | CMS-L-019 | Feedback lifecycle and reflective Git geometry existed as adjacent surfaces but were not yet bound into one runtime alignment check. | Geometry, feedback, README, mini READMEs, reports, registry, route maps, and release state could each pass locally without proving cross-surface binding. | No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces. |
 | CMS-L-020 | Multi-level alignment was evaluated before the new version's public-sync report could exist. | Internal alignment and post-tag public synchronization are different temporal phases. | Multi-level alignment must require public-sync report presence, while the dedicated public-sync validator verifies HEAD/origin/tag/registry agreement after commit/tag/push. |
+| CMS-L-021 | v0.3b2 locked runtime alignment but README still carried malformed multiline paths and stale validator references. | Runtime correctness and public explanation are separate surfaces; a sealed runtime can still have public documentation drift. | After a major lock, run a documentation coherence seal that repairs README path render, Quick Start commands, public metrics, and future-boundary language. |
+| CMS-L-022 | v0.3b2a was pasted/run interactively and the README normalizer failed on a regex replacement escape before README/registry updates landed. | Python regex replacement strings treated backslashes in PowerShell paths as escape templates, while the script continued after a blocked step. | Documentation coherence scripts must use literal replacement functions for README code blocks and must not continue after a failed normalizer. |
 
 ### Failure Response Protocol
 
@@ -507,7 +502,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.3b1a. API work begins only after multi-level geometric alignment confirms root README, mini READMEs, route maps, validators, reports, geometry, feedback lifecycle, and release surfaces agree.
+API is not active in v0.3b2a1. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -566,12 +561,16 @@ python scripts/validation/validate_runtime_observation_v0_2.py
 python scripts/validation/validate_directory_box_v0_2b.py
 python scripts/validation/validate_readme_render_hygiene_v0_2b2.py
 python scripts/validation/validate_markdown_structure_v0_2b3.py
-python scripts/validation/validate_public_sync_v0_2b3.py
 python scripts/geometry/emit_reflective_git_geometry.py
 python scripts/feedback/emit_feedback_lifecycle_v0_3b.py
+python scripts/alignment/emit_multilevel_alignment_v0_3b2.py
+python scripts/validation/validate_reflective_git_geometry_v0_3.py
+python scripts/validation/validate_feedback_lifecycle_v0_3b.py
+python scripts/validation/validate_surface_alignment_v0_3b2.py
+python scripts/validation/validate_multilevel_alignment_v0_3b2.py
+python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
-python scripts/validation/validate_surface_alignment_v0_3b1.py
 python scripts/validate_release.py
 ```
 
@@ -630,8 +629,7 @@ This box is the durable public navigation spine. The full repository is validate
 | `outputs/metrics/` | Latest metric evaluation artifacts. |
 | `outputs/drift/` | Latest CMS drift reports and K/D coherence measures. |
 | `outputs/evidence/` | Latest evidence packages emitted by the runtime. |
-| `outputs/evidence/
-outputs/feedback/` | Latest evidence packages emitted by the runtime. |
+| `outputs/evidence/`, `outputs/feedback/` | Latest evidence packages emitted by the runtime. |
 | `outputs/lineage/` | Append-only lineage ledger entries for version continuity. |
 | `outputs/injections/` | Append-only injection ledger entries for repository evolution. |
 | `outputs/version_registry/` | Machine-readable version registry and next-anchor record. |
@@ -662,9 +660,7 @@ outputs/feedback/` | Latest evidence packages emitted by the runtime. |
 | `reports/render_hygiene/` | README render hygiene and badge/status validation reports. |
 | `reports/markdown_structure/` | Markdown line structure and public table rendering reports. |
 | `reports/public_sync/` | Local/origin/public checkpoint sync reports. |
-| `reports/release/
-reports/feedback/
-reports/surface_alignment/` | Release readiness reports and checkpoint validation outputs. |
+| `reports/release/`, `reports/feedback/`, `reports/surface_alignment/` | Release readiness reports and checkpoint validation outputs. |
 | `tests/` | Unit tests for runtime observation, metrics, drift, and evidence cycle. |
 | `examples/` | Future examples and walkthrough surfaces. |
 
@@ -702,3 +698,32 @@ API remains inactive. This layer is internal runtime coherence only.
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 
 Non-claim lock: multi-level alignment improves repository-bound cybernetic runtime coherence. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+## CMS-SA v0.3b2a1 - README Documentation Coherence Repair
+
+v0.3b2a1 repairs the incomplete v0.3b2a documentation seal. The v0.3b2a attempt created version docs and a tag, but the README normalizer failed before updating README, registry, and validator expectations.
+
+Repair rule:
+
+```text
+A documentation seal is not complete unless README, registry, validators,
+reports, public sync, and release tag all agree.
+```
+
+What v0.3b2 remains responsible for:
+
+```text
+feedback item -> route -> files -> geometry -> evidence -> validators
+-> README/public surface -> version registry -> release tag/public sync
+```
+
+What v0.3b2a1 repairs:
+
+- stale README checkpoint and previous-seal text,
+- stale Quick Start validation commands,
+- malformed multiline README paths,
+- documentation seal ledger continuity,
+- public checkpoint/tag agreement for the documentation repair.
+
+Non-claim lock: v0.3b2a1 improves public readability and repository navigation. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.

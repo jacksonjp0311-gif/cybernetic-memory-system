@@ -7,7 +7,7 @@ text = README.read_text(encoding="utf-8", errors="replace") if README.exists() e
 
 errors = []
 required_badges = [
-    "CMS--SA-v0.3b2",
+    "CMS--SA-v0.3b2a1",
     "RCC--N-passing",
     "architecture-passing",
     "lineage-recorded",
@@ -52,7 +52,7 @@ for section in required_sections:
 
 passed = not errors
 report = {
-    "schema": "CMS-SA-v0.3b2-readme-render-hygiene",
+    "schema": "CMS-SA-v0.3b2a1-readme-render-hygiene",
     "passed": passed,
     "errors": len(errors),
     "findings": errors,
@@ -65,7 +65,7 @@ out_md = ROOT / "reports" / "render_hygiene" / "latest_readme_render_hygiene.md"
 out_json.parent.mkdir(parents=True, exist_ok=True)
 out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
 out_md.write_text(
-    "# CMS-SA v0.3b2 README Render Hygiene\n\n"
+    "# CMS-SA v0.3b2a1 README Render Hygiene\n\n"
     f"- passed: `{passed}`\n"
     f"- errors: `{len(errors)}`\n"
     f"- checked_badges: `{len(required_badges)}`\n\n"
