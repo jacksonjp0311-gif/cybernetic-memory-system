@@ -15,6 +15,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `5af636f` | `` | `middle, outer` | `evidence, validation` | `reports, validator` | fix: clamp CMS-SA v0.3a1 render hygiene version token |
 | `d927c12` | `v0.3a1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, validation` | `core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: stabilize CMS-SA v0.3a geometry and align README API boundary |
 | `fec1db7` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
 | `c76a4d9` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | feat: add CMS-SA v0.3a reflective git geometry contract |
@@ -26,7 +27,6 @@
 | `5c39180` | `v0.2b3a` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b3 README structure validator |
 | `bdaf0a9` | `` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | docs: add CMS-SA v0.2b3 README structure public sync tau lessons |
 | `5982e59` | `v0.2b2` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: add CMS-SA v0.2b2 README render hygiene badge guard |
-| `8793d17` | `v0.2b1` | `center, middle, outer` | `agent, documentation, evidence, memory, release, validation` | `injections, lineage, public, rcc, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.2b public anchors and directory table |
 
 ## Stable Boundary Rule
 
