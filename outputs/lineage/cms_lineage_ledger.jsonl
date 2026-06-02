@@ -18,3 +18,5 @@
 
 {"injection":"docs/injections/v0_2b3a/cms_sa_v0_2b3a_injection_record.md","version":"v0.2b3a","release_seal":"docs/release_seals/cms_sa_v0_2b3a_release_seal.md","next_anchor":"CMS-SA v0.3 — Feedback Quality and Lifecycle Engine","ts":"2026-06-01T21:42:10.7789236-04:00","non_claim_lock":"validator repair is not code correctness","document":"docs/versions/v0_2b3a/cms_sa_v0_2b3a_readme_structure_validator_repair.md","event":"readme_structure_validator_repair_public_sync_phase_split"}
 
+{"event":"stable_public_sync_evidence_boundary","version":"v0.2b3b","next_anchor":"v0.3","timestamp":"2026-06-01T22:00:29.2800801-04:00","previous":"v0.2b3a","lesson":"Committed public-sync reports must not store volatile commit hashes."}
+
