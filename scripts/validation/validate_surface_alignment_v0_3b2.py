@@ -15,7 +15,7 @@ PREVIOUS_VERSION = "v0.3b2a2"
 
 ROOT_REQUIRED_TOKENS = [
     "CMS--SA-v0.3b2a3-blue",
-    "Current checkpoint: **CMS-SA v0.3b2a3 - README Documentation Coherence Repair**",
+    "Current checkpoint: **CMS-SA v0.3b2a3 - Version Token Normalization Seal**",
     "| Current checkpoint | CMS-SA v0.3b2a3 |",
     "| Previous seal | CMS-SA v0.3b2a2 |",
     "Multi-level alignment report",
