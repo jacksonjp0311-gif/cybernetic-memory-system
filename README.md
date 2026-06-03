@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b2a3-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b3-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b2a3 - Version Token Normalization Seal**
-Previous seal: **CMS-SA v0.3b2a2 - Surface Validator Compatibility Seal**
+Current checkpoint: **CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger**
+Previous seal: **CMS-SA v0.3b2a3 - Version Token Normalization Seal**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -54,6 +54,7 @@ Core law:
 | v0.3b Feedback Lifecycle Engine | Can findings become typed, scored, downgrade-safe feedback objects? | `reports/feedback/latest_feedback_lifecycle_report.md` |
 | v0.3b1a Surface Alignment Repair | Does section-level README, mini README, validator, report, and registry alignment hold? | `reports/surface_alignment/latest_surface_alignment_report.md` |
 | v0.3b2 Multi-Level Geometric Alignment | Do feedback items bind to geometry, validators, evidence, routes, registry, and public surfaces? | `reports/alignment/latest_multilevel_alignment_report.md` |
+| v0.3b3 Runtime Decision Kernel | Can validation signals produce one replayable runtime decision? | `reports/decision/latest_runtime_decision.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -80,8 +81,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b2a3 |
-| Previous seal | CMS-SA v0.3b2a2 |
+| Current checkpoint | CMS-SA v0.3b3 |
+| Previous seal | CMS-SA v0.3b2a3 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -105,7 +106,10 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Surface alignment report | `reports/surface_alignment/latest_surface_alignment_report.md` |
 | Multi-level alignment report | `outputs/alignment/latest_multilevel_alignment_report.json` |
 | Multi-level alignment validation | `reports/alignment/latest_multilevel_alignment_validation.md` |
-| Runtime decision kernel | `planned: v0.3b3` |
+| Runtime decision kernel | `active: v0.3b3` |
+| Replay ledger | `outputs/replay/runtime_decision_replay_ledger.jsonl` |
+| Runtime decision validation | `reports/decision/latest_runtime_decision_validation.md` |
+| Runtime decision | `outputs/decision/latest_runtime_decision.json` |
 | Alignment layer count | `10` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -132,6 +136,8 @@ python scripts/validation/validate_reflective_git_geometry_v0_3.py
 python scripts/validation/validate_feedback_lifecycle_v0_3b.py
 python scripts/validation/validate_surface_alignment_v0_3b2.py
 python scripts/validation/validate_multilevel_alignment_v0_3b2.py
+python scripts/decision/emit_runtime_decision_v0_3b3.py
+python scripts/validation/validate_runtime_decision_v0_3b3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -267,7 +273,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b2a3 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b3 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -384,6 +390,7 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-020 | Multi-level alignment was evaluated before the new version's public-sync report could exist. | Internal alignment and post-tag public synchronization are different temporal phases. | Multi-level alignment must require public-sync report presence, while the dedicated public-sync validator verifies HEAD/origin/tag/registry agreement after commit/tag/push. |
 | CMS-L-021 | v0.3b2 locked runtime alignment but README still carried malformed multiline paths and stale validator references. | Runtime correctness and public explanation are separate surfaces; a sealed runtime can still have public documentation drift. | After a major lock, run a documentation coherence seal that repairs README path render, Quick Start commands, public metrics, and future-boundary language. |
 | CMS-L-022 | v0.3b2a was pasted/run interactively and the README normalizer failed on a regex replacement escape before README/registry updates landed. | Python regex replacement strings treated backslashes in PowerShell paths as escape templates, while the script continued after a blocked step. | Documentation coherence scripts must use literal replacement functions for README code blocks and must not continue after a failed normalizer. |
+| CMS-L-025 | v0.3b2a3 showed validator truth, public sync truth, and volatile latest-run artifacts can diverge. | Latest runtime/evidence artifacts can rewrite during validation even when stable public release state is true. | Runtime decisions must distinguish validator truth, public sync truth, stable release evidence, volatile latest-run evidence, dirty-state blockers, and next allowed action. |
 | CMS-L-024 | v0.3b2a2 produced validator expectations like v0.3b2a2a22. | Broad version-token replacement rewrote already-updated version strings instead of using exact assigned constants. | Version advancement scripts must replace exact stale tokens only and must assert that no generated version token contains duplicated suffix patterns. |
 | CMS-L-023 | v0.3b2a1 advanced README/registry but alignment mini READMEs and multi-level alignment version surfaces still pointed at earlier lock tokens. | Documentation patches changed public version state without updating every validator-bound mini README and alignment report version surface. | A documentation checkpoint is not sealed until mini README tokens, registry version, alignment report version, and validator expectations all agree. |
 
@@ -504,7 +511,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.3b2a3. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.3b3. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -570,6 +577,8 @@ python scripts/validation/validate_reflective_git_geometry_v0_3.py
 python scripts/validation/validate_feedback_lifecycle_v0_3b.py
 python scripts/validation/validate_surface_alignment_v0_3b2.py
 python scripts/validation/validate_multilevel_alignment_v0_3b2.py
+python scripts/decision/emit_runtime_decision_v0_3b3.py
+python scripts/validation/validate_runtime_decision_v0_3b3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -663,6 +672,12 @@ This box is the durable public navigation spine. The full repository is validate
 | `reports/markdown_structure/` | Markdown line structure and public table rendering reports. |
 | `reports/public_sync/` | Local/origin/public checkpoint sync reports. |
 | `reports/release/`, `reports/feedback/`, `reports/surface_alignment/` | Release readiness reports and checkpoint validation outputs. |
+| `configs/decision/` | Runtime decision contracts for action classification. |
+| `src/cms/decision/` | Runtime Decision Kernel and decision hashing logic. |
+| `scripts/decision/` | Decision emitters that produce replayable decision artifacts. |
+| `outputs/decision/` | Latest runtime decision artifacts. |
+| `outputs/replay/` | Append-only runtime decision replay ledger. |
+| `reports/decision/` | Runtime decision validation reports. |
 | `tests/` | Unit tests for runtime observation, metrics, drift, and evidence cycle. |
 | `examples/` | Future examples and walkthrough surfaces. |
 
@@ -695,7 +710,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.3b2a3. This layer is internal runtime coherence only.
+API is not active in v0.3b3. This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 
@@ -771,3 +786,23 @@ passes that can rewrite already-updated tokens.
 ```
 
 Non-claim lock: v0.3b2a3 repairs repository documentation and validator token coherence only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+## CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger
+
+v0.3b3 adds a bounded runtime decision layer. It converts repository-bound validation surfaces into one typed decision object.
+
+Decision states:
+
+```text
+promote | block | downgrade | observe_only
+```
+
+Decision rule:
+
+```text
+Validators do not merely pass individually; they are aggregated into a replayable
+decision surface with a decision hash and ledger entry.
+```
+
+Non-claim lock: v0.3b3 decides repository-bound next action only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.

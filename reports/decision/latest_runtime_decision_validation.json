@@ -1,0 +1,10 @@
+{
+  "schema": "CMS-SA-v0.3b3-runtime-decision-validation",
+  "passed": true,
+  "version": "v0.3b3",
+  "errors": 0,
+  "findings": [],
+  "decision": "promote",
+  "decision_hash": "d531658bbc11c030d00c93f3910038c124f041c541c04b56e304c0ec991fce3b",
+  "non_claim_lock": "Runtime decision validation is repository-bound and does not prove code correctness."
+}

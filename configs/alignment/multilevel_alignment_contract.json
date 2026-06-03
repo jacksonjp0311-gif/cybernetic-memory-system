@@ -1,6 +1,6 @@
 {
-  "schema": "CMS-SA-v0.3b2a3-multilevel-alignment-contract",
-  "version": "v0.3b2a3",
+  "schema": "CMS-SA-v0.3b3-multilevel-alignment-contract",
+  "version": "v0.3b3",
   "name": "Multi-Level Geometric Alignment Feedback Lock",
   "core_rule": "No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.",
   "layers": [

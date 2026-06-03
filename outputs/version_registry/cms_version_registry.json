@@ -1,7 +1,7 @@
 {
   "schema": "CMS-SA-version-registry-v0.2b3a",
   "repository": "cybernetic-memory-system",
-  "current_version": "v0.3b2a3",
+  "current_version": "v0.3b3",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "versions": [
     {
@@ -158,17 +158,25 @@
       "previous": "v0.3b2a2",
       "next": "v0.3b3",
       "non_claim_lock": "Version token normalization is not code correctness."
+    },
+    {
+      "version": "v0.3b3",
+      "name": "Runtime Decision Kernel and Replay Ledger",
+      "status": "runtime-decision-kernel",
+      "previous": "v0.3b2a3",
+      "next": "v0.3b4",
+      "non_claim_lock": "Runtime decisions are repository-bound and do not prove correctness."
     }
   ],
-  "next_anchor": "CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger",
+  "next_anchor": "CMS-SA v0.3b4 - Negative Control and Downgrade Harness",
   "non_claim_locks": {
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true,
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true
   },
-  "latest_version": "v0.3b2a3",
-  "current_checkpoint": "CMS-SA v0.3b2a3 - Version Token Normalization Seal",
-  "updated_at": "2026-06-02T13:49:16.1065482-04:00",
-  "previous_version": "v0.3b2a2"
+  "latest_version": "v0.3b3",
+  "current_checkpoint": "CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger",
+  "updated_at": "2026-06-02T14:01:01.5611526-04:00",
+  "previous_version": "v0.3b2a3"
 }

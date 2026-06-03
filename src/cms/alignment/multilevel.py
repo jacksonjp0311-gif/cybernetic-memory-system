@@ -210,8 +210,8 @@ def build_multilevel_alignment_report() -> dict[str, Any]:
             findings.append(f"version_check_failed:{key}")
 
     return {
-        "schema": "CMS-SA-v0.3b2a3-multilevel-alignment-report",
-        "version": "v0.3b2a3",
+        "schema": "CMS-SA-v0.3b3-multilevel-alignment-report",
+        "version": "v0.3b3",
         "created_at": datetime.now(timezone.utc).isoformat(),
         "current_registry_version": version,
         "layers": layer_results,
@@ -230,7 +230,7 @@ def build_multilevel_alignment_report() -> dict[str, Any]:
 
 def report_to_markdown(report: dict[str, Any]) -> str:
     rows = [
-        "# CMS-SA v0.3b2a3 Multi-Level Alignment Report",
+        "# CMS-SA v0.3b3 Multi-Level Alignment Report",
         "",
         "| Field | Value |",
         "|---|---|",

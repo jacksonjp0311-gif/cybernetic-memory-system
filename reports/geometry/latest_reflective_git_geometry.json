@@ -1,7 +1,7 @@
 {
   "schema": "CMS-SA-v0.3a2-reflective-git-geometry",
   "version": "v0.3a2",
-  "current_registry_version": "v0.3b2a3",
+  "current_registry_version": "v0.3b3",
   "node_count": 12,
   "core_law": "A commit is not only a change; it is a routed event in repository geometry.",
   "secondary_law": "A repository learns when repeated routed events become constraints, validators, evidence surfaces, and future routing rules.",
@@ -10,17 +10,17 @@
   "pure_validation_boundary": true,
   "emission_validation_split": true,
   "skipped_report_refresh_commits": [
+    "28aa2ab",
     "1a3cd42",
     "fc36875",
     "9bf6341",
     "416eb35",
     "adb2eed",
     "a7f0156",
-    "9e13043",
-    "0b340e1"
+    "9e13043"
   ],
   "release_truth": {
-    "registry_current_version": "v0.3b2a3",
+    "registry_current_version": "v0.3b3",
     "head_origin_match": true,
     "readme_checkpoint_present": true,
     "release_tag_exists": false,
@@ -31,6 +31,677 @@
     "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
   },
   "nodes": [
+    {
+      "commit_hash": "c7daff2d2fb60a2867b747880af01bb7f9b77846",
+      "short_hash": "c7daff2",
+      "parents": [
+        "ae0ec36ff820871535cec96aa2a5a7d2ff6d18da"
+      ],
+      "tag": null,
+      "message": "chore: refresh CMS-SA v0.3b2a3 evidence and runtime reports",
+      "changed_files": [
+        "outputs/evidence/latest_evidence_package.json",
+        "outputs/state/latest_observation_manifest.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "surface_classes": [
+        {
+          "path": "outputs/evidence/latest_evidence_package.json",
+          "pattern": "outputs/evidence/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "outputs/state/latest_observation_manifest.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "reports/evidence/latest_evidence_package.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        }
+      ],
+      "shells": [
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence"
+      ],
+      "sectors": [
+        "reports",
+        "unclassified"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/evidence/latest_evidence_package.json",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "evidence_reports_touched": [
+        "outputs/evidence/latest_evidence_package.json",
+        "reports/evidence/latest_evidence_package.json"
+      ],
+      "release_truth": {
+        "registry_current_version": "v0.3b3",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
+        "stable_geometry_boundary": true,
+        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
+    {
+      "commit_hash": "ae0ec36ff820871535cec96aa2a5a7d2ff6d18da",
+      "short_hash": "ae0ec36",
+      "parents": [
+        "28aa2ab0c4b434b17fd7fef7a2cc3c87f3a0293b"
+      ],
+      "tag": null,
+      "message": "fix: seal CMS-SA v0.3b2a3 version token normalization",
+      "changed_files": [
+        "README.md",
+        "outputs/evidence/latest_evidence_package.json",
+        "outputs/state/latest_observation_manifest.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md",
+        "reports/surface_alignment/latest_surface_alignment_report.json",
+        "reports/surface_alignment/latest_surface_alignment_report.md",
+        "scripts/validation/validate_surface_alignment_v0_3b2.py"
+      ],
+      "surface_classes": [
+        {
+          "path": "README.md",
+          "pattern": "README.md",
+          "shell": "outer",
+          "meridian": "documentation",
+          "sector": "public"
+        },
+        {
+          "path": "outputs/evidence/latest_evidence_package.json",
+          "pattern": "outputs/evidence/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "outputs/state/latest_observation_manifest.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "reports/evidence/latest_evidence_package.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/surface_alignment/latest_surface_alignment_report.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/surface_alignment/latest_surface_alignment_report.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "scripts/validation/validate_surface_alignment_v0_3b2.py",
+          "pattern": "scripts/validation/",
+          "shell": "middle",
+          "meridian": "validation",
+          "sector": "validator"
+        }
+      ],
+      "shells": [
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence",
+        "validation"
+      ],
+      "sectors": [
+        "public",
+        "reports",
+        "unclassified",
+        "validator"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/evidence/latest_evidence_package.json",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md",
+        "reports/surface_alignment/latest_surface_alignment_report.json",
+        "reports/surface_alignment/latest_surface_alignment_report.md",
+        "scripts/validation/validate_surface_alignment_v0_3b2.py"
+      ],
+      "evidence_reports_touched": [
+        "outputs/evidence/latest_evidence_package.json",
+        "reports/evidence/latest_evidence_package.json"
+      ],
+      "release_truth": {
+        "registry_current_version": "v0.3b3",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
+        "stable_geometry_boundary": true,
+        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
+    {
+      "commit_hash": "25522b9c4eaacc8c569f7f68481f31250a763fd5",
+      "short_hash": "25522b9",
+      "parents": [
+        "1a3cd42cc0963b8dafbaab071b9c4b87d8d7706d"
+      ],
+      "tag": "v0.3b2a3",
+      "message": "fix: seal CMS-SA v0.3b2a3 version token normalization",
+      "changed_files": [
+        "README.md",
+        "configs/alignment/README.md",
+        "configs/alignment/multilevel_alignment_contract.json",
+        "docs/injections/v0_3b2a3/cms_sa_v0_3b2a3_injection_record.md",
+        "docs/release_seals/cms_sa_v0_3b2a3_release_seal.md",
+        "docs/versions/v0_3b2a3/cms_sa_v0_3b2a3_version_token_normalization_seal.md",
+        "outputs/alignment/README.md",
+        "outputs/alignment/latest_multilevel_alignment_report.json",
+        "outputs/documents/v0_3b2a3/cms_sa_v0_3b2a3_version_token_normalization_seal.md",
+        "outputs/evidence/latest_evidence_package.json",
+        "outputs/geometry/latest_reflective_git_geometry.json",
+        "outputs/injections/cms_injection_ledger.jsonl",
+        "outputs/lineage/cms_lineage_ledger.jsonl",
+        "outputs/metrics/latest_metric_evaluation.json",
+        "outputs/release_seals/cms_sa_v0_3b2a3_release_seal.md",
+        "outputs/state/latest_observation_manifest.json",
+        "outputs/version_registry/cms_version_registry.json",
+        "reports/alignment/README.md",
+        "reports/alignment/latest_multilevel_alignment_report.json",
+        "reports/alignment/latest_multilevel_alignment_report.md",
+        "reports/alignment/latest_multilevel_alignment_validation.json",
+        "reports/alignment/latest_multilevel_alignment_validation.md",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/geometry/latest_reflective_git_geometry_validation.json",
+        "reports/geometry/latest_reflective_git_geometry_validation.md",
+        "reports/markdown_structure/latest_markdown_structure.json",
+        "reports/markdown_structure/latest_markdown_structure.md",
+        "reports/metric_contracts/latest_metric_evaluation.json",
+        "reports/metric_contracts/latest_metric_evaluation.md",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/readme/latest_readme_mini_repo_audit.md",
+        "reports/render_hygiene/latest_readme_render_hygiene.json",
+        "reports/render_hygiene/latest_readme_render_hygiene.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md",
+        "reports/surface_alignment/latest_surface_alignment_report.json",
+        "reports/surface_alignment/latest_surface_alignment_report.md",
+        "scripts/alignment/README.md",
+        "scripts/alignment/emit_multilevel_alignment_v0_3b2.py",
+        "scripts/repair_version_token_normalization_v0_3b2a3.py",
+        "scripts/validation/validate_multilevel_alignment_v0_3b2.py",
+        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
+        "scripts/validation/validate_surface_alignment_v0_3b2.py",
+        "src/cms/alignment/README.md",
+        "src/cms/alignment/multilevel.py"
+      ],
+      "surface_classes": [
+        {
+          "path": "README.md",
+          "pattern": "README.md",
+          "shell": "outer",
+          "meridian": "documentation",
+          "sector": "public"
+        },
+        {
+          "path": "configs/alignment/README.md",
+          "pattern": "configs/",
+          "shell": "center",
+          "meridian": "source",
+          "sector": "contract"
+        },
+        {
+          "path": "configs/alignment/multilevel_alignment_contract.json",
+          "pattern": "configs/",
+          "shell": "center",
+          "meridian": "source",
+          "sector": "contract"
+        },
+        {
+          "path": "docs/injections/v0_3b2a3/cms_sa_v0_3b2a3_injection_record.md",
+          "pattern": "docs/injections/",
+          "shell": "outer",
+          "meridian": "documentation",
+          "sector": "injections"
+        },
+        {
+          "path": "docs/release_seals/cms_sa_v0_3b2a3_release_seal.md",
+          "pattern": "docs/release_seals/",
+          "shell": "outer",
+          "meridian": "release",
+          "sector": "seal"
+        },
+        {
+          "path": "docs/versions/v0_3b2a3/cms_sa_v0_3b2a3_version_token_normalization_seal.md",
+          "pattern": "docs/versions/",
+          "shell": "outer",
+          "meridian": "documentation",
+          "sector": "versions"
+        },
+        {
+          "path": "outputs/alignment/README.md",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/alignment/latest_multilevel_alignment_report.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/documents/v0_3b2a3/cms_sa_v0_3b2a3_version_token_normalization_seal.md",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/evidence/latest_evidence_package.json",
+          "pattern": "outputs/evidence/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "outputs/geometry/latest_reflective_git_geometry.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/injections/cms_injection_ledger.jsonl",
+          "pattern": "outputs/injections/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "outputs/lineage/cms_lineage_ledger.jsonl",
+          "pattern": "outputs/lineage/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "outputs/metrics/latest_metric_evaluation.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/release_seals/cms_sa_v0_3b2a3_release_seal.md",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/state/latest_observation_manifest.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/version_registry/cms_version_registry.json",
+          "pattern": "outputs/version_registry/",
+          "shell": "center",
+          "meridian": "memory",
+          "sector": "lineage"
+        },
+        {
+          "path": "reports/alignment/README.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/alignment/latest_multilevel_alignment_report.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/alignment/latest_multilevel_alignment_report.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/alignment/latest_multilevel_alignment_validation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/alignment/latest_multilevel_alignment_validation.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/evidence/latest_evidence_package.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry_validation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry_validation.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/markdown_structure/latest_markdown_structure.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/markdown_structure/latest_markdown_structure.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/metric_contracts/latest_metric_evaluation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/metric_contracts/latest_metric_evaluation.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/readme/latest_readme_mini_repo_audit.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/readme/latest_readme_mini_repo_audit.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/render_hygiene/latest_readme_render_hygiene.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/render_hygiene/latest_readme_render_hygiene.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/surface_alignment/latest_surface_alignment_report.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/surface_alignment/latest_surface_alignment_report.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "scripts/alignment/README.md",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "scripts/alignment/emit_multilevel_alignment_v0_3b2.py",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "scripts/repair_version_token_normalization_v0_3b2a3.py",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "scripts/validation/validate_multilevel_alignment_v0_3b2.py",
+          "pattern": "scripts/validation/",
+          "shell": "middle",
+          "meridian": "validation",
+          "sector": "validator"
+        },
+        {
+          "path": "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
+          "pattern": "scripts/validation/",
+          "shell": "middle",
+          "meridian": "validation",
+          "sector": "validator"
+        },
+        {
+          "path": "scripts/validation/validate_surface_alignment_v0_3b2.py",
+          "pattern": "scripts/validation/",
+          "shell": "middle",
+          "meridian": "validation",
+          "sector": "validator"
+        },
+        {
+          "path": "src/cms/alignment/README.md",
+          "pattern": "src/cms/",
+          "shell": "inner",
+          "meridian": "runtime",
+          "sector": "core"
+        },
+        {
+          "path": "src/cms/alignment/multilevel.py",
+          "pattern": "src/cms/",
+          "shell": "inner",
+          "meridian": "runtime",
+          "sector": "core"
+        }
+      ],
+      "shells": [
+        "center",
+        "inner",
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence",
+        "memory",
+        "release",
+        "runtime",
+        "source",
+        "validation"
+      ],
+      "sectors": [
+        "contract",
+        "core",
+        "injections",
+        "lineage",
+        "public",
+        "reports",
+        "seal",
+        "unclassified",
+        "validator",
+        "versions"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/alignment/README.md",
+        "reports/alignment/latest_multilevel_alignment_report.json",
+        "reports/alignment/latest_multilevel_alignment_report.md",
+        "reports/alignment/latest_multilevel_alignment_validation.json",
+        "reports/alignment/latest_multilevel_alignment_validation.md",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/geometry/latest_reflective_git_geometry_validation.json",
+        "reports/geometry/latest_reflective_git_geometry_validation.md",
+        "reports/markdown_structure/latest_markdown_structure.json",
+        "reports/markdown_structure/latest_markdown_structure.md",
+        "reports/metric_contracts/latest_metric_evaluation.json",
+        "reports/metric_contracts/latest_metric_evaluation.md",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/readme/latest_readme_mini_repo_audit.md",
+        "reports/render_hygiene/latest_readme_render_hygiene.json",
+        "reports/render_hygiene/latest_readme_render_hygiene.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md",
+        "reports/surface_alignment/latest_surface_alignment_report.json",
+        "reports/surface_alignment/latest_surface_alignment_report.md",
+        "scripts/validation/validate_multilevel_alignment_v0_3b2.py",
+        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
+        "scripts/validation/validate_surface_alignment_v0_3b2.py"
+      ],
+      "evidence_reports_touched": [
+        "outputs/evidence/latest_evidence_package.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/readme/latest_readme_mini_repo_audit.md"
+      ],
+      "release_truth": {
+        "registry_current_version": "v0.3b3",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
+        "stable_geometry_boundary": true,
+        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
     {
       "commit_hash": "5241f3f1d994ae1a066f4045b7f9ddf053e5a3ca",
       "short_hash": "5241f3f",
@@ -463,7 +1134,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -845,7 +1516,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -1071,7 +1742,7 @@
         "reports/evidence/latest_evidence_package.json"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -1556,7 +2227,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -1621,7 +2292,7 @@
       ],
       "evidence_reports_touched": [],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -2048,7 +2719,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -2467,7 +3138,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -2885,7 +3556,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
@@ -3225,480 +3896,7 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.3b2a3",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": false,
-        "release_tag_is_ancestor_of_head": false,
-        "stable_geometry_boundary": true,
-        "report_refresh_commits_excluded": true,
-        "pure_validation_boundary": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "f6a25fa573417917c86dc53ac63d5f07350eb5de",
-      "short_hash": "f6a25fa",
-      "parents": [
-        "5af636ff7bfd747a8c5577eed0d807b4e51dd02f"
-      ],
-      "tag": null,
-      "message": "chore: seal CMS-SA v0.3a1 final geometry reflection",
-      "changed_files": [
-        "outputs/geometry/latest_reflective_git_geometry.json",
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/geometry/latest_reflective_git_geometry.md"
-      ],
-      "surface_classes": [
-        {
-          "path": "outputs/geometry/latest_reflective_git_geometry.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        }
-      ],
-      "shells": [
-        "middle",
-        "outer"
-      ],
-      "meridians": [
-        "documentation",
-        "evidence"
-      ],
-      "sectors": [
-        "reports",
-        "unclassified"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/geometry/latest_reflective_git_geometry.md"
-      ],
-      "evidence_reports_touched": [],
-      "release_truth": {
-        "registry_current_version": "v0.3b2a3",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": false,
-        "release_tag_is_ancestor_of_head": false,
-        "stable_geometry_boundary": true,
-        "report_refresh_commits_excluded": true,
-        "pure_validation_boundary": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "5af636ff7bfd747a8c5577eed0d807b4e51dd02f",
-      "short_hash": "5af636f",
-      "parents": [
-        "0b340e1a6970af827eaf6ee0144d7c13b636481d"
-      ],
-      "tag": null,
-      "message": "fix: clamp CMS-SA v0.3a1 render hygiene version token",
-      "changed_files": [
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py"
-      ],
-      "surface_classes": [
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
-          "pattern": "scripts/validation/",
-          "shell": "middle",
-          "meridian": "validation",
-          "sector": "validator"
-        }
-      ],
-      "shells": [
-        "middle",
-        "outer"
-      ],
-      "meridians": [
-        "evidence",
-        "validation"
-      ],
-      "sectors": [
-        "reports",
-        "validator"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py"
-      ],
-      "evidence_reports_touched": [],
-      "release_truth": {
-        "registry_current_version": "v0.3b2a3",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": false,
-        "release_tag_is_ancestor_of_head": false,
-        "stable_geometry_boundary": true,
-        "report_refresh_commits_excluded": true,
-        "pure_validation_boundary": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "d927c120cacff6f8076873f871504cec4b2f276a",
-      "short_hash": "d927c12",
-      "parents": [
-        "b6fe932da51eef583788ff7eef0f5e7fc08a918b"
-      ],
-      "tag": "v0.3a1",
-      "message": "fix: stabilize CMS-SA v0.3a geometry and align README API boundary",
-      "changed_files": [
-        "README.md",
-        "docs/injections/v0_3a1/cms_sa_v0_3a1_injection_record.md",
-        "docs/release_seals/cms_sa_v0_3a1_release_seal.md",
-        "docs/roadmap/CMS_ROADMAP.md",
-        "docs/versions/v0_3a1/cms_sa_v0_3a1_stable_reflective_geometry_evidence_boundary.md",
-        "outputs/documents/v0_3a1/cms_sa_v0_3a1_stable_reflective_geometry_evidence_boundary.md",
-        "outputs/evidence/latest_evidence_package.json",
-        "outputs/geometry/latest_reflective_git_geometry.json",
-        "outputs/injections/cms_injection_ledger.jsonl",
-        "outputs/lineage/cms_lineage_ledger.jsonl",
-        "outputs/metrics/latest_metric_evaluation.json",
-        "outputs/release_seals/cms_sa_v0_3a1_release_seal.md",
-        "outputs/state/latest_observation_manifest.json",
-        "outputs/version_registry/cms_version_registry.json",
-        "reports/evidence/latest_evidence_package.json",
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/geometry/latest_reflective_git_geometry.md",
-        "reports/geometry/latest_reflective_git_geometry_validation.json",
-        "reports/geometry/latest_reflective_git_geometry_validation.md",
-        "reports/markdown_structure/latest_markdown_structure.json",
-        "reports/markdown_structure/latest_markdown_structure.md",
-        "reports/metric_contracts/latest_metric_evaluation.json",
-        "reports/metric_contracts/latest_metric_evaluation.md",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "reports/runtime_observation/latest_observation_manifest.json",
-        "reports/runtime_observation/latest_observation_manifest.md",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
-        "scripts/validation/validate_reflective_git_geometry_v0_3.py",
-        "src/cms/geometry/git_geometry.py"
-      ],
-      "surface_classes": [
-        {
-          "path": "README.md",
-          "pattern": "README.md",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "public"
-        },
-        {
-          "path": "docs/injections/v0_3a1/cms_sa_v0_3a1_injection_record.md",
-          "pattern": "docs/injections/",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "injections"
-        },
-        {
-          "path": "docs/release_seals/cms_sa_v0_3a1_release_seal.md",
-          "pattern": "docs/release_seals/",
-          "shell": "outer",
-          "meridian": "release",
-          "sector": "seal"
-        },
-        {
-          "path": "docs/roadmap/CMS_ROADMAP.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "docs/versions/v0_3a1/cms_sa_v0_3a1_stable_reflective_geometry_evidence_boundary.md",
-          "pattern": "docs/versions/",
-          "shell": "outer",
-          "meridian": "documentation",
-          "sector": "versions"
-        },
-        {
-          "path": "outputs/documents/v0_3a1/cms_sa_v0_3a1_stable_reflective_geometry_evidence_boundary.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/evidence/latest_evidence_package.json",
-          "pattern": "outputs/evidence/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "outputs/geometry/latest_reflective_git_geometry.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/injections/cms_injection_ledger.jsonl",
-          "pattern": "outputs/injections/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "outputs/lineage/cms_lineage_ledger.jsonl",
-          "pattern": "outputs/lineage/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "outputs/metrics/latest_metric_evaluation.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/release_seals/cms_sa_v0_3a1_release_seal.md",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/state/latest_observation_manifest.json",
-          "pattern": "unclassified",
-          "shell": "middle",
-          "meridian": "documentation",
-          "sector": "unclassified"
-        },
-        {
-          "path": "outputs/version_registry/cms_version_registry.json",
-          "pattern": "outputs/version_registry/",
-          "shell": "center",
-          "meridian": "memory",
-          "sector": "lineage"
-        },
-        {
-          "path": "reports/evidence/latest_evidence_package.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry_validation.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/geometry/latest_reflective_git_geometry_validation.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/markdown_structure/latest_markdown_structure.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/markdown_structure/latest_markdown_structure.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/metric_contracts/latest_metric_evaluation.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/metric_contracts/latest_metric_evaluation.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/readme/latest_readme_mini_repo_audit.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/readme/latest_readme_mini_repo_audit.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/render_hygiene/latest_readme_render_hygiene.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/runtime_observation/latest_observation_manifest.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/runtime_observation/latest_observation_manifest.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
-          "pattern": "scripts/validation/",
-          "shell": "middle",
-          "meridian": "validation",
-          "sector": "validator"
-        },
-        {
-          "path": "scripts/validation/validate_reflective_git_geometry_v0_3.py",
-          "pattern": "scripts/validation/",
-          "shell": "middle",
-          "meridian": "validation",
-          "sector": "validator"
-        },
-        {
-          "path": "src/cms/geometry/git_geometry.py",
-          "pattern": "src/cms/",
-          "shell": "inner",
-          "meridian": "runtime",
-          "sector": "core"
-        }
-      ],
-      "shells": [
-        "center",
-        "inner",
-        "middle",
-        "outer"
-      ],
-      "meridians": [
-        "documentation",
-        "evidence",
-        "memory",
-        "release",
-        "runtime",
-        "validation"
-      ],
-      "sectors": [
-        "core",
-        "injections",
-        "lineage",
-        "public",
-        "reports",
-        "seal",
-        "unclassified",
-        "validator",
-        "versions"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/evidence/latest_evidence_package.json",
-        "reports/geometry/latest_reflective_git_geometry.json",
-        "reports/geometry/latest_reflective_git_geometry.md",
-        "reports/geometry/latest_reflective_git_geometry_validation.json",
-        "reports/geometry/latest_reflective_git_geometry_validation.md",
-        "reports/markdown_structure/latest_markdown_structure.json",
-        "reports/markdown_structure/latest_markdown_structure.md",
-        "reports/metric_contracts/latest_metric_evaluation.json",
-        "reports/metric_contracts/latest_metric_evaluation.md",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md",
-        "reports/render_hygiene/latest_readme_render_hygiene.json",
-        "reports/render_hygiene/latest_readme_render_hygiene.md",
-        "reports/runtime_observation/latest_observation_manifest.json",
-        "reports/runtime_observation/latest_observation_manifest.md",
-        "scripts/validation/validate_readme_render_hygiene_v0_2b2.py",
-        "scripts/validation/validate_reflective_git_geometry_v0_3.py"
-      ],
-      "evidence_reports_touched": [
-        "outputs/evidence/latest_evidence_package.json",
-        "reports/evidence/latest_evidence_package.json",
-        "reports/readme/latest_readme_mini_repo_audit.json",
-        "reports/readme/latest_readme_mini_repo_audit.md"
-      ],
-      "release_truth": {
-        "registry_current_version": "v0.3b2a3",
+        "registry_current_version": "v0.3b3",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
         "release_tag_exists": false,
