@@ -7,7 +7,7 @@ Echo Location:
 | Shell | center |
 | Meridian | geometry, feedback, validation, evidence |
 | Sector | alignment |
-| Version / TTL | CMS-RCC-N-v0.3b5 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.0 / 180 days |
 | Last verified | 2026-06-02 |
 
 ## Purpose

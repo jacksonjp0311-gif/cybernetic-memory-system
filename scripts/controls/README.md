@@ -1,7 +1,7 @@
 
 # Control Emitters
 
-CMS-RCC-N-v0.3b5
+CMS-RCC-N-v0.4.0
 
 Purpose: Emission scripts that write negative-control harness artifacts.
 

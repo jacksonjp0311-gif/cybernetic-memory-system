@@ -1,7 +1,7 @@
 
 # Memory Reports
 
-CMS-RCC-N-v0.3b5
+CMS-RCC-N-v0.4.0
 
 Purpose: human-readable and JSON memory-promotion reports and validation results.
 

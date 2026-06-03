@@ -1,7 +1,7 @@
 
 # CMS Memory Runtime
 
-CMS-RCC-N-v0.3b5
+CMS-RCC-N-v0.4.0
 
 Purpose: memory promotion, downgrade preservation, observe-only preservation, and future cybernetic memory loop support.
 

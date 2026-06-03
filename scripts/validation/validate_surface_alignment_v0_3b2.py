@@ -10,23 +10,23 @@ REGISTRY = ROOT / "outputs" / "version_registry" / "cms_version_registry.json"
 REPORT_JSON = ROOT / "reports" / "surface_alignment" / "latest_surface_alignment_report.json"
 REPORT_MD = ROOT / "reports" / "surface_alignment" / "latest_surface_alignment_report.md"
 
-CURRENT_VERSION = "v0.3b5"
-PREVIOUS_VERSION = "v0.3b4"
+CURRENT_VERSION = "v0.4.0"
+PREVIOUS_VERSION = "v0.3b5"
 
 ROOT_REQUIRED_TOKENS = [
-    "CMS--SA-v0.3b5-blue",
-    "Current checkpoint: **CMS-SA v0.3b5 - Memory Promotion Kernel**",
-    "| Current checkpoint | CMS-SA v0.3b5 |",
-    "| Previous seal | CMS-SA v0.3b4 |",
+    "CMS--SA-v0.4.0-blue",
+    "Current checkpoint: **CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis**",
+    "| Current checkpoint | CMS-SA v0.4.0 |",
+    "| Previous seal | CMS-SA v0.3b5 |",
     "Multi-level alignment report",
     "reports/alignment/latest_multilevel_alignment_report.md",
     "reports/alignment/latest_multilevel_alignment_validation.md",
     "scripts/alignment/emit_multilevel_alignment_v0_3b2.py",
     "scripts/validation/validate_multilevel_alignment_v0_3b2.py",
     "scripts/validation/validate_surface_alignment_v0_3b2.py",
-    "CMS-RCC-N-v0.3b5 / 180 days",
+    "CMS-RCC-N-v0.4.0 / 180 days",
     "Pre-API Transmission Constraint Box",
-    "API is not active in v0.3b5",
+    "API is not active in v0.4.0",
     "CMS-L-019",
     "CMS-L-026",
     "Negative control harness",
@@ -45,21 +45,21 @@ STALE_FORBIDDEN_TOKENS = [
 ]
 
 MINI_README_EXPECTED = {
-    "configs/alignment/README.md": ["CMS-RCC-N-v0.3b5", "Multi-Level Alignment Contracts"],
-    "src/cms/alignment/README.md": ["CMS-RCC-N-v0.3b5", "Multi-Level Alignment Runtime"],
-    "scripts/alignment/README.md": ["CMS-RCC-N-v0.3b5", "Alignment Emitters"],
-    "outputs/alignment/README.md": ["CMS-RCC-N-v0.3b5", "Alignment Outputs"],
-    "reports/alignment/README.md": ["CMS-RCC-N-v0.3b5", "Alignment Reports"],
-    "configs/controls/README.md": ["CMS-RCC-N-v0.3b5", "Control Contracts"],
-    "src/cms/controls/README.md": ["CMS-RCC-N-v0.3b5", "Control Runtime"],
-    "scripts/controls/README.md": ["CMS-RCC-N-v0.3b5", "Control Emitters"],
-    "outputs/controls/README.md": ["CMS-RCC-N-v0.3b5", "Control Outputs"],
-    "reports/controls/README.md": ["CMS-RCC-N-v0.3b5", "Control Reports"],
-    "configs/memory/README.md": ["CMS-RCC-N-v0.3b5", "Memory Contracts"],
-    "src/cms/memory/README.md": ["CMS-RCC-N-v0.3b5", "CMS Memory Runtime"],
-    "scripts/memory/README.md": ["CMS-RCC-N-v0.3b5", "Memory Emitters"],
-    "outputs/memory/README.md": ["CMS-RCC-N-v0.3b5", "Memory Outputs"],
-    "reports/memory/README.md": ["CMS-RCC-N-v0.3b5", "Memory Reports"],
+    "configs/alignment/README.md": ["CMS-RCC-N-v0.4.0", "Multi-Level Alignment Contracts"],
+    "src/cms/alignment/README.md": ["CMS-RCC-N-v0.4.0", "Multi-Level Alignment Runtime"],
+    "scripts/alignment/README.md": ["CMS-RCC-N-v0.4.0", "Alignment Emitters"],
+    "outputs/alignment/README.md": ["CMS-RCC-N-v0.4.0", "Alignment Outputs"],
+    "reports/alignment/README.md": ["CMS-RCC-N-v0.4.0", "Alignment Reports"],
+    "configs/controls/README.md": ["CMS-RCC-N-v0.4.0", "Control Contracts"],
+    "src/cms/controls/README.md": ["CMS-RCC-N-v0.4.0", "Control Runtime"],
+    "scripts/controls/README.md": ["CMS-RCC-N-v0.4.0", "Control Emitters"],
+    "outputs/controls/README.md": ["CMS-RCC-N-v0.4.0", "Control Outputs"],
+    "reports/controls/README.md": ["CMS-RCC-N-v0.4.0", "Control Reports"],
+    "configs/memory/README.md": ["CMS-RCC-N-v0.4.0", "Memory Contracts"],
+    "src/cms/memory/README.md": ["CMS-RCC-N-v0.4.0", "CMS Memory Runtime"],
+    "scripts/memory/README.md": ["CMS-RCC-N-v0.4.0", "Memory Emitters"],
+    "outputs/memory/README.md": ["CMS-RCC-N-v0.4.0", "Memory Outputs"],
+    "reports/memory/README.md": ["CMS-RCC-N-v0.4.0", "Memory Reports"],
 }
 
 
@@ -104,7 +104,7 @@ def main() -> int:
                 findings.append(f"mini_readme_missing:{relative}:{token}")
 
     report = {
-        "schema": "CMS-SA-v0.3b5-surface-alignment-validation",
+        "schema": "CMS-SA-v0.4.0-surface-alignment-validation",
         "passed": len(findings) == 0,
         "errors": len(findings),
         "warnings": 0,
@@ -121,7 +121,7 @@ def main() -> int:
     REPORT_JSON.parent.mkdir(parents=True, exist_ok=True)
     REPORT_JSON.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     md = [
-        "# CMS-SA v0.3b5 Surface Alignment Validation",
+        "# CMS-SA v0.4.0 Surface Alignment Validation",
         "",
         "| Field | Value |",
         "|---|---|",

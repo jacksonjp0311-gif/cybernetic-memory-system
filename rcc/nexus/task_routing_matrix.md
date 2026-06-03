@@ -10,3 +10,5 @@
 | README patch | root and target mini README | `python scripts/rcc/audit_readme_surface.py` |
 | Architecture patch | `docs/architecture/`, `docs/protocols/` | `python scripts/validation/validate_architecture_contracts.py` |
 | Release patch | `docs/release_seals/`, `reports/release/` | release validator |
+
+| Thread rehydration | `docs/context/THREAD_REHYDRATION_PROTOCOL.md`, `outputs/version_registry/cms_version_registry.json`, latest validation reports | thread rehydration validation + README audit |

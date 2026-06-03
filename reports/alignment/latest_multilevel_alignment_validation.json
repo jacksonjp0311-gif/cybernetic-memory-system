@@ -1,5 +1,5 @@
 {
-  "schema": "CMS-SA-v0.3b5-multilevel-alignment-validation",
+  "schema": "CMS-SA-v0.4.0-multilevel-alignment-validation",
   "passed": true,
   "errors": 0,
   "warnings": 0,

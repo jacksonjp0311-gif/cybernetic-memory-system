@@ -1,15 +1,16 @@
 {
-  "current_checkpoint": "CMS-SA v0.3b5 - Memory Promotion Kernel",
-  "current_version": "v0.3b5",
-  "latest_version": "v0.3b5",
-  "next_anchor": "CMS-SA v0.4.0 - Cybernetic Memory Loop",
+  "current_checkpoint": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
+  "current_version": "v0.4.0",
+  "latest_version": "v0.4.0",
+  "next_anchor": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true,
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_version": "v0.3b4",
+  "previous_seal": "CMS-SA v0.3b5 - Memory Promotion Kernel",
+  "previous_version": "v0.3b5",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
@@ -193,6 +194,13 @@
       "previous": "v0.3b4",
       "status": "memory-promotion-layer",
       "version": "v0.3b5"
+    },
+    {
+      "checkpoint": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
+      "previous": "CMS-SA v0.3b5 - Memory Promotion Kernel",
+      "primary_report": "reports/loop/latest_cybernetic_memory_loop.md",
+      "status": "pending_validation",
+      "version": "v0.4.0"
     }
   ]
 }

@@ -1,7 +1,7 @@
 
 # Control Runtime
 
-CMS-RCC-N-v0.3b5
+CMS-RCC-N-v0.4.0
 
 Purpose: Runtime control harness for false-promote rejection, downgrade preservation, and observe-only preservation.
 

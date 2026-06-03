@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.3b5` |
+| current registry version | `v0.4.0` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
@@ -17,6 +17,8 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `58c3bf0` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b5 public sync seal |
+| `9cbfd7c` | `v0.3b5` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.3b5 memory promotion kernel |
 | `34dde02` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b4 public sync seal |
 | `15de47a` | `v0.3b4` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.3b4 negative control downgrade harness |
 | `b92391c` | `v0.3b3` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b3 runtime decision kernel |
@@ -27,8 +29,6 @@
 | `ba6e1a4` | `v0.3b2a1` | `center, middle, outer` | `documentation, evidence, memory, release, validation` | `injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b2a1 README documentation coherence |
 | `1fd9dae` | `v0.3b2a` | `center, middle, outer` | `documentation, evidence, memory, release` | `injections, lineage, reports, seal, unclassified, versions` | docs: seal CMS-SA v0.3b2a README documentation coherence |
 | `d73e1fc` | `v0.3b2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b2 multi-level alignment lock |
-| `87fbe81` | `` | `outer` | `documentation, evidence` | `public, reports` | fix: seal CMS-SA v0.3b1a pre-API alignment token |
-| `b32c307` | `v0.3b1a` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b1 surface alignment lock |
 
 ## Pure Validation Boundary
 

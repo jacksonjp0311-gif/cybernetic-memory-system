@@ -31,3 +31,15 @@ python -c "from cms.core.runtime import CMSRuntime; print('CMSRuntime import OK'
 python scripts/validate_release.py
 python -m unittest discover -s tests
 ```
+
+## Thread Rehydration Protocol
+
+Before proposing a new version in a fresh thread, scan:
+
+1. Origin theory.
+2. Software architecture.
+3. Runtime state.
+
+Core rule: theory tells why; architecture tells how; runtime tells now.
+
+No fresh-thread versioning without Origin Scan, Architecture Scan, and Runtime State Scan.

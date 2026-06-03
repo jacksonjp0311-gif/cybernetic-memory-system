@@ -29,3 +29,15 @@ Memory is not consciousness.
 Surface alignment is not code correctness.
 Validation is repository-bound.
 ```
+
+## Thread Rehydration Protocol
+
+Before proposing a new version in a fresh thread, scan:
+
+1. Origin theory.
+2. Software architecture.
+3. Runtime state.
+
+Core rule: theory tells why; architecture tells how; runtime tells now.
+
+No fresh-thread versioning without Origin Scan, Architecture Scan, and Runtime State Scan.

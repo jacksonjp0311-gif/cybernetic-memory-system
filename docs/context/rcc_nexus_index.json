@@ -1,14 +1,5 @@
 {
-  "schema": "CMS-SA-v0.1.2-rcc-nexus-index",
-  "repository": "cybernetic-memory-system",
-  "version": "RCC-N-v1.7-inspired",
-  "ttl_days": 180,
-  "shells": {
-    "center": ["README.md", "AGENTS.md", "docs/context", "rcc/nexus"],
-    "inner": ["src/cms", "configs", "tests"],
-    "middle": ["scripts", "examples", "docs/architecture", "docs/protocols"],
-    "outer": ["outputs", "reports", "docs/versions", "docs/injections", "docs/release_seals", "docs/roadmap"]
-  },
+  "fresh_thread_rule": "theory tells why; architecture tells how; runtime tells now",
   "meridians": [
     "source",
     "validation",
@@ -21,5 +12,37 @@
     "release",
     "documentation"
   ],
-  "non_claim_lock": "RCC-N navigation is not validation."
+  "non_claim_lock": "RCC-N navigation is not validation.",
+  "repository": "cybernetic-memory-system",
+  "schema": "CMS-SA-v0.1.2-rcc-nexus-index",
+  "shells": {
+    "center": [
+      "README.md",
+      "AGENTS.md",
+      "docs/context",
+      "rcc/nexus"
+    ],
+    "inner": [
+      "src/cms",
+      "configs",
+      "tests"
+    ],
+    "middle": [
+      "scripts",
+      "examples",
+      "docs/architecture",
+      "docs/protocols"
+    ],
+    "outer": [
+      "outputs",
+      "reports",
+      "docs/versions",
+      "docs/injections",
+      "docs/release_seals",
+      "docs/roadmap"
+    ]
+  },
+  "thread_rehydration_protocol": "docs/context/THREAD_REHYDRATION_PROTOCOL.md",
+  "ttl_days": 180,
+  "version": "RCC-N-v1.7-inspired"
 }

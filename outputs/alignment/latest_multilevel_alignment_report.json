@@ -1,8 +1,8 @@
 {
-  "schema": "CMS-SA-v0.3b5-multilevel-alignment-report",
-  "version": "v0.3b5",
-  "created_at": "2026-06-03T12:29:40.900183+00:00",
-  "current_registry_version": "v0.3b5",
+  "schema": "CMS-SA-v0.4.0-multilevel-alignment-report",
+  "version": "v0.4.0",
+  "created_at": "2026-06-03T13:36:42.472827+00:00",
+  "current_registry_version": "v0.4.0",
   "layers": {
     "root_readme": {
       "required_paths": [
@@ -268,7 +268,7 @@
     }
   ],
   "version_checks": {
-    "registry_current_version": "v0.3b5",
+    "registry_current_version": "v0.4.0",
     "readme_contains_current_version": true,
     "public_sync_report_present": true,
     "public_sync_report_last_passed": true,

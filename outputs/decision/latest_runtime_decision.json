@@ -12,7 +12,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.3b3-readme-mini-repo-audit",
+      "schema": "CMS-SA-v0.4.0-readme-mini-repo-audit",
       "errors": []
     },
     {
@@ -21,7 +21,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.3b3-readme-render-hygiene",
+      "schema": "CMS-SA-v0.4.0-readme-render-hygiene",
       "errors": []
     },
     {
@@ -57,7 +57,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.3b3-surface-alignment-validation",
+      "schema": "CMS-SA-v0.4.0-surface-alignment-validation",
       "errors": []
     },
     {
@@ -66,7 +66,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.3b3-multilevel-alignment-validation",
+      "schema": "CMS-SA-v0.4.0-multilevel-alignment-validation",
       "errors": []
     },
     {
@@ -88,5 +88,5 @@
     "note": "Git dirty state is intentionally handled by final release gates to avoid volatile latest-artifact loops."
   },
   "non_claim_lock": "Runtime decision checks repository-bound validation surfaces only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-  "decision_hash": "d531658bbc11c030d00c93f3910038c124f041c541c04b56e304c0ec991fce3b"
+  "decision_hash": "c54e869af6a1f2089704e179f56a0934e4742554aebcd71f91628b5fa9b0b042"
 }

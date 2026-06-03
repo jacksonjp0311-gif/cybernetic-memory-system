@@ -1,8 +1,7 @@
-
 # CMS Next Anchor
 
-Current checkpoint: CMS-SA v0.3b5 - Memory Promotion Kernel
-Previous seal: CMS-SA v0.3b4 - Negative Control and Downgrade Harness
-Next allowed layer: CMS-SA v0.4.0 - Cybernetic Memory Loop
+Current checkpoint: CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis
+Previous seal: CMS-SA v0.3b5 - Memory Promotion Kernel
+Next allowed layer: CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening
 
-Rule: v0.4.0 may begin only after memory promotion validates promoted, downgraded, and observe-only memory candidates.
+Rule: v0.4.0 closes the first repository-bound cybernetic memory loop and makes fresh-thread rehydration explicit.
