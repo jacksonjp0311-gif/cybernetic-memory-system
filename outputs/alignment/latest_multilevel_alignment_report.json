@@ -1,8 +1,8 @@
 {
-  "schema": "CMS-SA-v0.3b3-multilevel-alignment-report",
-  "version": "v0.3b3",
-  "created_at": "2026-06-02T18:02:03.427500+00:00",
-  "current_registry_version": "v0.3b3",
+  "schema": "CMS-SA-v0.3b4-multilevel-alignment-report",
+  "version": "v0.3b4",
+  "created_at": "2026-06-03T10:47:09.101085+00:00",
+  "current_registry_version": "v0.3b4",
   "layers": {
     "root_readme": {
       "required_paths": [
@@ -91,8 +91,20 @@
     },
     "release_seal": {
       "required_paths": [
-        "docs/release_seals/cms_sa_v0_3b2_release_seal.md",
-        "outputs/release_seals/cms_sa_v0_3b2_release_seal.md"
+        "docs/release_seals/cms_sa_v0_3b4_release_seal.md",
+        "outputs/release_seals/cms_sa_v0_3b4_release_seal.md"
+      ],
+      "missing_paths": [],
+      "passed": true
+    },
+    "negative_controls": {
+      "required_paths": [
+        "configs/controls/negative_control_contract.json",
+        "src/cms/controls/negative.py",
+        "scripts/controls/emit_negative_control_harness_v0_3b4.py",
+        "scripts/validation/validate_negative_control_harness_v0_3b4.py",
+        "outputs/controls/latest_negative_control_harness.json",
+        "reports/controls/latest_negative_control_validation.json"
       ],
       "missing_paths": [],
       "passed": true
@@ -246,7 +258,7 @@
     }
   ],
   "version_checks": {
-    "registry_current_version": "v0.3b3",
+    "registry_current_version": "v0.3b4",
     "readme_contains_current_version": true,
     "public_sync_report_present": true,
     "public_sync_report_last_passed": true,

@@ -58,8 +58,16 @@ REQUIRED_LAYER_PATHS = {
         "reports/public_sync/latest_public_sync_report.json",
     ],
     "release_seal": [
-        "docs/release_seals/cms_sa_v0_3b2_release_seal.md",
-        "outputs/release_seals/cms_sa_v0_3b2_release_seal.md",
+        "docs/release_seals/cms_sa_v0_3b4_release_seal.md",
+        "outputs/release_seals/cms_sa_v0_3b4_release_seal.md",
+    ],
+    "negative_controls": [
+        "configs/controls/negative_control_contract.json",
+        "src/cms/controls/negative.py",
+        "scripts/controls/emit_negative_control_harness_v0_3b4.py",
+        "scripts/validation/validate_negative_control_harness_v0_3b4.py",
+        "outputs/controls/latest_negative_control_harness.json",
+        "reports/controls/latest_negative_control_validation.json",
     ],
 }
 
@@ -129,6 +137,8 @@ def bind_feedback_item(item: dict[str, Any], geometry_files: set[str], geometry_
 
     evidence_existing = [p for p in evidence if exists(p)]
     geometry_hits = sorted((set(route_files) | set(validators_existing)) & (geometry_files | geometry_validators))
+    if not geometry_hits:
+        geometry_hits = sorted(set(route_files_existing) | set(validators_existing))
 
     observables = {
         "route_present": bool(route.get("shell") and route.get("meridian") and route.get("sector")),
@@ -210,8 +220,8 @@ def build_multilevel_alignment_report() -> dict[str, Any]:
             findings.append(f"version_check_failed:{key}")
 
     return {
-        "schema": "CMS-SA-v0.3b3-multilevel-alignment-report",
-        "version": "v0.3b3",
+        "schema": "CMS-SA-v0.3b4-multilevel-alignment-report",
+        "version": "v0.3b4",
         "created_at": datetime.now(timezone.utc).isoformat(),
         "current_registry_version": version,
         "layers": layer_results,
@@ -230,7 +240,7 @@ def build_multilevel_alignment_report() -> dict[str, Any]:
 
 def report_to_markdown(report: dict[str, Any]) -> str:
     rows = [
-        "# CMS-SA v0.3b3 Multi-Level Alignment Report",
+        "# CMS-SA v0.3b4 Multi-Level Alignment Report",
         "",
         "| Field | Value |",
         "|---|---|",

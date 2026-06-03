@@ -1,13 +1,30 @@
+
 from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
+REGISTRY = ROOT / "outputs" / "version_registry" / "cms_version_registry.json"
 text = README.read_text(encoding="utf-8", errors="replace") if README.exists() else ""
+
+
+def load_json(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+registry = load_json(REGISTRY)
+version = registry.get("current_version") or registry.get("latest_version") or "v0.3b3"
+version = str(version).strip()
+version_badge = f"CMS--SA-{version}"
 
 errors = []
 required_badges = [
-    "CMS--SA-v0.3b3",
+    version_badge,
     "RCC--N-passing",
     "architecture-passing",
     "lineage-recorded",
@@ -52,12 +69,13 @@ for section in required_sections:
 
 passed = not errors
 report = {
-    "schema": "CMS-SA-v0.3b3-readme-render-hygiene",
+    "schema": f"CMS-SA-{version}-readme-render-hygiene",
     "passed": passed,
     "errors": len(errors),
     "findings": errors,
     "checked_badges": len(required_badges),
-    "non_claim_lock": "README render hygiene is not runtime correctness."
+    "version": version,
+    "non_claim_lock": "README render hygiene is not runtime correctness.",
 }
 
 out_json = ROOT / "reports" / "render_hygiene" / "latest_readme_render_hygiene.json"
@@ -65,7 +83,7 @@ out_md = ROOT / "reports" / "render_hygiene" / "latest_readme_render_hygiene.md"
 out_json.parent.mkdir(parents=True, exist_ok=True)
 out_json.write_text(json.dumps(report, indent=2), encoding="utf-8")
 out_md.write_text(
-    "# CMS-SA v0.3b3 README Render Hygiene\n\n"
+    f"# CMS-SA {version} README Render Hygiene\n\n"
     f"- passed: `{passed}`\n"
     f"- errors: `{len(errors)}`\n"
     f"- checked_badges: `{len(required_badges)}`\n\n"
