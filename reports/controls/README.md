@@ -1,7 +1,7 @@
 
 # Control Reports
 
-CMS-RCC-N-v0.3b4
+CMS-RCC-N-v0.3b5
 
 Purpose: Human-readable and JSON negative-control validation reports.
 

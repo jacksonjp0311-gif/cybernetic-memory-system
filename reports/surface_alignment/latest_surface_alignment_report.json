@@ -1,14 +1,14 @@
 {
-  "schema": "CMS-SA-v0.3b4-surface-alignment-validation",
+  "schema": "CMS-SA-v0.3b5-surface-alignment-validation",
   "passed": true,
   "errors": 0,
   "warnings": 0,
   "findings": [],
   "warning_findings": [],
-  "current_version": "v0.3b4",
-  "previous_version": "v0.3b3",
-  "root_tokens_checked": 18,
-  "mini_readmes_checked": 10,
+  "current_version": "v0.3b5",
+  "previous_version": "v0.3b4",
+  "root_tokens_checked": 22,
+  "mini_readmes_checked": 15,
   "stale_tokens_checked": 3,
   "non_claim_lock": "Surface alignment validates README and mini README currentness only. It does not prove code correctness."
 }

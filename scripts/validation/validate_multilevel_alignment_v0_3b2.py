@@ -29,16 +29,16 @@ def main() -> int:
     if report != report_copy:
         findings.append("alignment_report_copy_mismatch")
 
-    if report.get("schema") != "CMS-SA-v0.3b4-multilevel-alignment-report":
+    if report.get("schema") != "CMS-SA-v0.3b5-multilevel-alignment-report":
         findings.append("schema_mismatch")
 
-    if report.get("version") != "v0.3b4":
+    if report.get("version") != "v0.3b5":
         findings.append("version_mismatch")
 
     if report.get("passed") is not True:
         findings.append("alignment_report_not_passing")
 
-    if report.get("current_registry_version") != "v0.3b4":
+    if report.get("current_registry_version") != "v0.3b5":
         findings.append(f"registry_version_mismatch:{report.get('current_registry_version')}")
 
     layers = report.get("layers", {})
@@ -54,6 +54,7 @@ def main() -> int:
         "public_sync",
         "release_seal",
         "negative_controls",
+        "memory_promotion",
     ):
         layer = layers.get(layer_name)
         if not layer:
@@ -87,7 +88,7 @@ def main() -> int:
             findings.append(f"version_check_failed:{key}")
 
     validation = {
-        "schema": "CMS-SA-v0.3b4-multilevel-alignment-validation",
+        "schema": "CMS-SA-v0.3b5-multilevel-alignment-validation",
         "passed": len(findings) == 0,
         "errors": len(findings),
         "warnings": 0,
@@ -102,7 +103,7 @@ def main() -> int:
     VALIDATION_JSON.write_text(json.dumps(validation, indent=2) + "\n", encoding="utf-8")
 
     md = [
-        "# CMS-SA v0.3b4 Multi-Level Alignment Validation",
+        "# CMS-SA v0.3b5 Multi-Level Alignment Validation",
         "",
         "| Field | Value |",
         "|---|---|",

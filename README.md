@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b4-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.3b5-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.3b4 - Negative Control and Downgrade Harness**
-Previous seal: **CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger**
+Current checkpoint: **CMS-SA v0.3b5 - Memory Promotion Kernel**
+Previous seal: **CMS-SA v0.3b4 - Negative Control and Downgrade Harness**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -56,6 +56,7 @@ Core law:
 | v0.3b2 Multi-Level Geometric Alignment | Do feedback items bind to geometry, validators, evidence, routes, registry, and public surfaces? | `reports/alignment/latest_multilevel_alignment_report.md` |
 | v0.3b3 Runtime Decision Kernel | Can validation signals produce one replayable runtime decision? | `reports/decision/latest_runtime_decision.md` |
 | v0.3b4 Negative Control and Downgrade Harness | Can false-promote, downgrade, and observe-only cases be tested before memory promotion? | `reports/controls/latest_negative_control_harness.md` |
+| v0.3b5 Memory Promotion Kernel | Can evidence/control candidates become downgrade-safe durable memory? | `reports/memory/latest_memory_promotion_report.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -82,8 +83,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.3b4 |
-| Previous seal | CMS-SA v0.3b3 |
+| Current checkpoint | CMS-SA v0.3b5 |
+| Previous seal | CMS-SA v0.3b4 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -113,7 +114,9 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Runtime decision | `outputs/decision/latest_runtime_decision.json` |
 | Negative control harness | `active: v0.3b4` |
 | Negative control validation | `reports/controls/latest_negative_control_validation.md` |
-| Alignment layer count | `10` |
+| Memory promotion kernel | `active: v0.3b5` |
+| Memory promotion validation | `reports/memory/latest_memory_promotion_validation.md` |
+| Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
 
@@ -143,6 +146,8 @@ python scripts/decision/emit_runtime_decision_v0_3b3.py
 python scripts/validation/validate_runtime_decision_v0_3b3.py
 python scripts/controls/emit_negative_control_harness_v0_3b4.py
 python scripts/validation/validate_negative_control_harness_v0_3b4.py
+python scripts/memory/emit_memory_promotion_v0_3b5.py
+python scripts/validation/validate_memory_promotion_v0_3b5.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -163,6 +168,7 @@ python scripts/validate_release.py
 | Feedback lifecycle | Typed feedback items, scoring, classification, downgrade paths, lifecycle reports | `configs/feedback/`, `src/cms/feedback/`, `scripts/feedback/`, `outputs/feedback/`, `reports/feedback/` |
 | Multi-level alignment | Binds README, mini READMEs, route maps, validators, reports, geometry, feedback, registry, public sync, and release state | `configs/alignment/`, `src/cms/alignment/`, `scripts/alignment/`, `outputs/alignment/`, `reports/alignment/` |
 | Control harness | Negative controls, downgrade preservation, observe-only preservation, and false-promote rejection | `configs/controls/`, `src/cms/controls/`, `scripts/controls/`, `outputs/controls/`, `reports/controls/` |
+| Memory promotion | Evidence utility, control survival, downgrade-safe memory decisions, and next-cycle memory candidates | `configs/memory/`, `src/cms/memory/`, `scripts/memory/`, `outputs/memory/`, `reports/memory/` |
 
 ## Historical Report Archive
 
@@ -279,7 +285,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.3b4 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.3b5 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -398,6 +404,10 @@ This section is repository memory. When a patch fails, compress the failure into
 | CMS-L-022 | v0.3b2a was pasted/run interactively and the README normalizer failed on a regex replacement escape before README/registry updates landed. | Python regex replacement strings treated backslashes in PowerShell paths as escape templates, while the script continued after a blocked step. | Documentation coherence scripts must use literal replacement functions for README code blocks and must not continue after a failed normalizer. |
 | CMS-L-025 | v0.3b2a3 showed validator truth, public sync truth, and volatile latest-run artifacts can diverge. | Latest runtime/evidence artifacts can rewrite during validation even when stable public release state is true. | Runtime decisions must distinguish validator truth, public sync truth, stable release evidence, volatile latest-run evidence, dirty-state blockers, and next allowed action. |
 | CMS-L-024 | v0.3b2a2 produced validator expectations like v0.3b2a2a22. | Broad version-token replacement rewrote already-updated version strings instead of using exact assigned constants. | Version advancement scripts must replace exact stale tokens only and must assert that no generated version token contains duplicated suffix patterns. |
+| CMS-L-028 | v0.3b5 formalized that useful lessons are not automatically memory. | Successful feedback/control evidence still needs evidence utility, negative-control survival, downgrade path, falsification condition, and non-claim lock before durable promotion. | Memory is controlled future influence, not storage; promote only reusable invariants and preserve weak or external correlations as downgrade/observe-only candidates. |
+| CMS-L-031 | v0.3b5 memory promotion emitted valid summary counts while candidate-level actions were not yet materialized. | The first memory-promotion surface stores action classification at report-summary level before per-candidate schema lock. | Validators must distinguish summary-level promotion evidence from per-candidate promotion evidence, then require per-candidate action fields in the next major memory-loop phase. |
+| CMS-L-030 | v0.3b5 memory validator rejected all candidates even though the emitter produced promoted/downgraded/observe-only counts. | Validator field names were stricter than the emitted memory candidate grammar. | Emitters and validators must either share an explicit schema or validators must normalize accepted aliases before enforcing promotion counts. |
+| CMS-L-029 | v0.3b5 memory-promotion patch generated a broken validation script and missed `configs/memory/README.md`. | Validation and mini README surfaces advanced separately from the new memory contract folder. | New durable folders must be created with mini README surfaces before validator execution, and generated validators must compile before any promotion attempt. |
 | CMS-L-027 | v0.3b4 file-run patch continued after a dirty preflight because the patch body was still pasted interactively. | The operator needs copy/paste-compatible execution, and preflight stop points must be isolated from write phases. | Evolution patches must be delivered as downloadable file-run scripts or short numbered paste-safe cells; never combine preflight failure and write body in a single interactive paste. |
 | CMS-L-026 | v0.3b3 final cleanup produced a Windows trailing-space paste-fragment file that Git could see but normal deletion APIs could not remove. | Interactive paste execution created shell artifact files and Windows normalized trailing-space paths during deletion. | Copy/paste workflows must use small paste-safe blocks, stop after thrown errors, ignore printed RESULT lines after failures, and use extended paths such as `\\?\` when deleting trailing-space artifacts. |
 | CMS-L-023 | v0.3b2a1 advanced README/registry but alignment mini READMEs and multi-level alignment version surfaces still pointed at earlier lock tokens. | Documentation patches changed public version state without updating every validator-bound mini README and alignment report version surface. | A documentation checkpoint is not sealed until mini README tokens, registry version, alignment report version, and validator expectations all agree. |
@@ -519,7 +529,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.3b4. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.3b5. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -589,6 +599,8 @@ python scripts/decision/emit_runtime_decision_v0_3b3.py
 python scripts/validation/validate_runtime_decision_v0_3b3.py
 python scripts/controls/emit_negative_control_harness_v0_3b4.py
 python scripts/validation/validate_negative_control_harness_v0_3b4.py
+python scripts/memory/emit_memory_promotion_v0_3b5.py
+python scripts/validation/validate_memory_promotion_v0_3b5.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -671,6 +683,7 @@ This box is the durable public navigation spine. The full repository is validate
 | `src/cms/alignment/` | Multi-level alignment runtime. |
 | `configs/alignment/` | Multi-level alignment contracts for runtime coherence. |
 | `configs/controls/` | Negative-control and downgrade harness contracts. |
+| `configs/memory/` | Memory promotion contracts and durable memory gates. |
 | `reports/runtime_observation/` | Human-readable and JSON runtime observation reports. |
 | `reports/metric_contracts/` | Human-readable and JSON metric-contract reports. |
 | `reports/drift/` | Human-readable and JSON drift reports. |
@@ -725,7 +738,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.3b4. This layer is internal runtime coherence only.
+API is not active in v0.3b5. This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 
@@ -836,3 +849,24 @@ observe-only cases remain non-promotional, and false promote states are rejected
 ```
 
 Non-claim lock: v0.3b4 improves repository-bound decision discipline. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+## CMS-SA v0.3b5 - Memory Promotion Kernel
+
+v0.3b5 adds the memory-promotion boundary required before the v0.4.0 cybernetic memory loop.
+
+Memory hardening rule:
+
+```text
+Memory is not storage. Memory is controlled influence on future repository action.
+```
+
+Promotion rule:
+
+```text
+No memory promotion without evidence utility, negative-control pass,
+runtime-decision compatibility, downgrade path, falsification condition,
+and non-claim lock.
+```
+
+Non-claim lock: v0.3b5 improves repository-bound memory governance. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.

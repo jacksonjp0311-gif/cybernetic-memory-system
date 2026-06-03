@@ -1,8 +1,8 @@
 
 # CMS Next Anchor
 
-Current checkpoint: CMS-SA v0.3b4 - Negative Control and Downgrade Harness
-Previous seal: CMS-SA v0.3b3 - Runtime Decision Kernel and Replay Ledger
-Next allowed layer: CMS-SA v0.3b5 - Memory Promotion Kernel
+Current checkpoint: CMS-SA v0.3b5 - Memory Promotion Kernel
+Previous seal: CMS-SA v0.3b4 - Negative Control and Downgrade Harness
+Next allowed layer: CMS-SA v0.4.0 - Cybernetic Memory Loop
 
-Rule: memory promotion must not begin until negative controls, downgrade preservation, observe-only preservation, and false-promote rejection pass.
+Rule: v0.4.0 may begin only after memory promotion validates promoted, downgraded, and observe-only memory candidates.

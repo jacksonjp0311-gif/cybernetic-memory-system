@@ -1,7 +1,7 @@
 
 # Control Contracts
 
-CMS-RCC-N-v0.3b4
+CMS-RCC-N-v0.3b5
 
 Purpose: Negative-control and downgrade contracts for repository-bound action classification.
 

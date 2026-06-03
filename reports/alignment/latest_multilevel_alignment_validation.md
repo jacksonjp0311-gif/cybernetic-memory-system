@@ -1,4 +1,4 @@
-# CMS-SA v0.3b4 Multi-Level Alignment Validation
+# CMS-SA v0.3b5 Multi-Level Alignment Validation
 
 | Field | Value |
 |---|---|
@@ -7,6 +7,6 @@
 | warnings | `0` |
 | feedback items checked | `3` |
 | feedback items aligned | `3` |
-| layer count | `11` |
+| layer count | `12` |
 
 Non-claim lock: multi-level alignment validation checks repository-bound alignment only. It does not prove code correctness.

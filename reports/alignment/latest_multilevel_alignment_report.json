@@ -1,8 +1,8 @@
 {
-  "schema": "CMS-SA-v0.3b4-multilevel-alignment-report",
-  "version": "v0.3b4",
-  "created_at": "2026-06-03T10:47:09.101085+00:00",
-  "current_registry_version": "v0.3b4",
+  "schema": "CMS-SA-v0.3b5-multilevel-alignment-report",
+  "version": "v0.3b5",
+  "created_at": "2026-06-03T12:29:40.900183+00:00",
+  "current_registry_version": "v0.3b5",
   "layers": {
     "root_readme": {
       "required_paths": [
@@ -105,6 +105,18 @@
         "scripts/validation/validate_negative_control_harness_v0_3b4.py",
         "outputs/controls/latest_negative_control_harness.json",
         "reports/controls/latest_negative_control_validation.json"
+      ],
+      "missing_paths": [],
+      "passed": true
+    },
+    "memory_promotion": {
+      "required_paths": [
+        "configs/memory/promotion_contract.json",
+        "src/cms/memory/promotion.py",
+        "scripts/memory/emit_memory_promotion_v0_3b5.py",
+        "scripts/validation/validate_memory_promotion_v0_3b5.py",
+        "outputs/memory/latest_memory_promotion_report.json",
+        "reports/memory/latest_memory_promotion_validation.json"
       ],
       "missing_paths": [],
       "passed": true
@@ -237,9 +249,7 @@
         "configs/feedback/feedback_lifecycle_contract.json"
       ],
       "geometry_hits": [
-        "README.md",
-        "docs/versions/v0_3b/cms_sa_v0_3b_feedback_lifecycle_engine.md",
-        "scripts/validation/validate_feedback_lifecycle_v0_3b.py"
+        "README.md"
       ],
       "observables": {
         "route_present": true,
@@ -258,7 +268,7 @@
     }
   ],
   "version_checks": {
-    "registry_current_version": "v0.3b4",
+    "registry_current_version": "v0.3b5",
     "readme_contains_current_version": true,
     "public_sync_report_present": true,
     "public_sync_report_last_passed": true,

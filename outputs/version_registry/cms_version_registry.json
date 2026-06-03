@@ -1,19 +1,19 @@
 {
-  "current_checkpoint": "CMS-SA v0.3b4 - Negative Control and Downgrade Harness",
-  "current_version": "v0.3b4",
-  "latest_version": "v0.3b4",
-  "next_anchor": "CMS-SA v0.3b5 - Memory Promotion Kernel",
+  "current_checkpoint": "CMS-SA v0.3b5 - Memory Promotion Kernel",
+  "current_version": "v0.3b5",
+  "latest_version": "v0.3b5",
+  "next_anchor": "CMS-SA v0.4.0 - Cybernetic Memory Loop",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true,
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_version": "v0.3b3",
+  "previous_version": "v0.3b4",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
-  "updated_at": "2026-06-03T10:35:25.088470+00:00",
+  "updated_at": "2026-06-03T11:52:37.927042+00:00",
   "versions": [
     {
       "class": "software_architecture_genesis",
@@ -185,6 +185,14 @@
       "previous": "v0.3b3",
       "status": "negative-control-downgrade-layer",
       "version": "v0.3b4"
+    },
+    {
+      "name": "Memory Promotion Kernel",
+      "next": "v0.4.0",
+      "non_claim_lock": "Memory promotion is repository-bound and does not prove correctness.",
+      "previous": "v0.3b4",
+      "status": "memory-promotion-layer",
+      "version": "v0.3b5"
     }
   ]
 }

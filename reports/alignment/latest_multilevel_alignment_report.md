@@ -1,11 +1,11 @@
-# CMS-SA v0.3b4 Multi-Level Alignment Report
+# CMS-SA v0.3b5 Multi-Level Alignment Report
 
 | Field | Value |
 |---|---|
-| schema | `CMS-SA-v0.3b4-multilevel-alignment-report` |
-| version | `v0.3b4` |
+| schema | `CMS-SA-v0.3b5-multilevel-alignment-report` |
+| version | `v0.3b5` |
 | passed | `true` |
-| current registry version | `v0.3b4` |
+| current registry version | `v0.3b5` |
 | feedback items checked | `3` |
 | feedback items aligned | `3` |
 
@@ -24,6 +24,7 @@
 | `public_sync` | `true` |  |
 | `release_seal` | `true` |  |
 | `negative_controls` | `true` |  |
+| `memory_promotion` | `true` |  |
 
 ## Feedback Bindings
 
@@ -31,7 +32,7 @@
 |---|---|---|---:|---|---|
 | `CMS-FB-001` | `CMS-FB-A` | `promotion_candidate` | `1.0` | scripts/geometry/emit_reflective_git_geometry.py, scripts/validation/validate_reflective_git_geometry_v0_3.py | `true` |
 | `CMS-FB-002` | `CMS-FB-A` | `promotion_candidate` | `1.0` | configs/feedback/feedback_lifecycle_contract.json, schemas/feedback_item.schema.json, scripts/validation/validate_feedback_lifecycle_v0_3b.py | `true` |
-| `CMS-FB-003` | `CMS-FB-A` | `promotion_candidate` | `1.0` | README.md, docs/versions/v0_3b/cms_sa_v0_3b_feedback_lifecycle_engine.md, scripts/validation/validate_feedback_lifecycle_v0_3b.py | `true` |
+| `CMS-FB-003` | `CMS-FB-A` | `promotion_candidate` | `1.0` | README.md | `true` |
 
 ## Core Rule
 
