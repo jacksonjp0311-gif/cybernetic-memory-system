@@ -2,7 +2,7 @@
 
 - passed: `true`
 - errors: `0`
-- dry-apply run count: `3`
+- dry-apply run count: `1`
 - virtual target writes performed: `0`
 - live target writes performed: `0`
 - api writes performed: `0`

@@ -1,6 +1,6 @@
 {
-  "adapter_hash": "a1dee0654ebf1b38e272ceb084e740e6690eb6274e0635f36bcd929ba813bdd9",
-  "created_at": "2026-06-04T16:08:26.794671+00:00",
+  "adapter_hash": "b1819d99f095dbb45395050ae4af12ea6e027fd9175674c69ea5badcb81e87bb",
+  "created_at": "2026-06-04T16:08:41.939753+00:00",
   "memory_candidate_adapter": [
     {
       "decision": "cms_decides_memory_status",

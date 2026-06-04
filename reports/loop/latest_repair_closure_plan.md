@@ -3,41 +3,17 @@
 | Field | Value |
 |---|---|
 | passed | `true` |
-| source pressure state | `warning` |
-| source stability state | `green_with_repair_recommendation` |
-| plan count | `3` |
-| closure count | `3` |
-| closure hash | `fdd54687e2b1f741132dccbe73a1c9a0a8a50bd15c5366fc4a967ecce190a5a9` |
+| source pressure state | `stable` |
+| source stability state | `stable_green_loop` |
+| plan count | `1` |
+| closure count | `1` |
+| closure hash | `bc6990899352ed2ac70687b05a7327460825152819c69295cee45b97958eb0f6` |
 
 ## Primary Lock
 
 No repair recommendation may be marked closed unless it has a plan id, source recommendation id, declared execution mode, touched-surface boundary, required validation evidence, closure state, blocked-action preservation, and non-claim boundary.
 
 ## Plans
-
-### CMS-PLAN-9cf10f4caa
-
-- source recommendation: `CMS-RR-460ab6ea93`
-- pressure source: `public_sync_phase:preseal_tag_pending`
-- repair class: `REPORT_REFRESH`
-- execution mode: `human_authorized_report_refresh_plan`
-- authorization required: `true`
-- touched surfaces: `outputs/*, reports/*`
-- required validation: `validate_public_sync, validate_multilevel_alignment, validate_loop_drift_pressure`
-- closure state: `planned_not_executed`
-- blocked actions preserved: `runtime_code_patch, validator_patch, memory_promotion, api_write, autonomous_patch`
-
-### CMS-PLAN-d6db1713fe
-
-- source recommendation: `CMS-RR-3b9295f81d`
-- pressure source: `public_surface_delta`
-- repair class: `SURFACE_REPAIR`
-- execution mode: `human_authorized_surface_patch_plan`
-- authorization required: `true`
-- touched surfaces: `README.md, configs/*/README.md, src/cms/*/README.md, scripts/*/README.md, outputs/*/README.md, reports/*/README.md`
-- required validation: `audit_readme_surface, validate_surface_alignment, emit_runtime_decision, validate_runtime_decision`
-- closure state: `planned_not_executed`
-- blocked actions preserved: `runtime_code_patch, memory_promotion, public_release_seal, api_write, autonomous_patch`
 
 ### CMS-PLAN-c3c9530c24
 

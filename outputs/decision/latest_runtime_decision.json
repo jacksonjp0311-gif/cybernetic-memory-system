@@ -74,11 +74,9 @@
       "path": "reports/public_sync/latest_public_sync_report.json",
       "required": false,
       "present": true,
-      "passed": false,
+      "passed": true,
       "schema": "CMS-SA-v0.2b3c-public-sync-stable",
-      "errors": [
-        "release_tag_missing"
-      ]
+      "errors": []
     }
   ],
   "release_validator_direct_final_gate": true,
@@ -90,5 +88,5 @@
     "note": "Git dirty state is intentionally handled by final release gates to avoid volatile latest-artifact loops."
   },
   "non_claim_lock": "Runtime decision checks repository-bound validation surfaces only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-  "decision_hash": "3216d18b2c9b5a447eff42b7c0f2068d903478f00ca3cad0a932199622dc76c6"
+  "decision_hash": "f0b9b2360077b716b104b6b12d2be89d7b3f0219a5f4392f00c53c032cfb793a"
 }

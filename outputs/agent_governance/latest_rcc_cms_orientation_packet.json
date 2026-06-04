@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-04T16:08:26.794671+00:00",
+  "created_at": "2026-06-04T16:08:41.939753+00:00",
   "high_risk_surfaces": [
     "agent loop",
     "tool execution",
@@ -20,7 +20,7 @@
     "human": "write_boundary",
     "rcc": "map_and_route_boundary"
   },
-  "orientation_hash": "a48851c0e33c9a684def29be4fea5d065838709299549ff7afb24358477cc147",
+  "orientation_hash": "a05f8d8717d3d2023c3afdbd5fb0a2fb4097bdba47adb4c9fdde541435249875",
   "repository": "cybernetic-memory-system",
   "safe_current_surfaces": [
     "README.md",

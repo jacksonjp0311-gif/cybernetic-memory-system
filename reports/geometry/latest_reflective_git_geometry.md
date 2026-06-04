@@ -10,13 +10,14 @@
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `false` |
-| release tag ancestor | `false` |
+| release tag exists | `true` |
+| release tag ancestor | `true` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `506cf1b` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.5.0 agent governance kernel bridge |
 | `5228e2a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: close CMS-SA v0.4.8 residual verifier artifacts |
 | `8170a1a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.8 final postpush evidence |
 | `f2d671e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.8 postseal validation reports |
@@ -28,7 +29,6 @@
 | `4490c74` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.6 postseal validation reports |
 | `25bfb08` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.6 authorized repair apply gate |
 | `4f0669e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.5 final postpush evidence |
-| `abd667c` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.5 postseal validation reports |
 
 ## Pure Validation Boundary
 

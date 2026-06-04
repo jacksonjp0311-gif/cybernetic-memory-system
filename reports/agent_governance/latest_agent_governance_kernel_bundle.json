@@ -1,7 +1,7 @@
 {
   "adapter_decisions": {
-    "adapter_hash": "a1dee0654ebf1b38e272ceb084e740e6690eb6274e0635f36bcd929ba813bdd9",
-    "created_at": "2026-06-04T16:08:26.794671+00:00",
+    "adapter_hash": "b1819d99f095dbb45395050ae4af12ea6e027fd9175674c69ea5badcb81e87bb",
+    "created_at": "2026-06-04T16:08:41.939753+00:00",
     "memory_candidate_adapter": [
       {
         "decision": "cms_decides_memory_status",
@@ -26,12 +26,12 @@
     "write_authority_granted": false
   },
   "apply_authority_granted": false,
-  "bundle_hash": "1244c0f0ed3ed77719f38eb1dbed83aa78c204e7f753383c73efe2af4c5a4ef8",
+  "bundle_hash": "187f5f0ff5b864a86486e3d295240f7cecdba35a0759f6c4cf18e30a357c61d1",
   "classification": {
     "apply_authority_granted": false,
     "classification_count": 4,
-    "classification_report_hash": "01bcd09d0134ed313948e0ea528fe29ca9aa80ffe4ac69e5e696f36ada88fdc5",
-    "created_at": "2026-06-04T16:08:26.793279+00:00",
+    "classification_report_hash": "3504bdcac2a9922e53228c7a5008ecc8a8c30600846e2be4080714c5fe84cea3",
+    "created_at": "2026-06-04T16:08:41.939753+00:00",
     "decisions": [
       {
         "allowed_actions": [
@@ -200,7 +200,7 @@
     "write_authority_granted": false
   },
   "cms_write_integration_active": false,
-  "created_at": "2026-06-04T16:08:26.794671+00:00",
+  "created_at": "2026-06-04T16:08:41.939753+00:00",
   "division_of_powers": {
     "cms": "governed_permission",
     "hermes": "action",
@@ -240,8 +240,8 @@
     "cms_repo": "jacksonjp0311-gif/cybernetic-memory-system",
     "cms_schema": "CMS-SA-v0.5.0-agent-governance-context",
     "cms_write_integration_active": false,
-    "context_hash": "d2f9f5bc6c94ad00aca09ae5028f650e4980de4da81b476e32185023bb4c9ca4",
-    "created_at": "2026-06-04T16:08:26.793279+00:00",
+    "context_hash": "028348502c2d058f2ffb82accf7389420d38b8fd8abc3e9c40063dc5ce699688",
+    "created_at": "2026-06-04T16:08:41.939753+00:00",
     "division_of_powers": {
       "cms": "governed_permission",
       "hermes": "action",
@@ -250,23 +250,23 @@
     },
     "dry_apply_sandbox_ref": "reports/loop/latest_authorized_dry_apply_sandbox_validation.md",
     "hermes_repo": "jacksonjp0311-gif/hermes-agent-evo",
-    "loop_drift_pressure": 0.168,
+    "loop_drift_pressure": 0.14,
     "mode": "read_only",
     "non_claim_lock": "CMS-SA v0.5.0 agent governance outputs are repository-bound governance evidence and do not prove Hermes correctness, CMS correctness, code correctness, truth, AGI, consciousness, security, production readiness, external validation, autonomous patch safety, or autonomous write authority.",
     "primary_lock": "No agent proposal may become memory, skill, repair authority, dry-run authority, apply authority, or write authority unless CMS classifies the proposal, records evidence, preserves blocked actions, and emits a non-claim boundary.",
-    "public_sync_passed": false,
+    "public_sync_passed": true,
     "rcc_alignment_active": true,
-    "release_tag_status": "missing",
+    "release_tag_status": "present_and_ancestor_of_head",
     "runtime_code_changes_allowed": false,
     "schema": "HRCN-v1.0-hermes-cms-context",
-    "stability_state": "green_with_repair_recommendation"
+    "stability_state": "stable_green_loop"
   },
   "memory_authority_granted": false,
   "mode": "read_only_agent_governance_kernel",
   "non_claim_lock": "CMS-SA v0.5.0 agent governance outputs are repository-bound governance evidence and do not prove Hermes correctness, CMS correctness, code correctness, truth, AGI, consciousness, security, production readiness, external validation, autonomous patch safety, or autonomous write authority.",
   "primary_lock": "No agent proposal may become memory, skill, repair authority, dry-run authority, apply authority, or write authority unless CMS classifies the proposal, records evidence, preserves blocked actions, and emits a non-claim boundary.",
   "rcc_cms_orientation_packet": {
-    "created_at": "2026-06-04T16:08:26.794671+00:00",
+    "created_at": "2026-06-04T16:08:41.939753+00:00",
     "high_risk_surfaces": [
       "agent loop",
       "tool execution",
@@ -287,7 +287,7 @@
       "human": "write_boundary",
       "rcc": "map_and_route_boundary"
     },
-    "orientation_hash": "a48851c0e33c9a684def29be4fea5d065838709299549ff7afb24358477cc147",
+    "orientation_hash": "a05f8d8717d3d2023c3afdbd5fb0a2fb4097bdba47adb4c9fdde541435249875",
     "repository": "cybernetic-memory-system",
     "safe_current_surfaces": [
       "README.md",

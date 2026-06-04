@@ -31,8 +31,8 @@
   "cms_repo": "jacksonjp0311-gif/cybernetic-memory-system",
   "cms_schema": "CMS-SA-v0.5.0-agent-governance-context",
   "cms_write_integration_active": false,
-  "context_hash": "d2f9f5bc6c94ad00aca09ae5028f650e4980de4da81b476e32185023bb4c9ca4",
-  "created_at": "2026-06-04T16:08:26.793279+00:00",
+  "context_hash": "028348502c2d058f2ffb82accf7389420d38b8fd8abc3e9c40063dc5ce699688",
+  "created_at": "2026-06-04T16:08:41.939753+00:00",
   "division_of_powers": {
     "cms": "governed_permission",
     "hermes": "action",
@@ -41,14 +41,14 @@
   },
   "dry_apply_sandbox_ref": "reports/loop/latest_authorized_dry_apply_sandbox_validation.md",
   "hermes_repo": "jacksonjp0311-gif/hermes-agent-evo",
-  "loop_drift_pressure": 0.168,
+  "loop_drift_pressure": 0.14,
   "mode": "read_only",
   "non_claim_lock": "CMS-SA v0.5.0 agent governance outputs are repository-bound governance evidence and do not prove Hermes correctness, CMS correctness, code correctness, truth, AGI, consciousness, security, production readiness, external validation, autonomous patch safety, or autonomous write authority.",
   "primary_lock": "No agent proposal may become memory, skill, repair authority, dry-run authority, apply authority, or write authority unless CMS classifies the proposal, records evidence, preserves blocked actions, and emits a non-claim boundary.",
-  "public_sync_passed": false,
+  "public_sync_passed": true,
   "rcc_alignment_active": true,
-  "release_tag_status": "missing",
+  "release_tag_status": "present_and_ancestor_of_head",
   "runtime_code_changes_allowed": false,
   "schema": "HRCN-v1.0-hermes-cms-context",
-  "stability_state": "green_with_repair_recommendation"
+  "stability_state": "stable_green_loop"
 }

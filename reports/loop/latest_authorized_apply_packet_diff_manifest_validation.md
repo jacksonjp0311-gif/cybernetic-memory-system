@@ -2,8 +2,8 @@
 
 - passed: `true`
 - errors: `0`
-- apply packet count: `3`
-- diff manifest count: `3`
+- apply packet count: `1`
+- diff manifest count: `1`
 - target writes performed: `0`
 - api writes performed: `0`
 - git commits performed: `0`
