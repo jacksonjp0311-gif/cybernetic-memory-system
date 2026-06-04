@@ -3,46 +3,22 @@
 | Field | Value |
 |---|---|
 | passed | `true` |
-| source pressure state | `warning` |
-| source dry-run count | `3` |
-| apply gate count | `3` |
-| rollback ledger count | `3` |
+| source pressure state | `stable` |
+| source dry-run count | `1` |
+| apply gate count | `1` |
+| rollback ledger count | `1` |
 | target writes performed | `0` |
 | api writes performed | `0` |
 | git commits performed | `0` |
 | git pushes performed | `0` |
 | release tags created | `0` |
-| apply gate hash | `9342ef14dd77590dac93826a25cfe29d68509b1ecfb64544f6cc82b6b6d52201` |
+| apply gate hash | `4dfc93d7abde4625937a436d40cbcb1b1e97810af55262f77c992aa6cd4adff5` |
 
 ## Primary Lock
 
 No repair apply may execute unless it references a validated dry-run id, carries explicit human authorization, declares exact target writes, includes rollback entries for every target, preserves blocked actions, and passes the required validation stack before and after apply.
 
 ## Gates
-
-### CMS-APPLY-GATE-a6643e0259
-
-- source dry-run: `CMS-DRYRUN-eb1c78ada2`
-- repair class: `REPORT_REFRESH`
-- gate state: `blocked_pending_explicit_human_authorization`
-- apply authority: `false`
-- human authorization present: `false`
-- rollback required: `true`
-- rollback ready: `false`
-- touched surfaces: `outputs/*, reports/*`
-- pre-apply validation: `validate_public_sync, validate_multilevel_alignment, validate_loop_drift_pressure`
-
-### CMS-APPLY-GATE-465e02de46
-
-- source dry-run: `CMS-DRYRUN-6abf369743`
-- repair class: `SURFACE_REPAIR`
-- gate state: `blocked_pending_explicit_human_authorization`
-- apply authority: `false`
-- human authorization present: `false`
-- rollback required: `true`
-- rollback ready: `false`
-- touched surfaces: `README.md, configs/*/README.md, src/cms/*/README.md, scripts/*/README.md, outputs/*/README.md, reports/*/README.md`
-- pre-apply validation: `audit_readme_surface, validate_surface_alignment, emit_runtime_decision, validate_runtime_decision`
 
 ### CMS-APPLY-GATE-6319f003ce
 
