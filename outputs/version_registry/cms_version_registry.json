@@ -1,20 +1,20 @@
 {
-  "current_checkpoint": "CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest",
-  "current_version": "v0.4.7",
-  "latest_version": "v0.4.7",
-  "next_anchor": "CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox",
+  "current_checkpoint": "CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox",
+  "current_version": "v0.4.8",
+  "latest_version": "v0.4.8",
+  "next_anchor": "CMS-SA v0.4.9 - Authorized Apply Result Classifier and Promotion Boundary",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true,
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_seal": "CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger",
-  "previous_version": "v0.4.6",
+  "previous_seal": "CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest",
+  "previous_version": "v0.4.7",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
-  "updated_at": "2026-06-04T04:35:23.160327+00:00",
+  "updated_at": "2026-06-04T04:43:54.053594+00:00",
   "versions": [
     {
       "class": "software_architecture_genesis",
@@ -271,6 +271,14 @@
       "previous": "v0.4.6",
       "status": "preseal_development",
       "version": "v0.4.7"
+    },
+    {
+      "name": "Authorized Apply Executor Dry-Apply Sandbox",
+      "next": "v0.4.9",
+      "non_claim_lock": "Dry-apply sandbox execution is not live repair execution.",
+      "previous": "v0.4.7",
+      "status": "preseal_development",
+      "version": "v0.4.8"
     }
   ]
 }

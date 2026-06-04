@@ -3,13 +3,13 @@
   "dominant_repair_class": "REGISTRY_REPAIR",
   "errors": 0,
   "findings": [],
-  "loop_drift_pressure": 0.14,
+  "loop_drift_pressure": 0.168,
   "non_claim_lock": "Loop repair recommendation validation is repository-bound and does not prove code correctness.",
   "passed": true,
-  "pressure_state": "stable",
+  "pressure_state": "warning",
   "primary_lock": "No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.",
-  "recommendation_count": 1,
-  "recommendation_hash": "09b0f0da8ac652472b69dc7d0dd9ab5748ed860b3abf358373d19c5a6c2480c1",
+  "recommendation_count": 3,
+  "recommendation_hash": "ba24720da78f61f847fc0f1d8c905141a5873a5d7c666b8726e2cd9fe3e23b62",
   "schema": "CMS-SA-v0.4.3-loop-repair-recommendation-validation",
-  "source_stability_state": "stable_green_loop"
+  "source_stability_state": "green_with_repair_recommendation"
 }

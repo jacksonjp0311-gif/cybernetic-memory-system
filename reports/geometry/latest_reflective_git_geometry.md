@@ -4,19 +4,20 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.7` |
+| current registry version | `v0.4.8` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `true` |
-| release tag ancestor | `true` |
+| release tag exists | `false` |
+| release tag ancestor | `false` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `409b635` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.7 final postpush evidence |
 | `43f397b` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.7 postseal validation reports |
 | `056b3db` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.7 authorized apply packet diff manifest |
 | `a46167a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.6 final postpush evidence |
@@ -28,7 +29,6 @@
 | `a9764ad` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | fix: refresh CMS-SA v0.4.4 postseal geometry alignment |
 | `0ddd2e9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.4 postseal validation reports |
 | `5e1a6f6` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.4 repair closure ledger |
-| `6807051` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.3 postseal validation reports |
 
 ## Pure Validation Boundary
 

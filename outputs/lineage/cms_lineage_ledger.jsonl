@@ -72,3 +72,4 @@
 {"lineage_event": "promoted_v0_4_5_validation_order_and_preseal_boundary_lessons_to_main_readme", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:19:23.946027+00:00", "version": "v0.4.5"}
 {"lineage_event": "evolved_authorized_dry_run_into_apply_gate_and_rollback_ledger_without_write_authority", "previous": "v0.4.5", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:26:15.730948+00:00", "version": "v0.4.6"}
 {"lineage_event": "evolved_apply_gate_into_authorized_apply_packet_and_diff_manifest_without_write_authority", "previous": "v0.4.6", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:35:23.186463+00:00", "version": "v0.4.7"}
+{"lineage_event": "evolved_apply_packet_diff_manifest_into_dry_apply_sandbox_without_live_write_authority", "previous": "v0.4.7", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:43:54.076221+00:00", "version": "v0.4.8"}

@@ -1,7 +1,7 @@
 
 # CMS Memory Runtime
 
-CMS-RCC-N-v0.4.7
+CMS-RCC-N-v0.4.8
 
 Purpose: memory promotion, downgrade preservation, observe-only preservation, and future cybernetic memory loop support.
 
@@ -16,7 +16,7 @@ Mini README update rule: if this folder purpose, validation command, evidence su
 
 Non-claim lock: memory runtime surfaces are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
-## CMS-RCC-N-v0.4.7 Surface Alignment
+## CMS-RCC-N-v0.4.8 Surface Alignment
 
 Role: CMS Memory Runtime
 
@@ -40,14 +40,14 @@ Current version: v0.4.4
 
 Previous version: v0.4.3
 
-API is not active in v0.4.7
+API is not active in v0.4.8
 
 Repair closure planning converts recommendations into execution plans and closure ledgers without autonomous patch authority.
 
 Non-claim lock: v0.4.4 surface propagation repair is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.4.7 Surface Alignment
+## CMS-RCC-N-v0.4.8 Surface Alignment
 
 Current checkpoint: CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor
 
@@ -55,14 +55,14 @@ Current version: v0.4.5
 
 Previous version: v0.4.4
 
-API is not active in v0.4.7
+API is not active in v0.4.8
 
 Authorized repair dry-runs simulate repair execution without target writes.
 
 Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.4.7 Surface Alignment
+## CMS-RCC-N-v0.4.8 Surface Alignment
 
 Current checkpoint: CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger
 
@@ -70,14 +70,14 @@ Current version: v0.4.6
 
 Previous version: v0.4.5
 
-API is not active in v0.4.7
+API is not active in v0.4.8
 
 Authorized repair apply gates block repair execution until authorization and rollback coverage exist.
 
 Non-claim lock: Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.4.7 Surface Alignment
+## CMS-RCC-N-v0.4.8 Surface Alignment
 
 Current checkpoint: CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest
 
@@ -85,8 +85,23 @@ Current version: v0.4.7
 
 Previous version: v0.4.6
 
-API is not active in v0.4.7
+API is not active in v0.4.8
 
 Authorized apply packets define diff and rollback requirements but do not apply writes.
 
 Non-claim lock: Authorized apply packets and diff manifests are repository-bound authorization evidence and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+
+## CMS-RCC-N-v0.4.8 Surface Alignment
+
+Current checkpoint: CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox
+
+Current version: v0.4.8
+
+Previous version: v0.4.7
+
+API is not active in v0.4.8
+
+Authorized dry-apply sandbox simulates packet execution without live target writes.
+
+Non-claim lock: Authorized dry-apply sandboxes are repository-bound execution simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.

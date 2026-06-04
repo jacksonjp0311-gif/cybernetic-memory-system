@@ -23,3 +23,7 @@ __all__ = [name for name in globals() if not name.startswith('_')]
 from .repair_apply_packet import build_apply_packet_manifest
 
 __all__ = [name for name in globals() if not name.startswith('_')]
+
+from .repair_dry_apply_sandbox import build_dry_apply_sandbox
+
+__all__ = [name for name in globals() if not name.startswith('_')]
