@@ -1,14 +1,14 @@
 {
   "schema": "CMS-SA-v0.2-observation-manifest",
   "repository": "cybernetic-memory-system",
-  "observed_at": "2026-06-04T17:13:52.736758+00:00",
-  "git_head": "308f9115b32d766f1b3602abc896b6d866a0c3b7",
-  "file_count": 702,
+  "observed_at": "2026-06-04T17:14:06.284228+00:00",
+  "git_head": "16b93b537060e7ae5cebf93fde9d61a1682c51d1",
+  "file_count": 704,
   "role_counts": {
     "other": 9,
-    "documentation": 148,
+    "documentation": 149,
     "ai_contract": 1,
-    "json_artifact": 203,
+    "json_artifact": 204,
     "mini_readme": 67,
     "rcc_context": 5,
     "injection_record": 42,
@@ -19,8 +19,8 @@
   "suffix_counts": {
     "<none>": 2,
     ".txt": 2,
-    ".md": 370,
-    ".json": 207,
+    ".md": 371,
+    ".json": 208,
     ".tex": 1,
     ".jsonl": 7,
     ".toml": 1,
@@ -1299,8 +1299,8 @@
     {
       "path": "outputs/alignment/latest_multilevel_alignment_report.json",
       "suffix": ".json",
-      "bytes": 6439,
-      "sha256": "91d9d417c5853d3e8b749d68370d260e8c766b09f8cb3b451ca41ae916a982cf",
+      "bytes": 6406,
+      "sha256": "70080aa59def18e3243663cc6411acdb4bf7b891d3ecab4cdbbf2d324adc29b2",
       "role": "json_artifact"
     },
     {
@@ -1334,15 +1334,15 @@
     {
       "path": "outputs/decision/latest_runtime_decision.json",
       "suffix": ".json",
-      "bytes": 3205,
-      "sha256": "348c5bb47da7a65c263e50fdba5c457d047d69876df897e41aa7b8b6c8b4c4d8",
+      "bytes": 3165,
+      "sha256": "589917bce2f85585fae949ccd5ab589c9b31c3b0c5f0b552353ed6e13a772288",
       "role": "json_artifact"
     },
     {
       "path": "outputs/decision/latest_runtime_decision.md",
       "suffix": ".md",
       "bytes": 574,
-      "sha256": "79915f334613408df3b1b35e9fa32206c6a00d974d4feb9370feddb2da509b4d",
+      "sha256": "a4cfbfc5ed060e88aa033e763568206736886037b5f002768a2b98c2a98a1572",
       "role": "documentation"
     },
     {
@@ -1572,8 +1572,8 @@
     {
       "path": "outputs/evidence/latest_evidence_package.json",
       "suffix": ".json",
-      "bytes": 3415,
-      "sha256": "5e93b9c951f430d3568b4e461bbc90bff00324e25f26e158a5542b522978fcda",
+      "bytes": 3416,
+      "sha256": "d49553f9ed3a3b0e027a585911e7e0baf504bcf49d4caf07dda17a2bd72d1e57",
       "role": "json_artifact"
     },
     {
@@ -1600,8 +1600,8 @@
     {
       "path": "outputs/geometry/latest_reflective_git_geometry.json",
       "suffix": ".json",
-      "bytes": 245623,
-      "sha256": "a120340679d6579648eaf2305f84324589964ae9d16676785b957f0c139b8ce1",
+      "bytes": 258971,
+      "sha256": "1f80adc66896574f918a0f5a8a294153f55dbf8833efa443d8a3dd275a619e98",
       "role": "json_artifact"
     },
     {
@@ -1628,8 +1628,8 @@
     {
       "path": "outputs/ledger/cms_sa_v0_5_1_public_governance_backfill_ledger.jsonl",
       "suffix": ".jsonl",
-      "bytes": 619,
-      "sha256": "e0506a34436f03857829d478a295310ec38dbce475269f767d78ce2305090403",
+      "bytes": 1246,
+      "sha256": "000c1bd1245d549e184c8d85c542c5c385681937250de966920099352d7c6940",
       "role": "other"
     },
     {
@@ -1684,8 +1684,8 @@
     {
       "path": "outputs/loop/latest_loop_drift_pressure.json",
       "suffix": ".json",
-      "bytes": 1766,
-      "sha256": "46a8435d60d01bc18a4a080145cd8964ccf0dbd3742f710732503a5520b43290",
+      "bytes": 1696,
+      "sha256": "6f315912cb6300bbe37b2526fe9cba57195cc0eb3411065e45773629474acb8f",
       "role": "json_artifact"
     },
     {
@@ -1733,8 +1733,8 @@
     {
       "path": "outputs/metrics/latest_metric_evaluation.json",
       "suffix": ".json",
-      "bytes": 1452,
-      "sha256": "be9229737cd60a9d6eff8a4dd48b64094c1f1ec0e2ddffff3bf2926e2b46da27",
+      "bytes": 1453,
+      "sha256": "1b75ce50ab89c25e8b3612caebe56dc333f47f0897bcdd5af8b7441e65085750",
       "role": "json_artifact"
     },
     {
@@ -2041,8 +2041,8 @@
     {
       "path": "outputs/replay/runtime_decision_replay_ledger.jsonl",
       "suffix": ".jsonl",
-      "bytes": 9579,
-      "sha256": "676f1f8ce0e1634cc2ae0bb2a75ea2ad55a8bfb1c1e12e63bf0a58f9f1f21f60",
+      "bytes": 9910,
+      "sha256": "5b87be678425f74fd82441d5cb19a6ffbe9677293de89eacb932c9131ec079d0",
       "role": "other"
     },
     {
@@ -2083,8 +2083,8 @@
     {
       "path": "outputs/state/latest_cms_sa_v0_5_1_method_state.json",
       "suffix": ".json",
-      "bytes": 1610,
-      "sha256": "0d28eef247d7c8e5785dfae751453abf902c64a3022e0e6a13c65f5117670362",
+      "bytes": 1675,
+      "sha256": "bd212971865fa09335d693afd972f20457708fbec0f673af55e769cfc2a4eb9a",
       "role": "json_artifact"
     },
     {
@@ -2097,8 +2097,8 @@
     {
       "path": "outputs/state/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 174230,
-      "sha256": "86e930e99dd07e11110786eb2061416b415a820ad78fe8f54bdeb819dff13220",
+      "bytes": 174778,
+      "sha256": "565caccbb617ed4f45663c1fc3812a12f8abc6843ab2744fca541d7e671193f4",
       "role": "json_artifact"
     },
     {
@@ -2363,29 +2363,29 @@
     {
       "path": "reports/alignment/latest_multilevel_alignment_report.json",
       "suffix": ".json",
-      "bytes": 6439,
-      "sha256": "91d9d417c5853d3e8b749d68370d260e8c766b09f8cb3b451ca41ae916a982cf",
+      "bytes": 6406,
+      "sha256": "70080aa59def18e3243663cc6411acdb4bf7b891d3ecab4cdbbf2d324adc29b2",
       "role": "json_artifact"
     },
     {
       "path": "reports/alignment/latest_multilevel_alignment_report.md",
       "suffix": ".md",
-      "bytes": 932,
-      "sha256": "4df61a460ae0abedc4c31453c9e1c01da48900493233a87773301f41ca63e117",
+      "bytes": 913,
+      "sha256": "f02efadc9691fa4813cd98f7eb52e56010d269c2cfb3793079d17e0284b6c32c",
       "role": "documentation"
     },
     {
       "path": "reports/alignment/latest_multilevel_alignment_validation.json",
       "suffix": ".json",
-      "bytes": 491,
-      "sha256": "1c2c11b638d1039d70f9eaf7020188408c8c327ed9b759eeea272ea94780bdd0",
+      "bytes": 443,
+      "sha256": "2bf51b6a7310c502b9b037835d448d5fedfc8fb9cfa9bd87fc5054eae92ccd21",
       "role": "json_artifact"
     },
     {
       "path": "reports/alignment/latest_multilevel_alignment_validation.md",
       "suffix": ".md",
-      "bytes": 420,
-      "sha256": "8bb1426173c1b9f5e68cbffdbb505888424748e266fdd2c2b4ab36bc4eaaa85e",
+      "bytes": 352,
+      "sha256": "2c8159034d122c6b1152e62b7f259f8e7dfe695cc7717c49195c00df908c9334",
       "role": "documentation"
     },
     {
@@ -2517,22 +2517,22 @@
     {
       "path": "reports/decision/latest_runtime_decision.json",
       "suffix": ".json",
-      "bytes": 3205,
-      "sha256": "348c5bb47da7a65c263e50fdba5c457d047d69876df897e41aa7b8b6c8b4c4d8",
+      "bytes": 3165,
+      "sha256": "589917bce2f85585fae949ccd5ab589c9b31c3b0c5f0b552353ed6e13a772288",
       "role": "json_artifact"
     },
     {
       "path": "reports/decision/latest_runtime_decision.md",
       "suffix": ".md",
       "bytes": 574,
-      "sha256": "79915f334613408df3b1b35e9fa32206c6a00d974d4feb9370feddb2da509b4d",
+      "sha256": "a4cfbfc5ed060e88aa033e763568206736886037b5f002768a2b98c2a98a1572",
       "role": "documentation"
     },
     {
       "path": "reports/decision/latest_runtime_decision_validation.json",
       "suffix": ".json",
       "bytes": 364,
-      "sha256": "bce2a7619f49afa7f1a454c9bb1c4753468c280122d00f25fc4d8d7796cf83c7",
+      "sha256": "adf9b1b47430bdce7cb6315ee19f529ab47414b36a67eb9eed0b5cc52d293513",
       "role": "json_artifact"
     },
     {
@@ -2608,8 +2608,8 @@
     {
       "path": "reports/evidence/latest_evidence_package.json",
       "suffix": ".json",
-      "bytes": 3415,
-      "sha256": "5e93b9c951f430d3568b4e461bbc90bff00324e25f26e158a5542b522978fcda",
+      "bytes": 3416,
+      "sha256": "d49553f9ed3a3b0e027a585911e7e0baf504bcf49d4caf07dda17a2bd72d1e57",
       "role": "json_artifact"
     },
     {
@@ -2657,15 +2657,15 @@
     {
       "path": "reports/geometry/latest_reflective_git_geometry.json",
       "suffix": ".json",
-      "bytes": 245623,
-      "sha256": "a120340679d6579648eaf2305f84324589964ae9d16676785b957f0c139b8ce1",
+      "bytes": 258971,
+      "sha256": "1f80adc66896574f918a0f5a8a294153f55dbf8833efa443d8a3dd275a619e98",
       "role": "json_artifact"
     },
     {
       "path": "reports/geometry/latest_reflective_git_geometry.md",
       "suffix": ".md",
-      "bytes": 3520,
-      "sha256": "a6053dc0c5b2a4278514c0be4cb61a920288a6fed170b62f43006b4539659829",
+      "bytes": 3636,
+      "sha256": "33a261c6b89ebb389f19784706166d290d081928ed829daa8dbdf8731e5d5e64",
       "role": "documentation"
     },
     {
@@ -2708,6 +2708,20 @@
       "suffix": ".md",
       "bytes": 1648,
       "sha256": "e499c7fd160fded87f66ea759e4700570f562342fa117a0ccd147efecca87e77",
+      "role": "documentation"
+    },
+    {
+      "path": "reports/governance_backfill/latest_v0_5_1_preseal_seal_validation_summary.json",
+      "suffix": ".json",
+      "bytes": 1675,
+      "sha256": "bd212971865fa09335d693afd972f20457708fbec0f673af55e769cfc2a4eb9a",
+      "role": "json_artifact"
+    },
+    {
+      "path": "reports/governance_backfill/latest_v0_5_1_preseal_seal_validation_summary.md",
+      "suffix": ".md",
+      "bytes": 653,
+      "sha256": "b138d7ddd4b7af535d01c1e55aa798cce883f2fefffceb07227f83aed0eed2b7",
       "role": "documentation"
     },
     {
@@ -2867,29 +2881,29 @@
     {
       "path": "reports/loop/latest_loop_drift_pressure.json",
       "suffix": ".json",
-      "bytes": 1766,
-      "sha256": "46a8435d60d01bc18a4a080145cd8964ccf0dbd3742f710732503a5520b43290",
+      "bytes": 1696,
+      "sha256": "6f315912cb6300bbe37b2526fe9cba57195cc0eb3411065e45773629474acb8f",
       "role": "json_artifact"
     },
     {
       "path": "reports/loop/latest_loop_drift_pressure.md",
       "suffix": ".md",
-      "bytes": 1110,
-      "sha256": "51617564cafd6a697fa0464f8f082855221250c1cb4b149023a6e9614af56b4d",
+      "bytes": 1054,
+      "sha256": "0047d1d876f9b5d428cf7f53c7f489e171ca3b606592169bc0cbb95c74d3dde7",
       "role": "documentation"
     },
     {
       "path": "reports/loop/latest_loop_drift_pressure_validation.json",
       "suffix": ".json",
-      "bytes": 369,
-      "sha256": "aeea0140216642051d226fd48ee06f4b56700c77a3bc229dfd82549544a25a59",
+      "bytes": 353,
+      "sha256": "3eccb2b4b3ecb7743a907f52eb735b85f61f81b476eee3a206daa39a72569ac1",
       "role": "json_artifact"
     },
     {
       "path": "reports/loop/latest_loop_drift_pressure_validation.md",
       "suffix": ".md",
-      "bytes": 328,
-      "sha256": "ea64cb18fba4676651aa4ea2936c1c9ff5c03ecc6e6c08278783aeae91680b00",
+      "bytes": 312,
+      "sha256": "0675a57e87a3540d19b1b501865bc623ee682918d09bb34f43e59a52ffdbabb9",
       "role": "documentation"
     },
     {
@@ -3483,29 +3497,29 @@
     {
       "path": "reports/metric_contracts/latest_metric_evaluation.json",
       "suffix": ".json",
-      "bytes": 1452,
-      "sha256": "be9229737cd60a9d6eff8a4dd48b64094c1f1ec0e2ddffff3bf2926e2b46da27",
+      "bytes": 1453,
+      "sha256": "1b75ce50ab89c25e8b3612caebe56dc333f47f0897bcdd5af8b7441e65085750",
       "role": "json_artifact"
     },
     {
       "path": "reports/metric_contracts/latest_metric_evaluation.md",
       "suffix": ".md",
-      "bytes": 282,
-      "sha256": "30de578374f9a40305538913d974fe62e1259aef7937a50716e470d37c357641",
+      "bytes": 283,
+      "sha256": "27dc63a64c25327cad3e9493492ea4da22a24fb29af06d3dccb3d8ecdd6cb73c",
       "role": "documentation"
     },
     {
       "path": "reports/public_sync/latest_public_sync_report.json",
       "suffix": ".json",
-      "bytes": 875,
-      "sha256": "51a13364ed5c5cfdb743aad08a6ed044cdc981c38835668e18e4b6f46bdf6661",
+      "bytes": 862,
+      "sha256": "fac69a8cc2a9b8ee84485b015a39f2d9637fdcbcb9c9f713e07c27c62375b81f",
       "role": "json_artifact"
     },
     {
       "path": "reports/public_sync/latest_public_sync_report.md",
       "suffix": ".md",
-      "bytes": 671,
-      "sha256": "bf0e9de4a17b2a9c1cfbfbdbc5b21bd14e04806af0e4a113b8e5eff50dfd434f",
+      "bytes": 691,
+      "sha256": "a87a297a5242c8aa97a554fd6d72c4b3fac7d9ecdc095d2a5885bccc6649119c",
       "role": "documentation"
     },
     {
@@ -3763,15 +3777,15 @@
     {
       "path": "reports/runtime_observation/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 174230,
-      "sha256": "86e930e99dd07e11110786eb2061416b415a820ad78fe8f54bdeb819dff13220",
+      "bytes": 174778,
+      "sha256": "565caccbb617ed4f45663c1fc3812a12f8abc6843ab2744fca541d7e671193f4",
       "role": "json_artifact"
     },
     {
       "path": "reports/runtime_observation/latest_observation_manifest.md",
       "suffix": ".md",
       "bytes": 224,
-      "sha256": "c8b027caec3c3032ded2204af9edada6e0c596064854425089ffee6c614e9451",
+      "sha256": "fdda8398cf5b59c6953c09bbaa2614abd2e928645dbc7ce77ac65784d68e6c47",
       "role": "documentation"
     },
     {
