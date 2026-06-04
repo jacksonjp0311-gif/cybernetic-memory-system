@@ -1,6 +1,6 @@
 {
   "closure_count": 1,
-  "closure_hash": "5dd940b3b2214a7642c4739eb54dfba091747d72fcf7bbc4b2a40195a5bd0c43",
+  "closure_hash": "ca41a6774de6f45fac201265e6d0962d71e99f56b225f9728fba3fcb442ac46e",
   "closure_ledger": [
     {
       "blocked_actions_preserved": [
@@ -18,7 +18,7 @@
       "source_recommendation_id": "CMS-RR-3d8ebfb363"
     }
   ],
-  "created_at": "2026-06-04T04:46:27.684701+00:00",
+  "created_at": "2026-06-04T04:46:44.108642+00:00",
   "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
   "passed": true,
   "plan_count": 1,
@@ -60,7 +60,7 @@
   "schema": "CMS-SA-v0.4.4-repair-execution-plan-and-closure-ledger",
   "source_pressure_state": "stable",
   "source_recommendation_count": 1,
-  "source_recommendation_hash": "b716b5ca74df73524ffc08e2ee718731be238c95bad8e2bf0c694888d306b45e",
+  "source_recommendation_hash": "3f270e566980545fc4b73e9def7668b11dd7b51b65daf4bffcfaa662b5558fb3",
   "source_stability_state": "stable_green_loop",
   "version": "v0.4.4"
 }

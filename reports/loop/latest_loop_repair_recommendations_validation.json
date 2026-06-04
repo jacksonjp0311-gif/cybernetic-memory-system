@@ -9,7 +9,7 @@
   "pressure_state": "stable",
   "primary_lock": "No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.",
   "recommendation_count": 1,
-  "recommendation_hash": "b716b5ca74df73524ffc08e2ee718731be238c95bad8e2bf0c694888d306b45e",
+  "recommendation_hash": "3f270e566980545fc4b73e9def7668b11dd7b51b65daf4bffcfaa662b5558fb3",
   "schema": "CMS-SA-v0.4.3-loop-repair-recommendation-validation",
   "source_stability_state": "stable_green_loop"
 }

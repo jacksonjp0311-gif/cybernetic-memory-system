@@ -1,8 +1,8 @@
 {
   "api_writes_performed": 0,
   "apply_packet_count": 1,
-  "apply_packet_manifest_hash": "32715266671fb5b594b45ed86e6bf3ac23c21c5585eea14efc6a0f2fbf2b908d",
-  "created_at": "2026-06-04T04:46:28.269555+00:00",
+  "apply_packet_manifest_hash": "cf77840b94dddaac9cdc7fbbb4acc38dcee9c799385974113dab728bdebeece7",
+  "created_at": "2026-06-04T04:46:45.390035+00:00",
   "diff_manifest_count": 1,
   "diff_manifest_ledger": [
     {
@@ -76,7 +76,7 @@
   "release_tags_created": 0,
   "schema": "CMS-SA-v0.4.7-authorized-apply-packet-and-diff-manifest",
   "source_apply_gate_count": 1,
-  "source_apply_gate_hash": "e06408afe607818e588a8157aa4dfb0226179ec0b39cde658724bc10e50be519",
+  "source_apply_gate_hash": "028e702ebf2c18036a12667d1a2932a3c88958ddd441d6760bd4af07f6f54fb0",
   "source_pressure_state": "stable",
   "target_writes_performed": 0,
   "version": "v0.4.7"

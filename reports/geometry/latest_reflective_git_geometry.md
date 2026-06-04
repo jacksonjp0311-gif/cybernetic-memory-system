@@ -17,6 +17,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `f2d671e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.8 postseal validation reports |
 | `ef16a46` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.8 authorized dry-apply sandbox |
 | `409b635` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.7 final postpush evidence |
 | `43f397b` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.7 postseal validation reports |
@@ -28,7 +29,6 @@
 | `abd667c` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.5 postseal validation reports |
 | `f873f28` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.5 authorized repair dry-run executor |
 | `a9764ad` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | fix: refresh CMS-SA v0.4.4 postseal geometry alignment |
-| `0ddd2e9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.4 postseal validation reports |
 
 ## Pure Validation Boundary
 

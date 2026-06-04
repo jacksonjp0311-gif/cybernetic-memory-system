@@ -1,8 +1,8 @@
 {
   "api_writes_performed": 0,
-  "created_at": "2026-06-04T04:46:28.498763+00:00",
+  "created_at": "2026-06-04T04:46:45.817193+00:00",
   "dry_apply_run_count": 1,
-  "dry_apply_sandbox_hash": "7d855a19e7096b163e9a09ffd2cac481590e2af554ee293dd98c6b72ca265b87",
+  "dry_apply_sandbox_hash": "ab39510c5c9ee8f8e0e51c9017be98fe24c51b4e0ad14fb57ef0eeb073160b0c",
   "git_commits_performed": 0,
   "git_pushes_performed": 0,
   "live_target_writes_performed": 0,
@@ -64,7 +64,7 @@
   ],
   "schema": "CMS-SA-v0.4.8-authorized-apply-executor-dry-apply-sandbox",
   "source_apply_packet_count": 1,
-  "source_apply_packet_manifest_hash": "32715266671fb5b594b45ed86e6bf3ac23c21c5585eea14efc6a0f2fbf2b908d",
+  "source_apply_packet_manifest_hash": "cf77840b94dddaac9cdc7fbbb4acc38dcee9c799385974113dab728bdebeece7",
   "source_pressure_state": "stable",
   "version": "v0.4.8",
   "virtual_target_writes_performed": 0
