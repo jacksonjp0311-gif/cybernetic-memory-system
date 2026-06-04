@@ -1,20 +1,20 @@
 {
-  "current_checkpoint": "CMS-SA v0.4.2 - Loop Drift Pressure Metrics",
-  "current_version": "v0.4.2",
-  "latest_version": "v0.4.2",
-  "next_anchor": "CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer",
+  "current_checkpoint": "CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer",
+  "current_version": "v0.4.3",
+  "latest_version": "v0.4.3",
+  "next_anchor": "CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true,
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_seal": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
-  "previous_version": "v0.4.1",
+  "previous_seal": "CMS-SA v0.4.2 - Loop Drift Pressure Metrics",
+  "previous_version": "v0.4.2",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
-  "updated_at": "2026-06-04T03:16:51.592003+00:00",
+  "updated_at": "2026-06-04T03:42:30.926616+00:00",
   "versions": [
     {
       "class": "software_architecture_genesis",
@@ -222,10 +222,23 @@
     },
     {
       "checkpoint": "CMS-SA v0.4.2 - Loop Drift Pressure Metrics",
+      "lifecycle_status": {
+        "public_sync_passed": true,
+        "sealed": true,
+        "validated": true
+      },
       "previous": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
       "primary_report": "reports/loop/latest_loop_drift_pressure.md",
-      "status": "pending_validation",
+      "status": "validated_sealed_public_sync_passed",
       "version": "v0.4.2"
+    },
+    {
+      "checkpoint": "CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer",
+      "non_claim_lock": "Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
+      "previous": "CMS-SA v0.4.2 - Loop Drift Pressure Metrics",
+      "primary_report": "reports/loop/latest_loop_repair_recommendations.md",
+      "status": "preseal_development",
+      "version": "v0.4.3"
     }
   ]
 }

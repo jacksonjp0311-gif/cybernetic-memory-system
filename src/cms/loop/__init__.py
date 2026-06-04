@@ -5,3 +5,5 @@ from .cybernetic import build_cybernetic_memory_loop
 __all__ = ["build_cybernetic_memory_loop"]
 
 from cms.loop.drift_pressure import build_loop_drift_pressure
+
+from .repair_recommendation import build_loop_repair_recommendations

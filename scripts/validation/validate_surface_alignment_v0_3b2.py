@@ -51,6 +51,9 @@ STATIC_ROOT_TOKENS = [
     "reports/loop/latest_loop_drift_pressure.md",
     "scripts/loop/emit_loop_drift_pressure_v0_4_2.py",
     "scripts/validation/validate_loop_drift_pressure_v0_4_2.py",
+    "scripts/validation/validate_loop_repair_recommendations_v0_4_3.py",
+    "scripts/loop/emit_loop_repair_recommendations_v0_4_3.py",
+    "reports/loop/latest_loop_repair_recommendations.md",
 ]
 
 STALE_FORBIDDEN_TOKENS = [

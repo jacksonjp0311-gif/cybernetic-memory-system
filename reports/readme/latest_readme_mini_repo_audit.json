@@ -1,9 +1,9 @@
 {
-  "schema": "CMS-SA-v0.4.2-readme-mini-repo-audit",
+  "schema": "CMS-SA-v0.4.3-readme-mini-repo-audit",
   "passed": true,
   "errors": 0,
   "warnings": 0,
-  "accepted_checkpoint_pattern": "CMS-SA v0.4.2",
+  "accepted_checkpoint_pattern": "CMS-SA v0.4.3",
   "missing_root_tokens": [],
   "mini_readmes_missing_update_rule": [],
   "release_gate_truth_enforced": true,

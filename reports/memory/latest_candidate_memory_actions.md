@@ -2,7 +2,7 @@
 
 - passed: `True`
 - candidate_action_count: `4`
-- action_hash: `4a66113a9026483a6119028866841f0b57b8a868e912a487bac86ee478cf133d`
+- action_hash: `9966f1fb234ff5b6aebeadcf9331d27bcc40456ddd536870c20ba330bb1ead56`
 
 ## Actions
 

@@ -1,22 +1,22 @@
-# CMS-SA v0.4.2 Multi-Level Alignment Report
+# CMS-SA v0.4.3 Multi-Level Alignment Report
 
 | Field | Value |
 |---|---|
-| schema | `CMS-SA-v0.4.2-multilevel-alignment-report` |
-| version | `v0.4.2` |
-| seal mode | `postseal` |
+| schema | `CMS-SA-v0.4.3-multilevel-alignment-report` |
+| version | `v0.4.3` |
+| seal mode | `preseal` |
 | passed | `true` |
-| current registry version | `v0.4.2` |
-| previous registry version | `v0.4.1` |
+| current registry version | `v0.4.3` |
+| previous registry version | `v0.4.2` |
 
 ## Public Sync Phase
 
 ```json
 {
   "accepted_for_current_phase": true,
-  "mode": "postseal",
+  "mode": "preseal",
   "passed": true,
-  "phase_state": "postseal_passed",
+  "phase_state": "preseal_report_already_passed",
   "present": true,
   "release_tag_exists": true,
   "release_tag_is_ancestor_of_head": true,

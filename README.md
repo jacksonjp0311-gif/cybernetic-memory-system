@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.2-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.3-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.2 - Loop Drift Pressure Metrics**
-Previous seal: **CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening**
+Current checkpoint: **CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer**
+Previous seal: **CMS-SA v0.4.2 - Loop Drift Pressure Metrics**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -60,6 +60,7 @@ Core law:
 | v0.4.0 Cybernetic Memory Loop Genesis | Can promoted memory become bounded next-cycle influence? | `reports/loop/latest_cybernetic_memory_loop.md` |
 | v0.4.1 Per-Candidate Memory Action Schema | Can every memory candidate expose a typed next-cycle action and rehydration-visible status? | `reports/memory/latest_candidate_memory_actions.md` |
 | v0.4.2 Loop Drift Pressure Metrics | Is the loop still stable, or is green status hiding stale pressure? | `reports/loop/latest_loop_drift_pressure.md` |
+| v0.4.3 Loop Pressure Repair Recommendation Layer | What concrete repair should follow each pressure finding? | `reports/loop/latest_loop_repair_recommendations.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -86,8 +87,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.2 |
-| Previous seal | CMS-SA v0.4.1 |
+| Current checkpoint | CMS-SA v0.4.3 |
+| Previous seal | CMS-SA v0.4.2 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -124,6 +125,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Candidate memory actions | `reports/memory/latest_candidate_memory_actions_validation.md` |
 | Thread rehydration score | `reports/rehydration/latest_thread_rehydration_score_validation.md` |
 | Loop drift pressure | `reports/loop/latest_loop_drift_pressure_validation.md` |
+| Loop repair recommendations | `reports/loop/latest_loop_repair_recommendations_validation.md` |
 | Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -147,6 +149,16 @@ Preseal boundary: before commit/tag/push, public-sync tag absence is pressure, n
 Postseal boundary: after commit/tag/push, public-sync must pass and the release tag must be an ancestor of HEAD.
 
 Non-claim lock: registry-derived alignment is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+## CMS-SA v0.4.3 Loop Pressure Repair Recommendation Layer
+
+v0.4.3 converts loop drift pressure findings into typed repair recommendations. It does not execute repairs; it routes pressure into evidence requirements, validators, phase boundaries, downgrade paths, and next-action guidance.
+
+```text
+No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.
+```
+
+Non-claim lock: Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
 ## Quick Start
 
@@ -184,6 +196,8 @@ python scripts/rehydration/emit_thread_rehydration_score_v0_4_1.py
 python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
+python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
+python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -378,7 +392,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.4.2 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.3 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -624,7 +638,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.4.2 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.4.3 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -704,6 +718,8 @@ python scripts/rehydration/emit_thread_rehydration_score_v0_4_1.py
 python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
+python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
+python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -845,7 +861,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.4.2 This layer is internal runtime coherence only.
+API is not active in v0.4.3 This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 

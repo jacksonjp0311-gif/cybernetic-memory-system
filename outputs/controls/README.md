@@ -1,7 +1,7 @@
 
 # Control Outputs
 
-CMS-RCC-N-v0.4.2
+CMS-RCC-N-v0.4.3
 
 Purpose: Machine-readable latest negative-control harness outputs.
 
@@ -16,15 +16,15 @@ Mini README update rule: if this folder purpose, validation command, evidence su
 
 Non-claim lock: control harness surfaces are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
-## CMS-RCC-N-v0.4.2 Surface Alignment
+## CMS-RCC-N-v0.4.3 Surface Alignment
 
 Role: Control Outputs
 
-Current checkpoint: CMS-SA v0.4.2 - Loop Drift Pressure Metrics
+Current checkpoint: CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer
 
-Current version: v0.4.2
+Current version: v0.4.3
 
-Previous version: v0.4.1
+Previous version: v0.4.2
 
 Update rule: when the version registry advances, this mini README must either refresh to the current RCC-N token or explicitly mark itself as historical.
 

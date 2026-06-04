@@ -5,6 +5,6 @@
   "errors": 0,
   "findings": [],
   "decision": "promote",
-  "decision_hash": "01883481ea39e3bd13f05ac2a5bf0af09ec35d3cef370d8be1f486fb0719093a",
+  "decision_hash": "74027b273f4777b28f9c9ca94d64ddab3182c8d3d068f3ab201d4823e527962c",
   "non_claim_lock": "Runtime decision validation is repository-bound and does not prove code correctness."
 }

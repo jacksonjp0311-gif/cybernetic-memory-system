@@ -1,5 +1,5 @@
 {
-  "action_hash": "4a66113a9026483a6119028866841f0b57b8a868e912a487bac86ee478cf133d",
+  "action_hash": "9966f1fb234ff5b6aebeadcf9331d27bcc40456ddd536870c20ba330bb1ead56",
   "actions": [
     {
       "allowed_next_action": "may_influence_next_cycle_after_rehydration_scan",
@@ -88,7 +88,7 @@
   ],
   "candidate_action_count": 4,
   "input_hashes": {
-    "loop_hash": "7c3a5108d92cd1d1e0d2a647b417efc4377c3e90b059389b522e07cd62afde42",
+    "loop_hash": "cd1b512902752ccd51784e731af93cccda449eae885ab6d00353c3a026a44ce3",
     "memory_promotion_hash": "05fb031fcd78ce2e8b5b54bb71ca3602fd1bd472f160c4bd4278fc0254cf6605"
   },
   "non_claim_lock": "Candidate memory actions are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",

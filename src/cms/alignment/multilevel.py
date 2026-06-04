@@ -1,6 +1,8 @@
-
-from __future__ import annotations
-
+def _cms_v043_as_float(value, default=0.0):
+    try:
+        return float(value)
+    except Exception:
+        return default
 import json
 import os
 from datetime import datetime, timezone
@@ -150,7 +152,7 @@ def build_multilevel_alignment_report() -> dict[str, Any]:
         "readme_contains_previous_version": state["previous_version"] != "unknown" and state["previous_version"] in readme,
         "surface_alignment_passed": surface_alignment.get("passed") is True,
         "loop_drift_pressure_report_present": bool(pressure),
-        "loop_drift_pressure_under_threshold": bool(pressure) and float(pressure.get("loop_drift_pressure", 1.0)) <= float(pressure.get("threshold", 0.25)),
+        "loop_drift_pressure_under_threshold": bool(pressure) and float(pressure.get("loop_drift_pressure", "loop_repair_recommendations")) <= _cms_v043_as_float(pressure.get("threshold", 0.25), 0.25),
         "public_sync_report_present": sync["present"],
         "public_sync_accepted_for_current_phase": sync["accepted_for_current_phase"],
         "geometry_registry_version_matches": geometry_registry_matches,

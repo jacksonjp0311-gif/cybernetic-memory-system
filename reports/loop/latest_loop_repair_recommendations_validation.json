@@ -1,0 +1,15 @@
+{
+  "dominant_pressure_source": "registry_status_drift",
+  "dominant_repair_class": "REGISTRY_REPAIR",
+  "errors": 0,
+  "findings": [],
+  "loop_drift_pressure": 0.168,
+  "non_claim_lock": "Loop repair recommendation validation is repository-bound and does not prove code correctness.",
+  "passed": true,
+  "pressure_state": "warning",
+  "primary_lock": "No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.",
+  "recommendation_count": 3,
+  "recommendation_hash": "80cf3b7bc37e9bf6f4fd018d559e158168de4c626346656f4a272906dc9faffe",
+  "schema": "CMS-SA-v0.4.3-loop-repair-recommendation-validation",
+  "source_stability_state": "green_with_repair_recommendation"
+}
