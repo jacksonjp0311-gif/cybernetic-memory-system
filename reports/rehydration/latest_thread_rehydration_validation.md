@@ -1,4 +1,4 @@
-# CMS-SA v0.4.0 Thread Rehydration Validation
+# CMS-SA v0.4.x Thread Rehydration Validation
 
 - passed: `True`
 - errors: `0`

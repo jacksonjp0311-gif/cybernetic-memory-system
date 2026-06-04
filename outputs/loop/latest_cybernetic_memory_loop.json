@@ -9,7 +9,7 @@
   "input_hashes": {
     "memory_promotion_hash": "05fb031fcd78ce2e8b5b54bb71ca3602fd1bd472f160c4bd4278fc0254cf6605",
     "negative_control_hash": "839cfdcac84c7d6d703adc8751c00af308c47d1d49b071021448c14a57c8d1a9",
-    "runtime_decision_hash": "c54e869af6a1f2089704e179f56a0934e4742554aebcd71f91628b5fa9b0b042"
+    "runtime_decision_hash": "635c5d6fbbc7965fe6346cf3238916b4c4403ea3251fe734ce1c6da1659d1d99"
   },
   "loop_chain": [
     "observe",
@@ -21,7 +21,7 @@
     "validate_loop_report"
   ],
   "loop_closed": true,
-  "loop_hash": "8adfb15ca2911805461521b6a199e055cddf8e84b42d943decdcf57eeae15e64",
+  "loop_hash": "15feb7499e88617cee86b45550c602f5230d76835ccd06e4a58f0708860e3127",
   "memory_counts": {
     "candidate_count": 4,
     "downgraded_count": 1,

@@ -1,6 +1,6 @@
 # Rehydration Contracts
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Thread rehydration contracts and scan targets.
 

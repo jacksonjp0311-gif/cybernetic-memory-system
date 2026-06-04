@@ -1,7 +1,7 @@
 
 # Control Outputs
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Machine-readable latest negative-control harness outputs.
 

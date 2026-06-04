@@ -1,16 +1,16 @@
 {
-  "current_checkpoint": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
-  "current_version": "v0.4.0",
-  "latest_version": "v0.4.0",
-  "next_anchor": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
+  "current_checkpoint": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
+  "current_version": "v0.4.1",
+  "latest_version": "v0.4.1",
+  "next_anchor": "CMS-SA v0.4.2 - Loop Drift Pressure Metrics",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
     "public_sync_is_not_external_validation": true,
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_seal": "CMS-SA v0.3b5 - Memory Promotion Kernel",
-  "previous_version": "v0.3b5",
+  "previous_seal": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
+  "previous_version": "v0.4.0",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
@@ -197,10 +197,23 @@
     },
     {
       "checkpoint": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
+      "lifecycle_status": {
+        "public_sync_passed": true,
+        "sealed": true,
+        "validated": true
+      },
       "previous": "CMS-SA v0.3b5 - Memory Promotion Kernel",
       "primary_report": "reports/loop/latest_cybernetic_memory_loop.md",
-      "status": "pending_validation",
+      "status": "validated_sealed_public_sync_passed",
       "version": "v0.4.0"
+    },
+    {
+      "checkpoint": "CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening",
+      "previous": "CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis",
+      "primary_report": "reports/memory/latest_candidate_memory_actions.md",
+      "secondary_report": "reports/rehydration/latest_thread_rehydration_score.md",
+      "status": "pending_validation",
+      "version": "v0.4.1"
     }
   ]
 }

@@ -1,7 +1,7 @@
 
 # Memory Emitters
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: emit memory-promotion reports from repository-bound evidence, controls, decisions, downgrade paths, and falsification conditions.
 

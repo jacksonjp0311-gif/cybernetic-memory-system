@@ -3,6 +3,6 @@
   "findings": [],
   "non_claim_lock": "Thread rehydration validation is repository-bound and does not prove code correctness.",
   "passed": true,
-  "schema": "CMS-SA-v0.4.0-thread-rehydration-validation",
-  "version": "v0.4.0"
+  "schema": "CMS-SA-v0.4.x-thread-rehydration-validation",
+  "version": "v0.4.x"
 }

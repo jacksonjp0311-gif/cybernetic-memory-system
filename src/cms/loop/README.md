@@ -1,6 +1,6 @@
 # Loop Runtime
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Runtime package for cybernetic memory loop state and influence emission.
 

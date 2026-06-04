@@ -13,7 +13,7 @@ from cms.alignment.multilevel import write_multilevel_alignment_report  # noqa: 
 def main() -> int:
     report = write_multilevel_alignment_report()
     print(json.dumps({
-        "schema": "CMS-SA-v0.4.0-multilevel-alignment-emission",
+        "schema": "CMS-SA-v0.4.1-multilevel-alignment-emission",
         "passed": report.get("passed") is True,
         "version": report.get("version"),
         "feedback_items_checked": report.get("feedback_items_checked"),

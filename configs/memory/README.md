@@ -1,7 +1,7 @@
 
 # Memory Contracts
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Memory promotion contracts for deciding which repository-bound feedback items may become durable memory, which must downgrade, and which must remain observe-only.
 

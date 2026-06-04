@@ -1,6 +1,6 @@
 # Loop Contracts
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Cybernetic memory loop contracts and next-cycle influence rules.
 

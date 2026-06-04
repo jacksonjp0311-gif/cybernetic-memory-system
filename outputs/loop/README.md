@@ -1,6 +1,6 @@
 # Loop Outputs
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Machine-readable cybernetic memory loop outputs.
 

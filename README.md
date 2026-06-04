@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.0-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.1-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -15,8 +15,8 @@
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis**
-Previous seal: **CMS-SA v0.3b5 - Memory Promotion Kernel**
+Current checkpoint: **CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening**
+Previous seal: **CMS-SA v0.4.0 - Cybernetic Memory Loop Genesis**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -58,6 +58,7 @@ Core law:
 | v0.3b4 Negative Control and Downgrade Harness | Can false-promote, downgrade, and observe-only cases be tested before memory promotion? | `reports/controls/latest_negative_control_harness.md` |
 | v0.3b5 Memory Promotion Kernel | Can evidence/control candidates become downgrade-safe durable memory? | `reports/memory/latest_memory_promotion_report.md` |
 | v0.4.0 Cybernetic Memory Loop Genesis | Can promoted memory become bounded next-cycle influence? | `reports/loop/latest_cybernetic_memory_loop.md` |
+| v0.4.1 Per-Candidate Memory Action Schema | Can every memory candidate expose a typed next-cycle action and rehydration-visible status? | `reports/memory/latest_candidate_memory_actions.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -84,8 +85,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.0 |
-| Previous seal | CMS-SA v0.3b5 |
+| Current checkpoint | CMS-SA v0.4.1 |
+| Previous seal | CMS-SA v0.4.0 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -119,6 +120,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Memory promotion validation | `reports/memory/latest_memory_promotion_validation.md` |
 | Cybernetic memory loop | `active: v0.4.0` |
 | Cybernetic memory loop validation | `reports/loop/latest_cybernetic_memory_loop_validation.md` |
+| Candidate memory actions | `reports/memory/latest_candidate_memory_actions_validation.md` |
+| Thread rehydration score | `reports/rehydration/latest_thread_rehydration_score_validation.md` |
 | Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -153,6 +156,10 @@ python scripts/memory/emit_memory_promotion_v0_3b5.py
 python scripts/validation/validate_memory_promotion_v0_3b5.py
 python scripts/loop/emit_cybernetic_memory_loop_v0_4_0.py
 python scripts/validation/validate_cybernetic_memory_loop_v0_4_0.py
+python scripts/memory/emit_candidate_memory_actions_v0_4_1.py
+python scripts/validation/validate_candidate_memory_actions_v0_4_1.py
+python scripts/rehydration/emit_thread_rehydration_score_v0_4_1.py
+python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -347,7 +354,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.4.0 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.1 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -593,7 +600,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.4.0. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.4.1. API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -667,6 +674,10 @@ python scripts/memory/emit_memory_promotion_v0_3b5.py
 python scripts/validation/validate_memory_promotion_v0_3b5.py
 python scripts/loop/emit_cybernetic_memory_loop_v0_4_0.py
 python scripts/validation/validate_cybernetic_memory_loop_v0_4_0.py
+python scripts/memory/emit_candidate_memory_actions_v0_4_1.py
+python scripts/validation/validate_candidate_memory_actions_v0_4_1.py
+python scripts/rehydration/emit_thread_rehydration_score_v0_4_1.py
+python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
 python -m unittest discover -s tests
@@ -808,7 +819,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.4.0. This layer is internal runtime coherence only.
+API is not active in v0.4.1. This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 
@@ -961,3 +972,24 @@ observe -> validate -> decide -> promote_or_downgrade
 ```
 
 Non-claim lock: v0.4.0 improves repository-bound cybernetic memory governance. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous agency, or real-world correctness.
+
+
+## CMS-SA v0.4.1 - Per-Candidate Memory Action Schema and Thread Rehydration Tightening
+
+v0.4.1 sharpens the v0.4.0 loop. It converts summary-level memory promotion into typed candidate-level next-cycle actions and makes thread rehydration measurable.
+
+Primary lock:
+
+```text
+No promoted memory may influence the next cycle without a typed candidate-level action,
+downgrade boundary, evidence requirement, and rehydration-visible status.
+```
+
+Rehydration score rule:
+
+```text
+origin_scan_complete + architecture_scan_complete + runtime_scan_complete
+-> version_ready
+```
+
+Non-claim lock: v0.4.1 improves repository-bound memory action governance and thread rehydration scoring. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous agency, or real-world correctness.

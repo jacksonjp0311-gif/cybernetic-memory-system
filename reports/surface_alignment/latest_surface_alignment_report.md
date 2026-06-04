@@ -1,11 +1,11 @@
-# CMS-SA v0.4.0 Surface Alignment Validation
+# CMS-SA v0.4.1 Surface Alignment Validation
 
 | Field | Value |
 |---|---|
 | passed | `true` |
 | errors | `0` |
 | warnings | `0` |
-| current version | `v0.4.0` |
+| current version | `v0.4.1` |
 | previous version | `v0.3b5` |
 | root tokens checked | `22` |
 | mini READMEs checked | `15` |

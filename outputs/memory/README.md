@@ -1,7 +1,7 @@
 
 # Memory Outputs
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: machine-readable memory-promotion reports and future cybernetic memory-loop outputs.
 

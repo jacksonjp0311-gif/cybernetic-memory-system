@@ -1,6 +1,6 @@
 # Loop Reports
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Human-readable cybernetic memory loop reports and validation surfaces.
 

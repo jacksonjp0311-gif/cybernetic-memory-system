@@ -1,6 +1,6 @@
 # Loop Emitters
 
-CMS-RCC-N-v0.4.0
+CMS-RCC-N-v0.4.1
 
 Purpose: Emitters for cybernetic memory loop reports.
 
