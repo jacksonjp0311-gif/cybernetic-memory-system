@@ -1,14 +1,14 @@
 {
   "schema": "CMS-SA-v0.2-evidence-package",
   "repository": "cybernetic-memory-system",
-  "created_at": "2026-06-04T04:21:37.610089+00:00",
+  "created_at": "2026-06-04T04:23:20.792840+00:00",
   "observation": {
-    "file_count": 570,
+    "file_count": 574,
     "role_counts": {
       "other": 6,
-      "documentation": 110,
+      "documentation": 112,
       "ai_contract": 1,
-      "json_artifact": 149,
+      "json_artifact": 151,
       "mini_readme": 67,
       "rcc_context": 5,
       "injection_record": 37,
@@ -19,8 +19,8 @@
     "suffix_counts": {
       "<none>": 2,
       ".txt": 2,
-      ".md": 312,
-      ".json": 153,
+      ".md": 314,
+      ".json": 155,
       ".tex": 1,
       ".jsonl": 4,
       ".toml": 1,
@@ -42,7 +42,7 @@
       "required_surface_coverage": 1.0,
       "mini_readme_presence": 1.0,
       "version_memory_presence": 1.0,
-      "python_source_presence": 0.1649122807017544
+      "python_source_presence": 0.16376306620209058
     },
     "contracts": [
       {
