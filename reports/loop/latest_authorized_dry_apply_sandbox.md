@@ -3,22 +3,42 @@
 | Field | Value |
 |---|---|
 | passed | `true` |
-| source pressure state | `stable` |
-| source apply packet count | `1` |
-| dry-apply run count | `1` |
+| source pressure state | `warning` |
+| source apply packet count | `3` |
+| dry-apply run count | `3` |
 | virtual target writes performed | `0` |
 | live target writes performed | `0` |
 | api writes performed | `0` |
 | git commits performed | `0` |
 | git pushes performed | `0` |
 | release tags created | `0` |
-| sandbox hash | `ab39510c5c9ee8f8e0e51c9017be98fe24c51b4e0ad14fb57ef0eeb073160b0c` |
+| sandbox hash | `baf1cefd9ae34e7f3d30c6f236d1497d6c112f9df13aa7aa41e21bf7918072d3` |
 
 ## Primary Lock
 
 No dry-apply sandbox may write live target surfaces. It may only simulate packet execution against virtual or copied targets, compare before/after hashes inside the sandbox, simulate rollback, preserve blocked actions, and emit validation evidence.
 
 ## Runs
+
+### CMS-DRY-APPLY-e51a5d40d0
+
+- source packet: `CMS-APPLY-PACKET-ce28b07cd7`
+- sandbox state: `simulated_no_live_writes`
+- diff entries: `0`
+- sandbox operations: `0`
+- rollback simulations: `0`
+- rollback simulation passed: `true`
+- live target writes: `0`
+
+### CMS-DRY-APPLY-1f9bc632fa
+
+- source packet: `CMS-APPLY-PACKET-60de55c00a`
+- sandbox state: `simulated_no_live_writes`
+- diff entries: `0`
+- sandbox operations: `0`
+- rollback simulations: `0`
+- rollback simulation passed: `true`
+- live target writes: `0`
 
 ### CMS-DRY-APPLY-25690b5022
 

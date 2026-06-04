@@ -1,10 +1,89 @@
 {
   "api_writes_performed": 0,
   "commits_performed": 0,
-  "created_at": "2026-06-04T04:46:44.531057+00:00",
-  "dry_run_count": 1,
-  "dry_run_hash": "fdf334a5fe80fb6d29afacfa58c0eb2f0a3837ff932af9954d7b8b1cda445f32",
+  "created_at": "2026-06-04T16:08:26.043933+00:00",
+  "dry_run_count": 3,
+  "dry_run_hash": "80bb76bfb858803e79d36fb13aa1eddb6360adbd01a0b8b66c17cad7c6652d79",
   "dry_runs": [
+    {
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "validator_patch",
+        "memory_promotion",
+        "api_write",
+        "autonomous_patch",
+        "target_surface_write",
+        "release_tag_creation",
+        "git_commit",
+        "git_push"
+      ],
+      "closure_state_after_dry_run": "planned_not_executed",
+      "closure_state_before": "planned_not_executed",
+      "dry_run_hash": "7031c5fb52643a723e4138fb0cf30e58e62555f02b5bf08a7a990573665c5494",
+      "dry_run_id": "CMS-DRYRUN-eb1c78ada2",
+      "dry_run_state": "simulated_no_write",
+      "execution_mode": "dry_run_only",
+      "human_authorization_required_for_write": true,
+      "non_claim_lock": "Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "proposed_diff_manifest": [],
+      "repair_class": "REPORT_REFRESH",
+      "required_validation_evidence": [
+        "validate_public_sync",
+        "validate_multilevel_alignment",
+        "validate_loop_drift_pressure"
+      ],
+      "rollback_path": "discard_dry_run_report_and_recompute_from_latest_validated_closure_plan",
+      "source_plan_id": "CMS-PLAN-9cf10f4caa",
+      "source_recommendation_id": "CMS-RR-460ab6ea93",
+      "target_surface_writes": [],
+      "touched_surface_boundary": [
+        "outputs/*",
+        "reports/*"
+      ],
+      "write_authority": false
+    },
+    {
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "memory_promotion",
+        "public_release_seal",
+        "api_write",
+        "autonomous_patch",
+        "target_surface_write",
+        "release_tag_creation",
+        "git_commit",
+        "git_push"
+      ],
+      "closure_state_after_dry_run": "planned_not_executed",
+      "closure_state_before": "planned_not_executed",
+      "dry_run_hash": "34a6882b2f00cd9d39aca7318aabfa900324469e5e59dfee289f4f99df0f18ff",
+      "dry_run_id": "CMS-DRYRUN-6abf369743",
+      "dry_run_state": "simulated_no_write",
+      "execution_mode": "dry_run_only",
+      "human_authorization_required_for_write": true,
+      "non_claim_lock": "Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "proposed_diff_manifest": [],
+      "repair_class": "SURFACE_REPAIR",
+      "required_validation_evidence": [
+        "audit_readme_surface",
+        "validate_surface_alignment",
+        "emit_runtime_decision",
+        "validate_runtime_decision"
+      ],
+      "rollback_path": "discard_dry_run_report_and_recompute_from_latest_validated_closure_plan",
+      "source_plan_id": "CMS-PLAN-d6db1713fe",
+      "source_recommendation_id": "CMS-RR-3b9295f81d",
+      "target_surface_writes": [],
+      "touched_surface_boundary": [
+        "README.md",
+        "configs/*/README.md",
+        "src/cms/*/README.md",
+        "scripts/*/README.md",
+        "outputs/*/README.md",
+        "reports/*/README.md"
+      ],
+      "write_authority": false
+    },
     {
       "blocked_actions_preserved": [
         "runtime_code_patch",
@@ -48,9 +127,9 @@
   "passed": true,
   "primary_lock": "No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.",
   "schema": "CMS-SA-v0.4.5-authorized-repair-dry-run-executor",
-  "source_closure_hash": "ca41a6774de6f45fac201265e6d0962d71e99f56b225f9728fba3fcb442ac46e",
-  "source_plan_count": 1,
-  "source_pressure_state": "stable",
+  "source_closure_hash": "fdd54687e2b1f741132dccbe73a1c9a0a8a50bd15c5366fc4a967ecce190a5a9",
+  "source_plan_count": 3,
+  "source_pressure_state": "warning",
   "tags_created": 0,
   "target_writes_performed": 0,
   "version": "v0.4.5"

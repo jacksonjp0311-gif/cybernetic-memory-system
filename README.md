@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.8-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.5.0-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,14 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
-CMS-RCC-N-v0.4.8 / 180 days
+CMS-RCC-N-v0.5.0 / 180 days
 
-API is not active in v0.4.8
+API is not active in v0.5.0
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox**
-Previous seal: **CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest**
+Current checkpoint: **CMS-SA v0.5.0 - Agent Governance Kernel Bridge**
+Previous seal: **CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -96,8 +96,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.8 |
-| Previous seal | CMS-SA v0.4.7 |
+| Current checkpoint | CMS-SA v0.5.0 |
+| Previous seal | CMS-SA v0.4.8 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -397,6 +397,27 @@ Starting threshold: `0.14 / 0.25 = 56%` of allowed drift budget, leaving `44%` h
 
 Non-claim lock: Authorized dry-apply sandboxes are repository-bound execution simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
+
+## CMS-SA v0.5.0 Agent Governance Kernel Bridge
+
+v0.5.0 consolidates Phase One of the HRCN direction into a single CMS governance-kernel layer.
+
+```text
+Hermes acts.
+RCC orients.
+CMS governs memory, repair, skill, dry-run, apply-gate, rollback, and permission.
+Human authorization unlocks dangerous transitions.
+```
+
+Primary lock:
+
+```text
+No agent proposal may become memory, skill, repair authority, dry-run authority, apply authority, or write authority unless CMS classifies the proposal, records evidence, preserves blocked actions, and emits a non-claim boundary.
+```
+
+Runtime boundary: no Hermes runtime code is changed; no CMS write integration is active; no write, memory, skill-trust, or apply authority is granted.
+
+
 ## Quick Start
 
 Run the local validation stack:
@@ -443,6 +464,8 @@ python scripts/loop/emit_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/validation/validate_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/loop/emit_authorized_dry_apply_sandbox_v0_4_8.py
 python scripts/validation/validate_authorized_dry_apply_sandbox_v0_4_8.py
+python scripts/governance/emit_agent_governance_kernel_v0_5_0.py
+python scripts/validation/validate_agent_governance_kernel_v0_5_0.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -638,7 +661,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.4.8 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.5.0 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -884,7 +907,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.4.8 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.5.0 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -974,6 +997,8 @@ python scripts/loop/emit_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/validation/validate_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/loop/emit_authorized_dry_apply_sandbox_v0_4_8.py
 python scripts/validation/validate_authorized_dry_apply_sandbox_v0_4_8.py
+python scripts/governance/emit_agent_governance_kernel_v0_5_0.py
+python scripts/validation/validate_agent_governance_kernel_v0_5_0.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -1116,7 +1141,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.4.8 This layer is internal runtime coherence only.
+API is not active in v0.5.0 This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 

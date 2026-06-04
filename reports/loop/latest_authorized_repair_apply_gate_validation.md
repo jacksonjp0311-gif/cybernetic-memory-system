@@ -2,8 +2,8 @@
 
 - passed: `true`
 - errors: `0`
-- apply gate count: `1`
-- rollback ledger count: `1`
+- apply gate count: `3`
+- rollback ledger count: `3`
 - target writes performed: `0`
 - api writes performed: `0`
 - git commits performed: `0`
