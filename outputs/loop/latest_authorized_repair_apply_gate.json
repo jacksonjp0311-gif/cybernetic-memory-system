@@ -1,117 +1,9 @@
 {
   "api_writes_performed": 0,
-  "apply_gate_count": 3,
-  "apply_gate_hash": "b830a96a0ad529d38c8df2cdb9a4efd098111ce3ed19af3064b44641ca04b78d",
-  "created_at": "2026-06-04T04:28:38.747127+00:00",
+  "apply_gate_count": 1,
+  "apply_gate_hash": "1e89896a21fa5141c0f4049a9cd988339653f545f4587b67bf588f423582db9c",
+  "created_at": "2026-06-04T04:28:52.754195+00:00",
   "gates": [
-    {
-      "api_writes_performed": 0,
-      "apply_authority": false,
-      "apply_gate_id": "CMS-APPLY-GATE-a6643e0259",
-      "authorization_packet_id": null,
-      "blocked_actions_preserved": [
-        "runtime_code_patch",
-        "validator_patch",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch",
-        "target_surface_write",
-        "release_tag_creation",
-        "git_commit",
-        "git_push",
-        "silent_target_write",
-        "unreviewed_git_commit",
-        "unreviewed_git_push"
-      ],
-      "exact_target_writes_declared": false,
-      "gate_hash": "3780af63b84137118415f4e9aae38eb03646a7814e89fa955106c0d450e955de",
-      "gate_state": "blocked_pending_explicit_human_authorization",
-      "git_commits_performed": 0,
-      "git_pushes_performed": 0,
-      "human_authorization_present": false,
-      "non_claim_lock": "Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "post_apply_validation_required": [
-        "validate_public_sync",
-        "validate_multilevel_alignment",
-        "validate_loop_drift_pressure"
-      ],
-      "pre_apply_validation_required": [
-        "validate_public_sync",
-        "validate_multilevel_alignment",
-        "validate_loop_drift_pressure"
-      ],
-      "release_tags_created": 0,
-      "repair_class": "REPORT_REFRESH",
-      "rollback_entries": [],
-      "rollback_ready": false,
-      "rollback_required": true,
-      "source_dry_run_id": "CMS-DRYRUN-eb1c78ada2",
-      "source_plan_id": "CMS-PLAN-9cf10f4caa",
-      "source_recommendation_id": "CMS-RR-460ab6ea93",
-      "target_writes_allowed": [],
-      "target_writes_performed": 0,
-      "touched_surface_boundary": [
-        "outputs/*",
-        "reports/*"
-      ]
-    },
-    {
-      "api_writes_performed": 0,
-      "apply_authority": false,
-      "apply_gate_id": "CMS-APPLY-GATE-465e02de46",
-      "authorization_packet_id": null,
-      "blocked_actions_preserved": [
-        "runtime_code_patch",
-        "memory_promotion",
-        "public_release_seal",
-        "api_write",
-        "autonomous_patch",
-        "target_surface_write",
-        "release_tag_creation",
-        "git_commit",
-        "git_push",
-        "silent_target_write",
-        "unreviewed_git_commit",
-        "unreviewed_git_push"
-      ],
-      "exact_target_writes_declared": false,
-      "gate_hash": "3a03c4c2ad22a6239f053cc23a43cdb7dbff5668f23bec47710705217b044545",
-      "gate_state": "blocked_pending_explicit_human_authorization",
-      "git_commits_performed": 0,
-      "git_pushes_performed": 0,
-      "human_authorization_present": false,
-      "non_claim_lock": "Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "post_apply_validation_required": [
-        "audit_readme_surface",
-        "validate_surface_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "pre_apply_validation_required": [
-        "audit_readme_surface",
-        "validate_surface_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "release_tags_created": 0,
-      "repair_class": "SURFACE_REPAIR",
-      "rollback_entries": [],
-      "rollback_ready": false,
-      "rollback_required": true,
-      "source_dry_run_id": "CMS-DRYRUN-6abf369743",
-      "source_plan_id": "CMS-PLAN-d6db1713fe",
-      "source_recommendation_id": "CMS-RR-3b9295f81d",
-      "target_writes_allowed": [],
-      "target_writes_performed": 0,
-      "touched_surface_boundary": [
-        "README.md",
-        "configs/*/README.md",
-        "src/cms/*/README.md",
-        "scripts/*/README.md",
-        "outputs/*/README.md",
-        "reports/*/README.md"
-      ]
-    },
     {
       "api_writes_performed": 0,
       "apply_authority": false,
@@ -174,26 +66,6 @@
   "release_tags_created": 0,
   "rollback_ledger": [
     {
-      "apply_gate_id": "CMS-APPLY-GATE-a6643e0259",
-      "non_claim_lock": "Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "rollback_entries": [],
-      "rollback_ready": false,
-      "rollback_required": true,
-      "rollback_state": "not_ready_no_authorized_apply",
-      "source_dry_run_id": "CMS-DRYRUN-eb1c78ada2",
-      "target_writes_performed": 0
-    },
-    {
-      "apply_gate_id": "CMS-APPLY-GATE-465e02de46",
-      "non_claim_lock": "Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "rollback_entries": [],
-      "rollback_ready": false,
-      "rollback_required": true,
-      "rollback_state": "not_ready_no_authorized_apply",
-      "source_dry_run_id": "CMS-DRYRUN-6abf369743",
-      "target_writes_performed": 0
-    },
-    {
       "apply_gate_id": "CMS-APPLY-GATE-6319f003ce",
       "non_claim_lock": "Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
       "rollback_entries": [],
@@ -204,11 +76,11 @@
       "target_writes_performed": 0
     }
   ],
-  "rollback_ledger_count": 3,
+  "rollback_ledger_count": 1,
   "schema": "CMS-SA-v0.4.6-authorized-repair-apply-gate-and-rollback-ledger",
-  "source_dry_run_count": 3,
-  "source_dry_run_hash": "39091af25b6752ecf88517165a5a491d146ce6f55353f71c2f3cc5d00fd2f1f3",
-  "source_pressure_state": "warning",
+  "source_dry_run_count": 1,
+  "source_dry_run_hash": "426c9c80152b769633643ff8900afeeb0538adf06d298a7a80dbed88fc686e53",
+  "source_pressure_state": "stable",
   "target_writes_performed": 0,
   "version": "v0.4.6"
 }
