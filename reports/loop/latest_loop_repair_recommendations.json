@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-04T04:28:52.203949+00:00",
+  "created_at": "2026-06-04T04:29:03.974392+00:00",
   "dominant_pressure_source": "registry_status_drift",
   "dominant_repair_class": "REGISTRY_REPAIR",
   "loop_drift_pressure": 0.14,
@@ -8,7 +8,7 @@
   "pressure_state": "stable",
   "primary_lock": "No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.",
   "recommendation_count": 1,
-  "recommendation_hash": "bcfb2dff77b9be416c081a2103b88eefa8efd07d9888252468a515a8717ef99f",
+  "recommendation_hash": "5848cc81b063206f865e70282adbbe7e75ea22ea33df24de32a329c8e609e428",
   "recommendations": [
     {
       "allowed_repair_action": "normalize_version_registry_lifecycle_previous_seal_or_next_anchor",

@@ -1,7 +1,7 @@
 {
   "api_writes_performed": 0,
   "apply_gate_count": 1,
-  "apply_gate_hash": "1e89896a21fa5141c0f4049a9cd988339653f545f4587b67bf588f423582db9c",
+  "apply_gate_hash": "976ad0f5db6857c57a395169c622519bc90b0609c1c132a04300951bc4ae044e",
   "errors": 0,
   "findings": [],
   "git_commits_performed": 0,

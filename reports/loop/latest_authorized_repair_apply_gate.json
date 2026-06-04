@@ -1,8 +1,8 @@
 {
   "api_writes_performed": 0,
   "apply_gate_count": 1,
-  "apply_gate_hash": "1e89896a21fa5141c0f4049a9cd988339653f545f4587b67bf588f423582db9c",
-  "created_at": "2026-06-04T04:28:52.754195+00:00",
+  "apply_gate_hash": "976ad0f5db6857c57a395169c622519bc90b0609c1c132a04300951bc4ae044e",
+  "created_at": "2026-06-04T04:29:04.658570+00:00",
   "gates": [
     {
       "api_writes_performed": 0,
@@ -79,7 +79,7 @@
   "rollback_ledger_count": 1,
   "schema": "CMS-SA-v0.4.6-authorized-repair-apply-gate-and-rollback-ledger",
   "source_dry_run_count": 1,
-  "source_dry_run_hash": "426c9c80152b769633643ff8900afeeb0538adf06d298a7a80dbed88fc686e53",
+  "source_dry_run_hash": "4f156de83f159dca0a335cfa17921561e7aafbfb70ec77fdfd0284c373ac2582",
   "source_pressure_state": "stable",
   "target_writes_performed": 0,
   "version": "v0.4.6"

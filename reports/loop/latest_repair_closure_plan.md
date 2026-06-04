@@ -7,7 +7,7 @@
 | source stability state | `stable_green_loop` |
 | plan count | `1` |
 | closure count | `1` |
-| closure hash | `fbf08785cd4a6eed87d9c0e08a695a7ef43a0fb92f5db751c70886b6adb1c9f5` |
+| closure hash | `8a20ad5cace9d356b103323172e739084cab8da3a2620ba518d9973463cde908` |
 
 ## Primary Lock
 

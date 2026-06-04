@@ -10,7 +10,7 @@
 | dominant pressure source | `registry_status_drift` |
 | dominant repair class | `REGISTRY_REPAIR` |
 | recommendation count | `1` |
-| recommendation hash | `bcfb2dff77b9be416c081a2103b88eefa8efd07d9888252468a515a8717ef99f` |
+| recommendation hash | `5848cc81b063206f865e70282adbbe7e75ea22ea33df24de32a329c8e609e428` |
 
 ## Primary Lock
 

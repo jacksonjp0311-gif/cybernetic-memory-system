@@ -1,6 +1,6 @@
 {
   "closure_count": 1,
-  "closure_hash": "fbf08785cd4a6eed87d9c0e08a695a7ef43a0fb92f5db751c70886b6adb1c9f5",
+  "closure_hash": "8a20ad5cace9d356b103323172e739084cab8da3a2620ba518d9973463cde908",
   "errors": 0,
   "findings": [],
   "non_claim_lock": "Repair closure validation is repository-bound and does not prove code correctness.",
