@@ -2,23 +2,21 @@
   "components": {
     "memory_action_drift": 0.0,
     "non_claim_lock_drift": 0.0,
-    "public_surface_delta": 1.0,
+    "public_surface_delta": 0.0,
     "registry_status_drift": 0.0,
     "rehydration_gap_count": 0,
     "rehydration_gap_pressure": 0.0,
     "report_surface_lag": 0.0,
-    "validator_expectation_drift": 0.2
+    "validator_expectation_drift": 0.0
   },
-  "findings": [
-    "validation_failures:public_sync"
-  ],
+  "findings": [],
   "input_hashes": {
     "candidate_action_hash": "4a66113a9026483a6119028866841f0b57b8a868e912a487bac86ee478cf133d",
     "loop_hash": "7c3a5108d92cd1d1e0d2a647b417efc4377c3e90b059389b522e07cd62afde42",
     "rehydration_hash": "8e2427a46e96559117e16ebbe4a2e16e3f5e5f81a2186d8d4667dedac3bda8bd",
-    "runtime_decision_hash": "505538075daf9fabd8141c9e789e516fe7873a224cafd1fc7cc3cd78a5968dd6"
+    "runtime_decision_hash": "01883481ea39e3bd13f05ac2a5bf0af09ec35d3cef370d8be1f486fb0719093a"
   },
-  "loop_drift_pressure": 0.168,
+  "loop_drift_pressure": 0.0,
   "memory_counts": {
     "candidate_action_count": 4,
     "candidate_count": 4,
@@ -29,14 +27,12 @@
   },
   "non_claim_lock": "Loop drift pressure metrics are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
-  "pressure_hash": "cdd7da41ab5fbab1e7e855494ac22aaa45cfca375a5baa6ca2edf3c02e9f3843",
+  "pressure_hash": "2425815afe81aa493521747cc26b5cb562fa8c7a9e550efde9240d97b0d3a484",
   "primary_lock": "No green loop is considered stable if drift pressure exceeds the declared threshold without downgrade, warning, or repair recommendation.",
-  "recommended_action": "repair_pressure_findings_before_release_seal",
+  "recommended_action": "continue_to_next_layer_after_validation",
   "schema": "CMS-SA-v0.4.2-loop-drift-pressure-report",
-  "stability_state": "green_with_repair_recommendation",
+  "stability_state": "stable_green_loop",
   "threshold": 0.25,
-  "validation_failures": [
-    "public_sync"
-  ],
+  "validation_failures": [],
   "version": "v0.4.2"
 }

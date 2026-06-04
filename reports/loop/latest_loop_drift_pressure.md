@@ -1,11 +1,11 @@
 # CMS-SA v0.4.2 Loop Drift Pressure Metrics
 
 - passed: `True`
-- loop_drift_pressure: `0.168`
+- loop_drift_pressure: `0.0`
 - threshold: `0.25`
-- stability_state: `green_with_repair_recommendation`
-- recommended_action: `repair_pressure_findings_before_release_seal`
-- pressure_hash: `cdd7da41ab5fbab1e7e855494ac22aaa45cfca375a5baa6ca2edf3c02e9f3843`
+- stability_state: `stable_green_loop`
+- recommended_action: `continue_to_next_layer_after_validation`
+- pressure_hash: `2425815afe81aa493521747cc26b5cb562fa8c7a9e550efde9240d97b0d3a484`
 
 ## Components
 
@@ -15,14 +15,14 @@
 | `rehydration_gap_count` | `0` |
 | `rehydration_gap_pressure` | `0.0` |
 | `registry_status_drift` | `0.0` |
-| `public_surface_delta` | `1.0` |
-| `validator_expectation_drift` | `0.2` |
+| `public_surface_delta` | `0.0` |
+| `validator_expectation_drift` | `0.0` |
 | `non_claim_lock_drift` | `0.0` |
 | `report_surface_lag` | `0.0` |
 
 ## Findings
 
-- `validation_failures:public_sync`
+- none
 
 ## Primary Lock
 
