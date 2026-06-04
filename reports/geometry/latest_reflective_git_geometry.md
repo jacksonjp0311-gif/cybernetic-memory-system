@@ -17,6 +17,7 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `951a837` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.5.0 postseal validation reports |
 | `506cf1b` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.5.0 agent governance kernel bridge |
 | `5228e2a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: close CMS-SA v0.4.8 residual verifier artifacts |
 | `8170a1a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.8 final postpush evidence |
@@ -28,7 +29,6 @@
 | `a46167a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.6 final postpush evidence |
 | `4490c74` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.6 postseal validation reports |
 | `25bfb08` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.6 authorized repair apply gate |
-| `4f0669e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.5 final postpush evidence |
 
 ## Pure Validation Boundary
 

@@ -1,7 +1,7 @@
 {
   "api_boundary": "API remains inactive; this is internal runtime alignment only.",
   "core_rule": "No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, current public surfaces, and declared phase boundary.",
-  "created_at": "2026-06-04T16:08:40.401743+00:00",
+  "created_at": "2026-06-04T16:08:52.876269+00:00",
   "current_registry_version": "v0.5.0",
   "feedback_bindings": [],
   "feedback_items_aligned": 3,
