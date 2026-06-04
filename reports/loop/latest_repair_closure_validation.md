@@ -2,9 +2,9 @@
 
 - passed: `true`
 - errors: `0`
-- plan count: `4`
-- closure count: `4`
-- source pressure state: `warning`
+- plan count: `1`
+- closure count: `1`
+- source pressure state: `stable`
 
 ## Primary Lock
 

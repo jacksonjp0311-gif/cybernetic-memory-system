@@ -4,19 +4,23 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.3` |
+| current registry version | `v0.4.4` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `false` |
-| release tag ancestor | `false` |
+| release tag exists | `true` |
+| release tag ancestor | `true` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `0ddd2e9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.4 postseal validation reports |
+| `5e1a6f6` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.4 repair closure ledger |
+| `6807051` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.3 postseal validation reports |
+| `ad792fa` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.3 loop pressure repair recommendations |
 | `585f93a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.2 postseal validation reports |
 | `3dab44b` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: seal CMS-SA v0.4.2 registry-derived alignment geometry |
 | `24ce69d` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.1 public sync seal |
@@ -25,10 +29,6 @@
 | `e2bea1a` | `v0.4.0` | `center, inner, middle, outer` | `agent, documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, rcc, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.0 cybernetic memory loop and rehydration protocol |
 | `58c3bf0` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b5 public sync seal |
 | `9cbfd7c` | `v0.3b5` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.3b5 memory promotion kernel |
-| `34dde02` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b4 public sync seal |
-| `15de47a` | `v0.3b4` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.3b4 negative control downgrade harness |
-| `b92391c` | `v0.3b3` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | feat: add CMS-SA v0.3b3 runtime decision kernel |
-| `c7daff2` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: refresh CMS-SA v0.3b2a3 evidence and runtime reports |
 
 ## Pure Validation Boundary
 

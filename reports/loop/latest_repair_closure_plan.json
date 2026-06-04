@@ -1,22 +1,7 @@
 {
-  "closure_count": 4,
-  "closure_hash": "628342b314ede0ad6f498f25285831297ffc2b66e43ea470574d112c92413084",
+  "closure_count": 1,
+  "closure_hash": "f04d0880efc0261d771281ec96f0a805654b7d8466f59027cd5001de1ef55d79",
   "closure_ledger": [
-    {
-      "blocked_actions_preserved": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_state": "planned_not_executed",
-      "evidence_status": "pending_execution_evidence",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_id": "CMS-PLAN-12956e2faf",
-      "repair_class": "VALIDATOR_REPAIR",
-      "source_recommendation_id": "CMS-RR-a22e55b1d9"
-    },
     {
       "blocked_actions_preserved": [
         "runtime_code_patch",
@@ -31,75 +16,13 @@
       "plan_id": "CMS-PLAN-c3c9530c24",
       "repair_class": "REGISTRY_REPAIR",
       "source_recommendation_id": "CMS-RR-3d8ebfb363"
-    },
-    {
-      "blocked_actions_preserved": [
-        "runtime_code_patch",
-        "validator_patch",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_state": "planned_not_executed",
-      "evidence_status": "pending_execution_evidence",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_id": "CMS-PLAN-574211846b",
-      "repair_class": "REPORT_REFRESH",
-      "source_recommendation_id": "CMS-RR-cb8e4109cf"
-    },
-    {
-      "blocked_actions_preserved": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_state": "planned_not_executed",
-      "evidence_status": "pending_execution_evidence",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_id": "CMS-PLAN-d01c2e141d",
-      "repair_class": "VALIDATOR_REPAIR",
-      "source_recommendation_id": "CMS-RR-f4a537a3df"
     }
   ],
-  "created_at": "2026-06-04T04:07:28.786028+00:00",
+  "created_at": "2026-06-04T04:09:37.303219+00:00",
   "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
   "passed": true,
-  "plan_count": 4,
+  "plan_count": 1,
   "plans": [
-    {
-      "allowed_repair_action": "patch_validator_expectation_grammar_or_registry_derivation_only",
-      "authorization_required": true,
-      "blocked_actions_preserved": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_evidence": [],
-      "closure_state": "planned_not_executed",
-      "downgrade_path": "block_promotion_until_validator_false_failure_removed",
-      "execution_mode": "human_authorized_validator_compatibility_plan",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_hash": "df2e3ff0216a1e700e2a4525b84107ea340d82d2b00f419aaed5832a29fbf66f",
-      "plan_id": "CMS-PLAN-12956e2faf",
-      "pressure_source": "validation_failures:runtime_decision",
-      "repair_class": "VALIDATOR_REPAIR",
-      "required_validation_evidence": [
-        "validate_surface_alignment",
-        "emit_multilevel_alignment",
-        "validate_multilevel_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "source_recommendation_id": "CMS-RR-a22e55b1d9",
-      "touched_surface_boundary": [
-        "scripts/validation",
-        "reports/*"
-      ]
-    },
     {
       "allowed_repair_action": "normalize_version_registry_lifecycle_previous_seal_or_next_anchor",
       "authorization_required": true,
@@ -131,75 +54,13 @@
         "outputs/roadmap/next_anchor.md",
         "reports/public_sync"
       ]
-    },
-    {
-      "allowed_repair_action": "refresh_report_artifacts_after_valid_state_transition",
-      "authorization_required": true,
-      "blocked_actions_preserved": [
-        "runtime_code_patch",
-        "validator_patch",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_evidence": [],
-      "closure_state": "planned_not_executed",
-      "downgrade_path": "keep_report_refresh_as_documentation_commit_only",
-      "execution_mode": "human_authorized_report_refresh_plan",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_hash": "196f5868591243d709569eba1cd2d178013d7269a273d5428138e7f27bdfcdad",
-      "plan_id": "CMS-PLAN-574211846b",
-      "pressure_source": "report_surface_lag",
-      "repair_class": "REPORT_REFRESH",
-      "required_validation_evidence": [
-        "validate_public_sync",
-        "validate_multilevel_alignment",
-        "validate_loop_drift_pressure"
-      ],
-      "source_recommendation_id": "CMS-RR-cb8e4109cf",
-      "touched_surface_boundary": [
-        "outputs/*",
-        "reports/*"
-      ]
-    },
-    {
-      "allowed_repair_action": "patch_validator_expectation_grammar_or_registry_derivation_only",
-      "authorization_required": true,
-      "blocked_actions_preserved": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "closure_evidence": [],
-      "closure_state": "planned_not_executed",
-      "downgrade_path": "block_promotion_until_validator_false_failure_removed",
-      "execution_mode": "human_authorized_validator_compatibility_plan",
-      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
-      "plan_hash": "dfc1b38f68e873ac21bf0824a60834154da169d9f7e1bdcda9c7f6583ac126af",
-      "plan_id": "CMS-PLAN-d01c2e141d",
-      "pressure_source": "validator_expectation_drift",
-      "repair_class": "VALIDATOR_REPAIR",
-      "required_validation_evidence": [
-        "validate_surface_alignment",
-        "emit_multilevel_alignment",
-        "validate_multilevel_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "source_recommendation_id": "CMS-RR-f4a537a3df",
-      "touched_surface_boundary": [
-        "scripts/validation",
-        "reports/*"
-      ]
     }
   ],
   "primary_lock": "No repair recommendation may be marked closed unless it has a plan id, source recommendation id, declared execution mode, touched-surface boundary, required validation evidence, closure state, blocked-action preservation, and non-claim boundary.",
   "schema": "CMS-SA-v0.4.4-repair-execution-plan-and-closure-ledger",
-  "source_pressure_state": "warning",
-  "source_recommendation_count": 4,
-  "source_recommendation_hash": "36dac22170b78b843187fe928a771a503c62781040f3e0ed12a3706c8e471480",
-  "source_stability_state": "green_with_repair_recommendation",
+  "source_pressure_state": "stable",
+  "source_recommendation_count": 1,
+  "source_recommendation_hash": "2c8a807d13455d3a5aa3edbb1aaaef36e52d25c98ffd060c8bf911f82f122005",
+  "source_stability_state": "stable_green_loop",
   "version": "v0.4.4"
 }

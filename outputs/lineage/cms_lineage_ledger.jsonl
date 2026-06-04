@@ -65,3 +65,4 @@
 {"lineage_event": "repaired_multilevel_future_import_order_after_getter_patch", "status": "pending_validation", "timestamp_utc": "2026-06-04T03:55:05.302960+00:00", "version": "v0.4.3"}
 {"lineage_event": "began_bounded_self_healing_as_repair_closure_planning_not_autonomous_execution", "previous": "v0.4.3", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:03:41.630566+00:00", "version": "v0.4.4"}
 {"lineage_event": "repaired_v0_4_4_script_literals_and_surface_propagation", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:06:05.509594+00:00", "version": "v0.4.4"}
+{"lineage_event": "postseal_geometry_refresh_repaired_multilevel_alignment_registry_version_mismatch", "status": "postseal_repair", "timestamp_utc": "2026-06-04T04:09:42.942401+00:00", "version": "v0.4.4"}

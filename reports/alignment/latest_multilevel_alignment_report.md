@@ -5,7 +5,7 @@
 | schema | `CMS-SA-v0.4.4-multilevel-alignment-report` |
 | version | `v0.4.4` |
 | seal mode | `postseal` |
-| passed | `false` |
+| passed | `true` |
 | current registry version | `v0.4.4` |
 | previous registry version | `v0.4.3` |
 
@@ -26,7 +26,7 @@
 
 ## Findings
 
-- `version_check_failed:geometry_registry_version_matches`
+- none
 
 ## Pressure Findings
 

@@ -1,43 +1,15 @@
 {
-  "created_at": "2026-06-04T04:07:28.569956+00:00",
+  "created_at": "2026-06-04T04:09:37.108916+00:00",
   "dominant_pressure_source": "registry_status_drift",
   "dominant_repair_class": "REGISTRY_REPAIR",
-  "loop_drift_pressure": 0.198,
+  "loop_drift_pressure": 0.14,
   "non_claim_lock": "Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
-  "pressure_state": "warning",
+  "pressure_state": "stable",
   "primary_lock": "No repair recommendation may write, promote, or seal a change unless it declares pressure source, repair class, allowed action, blocked action, required validation, and non-claim boundary.",
-  "recommendation_count": 4,
-  "recommendation_hash": "36dac22170b78b843187fe928a771a503c62781040f3e0ed12a3706c8e471480",
+  "recommendation_count": 1,
+  "recommendation_hash": "2c8a807d13455d3a5aa3edbb1aaaef36e52d25c98ffd060c8bf911f82f122005",
   "recommendations": [
-    {
-      "allowed_repair_action": "patch_validator_expectation_grammar_or_registry_derivation_only",
-      "blocked_actions": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "downgrade_path": "block_promotion_until_validator_false_failure_removed",
-      "id": "CMS-RR-a22e55b1d9",
-      "non_claim_lock": "Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-      "pressure_source": "validation_failures:runtime_decision",
-      "pressure_state": "warning",
-      "repair_class": "VALIDATOR_REPAIR",
-      "required_files": [],
-      "required_validation_stack": [
-        "validate_surface_alignment",
-        "emit_multilevel_alignment",
-        "validate_multilevel_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "severity": "medium",
-      "source_kind": "finding",
-      "source_value": "validation_failures:runtime_decision",
-      "status": "repair_recommended"
-    },
     {
       "allowed_repair_action": "normalize_version_registry_lifecycle_previous_seal_or_next_anchor",
       "blocked_actions": [
@@ -64,69 +36,13 @@
       "source_kind": "component",
       "source_value": 1.0,
       "status": "repair_recommended"
-    },
-    {
-      "allowed_repair_action": "refresh_report_artifacts_after_valid_state_transition",
-      "blocked_actions": [
-        "runtime_code_patch",
-        "validator_patch",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "downgrade_path": "keep_report_refresh_as_documentation_commit_only",
-      "id": "CMS-RR-cb8e4109cf",
-      "non_claim_lock": "Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-      "pressure_source": "report_surface_lag",
-      "pressure_state": "warning",
-      "repair_class": "REPORT_REFRESH",
-      "required_files": [],
-      "required_validation_stack": [
-        "validate_public_sync",
-        "validate_multilevel_alignment",
-        "validate_loop_drift_pressure"
-      ],
-      "severity": "low",
-      "source_kind": "component",
-      "source_value": 0.25,
-      "status": "repair_recommended"
-    },
-    {
-      "allowed_repair_action": "patch_validator_expectation_grammar_or_registry_derivation_only",
-      "blocked_actions": [
-        "version_promotion",
-        "public_sync_refresh_as_fix",
-        "memory_promotion",
-        "api_write",
-        "autonomous_patch"
-      ],
-      "downgrade_path": "block_promotion_until_validator_false_failure_removed",
-      "id": "CMS-RR-f4a537a3df",
-      "non_claim_lock": "Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-      "pressure_source": "validator_expectation_drift",
-      "pressure_state": "warning",
-      "repair_class": "VALIDATOR_REPAIR",
-      "required_files": [],
-      "required_validation_stack": [
-        "validate_surface_alignment",
-        "emit_multilevel_alignment",
-        "validate_multilevel_alignment",
-        "emit_runtime_decision",
-        "validate_runtime_decision"
-      ],
-      "severity": "medium",
-      "source_kind": "component",
-      "source_value": 0.2,
-      "status": "repair_recommended"
     }
   ],
   "schema": "CMS-SA-v0.4.3-loop-pressure-repair-recommendation",
-  "source_findings": [
-    "validation_failures:runtime_decision"
-  ],
-  "source_pressure_hash": "a41a17c724d43ad73f36926b63a6ca072007d666684efe6da6497f36378147ce",
+  "source_findings": [],
+  "source_pressure_hash": "46ad512abd076a80a218c7d9a4ad9f602cf79ee01170d73104eea0ede236defc",
   "source_pressure_version": "v0.4.2",
-  "source_stability_state": "green_with_repair_recommendation",
+  "source_stability_state": "stable_green_loop",
   "threshold": 0.25,
   "unknown_findings": [],
   "version": "v0.4.3"

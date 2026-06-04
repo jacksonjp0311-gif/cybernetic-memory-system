@@ -1,12 +1,12 @@
 {
-  "closure_count": 4,
-  "closure_hash": "628342b314ede0ad6f498f25285831297ffc2b66e43ea470574d112c92413084",
+  "closure_count": 1,
+  "closure_hash": "f04d0880efc0261d771281ec96f0a805654b7d8466f59027cd5001de1ef55d79",
   "errors": 0,
   "findings": [],
   "non_claim_lock": "Repair closure validation is repository-bound and does not prove code correctness.",
   "passed": true,
-  "plan_count": 4,
+  "plan_count": 1,
   "primary_lock": "No repair recommendation may be marked closed unless it has a plan id, source recommendation id, declared execution mode, touched-surface boundary, required validation evidence, closure state, blocked-action preservation, and non-claim boundary.",
   "schema": "CMS-SA-v0.4.4-repair-closure-validation",
-  "source_pressure_state": "warning"
+  "source_pressure_state": "stable"
 }

@@ -6,19 +6,17 @@
     "registry_status_drift": 1.0,
     "rehydration_gap_count": 0,
     "rehydration_gap_pressure": 0.0,
-    "report_surface_lag": 0.25,
-    "validator_expectation_drift": 0.2
+    "report_surface_lag": 0.0,
+    "validator_expectation_drift": 0.0
   },
-  "findings": [
-    "validation_failures:runtime_decision"
-  ],
+  "findings": [],
   "input_hashes": {
     "candidate_action_hash": "9966f1fb234ff5b6aebeadcf9331d27bcc40456ddd536870c20ba330bb1ead56",
     "loop_hash": "cd1b512902752ccd51784e731af93cccda449eae885ab6d00353c3a026a44ce3",
     "rehydration_hash": "8e2427a46e96559117e16ebbe4a2e16e3f5e5f81a2186d8d4667dedac3bda8bd",
-    "runtime_decision_hash": "0b5c041be378a10d2c24d372d13cf92fe8ba1a163e13f21f9652fbe6500b1987"
+    "runtime_decision_hash": "a354c54f739554b164bc775368e264fb9aa060a59667e40064cec892c518e36a"
   },
-  "loop_drift_pressure": 0.198,
+  "loop_drift_pressure": 0.14,
   "memory_counts": {
     "candidate_action_count": 4,
     "candidate_count": 4,
@@ -29,14 +27,12 @@
   },
   "non_claim_lock": "Loop drift pressure metrics are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
-  "pressure_hash": "a41a17c724d43ad73f36926b63a6ca072007d666684efe6da6497f36378147ce",
+  "pressure_hash": "46ad512abd076a80a218c7d9a4ad9f602cf79ee01170d73104eea0ede236defc",
   "primary_lock": "No green loop is considered stable if drift pressure exceeds the declared threshold without downgrade, warning, or repair recommendation.",
-  "recommended_action": "repair_pressure_findings_before_release_seal",
+  "recommended_action": "continue_to_next_layer_after_validation",
   "schema": "CMS-SA-v0.4.2-loop-drift-pressure-report",
-  "stability_state": "green_with_repair_recommendation",
+  "stability_state": "stable_green_loop",
   "threshold": 0.25,
-  "validation_failures": [
-    "runtime_decision"
-  ],
+  "validation_failures": [],
   "version": "v0.4.2"
 }

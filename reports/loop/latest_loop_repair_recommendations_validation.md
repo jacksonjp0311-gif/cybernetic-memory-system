@@ -4,11 +4,11 @@
 |---|---|
 | passed | `true` |
 | errors | `0` |
-| recommendation count | `4` |
-| pressure state | `warning` |
+| recommendation count | `1` |
+| pressure state | `stable` |
 | dominant pressure source | `registry_status_drift` |
 | dominant repair class | `REGISTRY_REPAIR` |
-| loop drift pressure | `0.198` |
+| loop drift pressure | `0.14` |
 
 ## Primary Lock
 
