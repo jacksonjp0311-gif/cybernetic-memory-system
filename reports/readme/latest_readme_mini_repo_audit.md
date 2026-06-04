@@ -1,11 +1,11 @@
-# CMS-SA v0.4.1 README / Mini Repo Audit
+# CMS-SA v0.4.2 README / Mini Repo Audit
 
 | Field | Value |
 |---|---|
 | passed | `true` |
 | errors | `0` |
 | warnings | `0` |
-| accepted checkpoint pattern | `CMS-SA v0.4.1` |
+| accepted checkpoint pattern | `CMS-SA v0.4.2` |
 | release gate truth enforced | `true` |
 
 Non-claim lock: README audits improve context alignment but do not prove runtime correctness.

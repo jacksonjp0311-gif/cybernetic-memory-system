@@ -9,7 +9,7 @@ from typing import Any, Dict, List
 VERSION = "v0.4.1"
 SCHEMA = "CMS-SA-v0.4.1-candidate-memory-action-report"
 NON_CLAIM_LOCK = (
-    "Candidate memory actions are repository-bound and does not prove code correctness, "
+    "Candidate memory actions are repository-bound and do not prove code correctness, "
     "truth, AGI, consciousness, production readiness, security, external validation, "
     "or real-world correctness."
 )

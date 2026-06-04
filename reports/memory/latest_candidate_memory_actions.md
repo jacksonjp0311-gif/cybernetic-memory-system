@@ -2,7 +2,7 @@
 
 - passed: `True`
 - candidate_action_count: `4`
-- action_hash: `a6c89f6a4548a5e6b468e31bf6fe74f2dcf8f568298d457fdd97a9f43d5d6bda`
+- action_hash: `4a66113a9026483a6119028866841f0b57b8a868e912a487bac86ee478cf133d`
 
 ## Actions
 
@@ -17,4 +17,4 @@ No promoted memory may influence the next cycle without a typed candidate-level 
 
 ## Non-Claim Lock
 
-Candidate memory actions are repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+Candidate memory actions are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.

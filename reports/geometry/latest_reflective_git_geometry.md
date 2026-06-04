@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.1` |
+| current registry version | `v0.4.2` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
@@ -17,6 +17,8 @@
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `24ce69d` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.1 public sync seal |
+| `28bfc14` | `v0.4.1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.1 candidate memory actions and rehydration scoring |
 | `7582a40` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.0 public sync seal |
 | `e2bea1a` | `v0.4.0` | `center, inner, middle, outer` | `agent, documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, rcc, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.0 cybernetic memory loop and rehydration protocol |
 | `58c3bf0` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b5 public sync seal |
@@ -27,8 +29,6 @@
 | `c7daff2` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | chore: refresh CMS-SA v0.3b2a3 evidence and runtime reports |
 | `ae0ec36` | `` | `middle, outer` | `documentation, evidence, validation` | `public, reports, unclassified, validator` | fix: seal CMS-SA v0.3b2a3 version token normalization |
 | `25522b9` | `v0.3b2a3` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: seal CMS-SA v0.3b2a3 version token normalization |
-| `5241f3f` | `v0.3b2a2` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: seal CMS-SA v0.3b2a2 surface validator compatibility |
-| `ba6e1a4` | `v0.3b2a1` | `center, middle, outer` | `documentation, evidence, memory, release, validation` | `injections, lineage, public, reports, seal, unclassified, validator, versions` | fix: repair CMS-SA v0.3b2a1 README documentation coherence |
 
 ## Pure Validation Boundary
 

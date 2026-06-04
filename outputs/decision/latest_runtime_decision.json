@@ -12,7 +12,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.4.1-readme-mini-repo-audit",
+      "schema": "CMS-SA-v0.4.2-readme-mini-repo-audit",
       "errors": []
     },
     {
@@ -21,7 +21,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.4.1-readme-render-hygiene",
+      "schema": "CMS-SA-v0.4.2-readme-render-hygiene",
       "errors": []
     },
     {
@@ -57,7 +57,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.4.1-surface-alignment-validation",
+      "schema": "CMS-SA-v0.4.2-surface-alignment-validation",
       "errors": []
     },
     {
@@ -66,7 +66,7 @@
       "required": true,
       "present": true,
       "passed": true,
-      "schema": "CMS-SA-v0.4.1-multilevel-alignment-validation",
+      "schema": "CMS-SA-v0.4.2-multilevel-alignment-validation",
       "errors": []
     },
     {
@@ -74,9 +74,11 @@
       "path": "reports/public_sync/latest_public_sync_report.json",
       "required": false,
       "present": true,
-      "passed": true,
+      "passed": false,
       "schema": "CMS-SA-v0.2b3c-public-sync-stable",
-      "errors": []
+      "errors": [
+        "release_tag_missing"
+      ]
     }
   ],
   "release_validator_direct_final_gate": true,
@@ -88,5 +90,5 @@
     "note": "Git dirty state is intentionally handled by final release gates to avoid volatile latest-artifact loops."
   },
   "non_claim_lock": "Runtime decision checks repository-bound validation surfaces only. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
-  "decision_hash": "635c5d6fbbc7965fe6346cf3238916b4c4403ea3251fe734ce1c6da1659d1d99"
+  "decision_hash": "505538075daf9fabd8141c9e789e516fe7873a224cafd1fc7cc3cd78a5968dd6"
 }

@@ -1,5 +1,5 @@
 {
-  "action_hash": "a6c89f6a4548a5e6b468e31bf6fe74f2dcf8f568298d457fdd97a9f43d5d6bda",
+  "action_hash": "4a66113a9026483a6119028866841f0b57b8a868e912a487bac86ee478cf133d",
   "actions": [
     {
       "allowed_next_action": "may_influence_next_cycle_after_rehydration_scan",
@@ -88,10 +88,10 @@
   ],
   "candidate_action_count": 4,
   "input_hashes": {
-    "loop_hash": "15feb7499e88617cee86b45550c602f5230d76835ccd06e4a58f0708860e3127",
+    "loop_hash": "7c3a5108d92cd1d1e0d2a647b417efc4377c3e90b059389b522e07cd62afde42",
     "memory_promotion_hash": "05fb031fcd78ce2e8b5b54bb71ca3602fd1bd472f160c4bd4278fc0254cf6605"
   },
-  "non_claim_lock": "Candidate memory actions are repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
+  "non_claim_lock": "Candidate memory actions are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
   "primary_lock": "No promoted memory may influence the next cycle without a typed candidate-level action, downgrade boundary, evidence requirement, and rehydration-visible status.",
   "schema": "CMS-SA-v0.4.1-candidate-memory-action-report",

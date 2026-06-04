@@ -4,7 +4,7 @@
 - Decision: `promote`
 - Reason: `all_required_repository_bound_validation_surfaces_passed`
 - Next allowed action: `CMS-SA v0.3b4 - Negative Control and Downgrade Harness`
-- Decision hash: `635c5d6fbbc7965fe6346cf3238916b4c4403ea3251fe734ce1c6da1659d1d99`
+- Decision hash: `505538075daf9fabd8141c9e789e516fe7873a224cafd1fc7cc3cd78a5968dd6`
 
 ## Required failures
 

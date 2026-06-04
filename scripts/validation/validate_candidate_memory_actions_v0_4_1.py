@@ -22,6 +22,11 @@ REQUIRED = [
 ]
 
 
+def has_non_claim_lock(value: str) -> bool:
+    text = str(value)
+    return ("does not prove" in text) or ("do not prove" in text)
+
+
 def main() -> int:
     findings: list[str] = []
     obj = json.loads(REPORT.read_text(encoding="utf-8")) if REPORT.exists() else {}
@@ -40,13 +45,13 @@ def main() -> int:
                 findings.append(f"{cid}:missing_{key}")
         if action.get("memory_decision") == "promote_memory" and action.get("rehydration_visible") is not True:
             findings.append(f"{cid}:promoted_not_rehydration_visible")
-        if "does not prove" not in str(action.get("non_claim_lock", "")):
+        if not has_non_claim_lock(str(action.get("non_claim_lock", ""))):
             findings.append(f"{cid}:missing_non_claim_lock")
     if obj.get("candidate_action_count") != len(actions):
         findings.append("candidate_action_count_mismatch")
     if not obj.get("action_hash"):
         findings.append("missing_action_hash")
-    if "does not prove" not in str(obj.get("non_claim_lock", "")):
+    if not has_non_claim_lock(str(obj.get("non_claim_lock", ""))):
         findings.append("report_missing_non_claim_lock")
 
     passed = len(findings) == 0
