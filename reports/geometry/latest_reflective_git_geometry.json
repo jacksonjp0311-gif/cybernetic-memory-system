@@ -1,7 +1,7 @@
 {
   "schema": "CMS-SA-v0.3a2-reflective-git-geometry",
   "version": "v0.3a2",
-  "current_registry_version": "v0.4.5",
+  "current_registry_version": "v0.4.6",
   "node_count": 12,
   "core_law": "A commit is not only a change; it is a routed event in repository geometry.",
   "secondary_law": "A repository learns when repeated routed events become constraints, validators, evidence surfaces, and future routing rules.",
@@ -11,17 +11,313 @@
   "emission_validation_split": true,
   "skipped_report_refresh_commits": [],
   "release_truth": {
-    "registry_current_version": "v0.4.5",
+    "registry_current_version": "v0.4.6",
     "head_origin_match": true,
     "readme_checkpoint_present": true,
-    "release_tag_exists": true,
-    "release_tag_is_ancestor_of_head": true,
+    "release_tag_exists": false,
+    "release_tag_is_ancestor_of_head": false,
     "stable_geometry_boundary": true,
     "report_refresh_commits_excluded": true,
     "pure_validation_boundary": true,
     "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
   },
   "nodes": [
+    {
+      "commit_hash": "4f0669e59ee354c4eac3051fe131d8b38e61260b",
+      "short_hash": "4f0669e",
+      "parents": [
+        "abd667c4ac619a7391ea5db594c73a931cde416c"
+      ],
+      "tag": null,
+      "message": "docs: commit CMS-SA v0.4.5 final postpush evidence",
+      "changed_files": [
+        "outputs/alignment/latest_multilevel_alignment_report.json",
+        "outputs/evidence/latest_evidence_package.json",
+        "outputs/geometry/latest_reflective_git_geometry.json",
+        "outputs/loop/latest_authorized_repair_dry_run.json",
+        "outputs/loop/latest_loop_repair_recommendations.json",
+        "outputs/loop/latest_repair_closure_plan.json",
+        "outputs/metrics/latest_metric_evaluation.json",
+        "outputs/state/latest_observation_manifest.json",
+        "reports/alignment/latest_multilevel_alignment_report.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/loop/latest_authorized_repair_dry_run.json",
+        "reports/loop/latest_authorized_repair_dry_run.md",
+        "reports/loop/latest_authorized_repair_dry_run_validation.json",
+        "reports/loop/latest_loop_repair_recommendations.json",
+        "reports/loop/latest_loop_repair_recommendations.md",
+        "reports/loop/latest_loop_repair_recommendations_validation.json",
+        "reports/loop/latest_repair_closure_plan.json",
+        "reports/loop/latest_repair_closure_plan.md",
+        "reports/loop/latest_repair_closure_validation.json",
+        "reports/loop/latest_v0_4_5_final_evidence_commit_report.json",
+        "reports/loop/latest_v0_4_5_final_evidence_commit_report.md",
+        "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.json",
+        "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.md",
+        "reports/metric_contracts/latest_metric_evaluation.json",
+        "reports/metric_contracts/latest_metric_evaluation.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "surface_classes": [
+        {
+          "path": "outputs/alignment/latest_multilevel_alignment_report.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/evidence/latest_evidence_package.json",
+          "pattern": "outputs/evidence/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "outputs/geometry/latest_reflective_git_geometry.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/loop/latest_authorized_repair_dry_run.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/loop/latest_loop_repair_recommendations.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/loop/latest_repair_closure_plan.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/metrics/latest_metric_evaluation.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "outputs/state/latest_observation_manifest.json",
+          "pattern": "unclassified",
+          "shell": "middle",
+          "meridian": "documentation",
+          "sector": "unclassified"
+        },
+        {
+          "path": "reports/alignment/latest_multilevel_alignment_report.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/evidence/latest_evidence_package.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/geometry/latest_reflective_git_geometry.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_authorized_repair_dry_run.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_authorized_repair_dry_run.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_authorized_repair_dry_run_validation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_loop_repair_recommendations.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_loop_repair_recommendations.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_loop_repair_recommendations_validation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_repair_closure_plan.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_repair_closure_plan.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_repair_closure_validation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_v0_4_5_final_evidence_commit_report.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_v0_4_5_final_evidence_commit_report.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/metric_contracts/latest_metric_evaluation.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/metric_contracts/latest_metric_evaluation.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.json",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        },
+        {
+          "path": "reports/runtime_observation/latest_observation_manifest.md",
+          "pattern": "reports/",
+          "shell": "outer",
+          "meridian": "evidence",
+          "sector": "reports"
+        }
+      ],
+      "shells": [
+        "middle",
+        "outer"
+      ],
+      "meridians": [
+        "documentation",
+        "evidence"
+      ],
+      "sectors": [
+        "reports",
+        "unclassified"
+      ],
+      "lesson_ids_detected": [],
+      "validator_reports_touched": [
+        "reports/alignment/latest_multilevel_alignment_report.json",
+        "reports/evidence/latest_evidence_package.json",
+        "reports/geometry/latest_reflective_git_geometry.json",
+        "reports/geometry/latest_reflective_git_geometry.md",
+        "reports/loop/latest_authorized_repair_dry_run.json",
+        "reports/loop/latest_authorized_repair_dry_run.md",
+        "reports/loop/latest_authorized_repair_dry_run_validation.json",
+        "reports/loop/latest_loop_repair_recommendations.json",
+        "reports/loop/latest_loop_repair_recommendations.md",
+        "reports/loop/latest_loop_repair_recommendations_validation.json",
+        "reports/loop/latest_repair_closure_plan.json",
+        "reports/loop/latest_repair_closure_plan.md",
+        "reports/loop/latest_repair_closure_validation.json",
+        "reports/loop/latest_v0_4_5_final_evidence_commit_report.json",
+        "reports/loop/latest_v0_4_5_final_evidence_commit_report.md",
+        "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.json",
+        "reports/loop/latest_v0_4_5_final_postpush_seal_validation_summary.md",
+        "reports/metric_contracts/latest_metric_evaluation.json",
+        "reports/metric_contracts/latest_metric_evaluation.md",
+        "reports/runtime_observation/latest_observation_manifest.json",
+        "reports/runtime_observation/latest_observation_manifest.md"
+      ],
+      "evidence_reports_touched": [
+        "outputs/evidence/latest_evidence_package.json",
+        "reports/evidence/latest_evidence_package.json"
+      ],
+      "release_truth": {
+        "registry_current_version": "v0.4.6",
+        "head_origin_match": true,
+        "readme_checkpoint_present": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
+        "stable_geometry_boundary": true,
+        "report_refresh_commits_excluded": true,
+        "pure_validation_boundary": true,
+        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
+      }
+    },
     {
       "commit_hash": "abd667c4ac619a7391ea5db594c73a931cde416c",
       "short_hash": "abd667c",
@@ -458,11 +754,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -1323,11 +1619,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -1726,11 +2022,11 @@
         "reports/evidence/latest_evidence_package.json"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -2068,11 +2364,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -2763,11 +3059,11 @@
         "reports/evidence/latest_evidence_package.json"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -3001,11 +3297,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -3937,11 +4233,11 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -4182,11 +4478,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -5072,11 +5368,11 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -5130,11 +5426,11 @@
         "reports/public_sync/latest_public_sync_report.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,
@@ -5927,69 +6223,11 @@
         "reports/readme/latest_readme_mini_repo_audit.md"
       ],
       "release_truth": {
-        "registry_current_version": "v0.4.5",
+        "registry_current_version": "v0.4.6",
         "head_origin_match": true,
         "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
-        "stable_geometry_boundary": true,
-        "report_refresh_commits_excluded": true,
-        "pure_validation_boundary": true,
-        "non_claim_lock": "Release truth is repository-bound and does not prove runtime correctness."
-      }
-    },
-    {
-      "commit_hash": "7582a408e2e3e055a1026d7005fdfd87bca8ed0e",
-      "short_hash": "7582a40",
-      "parents": [
-        "e2bea1acdcdeafcfc00ed65eed479a0b9fb671df"
-      ],
-      "tag": null,
-      "message": "docs: refresh CMS-SA v0.4.0 public sync seal",
-      "changed_files": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "surface_classes": [
-        {
-          "path": "reports/public_sync/latest_public_sync_report.json",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        },
-        {
-          "path": "reports/public_sync/latest_public_sync_report.md",
-          "pattern": "reports/",
-          "shell": "outer",
-          "meridian": "evidence",
-          "sector": "reports"
-        }
-      ],
-      "shells": [
-        "outer"
-      ],
-      "meridians": [
-        "evidence"
-      ],
-      "sectors": [
-        "reports"
-      ],
-      "lesson_ids_detected": [],
-      "validator_reports_touched": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "evidence_reports_touched": [
-        "reports/public_sync/latest_public_sync_report.json",
-        "reports/public_sync/latest_public_sync_report.md"
-      ],
-      "release_truth": {
-        "registry_current_version": "v0.4.5",
-        "head_origin_match": true,
-        "readme_checkpoint_present": true,
-        "release_tag_exists": true,
-        "release_tag_is_ancestor_of_head": true,
+        "release_tag_exists": false,
+        "release_tag_is_ancestor_of_head": false,
         "stable_geometry_boundary": true,
         "report_refresh_commits_excluded": true,
         "pure_validation_boundary": true,

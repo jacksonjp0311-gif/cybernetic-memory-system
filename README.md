@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.5-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.6-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,14 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
-CMS-RCC-N-v0.4.5 / 180 days
+CMS-RCC-N-v0.4.6 / 180 days
 
-API is not active in v0.4.5
+API is not active in v0.4.6
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor**
-Previous seal: **CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger**
+Current checkpoint: **CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger**
+Previous seal: **CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -67,6 +67,7 @@ Core law:
 | v0.4.3 Loop Pressure Repair Recommendation Layer | What concrete repair should follow each pressure finding? | `reports/loop/latest_loop_repair_recommendations.md` |
 | v0.4.4 Recommendation Execution Plan and Repair Closure Ledger | Which bounded execution plan and closure state follows each recommendation? | `reports/loop/latest_repair_closure_plan.md` |
 | v0.4.5 Authorized Repair Dry-Run Executor | Can a repair plan be simulated without target writes, API writes, commits, or tags? | `reports/loop/latest_authorized_repair_dry_run.md` |
+| v0.4.6 Authorized Repair Apply Gate and Rollback Ledger | Can a dry-run be gated behind authorization and rollback coverage without applying writes? | `reports/loop/latest_authorized_repair_apply_gate.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -93,8 +94,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.5 |
-| Previous seal | CMS-SA v0.4.4 |
+| Current checkpoint | CMS-SA v0.4.6 |
+| Previous seal | CMS-SA v0.4.5 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -134,6 +135,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Loop repair recommendations | `reports/loop/latest_loop_repair_recommendations_validation.md` |
 | Repair closure ledger | `reports/loop/latest_repair_closure_validation.md` |
 | Authorized repair dry-run | `reports/loop/latest_authorized_repair_dry_run_validation.md` |
+| Authorized repair apply gate | `reports/loop/latest_authorized_repair_apply_gate_validation.md` |
 | Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -273,6 +275,20 @@ No repair dry-run may write target surfaces unless explicit human authorization,
 README lesson alignment is repository-bound documentation and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
+
+
+## CMS-SA v0.4.6 Authorized Repair Apply Gate and Rollback Ledger
+
+v0.4.6 converts dry-run output into an apply gate and rollback ledger. It does not execute writes. It blocks apply until authorization, exact target declaration, rollback coverage, blocked-action preservation, and validation evidence are present.
+
+```text
+No repair apply may execute unless it references a validated dry-run id, carries explicit human authorization, declares exact target writes, includes rollback entries for every target, preserves blocked actions, and passes the required validation stack before and after apply.
+```
+
+Starting threshold: `0.14 / 0.25 = 56%` of allowed drift budget, leaving `44%` headroom.
+
+Non-claim lock: Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
 ## Quick Start
 
 Run the local validation stack:
@@ -313,6 +329,8 @@ python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
 python scripts/loop/emit_repair_closure_plan_v0_4_4.py
 python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
+python scripts/loop/emit_authorized_repair_apply_gate_v0_4_6.py
+python scripts/validation/validate_authorized_repair_apply_gate_v0_4_6.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -838,6 +856,8 @@ python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
 python scripts/loop/emit_repair_closure_plan_v0_4_4.py
 python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
+python scripts/loop/emit_authorized_repair_apply_gate_v0_4_6.py
+python scripts/validation/validate_authorized_repair_apply_gate_v0_4_6.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core

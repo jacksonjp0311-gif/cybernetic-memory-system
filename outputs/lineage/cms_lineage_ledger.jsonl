@@ -70,3 +70,4 @@
 {"lineage_event": "repaired_preseal_public_sync_tag_absence_from_hard_failure_to_phase_boundary_pressure", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:15:59.738221+00:00", "version": "v0.4.5"}
 {"lineage_event": "reordered_preseal_validation_to_refresh_pressure_before_alignment", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:17:39.535460+00:00", "version": "v0.4.5"}
 {"lineage_event": "promoted_v0_4_5_validation_order_and_preseal_boundary_lessons_to_main_readme", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:19:23.946027+00:00", "version": "v0.4.5"}
+{"lineage_event": "evolved_authorized_dry_run_into_apply_gate_and_rollback_ledger_without_write_authority", "previous": "v0.4.5", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:26:15.730948+00:00", "version": "v0.4.6"}

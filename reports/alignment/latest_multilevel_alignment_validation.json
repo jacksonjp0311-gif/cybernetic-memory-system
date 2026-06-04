@@ -6,9 +6,11 @@
   "layer_count": 13,
   "non_claim_lock": "Multi-level alignment validation checks repository-bound alignment only. It does not prove code correctness.",
   "passed": true,
-  "pressure_findings": [],
+  "pressure_findings": [
+    "public_sync_phase:preseal_tag_pending"
+  ],
   "registry_derived": true,
-  "schema": "CMS-SA-v0.4.5-multilevel-alignment-validation",
-  "seal_mode": "postseal",
+  "schema": "CMS-SA-v0.4.6-multilevel-alignment-validation",
+  "seal_mode": "preseal",
   "warnings": 0
 }

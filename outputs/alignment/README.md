@@ -7,7 +7,7 @@ Echo Location:
 | Shell | center |
 | Meridian | geometry, feedback, validation, evidence |
 | Sector | alignment |
-| Version / TTL | CMS-RCC-N-v0.4.5 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.6 / 180 days |
 | Last verified | 2026-06-02 |
 
 ## Purpose
@@ -37,7 +37,7 @@ This mini README must update when this folder's purpose, files, routing meaning,
 This folder supports repository-bound multi-level geometric alignment. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 Current checkpoint: CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer
 
-## CMS-RCC-N-v0.4.5 Surface Alignment
+## CMS-RCC-N-v0.4.6 Surface Alignment
 
 Role: Alignment Outputs
 
@@ -61,14 +61,14 @@ Current version: v0.4.4
 
 Previous version: v0.4.3
 
-API is not active in v0.4.5
+API is not active in v0.4.6
 
 Repair closure planning converts recommendations into execution plans and closure ledgers without autonomous patch authority.
 
 Non-claim lock: v0.4.4 surface propagation repair is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.4.5 Surface Alignment
+## CMS-RCC-N-v0.4.6 Surface Alignment
 
 Current checkpoint: CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor
 
@@ -76,8 +76,23 @@ Current version: v0.4.5
 
 Previous version: v0.4.4
 
-API is not active in v0.4.5
+API is not active in v0.4.6
 
 Authorized repair dry-runs simulate repair execution without target writes.
 
 Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+
+## CMS-RCC-N-v0.4.6 Surface Alignment
+
+Current checkpoint: CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger
+
+Current version: v0.4.6
+
+Previous version: v0.4.5
+
+API is not active in v0.4.6
+
+Authorized repair apply gates block repair execution until authorization and rollback coverage exist.
+
+Non-claim lock: Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.

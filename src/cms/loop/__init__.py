@@ -15,3 +15,7 @@ __all__ = [name for name in globals() if not name.startswith('_')]
 from .repair_dry_run import build_authorized_dry_run
 
 __all__ = [name for name in globals() if not name.startswith('_')]
+
+from .repair_apply_gate import build_apply_gate
+
+__all__ = [name for name in globals() if not name.startswith('_')]

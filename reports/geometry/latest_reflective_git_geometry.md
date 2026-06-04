@@ -4,19 +4,20 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.5` |
+| current registry version | `v0.4.6` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `true` |
-| release tag ancestor | `true` |
+| release tag exists | `false` |
+| release tag ancestor | `false` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `4f0669e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.5 final postpush evidence |
 | `abd667c` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.5 postseal validation reports |
 | `f873f28` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.5 authorized repair dry-run executor |
 | `a9764ad` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | fix: refresh CMS-SA v0.4.4 postseal geometry alignment |
@@ -28,7 +29,6 @@
 | `3dab44b` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: seal CMS-SA v0.4.2 registry-derived alignment geometry |
 | `24ce69d` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.1 public sync seal |
 | `28bfc14` | `v0.4.1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.1 candidate memory actions and rehydration scoring |
-| `7582a40` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.0 public sync seal |
 
 ## Pure Validation Boundary
 
