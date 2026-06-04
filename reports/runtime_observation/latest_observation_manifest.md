@@ -2,6 +2,6 @@
 
 - repository: `cybernetic-memory-system`
 - file_count: `526`
-- git_head: `585f93a1a0e56b0c0e546c8c40d2240072c4ee4d`
+- git_head: `ad792fa968df099d8235a658ed2943e1307dd202`
 
 Non-claim lock: repository observation is not code correctness.

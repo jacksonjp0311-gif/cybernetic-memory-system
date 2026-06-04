@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.4.3-multilevel-alignment-report` |
 | version | `v0.4.3` |
-| seal mode | `preseal` |
+| seal mode | `postseal` |
 | passed | `true` |
 | current registry version | `v0.4.3` |
 | previous registry version | `v0.4.2` |
@@ -14,9 +14,9 @@
 ```json
 {
   "accepted_for_current_phase": true,
-  "mode": "preseal",
+  "mode": "postseal",
   "passed": true,
-  "phase_state": "preseal_report_already_passed",
+  "phase_state": "postseal_passed",
   "present": true,
   "release_tag_exists": true,
   "release_tag_is_ancestor_of_head": true,

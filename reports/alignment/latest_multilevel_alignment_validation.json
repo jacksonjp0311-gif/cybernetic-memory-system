@@ -9,6 +9,6 @@
   "pressure_findings": [],
   "registry_derived": true,
   "schema": "CMS-SA-v0.4.3-multilevel-alignment-validation",
-  "seal_mode": "preseal",
+  "seal_mode": "postseal",
   "warnings": 0
 }

@@ -5,7 +5,7 @@
 | passed | `true` |
 | errors | `0` |
 | warnings | `0` |
-| seal mode | `preseal` |
+| seal mode | `postseal` |
 | layer count | `13` |
 | registry derived | `true` |
 
