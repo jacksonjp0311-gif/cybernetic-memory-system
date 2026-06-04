@@ -1,14 +1,14 @@
 {
   "schema": "CMS-SA-v0.2-observation-manifest",
   "repository": "cybernetic-memory-system",
-  "observed_at": "2026-06-04T16:11:14.566550+00:00",
-  "git_head": "951a837fc070e12eddcc9fcb0efea30edd3fd52f",
-  "file_count": 688,
+  "observed_at": "2026-06-04T16:11:24.481798+00:00",
+  "git_head": "f083f468dab8f09b604b49c92b8055e534524cc8",
+  "file_count": 690,
   "role_counts": {
     "other": 8,
-    "documentation": 144,
+    "documentation": 145,
     "ai_contract": 1,
-    "json_artifact": 198,
+    "json_artifact": 199,
     "mini_readme": 67,
     "rcc_context": 5,
     "injection_record": 41,
@@ -19,8 +19,8 @@
   "suffix_counts": {
     "<none>": 2,
     ".txt": 2,
-    ".md": 362,
-    ".json": 202,
+    ".md": 363,
+    ".json": 203,
     ".tex": 1,
     ".jsonl": 6,
     ".toml": 1,
@@ -1552,7 +1552,7 @@
       "path": "outputs/evidence/latest_evidence_package.json",
       "suffix": ".json",
       "bytes": 3415,
-      "sha256": "c5ca698987011f59442da31785c6fe6fa1d1a40ad36c3654231a82f8e1a5fab0",
+      "sha256": "684fae83cc24696f905ed5b227ab4ce22b34bd0eb22cdf4e3c7e41caefebf142",
       "role": "json_artifact"
     },
     {
@@ -1600,8 +1600,8 @@
     {
       "path": "outputs/ledger/cms_sa_v0_5_0_agent_governance_ledger.jsonl",
       "suffix": ".jsonl",
-      "bytes": 3124,
-      "sha256": "88df521391177e53815310809f5155de7eadae86fba387063d1177097b749866",
+      "bytes": 3826,
+      "sha256": "619a72c6306f85aab3c4788c73897f8f4b98c7b777f6e8a3a721d9f21d7f469d",
       "role": "other"
     },
     {
@@ -1706,7 +1706,7 @@
       "path": "outputs/metrics/latest_metric_evaluation.json",
       "suffix": ".json",
       "bytes": 1452,
-      "sha256": "69f8d92a5e95c63b9204910e05e3591a9b5ffe5015e9a9a970ef31bc6b293a94",
+      "sha256": "4d88873201b752ebf7a42cd0e343cfe0d6af7e458e004e9c736c51c0cc974f6a",
       "role": "json_artifact"
     },
     {
@@ -2055,8 +2055,8 @@
     {
       "path": "outputs/state/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 170526,
-      "sha256": "13711a49b8b863b8f6a2b6588e176f1c951548035bde711356e2a8aaeb157a4b",
+      "bytes": 171061,
+      "sha256": "334dba96a42a28ef83029756c28f9f9f9c285cd668a3fa94e42d276ead8dc672",
       "role": "json_artifact"
     },
     {
@@ -2191,6 +2191,20 @@
       "bytes": 2504,
       "sha256": "0ed22aba93ca918743bc8a6b157a4d306263093cdcc13f5da53fd43bb2fb06f2",
       "role": "json_artifact"
+    },
+    {
+      "path": "reports/agent_governance/latest_v0_5_0_final_evidence_commit_report.json",
+      "suffix": ".json",
+      "bytes": 2291,
+      "sha256": "391f2de9f45996a79a9958fc1e58c7cc23d280a795c795930d2989f8b47d42f1",
+      "role": "json_artifact"
+    },
+    {
+      "path": "reports/agent_governance/latest_v0_5_0_final_evidence_commit_report.md",
+      "suffix": ".md",
+      "bytes": 784,
+      "sha256": "ca223121bcc07dc0b9e739eeafc655ee60edf7e3564ae9f1282de060d8c87dc3",
+      "role": "documentation"
     },
     {
       "path": "reports/agent_governance/latest_v0_5_0_final_postpush_seal_validation_summary.json",
@@ -2539,7 +2553,7 @@
       "path": "reports/evidence/latest_evidence_package.json",
       "suffix": ".json",
       "bytes": 3415,
-      "sha256": "c5ca698987011f59442da31785c6fe6fa1d1a40ad36c3654231a82f8e1a5fab0",
+      "sha256": "684fae83cc24696f905ed5b227ab4ce22b34bd0eb22cdf4e3c7e41caefebf142",
       "role": "json_artifact"
     },
     {
@@ -3386,14 +3400,14 @@
       "path": "reports/metric_contracts/latest_metric_evaluation.json",
       "suffix": ".json",
       "bytes": 1452,
-      "sha256": "69f8d92a5e95c63b9204910e05e3591a9b5ffe5015e9a9a970ef31bc6b293a94",
+      "sha256": "4d88873201b752ebf7a42cd0e343cfe0d6af7e458e004e9c736c51c0cc974f6a",
       "role": "json_artifact"
     },
     {
       "path": "reports/metric_contracts/latest_metric_evaluation.md",
       "suffix": ".md",
       "bytes": 282,
-      "sha256": "b6b890fc479d8c34e2771fc3ab1fd04a076d9575e75e623cbd02ee2baf6dafb4",
+      "sha256": "8ad15fa78e48711a32e3ade4c24e033ed6ced2df0b899fb6d6e287dfc50d3d4c",
       "role": "documentation"
     },
     {
@@ -3665,15 +3679,15 @@
     {
       "path": "reports/runtime_observation/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 170526,
-      "sha256": "13711a49b8b863b8f6a2b6588e176f1c951548035bde711356e2a8aaeb157a4b",
+      "bytes": 171061,
+      "sha256": "334dba96a42a28ef83029756c28f9f9f9c285cd668a3fa94e42d276ead8dc672",
       "role": "json_artifact"
     },
     {
       "path": "reports/runtime_observation/latest_observation_manifest.md",
       "suffix": ".md",
       "bytes": 224,
-      "sha256": "03046626669280c353532efe1b7bf439c8c383c6ecabbb8556a6ff65aac899dc",
+      "sha256": "a2f2c2673fbca4c5b8c0c5935abadcb15200156047e0f5992f0a44bee70e7820",
       "role": "documentation"
     },
     {
