@@ -6,10 +6,10 @@
 | passed | `true` |
 | errors | `0` |
 | warnings | `0` |
-| registry current version | `v0.4.0` |
+| registry current version | `v0.4.1` |
 | HEAD equals origin/main | `true` |
 | README checkpoint present | `true` |
-| release tag | `v0.4.0` |
+| release tag | `v0.4.1` |
 | release tag status | `present_and_ancestor_of_head` |
 | stable evidence boundary | `true` |
 | volatile commit hashes omitted | `true` |
