@@ -10,13 +10,14 @@
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `false` |
-| release tag ancestor | `false` |
+| release tag exists | `true` |
+| release tag ancestor | `true` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `f873f28` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.5 authorized repair dry-run executor |
 | `a9764ad` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | fix: refresh CMS-SA v0.4.4 postseal geometry alignment |
 | `0ddd2e9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.4 postseal validation reports |
 | `5e1a6f6` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.4 repair closure ledger |
@@ -28,7 +29,6 @@
 | `28bfc14` | `v0.4.1` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.1 candidate memory actions and rehydration scoring |
 | `7582a40` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.0 public sync seal |
 | `e2bea1a` | `v0.4.0` | `center, inner, middle, outer` | `agent, documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, rcc, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.0 cybernetic memory loop and rehydration protocol |
-| `58c3bf0` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b5 public sync seal |
 
 ## Pure Validation Boundary
 

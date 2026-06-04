@@ -4,7 +4,7 @@
 |---|---|
 | schema | `CMS-SA-v0.4.5-multilevel-alignment-report` |
 | version | `v0.4.5` |
-| seal mode | `preseal` |
+| seal mode | `postseal` |
 | passed | `true` |
 | current registry version | `v0.4.5` |
 | previous registry version | `v0.4.4` |
@@ -14,13 +14,13 @@
 ```json
 {
   "accepted_for_current_phase": true,
-  "mode": "preseal",
-  "passed": false,
-  "phase_state": "preseal_tag_pending",
+  "mode": "postseal",
+  "passed": true,
+  "phase_state": "postseal_passed",
   "present": true,
-  "release_tag_exists": false,
-  "release_tag_is_ancestor_of_head": false,
-  "release_tag_status": "missing"
+  "release_tag_exists": true,
+  "release_tag_is_ancestor_of_head": true,
+  "release_tag_status": "present_and_ancestor_of_head"
 }
 ```
 
@@ -30,7 +30,7 @@
 
 ## Pressure Findings
 
-- `public_sync_phase:preseal_tag_pending`
+- none
 
 ## Non-Claim Lock
 

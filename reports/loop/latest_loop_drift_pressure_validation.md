@@ -2,9 +2,9 @@
 
 - passed: `True`
 - errors: `0`
-- loop_drift_pressure: `0.168`
+- loop_drift_pressure: `0.14`
 - threshold: `0.25`
-- stability_state: `green_with_repair_recommendation`
+- stability_state: `stable_green_loop`
 
 ## Findings
 

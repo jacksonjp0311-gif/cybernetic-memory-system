@@ -2,7 +2,7 @@
 
 - passed: `true`
 - errors: `0`
-- dry-run count: `3`
+- dry-run count: `1`
 - target writes performed: `0`
 - api writes performed: `0`
 - commits performed: `0`

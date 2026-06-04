@@ -3,14 +3,14 @@
 | Field | Value |
 |---|---|
 | schema | `CMS-SA-v0.2b3c-public-sync-stable` |
-| passed | `false` |
-| errors | `1` |
+| passed | `true` |
+| errors | `0` |
 | warnings | `0` |
 | registry current version | `v0.4.5` |
 | HEAD equals origin/main | `true` |
 | README checkpoint present | `true` |
 | release tag | `v0.4.5` |
-| release tag status | `missing` |
+| release tag status | `present_and_ancestor_of_head` |
 | stable evidence boundary | `true` |
 | volatile commit hashes omitted | `true` |
 
