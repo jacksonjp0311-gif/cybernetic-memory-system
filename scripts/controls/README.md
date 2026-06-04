@@ -1,7 +1,7 @@
 
 # Control Emitters
 
-CMS-RCC-N-v0.5.0
+CMS-RCC-N-v0.5.1
 
 Purpose: Emission scripts that write negative-control harness artifacts.
 
@@ -16,15 +16,15 @@ Mini README update rule: if this folder purpose, validation command, evidence su
 
 Non-claim lock: control harness surfaces are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
 Role: Control Emitters
 
-Current checkpoint: CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.3
+Current version: v0.5.1
 
-Previous version: v0.4.2
+Previous version: v0.5.0
 
 Update rule: when the version registry advances, this mini README must either refresh to the current RCC-N token or explicitly mark itself as historical.
 
@@ -34,88 +34,88 @@ Postseal boundary: public-sync must pass after commit, tag, and push.
 
 Non-claim lock: Registry-derived alignment is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
-Current checkpoint: CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.4
+Current version: v0.5.1
 
-Previous version: v0.4.3
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Repair closure planning converts recommendations into execution plans and closure ledgers without autonomous patch authority.
 
 Non-claim lock: v0.4.4 surface propagation repair is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
-Current checkpoint: CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.5
+Current version: v0.5.1
 
-Previous version: v0.4.4
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Authorized repair dry-runs simulate repair execution without target writes.
 
 Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
-Current checkpoint: CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.6
+Current version: v0.5.1
 
-Previous version: v0.4.5
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Authorized repair apply gates block repair execution until authorization and rollback coverage exist.
 
 Non-claim lock: Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
-Current checkpoint: CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.7
+Current version: v0.5.1
 
-Previous version: v0.4.6
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Authorized apply packets define diff and rollback requirements but do not apply writes.
 
 Non-claim lock: Authorized apply packets and diff manifests are repository-bound authorization evidence and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
-Current checkpoint: CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.4.8
+Current version: v0.5.1
 
-Previous version: v0.4.7
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Authorized dry-apply sandbox simulates packet execution without live target writes.
 
 Non-claim lock: Authorized dry-apply sandboxes are repository-bound execution simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 
-## CMS-RCC-N-v0.5.0 Surface Alignment
+## CMS-RCC-N-v0.5.1 Surface Alignment
 
-Current checkpoint: CMS-SA v0.5.0 - Agent Governance Kernel Bridge
+Current checkpoint: CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill
 
-Current version: v0.5.0
+Current version: v0.5.1
 
-Previous version: v0.4.8
+Previous version: v0.5.0
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Agent governance kernel is read-only and does not mutate Hermes runtime.
 

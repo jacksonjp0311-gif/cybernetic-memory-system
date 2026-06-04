@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.5.0-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.5.1-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,14 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
-CMS-RCC-N-v0.5.0 / 180 days
+CMS-RCC-N-v0.5.1 / 180 days
 
-API is not active in v0.5.0
+API is not active in v0.5.1
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.5.0 - Agent Governance Kernel Bridge**
-Previous seal: **CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox**
+Current checkpoint: **CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill**
+Previous seal: **CMS-SA v0.5.0 - Agent Governance Kernel Bridge**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -70,6 +70,8 @@ Core law:
 | v0.4.6 Authorized Repair Apply Gate and Rollback Ledger | Can a dry-run be gated behind authorization and rollback coverage without applying writes? | `reports/loop/latest_authorized_repair_apply_gate.md` |
 | v0.4.7 Authorized Apply Packet Schema and Diff Manifest | Can an apply gate expose a packet, exact diff manifest, and rollback binding without applying writes? | `reports/loop/latest_authorized_apply_packet_diff_manifest.md` |
 | v0.4.8 Authorized Apply Executor Dry-Apply Sandbox | Can an apply packet be simulated in a sandbox without live target writes? | `reports/loop/latest_authorized_dry_apply_sandbox.md` |
+| v0.5.0 Agent Governance Kernel Bridge | Can CMS classify agent proposals without granting memory, skill, repair, apply, or write authority? | `reports/agent_governance/latest_agent_governance_kernel_validation.md` |
+| v0.5.1 Public Governance Surface Backfill | Do README, roadmap, registry history, mini READMEs, and lesson surfaces reflect the sealed v0.5.0 evidence? | `reports/governance_backfill/latest_v0_5_1_public_governance_surface_backfill_summary.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -96,8 +98,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.5.0 |
-| Previous seal | CMS-SA v0.4.8 |
+| Current checkpoint | CMS-SA v0.5.1 |
+| Previous seal | CMS-SA v0.5.0 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -140,6 +142,13 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Authorized repair apply gate | `reports/loop/latest_authorized_repair_apply_gate_validation.md` |
 | Authorized apply packet diff manifest | `reports/loop/latest_authorized_apply_packet_diff_manifest_validation.md` |
 | Authorized dry-apply sandbox | `reports/loop/latest_authorized_dry_apply_sandbox_validation.md` |
+| Agent governance kernel | `reports/agent_governance/latest_agent_governance_kernel_validation.md` |
+| Hermes/CMS context packet | `outputs/cms/hermes_cms_context.json` |
+| RCC/CMS orientation packet | `outputs/agent_governance/latest_rcc_cms_orientation_packet.json` |
+| Agent adapter decisions | `outputs/agent_governance/latest_agent_adapter_decisions.json` |
+| v0.5.0 final evidence report | `reports/agent_governance/latest_v0_5_0_final_evidence_commit_report.md` |
+| v0.5.0 residual closure report | `reports/agent_governance/latest_v0_5_0_residual_verifier_artifact_closure_report.md` |
+| v0.5.1 public governance backfill | `reports/governance_backfill/latest_v0_5_1_public_governance_surface_backfill_summary.md` |
 | Alignment layer count | `13` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -418,6 +427,82 @@ No agent proposal may become memory, skill, repair authority, dry-run authority,
 Runtime boundary: no Hermes runtime code is changed; no CMS write integration is active; no write, memory, skill-trust, or apply authority is granted.
 
 
+## CMS-SA v0.5.0 Lessons — Agent Governance Kernel Bridge
+
+v0.5.0 proved that CMS can become a read-only governance bridge for an agent framework without becoming the agent runtime.
+
+### Final v0.5.0 Threshold Position
+
+```text
+loop_drift_pressure = 0.14
+threshold = 0.25
+threshold_usage = 56%
+headroom = 44%
+state = stable_green_loop
+```
+
+### Lesson 1 — Agent Proposal Is Not Authority
+
+An agent proposal may be classified, recorded, and routed. It may not become memory, repair authority, skill trust, dry-run authority, apply authority, or write authority without CMS classification, evidence, blocked-action preservation, and non-claim boundary.
+
+### Lesson 2 — Read-Only Context Is Not Runtime Integration
+
+The Hermes/CMS context packet is an orientation artifact. It does not mutate Hermes runtime behavior and does not activate CMS write integration.
+
+### Lesson 3 — CMS Governs Permission, Not Action
+
+CMS classifies proposals, preserves boundaries, emits evidence, and governs permission state. It does not act as Hermes and does not execute autonomous writes.
+
+### Lesson 4 — Hermes Acts Only After Orientation and Permission
+
+```text
+RCC    -> orientation
+CMS    -> governed permission
+Hermes -> action
+Human  -> write boundary
+```
+
+### Lesson 5 — Human Authorization Remains the Write Boundary
+
+Dangerous transitions remain blocked unless explicit human authorization, exact target declaration, rollback coverage, validation evidence, and non-claim boundaries exist.
+
+### Lesson 6 — Final Verifier Residue Must Be Committed or Discarded
+
+Final verification can refresh evidence, metric, and runtime-observation artifacts after final evidence commit. The repo is not clean until that residue is committed or intentionally discarded.
+
+### Main Operational Lock
+
+```text
+No agent proposal may become memory, skill, repair authority, dry-run authority, apply authority, or write authority unless CMS classifies the proposal, records evidence, preserves blocked actions, and emits a non-claim boundary.
+```
+
+### Non-Claim Lock
+
+v0.5.0 lesson alignment is repository-bound documentation and does not prove Hermes correctness, CMS correctness, code correctness, truth, AGI, consciousness, security, production readiness, external validation, autonomous patch safety, or autonomous write authority.
+
+## CMS-SA v0.5.1 Public Governance Surface and Roadmap Backfill
+
+v0.5.1 is not a new runtime authority layer. It backfills the public governance surfaces after v0.5.0 sealed.
+
+It updates:
+
+```text
+README snapshot and metrics
+v0.5.0 public lesson memory
+repository layers and directory surfaces
+docs/roadmap/CMS_ROADMAP.md
+version registry history
+mini README alignment tokens
+```
+
+Primary lock:
+
+```text
+No CMS public governance surface is current unless README, roadmap, registry, version docs, mini READMEs, release seals, validation reports, and non-claim locks agree with the latest sealed evidence.
+```
+
+Non-claim lock: CMS-SA v0.5.1 is a public governance surface backfill. It improves repository orientation, lineage, and lesson visibility but does not prove Hermes correctness, CMS correctness, code correctness, truth, AGI, consciousness, security, production readiness, external validation, autonomous patch safety, or autonomous write authority.
+
 ## Quick Start
 
 Run the local validation stack:
@@ -489,6 +574,7 @@ python scripts/validate_release.py
 | Control harness | Negative controls, downgrade preservation, observe-only preservation, and false-promote rejection | `configs/controls/`, `src/cms/controls/`, `scripts/controls/`, `outputs/controls/`, `reports/controls/` |
 | Memory promotion | Evidence utility, control survival, downgrade-safe memory decisions, and next-cycle memory candidates | `configs/memory/`, `src/cms/memory/`, `scripts/memory/`, `outputs/memory/`, `reports/memory/` |
 | Loop runtime | Closed cybernetic memory loop and bounded next-cycle influence | `configs/loop/`, `src/cms/loop/`, `scripts/loop/`, `outputs/loop/`, `reports/loop/` |
+| Agent governance | Agent proposal classification, read-only Hermes/CMS context, RCC/CMS orientation, and memory/repair/skill adapter decisions | `src/cms/governance/`, `scripts/governance/`, `outputs/agent_governance/`, `outputs/cms/`, `reports/agent_governance/` |
 
 ## Historical Report Archive
 
@@ -661,7 +747,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.5.0 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.5.1 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -907,7 +993,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.5.0 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.5.1 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -1109,6 +1195,12 @@ This box is the durable public navigation spine. The full repository is validate
 | `outputs/loop/` | Latest cybernetic memory loop outputs. |
 | `reports/controls/` | Negative-control harness and validation reports. |
 | `reports/loop/` | Cybernetic memory loop reports and validation outputs. |
+| `src/cms/governance/` | Agent governance runtime for proposal classification and read-only governance bundles. |
+| `scripts/governance/` | Agent governance emitters for context packets and proposal-classification evidence. |
+| `outputs/agent_governance/` | Machine-readable agent governance bundles, orientation packets, and adapter decisions. |
+| `outputs/cms/` | Read-only CMS context packets intended for future agent consumption. |
+| `reports/agent_governance/` | Agent governance validation, final evidence, and residual closure reports. |
+| `reports/governance_backfill/` | Public governance surface backfill summaries and validation evidence. |
 | `tests/` | Unit tests for runtime observation, metrics, drift, and evidence cycle. |
 | `examples/` | Future examples and walkthrough surfaces. |
 
@@ -1141,7 +1233,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.5.0 This layer is internal runtime coherence only.
+API is not active in v0.5.1 This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 

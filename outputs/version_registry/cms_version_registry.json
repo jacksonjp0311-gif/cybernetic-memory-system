@@ -1,7 +1,7 @@
 {
-  "current_checkpoint": "CMS-SA v0.5.0 - Agent Governance Kernel Bridge",
-  "current_version": "v0.5.0",
-  "latest_version": "v0.5.0",
+  "current_checkpoint": "CMS-SA v0.5.1 - Public Governance Surface and Roadmap Backfill",
+  "current_version": "v0.5.1",
+  "latest_version": "v0.5.1",
   "next_anchor": "HRCN v0.1 - Hermes README/RCC Documentation Anchor",
   "non_claim_locks": {
     "markdown_structure_is_not_code_correctness": true,
@@ -9,12 +9,18 @@
     "release_seal_is_not_external_validation": true,
     "version_registry_is_not_truth": true
   },
-  "previous_seal": "CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox",
-  "previous_version": "v0.4.8",
+  "previous_seal": "CMS-SA v0.5.0 - Agent Governance Kernel Bridge",
+  "previous_version": "v0.5.0",
   "purpose": "Record every CMS version as document, injection, state, ledger, release seal, next anchor, public status, and public sync state.",
+  "registry_backfill": {
+    "backfilled_through": "v0.5.1",
+    "non_claim_lock": "Registry backfill is repository memory hygiene and does not prove correctness.",
+    "reason": "Historical version list lagged behind current checkpoint and sealed evidence.",
+    "version": "v0.5.1"
+  },
   "repository": "cybernetic-memory-system",
   "schema": "CMS-SA-version-registry-v0.2b3a",
-  "updated_at": "2026-06-04T16:02:10.979288+00:00",
+  "updated_at": "2026-06-04T17:11:22.801271+00:00",
   "versions": [
     {
       "class": "software_architecture_genesis",
@@ -287,6 +293,12 @@
       "previous": "v0.4.8",
       "status": "preseal_development",
       "version": "v0.5.0"
+    },
+    {
+      "name": "Public Governance Surface and Roadmap Backfill",
+      "non_claim_lock": "Version registry lineage improves repository continuity but is not truth, correctness, or external validation.",
+      "status": "public-governance-surface-backfill",
+      "version": "v0.5.1"
     }
   ]
 }
