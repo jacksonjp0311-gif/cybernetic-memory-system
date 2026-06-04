@@ -1,14 +1,14 @@
 {
   "schema": "CMS-SA-v0.2-observation-manifest",
   "repository": "cybernetic-memory-system",
-  "observed_at": "2026-06-04T17:16:24.856791+00:00",
-  "git_head": "51a8c62e9ff374976df1edbf3088c5f249c91d34",
-  "file_count": 708,
+  "observed_at": "2026-06-04T17:16:36.203123+00:00",
+  "git_head": "edd8afbd85727629736f3086904a8d000572f1e5",
+  "file_count": 710,
   "role_counts": {
     "other": 9,
-    "documentation": 151,
+    "documentation": 152,
     "ai_contract": 1,
-    "json_artifact": 206,
+    "json_artifact": 207,
     "mini_readme": 67,
     "rcc_context": 5,
     "injection_record": 42,
@@ -19,8 +19,8 @@
   "suffix_counts": {
     "<none>": 2,
     ".txt": 2,
-    ".md": 373,
-    ".json": 210,
+    ".md": 374,
+    ".json": 211,
     ".tex": 1,
     ".jsonl": 7,
     ".toml": 1,
@@ -1572,8 +1572,8 @@
     {
       "path": "outputs/evidence/latest_evidence_package.json",
       "suffix": ".json",
-      "bytes": 3416,
-      "sha256": "e4035ce99c241493bdbc2a934350aad4e38351446d104cb0451fb208ca84d030",
+      "bytes": 3415,
+      "sha256": "0945195a797c574ff398121ca7a9f12811709041a23f5536b755973b46d7b445",
       "role": "json_artifact"
     },
     {
@@ -1628,8 +1628,8 @@
     {
       "path": "outputs/ledger/cms_sa_v0_5_1_public_governance_backfill_ledger.jsonl",
       "suffix": ".jsonl",
-      "bytes": 2506,
-      "sha256": "dfd64173ae1acb4d194c38f4c99eb017a9f08aed55cec86b7466cc5a2a780a4e",
+      "bytes": 3215,
+      "sha256": "1a2133fb1d8a225d976ff6a06b2c8a10aa0d539b46a4edbe6b616137ccaed64c",
       "role": "other"
     },
     {
@@ -1733,8 +1733,8 @@
     {
       "path": "outputs/metrics/latest_metric_evaluation.json",
       "suffix": ".json",
-      "bytes": 1453,
-      "sha256": "3aec8a6c538e1a218b19f7aa9df8358caec352cb8ae774568108997df193269f",
+      "bytes": 1452,
+      "sha256": "f1a3d9c2e871d62ea97d9af950b402cb7f57a30b6263c5424ad573cfb59a279f",
       "role": "json_artifact"
     },
     {
@@ -2097,8 +2097,8 @@
     {
       "path": "outputs/state/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 175888,
-      "sha256": "696d0271ca35c20370ce87de9239df45c404a542d17fca4270a6c6cf13386970",
+      "bytes": 176429,
+      "sha256": "9fa5401a6a0f92adda1a41ad98ce24677e9259e13afa06b80641de61dc548bf1",
       "role": "json_artifact"
     },
     {
@@ -2608,8 +2608,8 @@
     {
       "path": "reports/evidence/latest_evidence_package.json",
       "suffix": ".json",
-      "bytes": 3416,
-      "sha256": "e4035ce99c241493bdbc2a934350aad4e38351446d104cb0451fb208ca84d030",
+      "bytes": 3415,
+      "sha256": "0945195a797c574ff398121ca7a9f12811709041a23f5536b755973b46d7b445",
       "role": "json_artifact"
     },
     {
@@ -2694,6 +2694,20 @@
       "suffix": ".md",
       "bytes": 481,
       "sha256": "59ff56dca7014766f3ad876935d06ea6c1708a8bc4f6bf762ab4a6b1bca261d2",
+      "role": "documentation"
+    },
+    {
+      "path": "reports/governance_backfill/latest_v0_5_1_final_evidence_commit_report.json",
+      "suffix": ".json",
+      "bytes": 2191,
+      "sha256": "d66d1d6bb4926a7e92510328ff55dc31af3d76ea4e55c9615889bee355682929",
+      "role": "json_artifact"
+    },
+    {
+      "path": "reports/governance_backfill/latest_v0_5_1_final_evidence_commit_report.md",
+      "suffix": ".md",
+      "bytes": 776,
+      "sha256": "af30a4e5cad58e84a334d1be75fbc41683974387d7ba091c937129322e8880e3",
       "role": "documentation"
     },
     {
@@ -3525,15 +3539,15 @@
     {
       "path": "reports/metric_contracts/latest_metric_evaluation.json",
       "suffix": ".json",
-      "bytes": 1453,
-      "sha256": "3aec8a6c538e1a218b19f7aa9df8358caec352cb8ae774568108997df193269f",
+      "bytes": 1452,
+      "sha256": "f1a3d9c2e871d62ea97d9af950b402cb7f57a30b6263c5424ad573cfb59a279f",
       "role": "json_artifact"
     },
     {
       "path": "reports/metric_contracts/latest_metric_evaluation.md",
       "suffix": ".md",
-      "bytes": 283,
-      "sha256": "9117c4ba8b3ff019f66c402d53cc83dea865a8da52ebe843963f2425b2270768",
+      "bytes": 282,
+      "sha256": "2e8158db45de600deb282cb1793606f7c53d0a00e5ac524c82ddc15ec73932b0",
       "role": "documentation"
     },
     {
@@ -3805,15 +3819,15 @@
     {
       "path": "reports/runtime_observation/latest_observation_manifest.json",
       "suffix": ".json",
-      "bytes": 175888,
-      "sha256": "696d0271ca35c20370ce87de9239df45c404a542d17fca4270a6c6cf13386970",
+      "bytes": 176429,
+      "sha256": "9fa5401a6a0f92adda1a41ad98ce24677e9259e13afa06b80641de61dc548bf1",
       "role": "json_artifact"
     },
     {
       "path": "reports/runtime_observation/latest_observation_manifest.md",
       "suffix": ".md",
       "bytes": 224,
-      "sha256": "239ec67c6d50e077fcf80103f4323882d852c619bef9b9bd88733befe722a7a1",
+      "sha256": "aec887a76df1d78675efd7a056444cd0957d2d45de8a1752c16c92397fb6b6c5",
       "role": "documentation"
     },
     {
