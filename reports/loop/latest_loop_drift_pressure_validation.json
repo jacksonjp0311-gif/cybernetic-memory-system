@@ -1,7 +1,7 @@
 {
   "errors": 0,
   "findings": [],
-  "loop_drift_pressure": 0.168,
+  "loop_drift_pressure": 0.198,
   "non_claim_lock": "Loop drift pressure validation is repository-bound and does not prove code correctness.",
   "passed": true,
   "schema": "CMS-SA-v0.4.2-loop-drift-pressure-validation",

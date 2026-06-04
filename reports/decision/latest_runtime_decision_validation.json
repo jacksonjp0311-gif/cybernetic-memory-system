@@ -1,10 +1,12 @@
 {
   "schema": "CMS-SA-v0.3b3-runtime-decision-validation",
-  "passed": true,
+  "passed": false,
   "version": "v0.3b3",
-  "errors": 0,
-  "findings": [],
-  "decision": "promote",
-  "decision_hash": "a354c54f739554b164bc775368e264fb9aa060a59667e40064cec892c518e36a",
+  "errors": 1,
+  "findings": [
+    "required_signal_failed:multilevel_alignment"
+  ],
+  "decision": "block",
+  "decision_hash": "0b5c041be378a10d2c24d372d13cf92fe8ba1a163e13f21f9652fbe6500b1987",
   "non_claim_lock": "Runtime decision validation is repository-bound and does not prove code correctness."
 }

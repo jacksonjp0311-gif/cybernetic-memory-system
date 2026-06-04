@@ -1,10 +1,10 @@
 # Runtime Decision Validation
 
-- Passed: `True`
-- Errors: `0`
+- Passed: `False`
+- Errors: `1`
 
 ## Findings
 
-- none
+- `required_signal_failed:multilevel_alignment`
 
 Runtime decision validation is repository-bound and does not prove code correctness.

@@ -1,14 +1,17 @@
 {
-  "errors": 0,
+  "errors": 2,
   "feedback_items_aligned": 3,
   "feedback_items_checked": 3,
-  "findings": [],
+  "findings": [
+    "alignment_report_not_passing",
+    "version_check_failed:geometry_registry_version_matches"
+  ],
   "layer_count": 13,
   "non_claim_lock": "Multi-level alignment validation checks repository-bound alignment only. It does not prove code correctness.",
-  "passed": true,
+  "passed": false,
   "pressure_findings": [],
   "registry_derived": true,
   "schema": "CMS-SA-v0.4.4-multilevel-alignment-validation",
-  "seal_mode": "preseal",
+  "seal_mode": "postseal",
   "warnings": 0
 }
