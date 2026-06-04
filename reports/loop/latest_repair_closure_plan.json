@@ -1,7 +1,37 @@
 {
-  "closure_count": 1,
-  "closure_hash": "f04d0880efc0261d771281ec96f0a805654b7d8466f59027cd5001de1ef55d79",
+  "closure_count": 3,
+  "closure_hash": "1ee847a0980b42c4ffa8c6cac375d886f8d06f6b611385518d2007b2f33c387e",
   "closure_ledger": [
+    {
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "validator_patch",
+        "memory_promotion",
+        "api_write",
+        "autonomous_patch"
+      ],
+      "closure_state": "planned_not_executed",
+      "evidence_status": "pending_execution_evidence",
+      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "plan_id": "CMS-PLAN-9cf10f4caa",
+      "repair_class": "REPORT_REFRESH",
+      "source_recommendation_id": "CMS-RR-460ab6ea93"
+    },
+    {
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "memory_promotion",
+        "public_release_seal",
+        "api_write",
+        "autonomous_patch"
+      ],
+      "closure_state": "planned_not_executed",
+      "evidence_status": "pending_execution_evidence",
+      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "plan_id": "CMS-PLAN-d6db1713fe",
+      "repair_class": "SURFACE_REPAIR",
+      "source_recommendation_id": "CMS-RR-3b9295f81d"
+    },
     {
       "blocked_actions_preserved": [
         "runtime_code_patch",
@@ -18,11 +48,76 @@
       "source_recommendation_id": "CMS-RR-3d8ebfb363"
     }
   ],
-  "created_at": "2026-06-04T04:09:37.303219+00:00",
+  "created_at": "2026-06-04T04:21:17.305355+00:00",
   "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
   "passed": true,
-  "plan_count": 1,
+  "plan_count": 3,
   "plans": [
+    {
+      "allowed_repair_action": "refresh_report_artifacts_after_valid_state_transition",
+      "authorization_required": true,
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "validator_patch",
+        "memory_promotion",
+        "api_write",
+        "autonomous_patch"
+      ],
+      "closure_evidence": [],
+      "closure_state": "planned_not_executed",
+      "downgrade_path": "keep_report_refresh_as_documentation_commit_only",
+      "execution_mode": "human_authorized_report_refresh_plan",
+      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "plan_hash": "d641683a1df30d82793d8a884c9b1ff3d09dbc682929ac0f5abbb0fa5736b30f",
+      "plan_id": "CMS-PLAN-9cf10f4caa",
+      "pressure_source": "public_sync_phase:preseal_tag_pending",
+      "repair_class": "REPORT_REFRESH",
+      "required_validation_evidence": [
+        "validate_public_sync",
+        "validate_multilevel_alignment",
+        "validate_loop_drift_pressure"
+      ],
+      "source_recommendation_id": "CMS-RR-460ab6ea93",
+      "touched_surface_boundary": [
+        "outputs/*",
+        "reports/*"
+      ]
+    },
+    {
+      "allowed_repair_action": "patch_readme_badge_route_map_mini_readme_or_public_table_only",
+      "authorization_required": true,
+      "blocked_actions_preserved": [
+        "runtime_code_patch",
+        "memory_promotion",
+        "public_release_seal",
+        "api_write",
+        "autonomous_patch"
+      ],
+      "closure_evidence": [],
+      "closure_state": "planned_not_executed",
+      "downgrade_path": "hold_release_until_surface_alignment_passes",
+      "execution_mode": "human_authorized_surface_patch_plan",
+      "non_claim_lock": "Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.",
+      "plan_hash": "49918968480d6a0a4941115770ce7e6fe5a58456748ed362750080399ddf46cb",
+      "plan_id": "CMS-PLAN-d6db1713fe",
+      "pressure_source": "public_surface_delta",
+      "repair_class": "SURFACE_REPAIR",
+      "required_validation_evidence": [
+        "audit_readme_surface",
+        "validate_surface_alignment",
+        "emit_runtime_decision",
+        "validate_runtime_decision"
+      ],
+      "source_recommendation_id": "CMS-RR-3b9295f81d",
+      "touched_surface_boundary": [
+        "README.md",
+        "configs/*/README.md",
+        "src/cms/*/README.md",
+        "scripts/*/README.md",
+        "outputs/*/README.md",
+        "reports/*/README.md"
+      ]
+    },
     {
       "allowed_repair_action": "normalize_version_registry_lifecycle_previous_seal_or_next_anchor",
       "authorization_required": true,
@@ -58,9 +153,9 @@
   ],
   "primary_lock": "No repair recommendation may be marked closed unless it has a plan id, source recommendation id, declared execution mode, touched-surface boundary, required validation evidence, closure state, blocked-action preservation, and non-claim boundary.",
   "schema": "CMS-SA-v0.4.4-repair-execution-plan-and-closure-ledger",
-  "source_pressure_state": "stable",
-  "source_recommendation_count": 1,
-  "source_recommendation_hash": "2c8a807d13455d3a5aa3edbb1aaaef36e52d25c98ffd060c8bf911f82f122005",
-  "source_stability_state": "stable_green_loop",
+  "source_pressure_state": "warning",
+  "source_recommendation_count": 3,
+  "source_recommendation_hash": "c1e5f368e91f8413dd6659ef8ba3474edbde5b1cda290480c9505afcaa3f3ffd",
+  "source_stability_state": "green_with_repair_recommendation",
   "version": "v0.4.4"
 }

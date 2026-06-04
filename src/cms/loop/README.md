@@ -1,6 +1,6 @@
 # Loop Runtime
 
-CMS-RCC-N-v0.4.4
+CMS-RCC-N-v0.4.5
 
 Purpose: Runtime package for cybernetic memory loop state and influence emission.
 
@@ -19,7 +19,7 @@ Non-claim lock: loop surfaces are repository-bound and do not prove code correct
 
 Loop runtime modules, including v0.4.2 drift pressure metrics.
 
-## CMS-RCC-N-v0.4.4 Surface Alignment
+## CMS-RCC-N-v0.4.5 Surface Alignment
 
 Role: Loop Runtime
 
@@ -38,7 +38,7 @@ Postseal boundary: public-sync must pass after commit, tag, and push.
 Non-claim lock: Registry-derived alignment is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
 
-## CMS-RCC-N-v0.4.4 Surface Alignment
+## CMS-RCC-N-v0.4.5 Surface Alignment
 
 Role: Loop Runtime
 
@@ -52,4 +52,19 @@ Update rule: when repair recommendation changes, closure planning surfaces must 
 
 Non-claim lock: Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
-API is not active in v0.4.4
+API is not active in v0.4.5
+
+
+## CMS-RCC-N-v0.4.5 Surface Alignment
+
+Current checkpoint: CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor
+
+Current version: v0.4.5
+
+Previous version: v0.4.4
+
+API is not active in v0.4.5
+
+Authorized repair dry-runs simulate repair execution without target writes.
+
+Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.

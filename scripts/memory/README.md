@@ -1,7 +1,7 @@
 
 # Memory Emitters
 
-CMS-RCC-N-v0.4.4
+CMS-RCC-N-v0.4.5
 
 Purpose: emit memory-promotion reports from repository-bound evidence, controls, decisions, downgrade paths, and falsification conditions.
 
@@ -16,7 +16,7 @@ Mini README update rule: if this folder purpose, validation command, evidence su
 
 Non-claim lock: memory emitters are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 
-## CMS-RCC-N-v0.4.4 Surface Alignment
+## CMS-RCC-N-v0.4.5 Surface Alignment
 
 Role: Memory Emitters
 
@@ -40,8 +40,23 @@ Current version: v0.4.4
 
 Previous version: v0.4.3
 
-API is not active in v0.4.4
+API is not active in v0.4.5
 
 Repair closure planning converts recommendations into execution plans and closure ledgers without autonomous patch authority.
 
 Non-claim lock: v0.4.4 surface propagation repair is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+
+## CMS-RCC-N-v0.4.5 Surface Alignment
+
+Current checkpoint: CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor
+
+Current version: v0.4.5
+
+Previous version: v0.4.4
+
+API is not active in v0.4.5
+
+Authorized repair dry-runs simulate repair execution without target writes.
+
+Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.

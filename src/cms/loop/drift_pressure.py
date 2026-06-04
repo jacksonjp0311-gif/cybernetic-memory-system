@@ -78,14 +78,28 @@ def build_loop_drift_pressure(
             v041_status = str(item.get("status", "unknown"))
             break
 
-    public_sync_preseal_pending = public_sync.get("registry_current_version") != registry.get("current_version")
+    public_sync_preseal_tag_pending = (
+        public_sync.get("passed") is not True
+        and public_sync.get("registry_current_version") == registry.get("current_version")
+        and public_sync.get("head_origin_match") is True
+        and public_sync.get("readme_checkpoint_present") is True
+        and public_sync.get("release_tag_status") == "missing"
+    )
+    public_sync_preseal_pending = (
+        public_sync.get("registry_current_version") != registry.get("current_version")
+        or public_sync_preseal_tag_pending
+    )
     public_sync_core_ok = (
         public_sync.get("passed") is True
         and public_sync.get("head_origin_match") is True
         and public_sync.get("release_tag_status") == "present_and_ancestor_of_head"
-    )
+    ) or public_sync_preseal_tag_pending
 
-    validation_failures = [name for name, obj in validation_surfaces.items() if obj.get("passed") is not True]
+    validation_failures = [
+        name
+        for name, obj in validation_surfaces.items()
+        if obj.get("passed") is not True and not (name == "public_sync" and public_sync_preseal_tag_pending)
+    ]
 
     grammar_drift = 0
     if "are repository-bound and does not prove" in str(candidate_actions.get("non_claim_lock", "")):
@@ -149,7 +163,9 @@ def build_loop_drift_pressure(
         findings.append("validation_failures:" + ",".join(validation_failures))
     if rehydration_gap_count:
         findings.append("rehydration_gap_surfaces_present")
-    if public_sync_preseal_pending:
+    if public_sync_preseal_tag_pending:
+        findings.append("public_sync_phase:preseal_tag_pending")
+    elif public_sync_preseal_pending:
         findings.append("public_sync_preseal_pending_until_v0_4_2_tag")
 
     if loop_drift_pressure > threshold:

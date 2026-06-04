@@ -66,3 +66,7 @@
 {"lineage_event": "began_bounded_self_healing_as_repair_closure_planning_not_autonomous_execution", "previous": "v0.4.3", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:03:41.630566+00:00", "version": "v0.4.4"}
 {"lineage_event": "repaired_v0_4_4_script_literals_and_surface_propagation", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:06:05.509594+00:00", "version": "v0.4.4"}
 {"lineage_event": "postseal_geometry_refresh_repaired_multilevel_alignment_registry_version_mismatch", "status": "postseal_repair", "timestamp_utc": "2026-06-04T04:09:42.942401+00:00", "version": "v0.4.4"}
+{"lineage_event": "evolved_repair_closure_into_authorized_dry_run_without_target_writes", "previous": "v0.4.4", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:13:54.183125+00:00", "version": "v0.4.5"}
+{"lineage_event": "repaired_preseal_public_sync_tag_absence_from_hard_failure_to_phase_boundary_pressure", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:15:59.738221+00:00", "version": "v0.4.5"}
+{"lineage_event": "reordered_preseal_validation_to_refresh_pressure_before_alignment", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:17:39.535460+00:00", "version": "v0.4.5"}
+{"lineage_event": "promoted_v0_4_5_validation_order_and_preseal_boundary_lessons_to_main_readme", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:19:23.946027+00:00", "version": "v0.4.5"}

@@ -4,19 +4,20 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.4` |
+| current registry version | `v0.4.5` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `true` |
-| release tag ancestor | `true` |
+| release tag exists | `false` |
+| release tag ancestor | `false` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `a9764ad` | `` | `center, middle, outer` | `documentation, evidence, memory` | `lineage, reports, unclassified` | fix: refresh CMS-SA v0.4.4 postseal geometry alignment |
 | `0ddd2e9` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.4 postseal validation reports |
 | `5e1a6f6` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.4 repair closure ledger |
 | `6807051` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.3 postseal validation reports |
@@ -28,7 +29,6 @@
 | `7582a40` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.4.0 public sync seal |
 | `e2bea1a` | `v0.4.0` | `center, inner, middle, outer` | `agent, documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, rcc, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.0 cybernetic memory loop and rehydration protocol |
 | `58c3bf0` | `` | `outer` | `evidence` | `reports` | docs: refresh CMS-SA v0.3b5 public sync seal |
-| `9cbfd7c` | `v0.3b5` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.3b5 memory promotion kernel |
 
 ## Pure Validation Boundary
 

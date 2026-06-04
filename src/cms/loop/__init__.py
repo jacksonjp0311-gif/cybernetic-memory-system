@@ -11,3 +11,7 @@ from .repair_recommendation import build_loop_repair_recommendations
 from .repair_closure import build_repair_closure_plan
 
 __all__ = [name for name in globals() if not name.startswith('_')]
+
+from .repair_dry_run import build_authorized_dry_run
+
+__all__ = [name for name in globals() if not name.startswith('_')]

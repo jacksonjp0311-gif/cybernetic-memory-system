@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.4-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.5-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,14 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
-CMS-RCC-N-v0.4.4 / 180 days
+CMS-RCC-N-v0.4.5 / 180 days
 
-API is not active in v0.4.4
+API is not active in v0.4.5
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger**
-Previous seal: **CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer**
+Current checkpoint: **CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor**
+Previous seal: **CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -66,6 +66,7 @@ Core law:
 | v0.4.2 Loop Drift Pressure Metrics | Is the loop still stable, or is green status hiding stale pressure? | `reports/loop/latest_loop_drift_pressure.md` |
 | v0.4.3 Loop Pressure Repair Recommendation Layer | What concrete repair should follow each pressure finding? | `reports/loop/latest_loop_repair_recommendations.md` |
 | v0.4.4 Recommendation Execution Plan and Repair Closure Ledger | Which bounded execution plan and closure state follows each recommendation? | `reports/loop/latest_repair_closure_plan.md` |
+| v0.4.5 Authorized Repair Dry-Run Executor | Can a repair plan be simulated without target writes, API writes, commits, or tags? | `reports/loop/latest_authorized_repair_dry_run.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -92,8 +93,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.4 |
-| Previous seal | CMS-SA v0.4.3 |
+| Current checkpoint | CMS-SA v0.4.5 |
+| Previous seal | CMS-SA v0.4.4 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -132,6 +133,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Loop drift pressure | `reports/loop/latest_loop_drift_pressure_validation.md` |
 | Loop repair recommendations | `reports/loop/latest_loop_repair_recommendations_validation.md` |
 | Repair closure ledger | `reports/loop/latest_repair_closure_validation.md` |
+| Authorized repair dry-run | `reports/loop/latest_authorized_repair_dry_run_validation.md` |
 | Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -178,6 +180,99 @@ No repair recommendation may be marked closed unless it has a plan id, source re
 
 Non-claim lock: Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
+
+
+## CMS-SA v0.4.5 Authorized Repair Dry-Run Executor
+
+v0.4.5 simulates repair execution without writing target surfaces. It creates dry-run manifests, rollback paths, and validation requirements while preserving blocked actions. Its key lesson is that dry-run safety depends on evidence order: pressure must be refreshed before multilevel alignment and again after runtime decision.
+
+```text
+No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.
+```
+
+Threshold status at genesis: `0.14 / 0.25 = 56%` of allowed drift budget, leaving `44%` headroom.
+
+Non-claim lock: Authorized repair dry-runs are repository-bound simulations and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+## CMS-SA v0.4.5 Lessons — Preseal Geometry, Threshold, and Dry-Run Safety
+
+v0.4.5 exposed an important governance lesson: **validation order is part of the system geometry**. A correct layer can still appear broken if stale evidence is read in the wrong sequence.
+
+### Current Threshold Position
+
+The final v0.4.5 preseal refresh settled at:
+
+```text
+loop_drift_pressure = 0.168
+threshold = 0.25
+threshold_usage = 67.2%
+headroom = 32.8%
+state = green_with_repair_recommendation
+```
+
+This is below the release-block threshold, but it is not silent-green. It remains a warning state because the v0.4.5 release tag is intentionally missing during preseal.
+
+### Lesson 1 — Preseal Tag Absence Is a Phase Boundary
+
+During preseal, `release_tag_missing` for the current version is expected. It must be represented as:
+
+```text
+public_sync_phase:preseal_tag_pending
+```
+
+not as a hard `validation_failures:public_sync`, provided the registry version, HEAD/origin agreement, and README checkpoint are aligned.
+
+### Lesson 2 — Pressure Must Refresh Before Alignment
+
+The correct v0.4.5 preseal validation order is:
+
+```text
+compile
+→ public-sync boundary check
+→ reflective geometry
+→ surface alignment
+→ loop pressure refresh
+→ multilevel alignment
+→ runtime decision
+→ loop pressure refresh again
+→ repair recommendation
+→ repair closure
+→ authorized dry-run
+→ tests
+→ release validator
+```
+
+The system learned that multilevel alignment must not read stale loop-pressure artifacts.
+
+### Lesson 3 — Dry-Run Is Not Write Authority
+
+The v0.4.5 dry-run executor is a simulation layer only. It must preserve:
+
+```text
+target_writes_performed = 0
+api_writes_performed = 0
+commits_performed = 0
+tags_created = 0
+write_authority = false
+```
+
+A dry-run may declare a proposed plan, touched surfaces, validation stack, rollback path, and blocked actions. It may not mutate target surfaces.
+
+### Lesson 4 — Self-Healing Means Bounded Recovery, Not Autonomy
+
+The system is now capable of sensing stale evidence, classifying pressure, planning closure, and simulating repair. That is bounded self-healing. It is not autonomous patching, not API write authority, not release authority, and not proof of correctness.
+
+### Main Operational Lock
+
+```text
+No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.
+```
+
+### Non-Claim Lock
+
+README lesson alignment is repository-bound documentation and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+
 ## Quick Start
 
 Run the local validation stack:
@@ -216,6 +311,8 @@ python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
 python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
 python scripts/loop/emit_repair_closure_plan_v0_4_4.py
+python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
+python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -739,6 +836,8 @@ python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
 python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
 python scripts/loop/emit_repair_closure_plan_v0_4_4.py
+python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
+python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
