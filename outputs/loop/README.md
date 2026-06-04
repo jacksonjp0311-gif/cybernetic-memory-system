@@ -1,6 +1,6 @@
 # Loop Outputs
 
-CMS-RCC-N-v0.4.3
+CMS-RCC-N-v0.4.4
 
 Purpose: Machine-readable cybernetic memory loop outputs.
 
@@ -19,7 +19,7 @@ Non-claim lock: loop surfaces are repository-bound and do not prove code correct
 
 Loop output artifacts, including latest loop drift pressure JSON.
 
-## CMS-RCC-N-v0.4.3 Surface Alignment
+## CMS-RCC-N-v0.4.4 Surface Alignment
 
 Role: Loop Outputs
 
@@ -36,3 +36,20 @@ Preseal boundary: public-sync tag absence is pressure, not local alignment failu
 Postseal boundary: public-sync must pass after commit, tag, and push.
 
 Non-claim lock: Registry-derived alignment is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+## CMS-RCC-N-v0.4.4 Surface Alignment
+
+Role: Loop Outputs
+
+Current checkpoint: CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger
+
+Current version: v0.4.4
+
+Previous version: v0.4.3
+
+Update rule: when repair recommendation changes, closure planning surfaces must refresh.
+
+Non-claim lock: Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+API is not active in v0.4.4

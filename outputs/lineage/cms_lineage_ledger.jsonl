@@ -63,3 +63,5 @@
 {"lineage_event": "replaced_loop_repair_recommendation_emitter_with_taxonomy_safe_renderer", "status": "pending_validation", "timestamp_utc": "2026-06-04T03:49:16.822137+00:00", "version": "v0.4.3"}
 {"lineage_event": "minimal_direct_repair_of_multilevel_loop_pressure_getter", "status": "pending_validation", "timestamp_utc": "2026-06-04T03:53:00.806122+00:00", "version": "v0.4.3"}
 {"lineage_event": "repaired_multilevel_future_import_order_after_getter_patch", "status": "pending_validation", "timestamp_utc": "2026-06-04T03:55:05.302960+00:00", "version": "v0.4.3"}
+{"lineage_event": "began_bounded_self_healing_as_repair_closure_planning_not_autonomous_execution", "previous": "v0.4.3", "status": "preseal_development", "timestamp_utc": "2026-06-04T04:03:41.630566+00:00", "version": "v0.4.4"}
+{"lineage_event": "repaired_v0_4_4_script_literals_and_surface_propagation", "status": "pending_validation", "timestamp_utc": "2026-06-04T04:06:05.509594+00:00", "version": "v0.4.4"}

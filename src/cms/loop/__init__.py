@@ -7,3 +7,7 @@ __all__ = ["build_cybernetic_memory_loop"]
 from cms.loop.drift_pressure import build_loop_drift_pressure
 
 from .repair_recommendation import build_loop_repair_recommendations
+
+from .repair_closure import build_repair_closure_plan
+
+__all__ = [name for name in globals() if not name.startswith('_')]

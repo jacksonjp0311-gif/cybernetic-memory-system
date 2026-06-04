@@ -7,7 +7,7 @@ Echo Location:
 | Shell | center |
 | Meridian | geometry, feedback, validation, evidence |
 | Sector | alignment |
-| Version / TTL | CMS-RCC-N-v0.4.3 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.4 / 180 days |
 | Last verified | 2026-06-02 |
 
 ## Purpose
@@ -37,7 +37,7 @@ This mini README must update when this folder's purpose, files, routing meaning,
 This folder supports repository-bound multi-level geometric alignment. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
 Current checkpoint: CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer
 
-## CMS-RCC-N-v0.4.3 Surface Alignment
+## CMS-RCC-N-v0.4.4 Surface Alignment
 
 Role: Multi-Level Alignment Contracts
 
@@ -54,3 +54,15 @@ Preseal boundary: public-sync tag absence is pressure, not local alignment failu
 Postseal boundary: public-sync must pass after commit, tag, and push.
 
 Non-claim lock: Registry-derived alignment is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+Current checkpoint: CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger
+
+Current version: v0.4.4
+
+Previous version: v0.4.3
+
+API is not active in v0.4.4
+
+Repair closure planning converts recommendations into execution plans and closure ledgers without autonomous patch authority.
+
+Non-claim lock: v0.4.4 surface propagation repair is repository-bound and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.

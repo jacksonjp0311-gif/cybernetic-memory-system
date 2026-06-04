@@ -1,11 +1,11 @@
-# CMS-SA v0.4.3 Multi-Level Alignment Validation
+# CMS-SA v0.4.4 Multi-Level Alignment Validation
 
 | Field | Value |
 |---|---|
 | passed | `true` |
 | errors | `0` |
 | warnings | `0` |
-| seal mode | `postseal` |
+| seal mode | `preseal` |
 | layer count | `13` |
 | registry derived | `true` |
 

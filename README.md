@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.3-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.4-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,10 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
+CMS-RCC-N-v0.4.4 / 180 days
+
+API is not active in v0.4.4
+
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer**
-Previous seal: **CMS-SA v0.4.2 - Loop Drift Pressure Metrics**
+Current checkpoint: **CMS-SA v0.4.4 - Recommendation Execution Plan and Repair Closure Ledger**
+Previous seal: **CMS-SA v0.4.3 - Loop Pressure Repair Recommendation Layer**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -61,6 +65,7 @@ Core law:
 | v0.4.1 Per-Candidate Memory Action Schema | Can every memory candidate expose a typed next-cycle action and rehydration-visible status? | `reports/memory/latest_candidate_memory_actions.md` |
 | v0.4.2 Loop Drift Pressure Metrics | Is the loop still stable, or is green status hiding stale pressure? | `reports/loop/latest_loop_drift_pressure.md` |
 | v0.4.3 Loop Pressure Repair Recommendation Layer | What concrete repair should follow each pressure finding? | `reports/loop/latest_loop_repair_recommendations.md` |
+| v0.4.4 Recommendation Execution Plan and Repair Closure Ledger | Which bounded execution plan and closure state follows each recommendation? | `reports/loop/latest_repair_closure_plan.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -87,8 +92,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.3 |
-| Previous seal | CMS-SA v0.4.2 |
+| Current checkpoint | CMS-SA v0.4.4 |
+| Previous seal | CMS-SA v0.4.3 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -126,6 +131,7 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Thread rehydration score | `reports/rehydration/latest_thread_rehydration_score_validation.md` |
 | Loop drift pressure | `reports/loop/latest_loop_drift_pressure_validation.md` |
 | Loop repair recommendations | `reports/loop/latest_loop_repair_recommendations_validation.md` |
+| Repair closure ledger | `reports/loop/latest_repair_closure_validation.md` |
 | Alignment layer count | `12` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
@@ -159,6 +165,18 @@ No repair recommendation may write, promote, or seal a change unless it declares
 ```
 
 Non-claim lock: Loop pressure repair recommendations are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.
+
+
+
+## CMS-SA v0.4.4 Recommendation Execution Plan and Repair Closure Ledger
+
+v0.4.4 begins bounded self-healing by converting repair recommendations into execution plans and closure ledger records. It does not execute repairs autonomously.
+
+```text
+No repair recommendation may be marked closed unless it has a plan id, source recommendation id, declared execution mode, touched-surface boundary, required validation evidence, closure state, blocked-action preservation, and non-claim boundary.
+```
+
+Non-claim lock: Repair execution planning and closure ledgers are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
 ## Quick Start
 
@@ -197,6 +215,7 @@ python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
 python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
+python scripts/loop/emit_repair_closure_plan_v0_4_4.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -719,6 +738,7 @@ python scripts/validation/validate_thread_rehydration_score_v0_4_1.py
 python scripts/loop/emit_loop_drift_pressure_v0_4_2.py
 python scripts/validation/validate_loop_drift_pressure_v0_4_2.py
 python scripts/loop/emit_loop_repair_recommendations_v0_4_3.py
+python scripts/loop/emit_repair_closure_plan_v0_4_4.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core

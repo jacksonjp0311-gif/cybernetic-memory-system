@@ -1,8 +1,8 @@
 {
   "api_boundary": "API remains inactive; this is internal runtime alignment only.",
   "core_rule": "No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, current public surfaces, and declared phase boundary.",
-  "created_at": "2026-06-04T03:57:58.340456+00:00",
-  "current_registry_version": "v0.4.3",
+  "created_at": "2026-06-04T04:07:16.019930+00:00",
+  "current_registry_version": "v0.4.4",
   "feedback_bindings": [],
   "feedback_items_aligned": 3,
   "feedback_items_checked": 3,
@@ -144,21 +144,21 @@
   "non_claim_lock": "Multi-level alignment improves repository-bound cybernetic runtime coherence. It does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
   "pressure_findings": [],
-  "previous_registry_version": "v0.4.2",
+  "previous_registry_version": "v0.4.3",
   "public_sync_phase": {
     "accepted_for_current_phase": true,
-    "mode": "postseal",
+    "mode": "preseal",
     "passed": true,
-    "phase_state": "postseal_passed",
+    "phase_state": "preseal_report_already_passed",
     "present": true,
     "release_tag_exists": true,
     "release_tag_is_ancestor_of_head": true,
     "release_tag_status": "present_and_ancestor_of_head"
   },
-  "schema": "CMS-SA-v0.4.3-multilevel-alignment-report",
-  "seal_mode": "postseal",
+  "schema": "CMS-SA-v0.4.4-multilevel-alignment-report",
+  "seal_mode": "preseal",
   "temporal_boundary": "Preseal geometry allows public-sync tag absence as pressure. Postseal geometry requires public-sync pass and release-tag ancestry.",
-  "version": "v0.4.3",
+  "version": "v0.4.4",
   "version_checks": {
     "feedback_report_present": true,
     "geometry_registry_version_matches": true,
@@ -168,7 +168,7 @@
     "public_sync_report_present": true,
     "readme_contains_current_version": true,
     "readme_contains_previous_version": true,
-    "registry_current_version": "v0.4.3",
+    "registry_current_version": "v0.4.4",
     "surface_alignment_passed": true
   }
 }
