@@ -1,8 +1,8 @@
 {
   "api_writes_performed": 0,
-  "apply_packet_count": 3,
-  "apply_packet_manifest_hash": "47c5cd7a9f10ece1c38844d2c29c070547c85e504646cc62b47a8f65eeb9f17f",
-  "diff_manifest_count": 3,
+  "apply_packet_count": 1,
+  "apply_packet_manifest_hash": "32715266671fb5b594b45ed86e6bf3ac23c21c5585eea14efc6a0f2fbf2b908d",
+  "diff_manifest_count": 1,
   "errors": 0,
   "findings": [],
   "git_commits_performed": 0,
@@ -12,6 +12,6 @@
   "primary_lock": "No apply packet may authorize a repair unless it references a validated apply gate, includes a human authorization artifact, declares exact diff entries for every target write, binds rollback entries one-to-one with diff entries, preserves blocked actions, and passes pre-apply validation.",
   "release_tags_created": 0,
   "schema": "CMS-SA-v0.4.7-authorized-apply-packet-diff-manifest-validation",
-  "source_pressure_state": "warning",
+  "source_pressure_state": "stable",
   "target_writes_performed": 0
 }

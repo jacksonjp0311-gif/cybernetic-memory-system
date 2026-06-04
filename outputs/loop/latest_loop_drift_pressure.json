@@ -2,23 +2,21 @@
   "components": {
     "memory_action_drift": 0.0,
     "non_claim_lock_drift": 0.0,
-    "public_surface_delta": 0.2,
+    "public_surface_delta": 0.0,
     "registry_status_drift": 1.0,
     "rehydration_gap_count": 0,
     "rehydration_gap_pressure": 0.0,
     "report_surface_lag": 0.0,
     "validator_expectation_drift": 0.0
   },
-  "findings": [
-    "public_sync_phase:preseal_tag_pending"
-  ],
+  "findings": [],
   "input_hashes": {
     "candidate_action_hash": "9966f1fb234ff5b6aebeadcf9331d27bcc40456ddd536870c20ba330bb1ead56",
     "loop_hash": "cd1b512902752ccd51784e731af93cccda449eae885ab6d00353c3a026a44ce3",
     "rehydration_hash": "8e2427a46e96559117e16ebbe4a2e16e3f5e5f81a2186d8d4667dedac3bda8bd",
-    "runtime_decision_hash": "eecd0547fd9bfe55a13e8f08d13bda1ad0f00a2ce56fef8661eb5f6191401c3a"
+    "runtime_decision_hash": "a2efb30d0f3a6b43066559bda6b18948e2ad0f4306da96fee3c747badc1718c1"
   },
-  "loop_drift_pressure": 0.168,
+  "loop_drift_pressure": 0.14,
   "memory_counts": {
     "candidate_action_count": 4,
     "candidate_count": 4,
@@ -29,11 +27,11 @@
   },
   "non_claim_lock": "Loop drift pressure metrics are repository-bound and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, or real-world correctness.",
   "passed": true,
-  "pressure_hash": "bbbfaaefaefaabd1939cc2c0022343861b77b1f4d57797c95955b569782d1ca6",
+  "pressure_hash": "46ad512abd076a80a218c7d9a4ad9f602cf79ee01170d73104eea0ede236defc",
   "primary_lock": "No green loop is considered stable if drift pressure exceeds the declared threshold without downgrade, warning, or repair recommendation.",
-  "recommended_action": "repair_pressure_findings_before_release_seal",
+  "recommended_action": "continue_to_next_layer_after_validation",
   "schema": "CMS-SA-v0.4.2-loop-drift-pressure-report",
-  "stability_state": "green_with_repair_recommendation",
+  "stability_state": "stable_green_loop",
   "threshold": 0.25,
   "validation_failures": [],
   "version": "v0.4.2"

@@ -1,7 +1,7 @@
 {
   "api_writes_performed": 0,
-  "dry_apply_run_count": 3,
-  "dry_apply_sandbox_hash": "a404553c26ab34cafcedb1552d40e2cf88b48d5ca2b6db2248f6a226c1e7ea7f",
+  "dry_apply_run_count": 1,
+  "dry_apply_sandbox_hash": "7d855a19e7096b163e9a09ffd2cac481590e2af554ee293dd98c6b72ca265b87",
   "errors": 0,
   "findings": [],
   "git_commits_performed": 0,
@@ -12,6 +12,6 @@
   "primary_lock": "No dry-apply sandbox may write live target surfaces. It may only simulate packet execution against virtual or copied targets, compare before/after hashes inside the sandbox, simulate rollback, preserve blocked actions, and emit validation evidence.",
   "release_tags_created": 0,
   "schema": "CMS-SA-v0.4.8-authorized-dry-apply-sandbox-validation",
-  "source_pressure_state": "warning",
+  "source_pressure_state": "stable",
   "virtual_target_writes_performed": 0
 }

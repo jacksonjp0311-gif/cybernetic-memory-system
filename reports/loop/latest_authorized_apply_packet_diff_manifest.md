@@ -3,44 +3,22 @@
 | Field | Value |
 |---|---|
 | passed | `true` |
-| source pressure state | `warning` |
-| source apply gate count | `3` |
-| apply packet count | `3` |
-| diff manifest count | `3` |
+| source pressure state | `stable` |
+| source apply gate count | `1` |
+| apply packet count | `1` |
+| diff manifest count | `1` |
 | target writes performed | `0` |
 | api writes performed | `0` |
 | git commits performed | `0` |
 | git pushes performed | `0` |
 | release tags created | `0` |
-| manifest hash | `47c5cd7a9f10ece1c38844d2c29c070547c85e504646cc62b47a8f65eeb9f17f` |
+| manifest hash | `32715266671fb5b594b45ed86e6bf3ac23c21c5585eea14efc6a0f2fbf2b908d` |
 
 ## Primary Lock
 
 No apply packet may authorize a repair unless it references a validated apply gate, includes a human authorization artifact, declares exact diff entries for every target write, binds rollback entries one-to-one with diff entries, preserves blocked actions, and passes pre-apply validation.
 
 ## Packets
-
-### CMS-APPLY-PACKET-ce28b07cd7
-
-- source apply gate: `CMS-APPLY-GATE-a6643e0259`
-- packet state: `blocked_missing_human_authorization_packet`
-- apply authority: `false`
-- human authorization artifact present: `false`
-- diff entries: `0`
-- rollback entries: `0`
-- rollback binds every diff: `true`
-- target writes requested: ``
-
-### CMS-APPLY-PACKET-60de55c00a
-
-- source apply gate: `CMS-APPLY-GATE-465e02de46`
-- packet state: `blocked_missing_human_authorization_packet`
-- apply authority: `false`
-- human authorization artifact present: `false`
-- diff entries: `0`
-- rollback entries: `0`
-- rollback binds every diff: `true`
-- target writes requested: ``
 
 ### CMS-APPLY-PACKET-889d035eec
 

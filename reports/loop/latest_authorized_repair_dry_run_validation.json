@@ -1,14 +1,14 @@
 {
   "api_writes_performed": 0,
   "commits_performed": 0,
-  "dry_run_count": 3,
-  "dry_run_hash": "9c4f20c0a57d3a5c92801d79a1552dd6f5a4084dfe7ad867fc3c5572d5d4c374",
+  "dry_run_count": 1,
+  "dry_run_hash": "59a51b9a5a3a94f28f5c74bd01df5246628b94f7d9d797427fafc52c8f5a647f",
   "errors": 0,
   "findings": [],
   "non_claim_lock": "Authorized dry-run validation is repository-bound and does not prove code correctness.",
   "passed": true,
   "primary_lock": "No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.",
   "schema": "CMS-SA-v0.4.5-authorized-repair-dry-run-validation",
-  "source_pressure_state": "warning",
+  "source_pressure_state": "stable",
   "target_writes_performed": 0
 }
