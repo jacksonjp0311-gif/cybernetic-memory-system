@@ -1,6 +1,6 @@
 # Cybernetic Memory System - Feedback-Governed Repository Memory Runtime
 
-![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.6-blue)
+![CMS-SA](https://img.shields.io/badge/CMS--SA-v0.4.7-blue)
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
 ![Lineage](https://img.shields.io/badge/lineage-recorded-brightgreen)
@@ -13,14 +13,14 @@
 ![D_CMS](https://img.shields.io/badge/D__CMS-0.0-blue)
 ![Non-Claim](https://img.shields.io/badge/non--claim--locks-active-black)
 
-CMS-RCC-N-v0.4.6 / 180 days
+CMS-RCC-N-v0.4.7 / 180 days
 
-API is not active in v0.4.6
+API is not active in v0.4.7
 
 Repository: `cybernetic-memory-system`  
 Package / CLI: `cms`  
-Current checkpoint: **CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger**
-Previous seal: **CMS-SA v0.4.5 - Authorized Repair Dry-Run Executor**
+Current checkpoint: **CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest**
+Previous seal: **CMS-SA v0.4.6 - Authorized Repair Apply Gate and Rollback Ledger**
 
 Cybernetic Memory System is a local-first Python/RCC runtime for executable repository memory. It observes repository state, measures drift, validates public surfaces, records version lineage, emits evidence packages, and keeps README/RCC/directory/status surfaces synchronized.
 
@@ -68,6 +68,7 @@ Core law:
 | v0.4.4 Recommendation Execution Plan and Repair Closure Ledger | Which bounded execution plan and closure state follows each recommendation? | `reports/loop/latest_repair_closure_plan.md` |
 | v0.4.5 Authorized Repair Dry-Run Executor | Can a repair plan be simulated without target writes, API writes, commits, or tags? | `reports/loop/latest_authorized_repair_dry_run.md` |
 | v0.4.6 Authorized Repair Apply Gate and Rollback Ledger | Can a dry-run be gated behind authorization and rollback coverage without applying writes? | `reports/loop/latest_authorized_repair_apply_gate.md` |
+| v0.4.7 Authorized Apply Packet Schema and Diff Manifest | Can an apply gate expose a packet, exact diff manifest, and rollback binding without applying writes? | `reports/loop/latest_authorized_apply_packet_diff_manifest.md` |
 | v0.3b2a1 README Documentation Coherence Repair | Does the public README cleanly document the v0.3b2 lock after the incomplete v0.3b2a seal? | `reports/readme/latest_readme_mini_repo_audit.md` |
 
 Current public finding: CMS can be structured as a feedback-governed repository-memory runtime. The current repo is a local evidence-governance and repository-observability system, not a proof of correctness, intelligence, consciousness, production safety, external validation, or truth.
@@ -94,8 +95,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | CMS-SA v0.4.6 |
-| Previous seal | CMS-SA v0.4.5 |
+| Current checkpoint | CMS-SA v0.4.7 |
+| Previous seal | CMS-SA v0.4.6 |
 | README / mini repo audit | `True` |
 | RCC-N checker | `True` |
 | Runtime observation validation | `True` |
@@ -136,7 +137,8 @@ This repo does **not** prove code correctness, security, truth, AGI, consciousne
 | Repair closure ledger | `reports/loop/latest_repair_closure_validation.md` |
 | Authorized repair dry-run | `reports/loop/latest_authorized_repair_dry_run_validation.md` |
 | Authorized repair apply gate | `reports/loop/latest_authorized_repair_apply_gate_validation.md` |
-| Alignment layer count | `12` |
+| Authorized apply packet diff manifest | `reports/loop/latest_authorized_apply_packet_diff_manifest_validation.md` |
+| Alignment layer count | `13` |
 | Feedback items aligned | `3` |
 | Feedback items checked | `3` |
 
@@ -289,6 +291,58 @@ Starting threshold: `0.14 / 0.25 = 56%` of allowed drift budget, leaving `44%` h
 
 Non-claim lock: Authorized repair apply gates are repository-bound authorization ledgers and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
 
+
+## CMS-SA v0.4.6 Lessons — Apply Gate, Rollback, and Final Evidence
+
+v0.4.6 proved that an apply gate is not apply authority. The system can derive a gate and rollback ledger from dry-run output while preserving zero-write behavior.
+
+### Final v0.4.6 Threshold Position
+
+```text
+loop_drift_pressure = 0.14
+threshold = 0.25
+threshold_usage = 56%
+headroom = 44%
+state = stable_green_loop
+```
+
+### Lesson 1 — Apply Gate Is Not Apply Authority
+
+An apply gate may organize readiness, authorization requirements, rollback requirements, and validation requirements. It may not perform target writes, API writes, commits, pushes, or release-tag creation.
+
+### Lesson 2 — Rollback Must Exist Before Apply
+
+A future apply step is blocked unless every target write has a rollback entry and the rollback coverage is validated before execution.
+
+### Lesson 3 — Final Postpush Evidence Must Be Committed
+
+Final-postpush reports are generated after push. They must either be committed in a final evidence pass or intentionally discarded before the repo is declared clean.
+
+### Main Operational Lock
+
+```text
+No repair apply may execute unless it references a validated dry-run id, carries explicit human authorization, declares exact target writes, includes rollback entries for every target, preserves blocked actions, and passes the required validation stack before and after apply.
+```
+
+### Non-Claim Lock
+
+v0.4.6 lesson alignment is repository-bound documentation and does not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
+
+
+
+## CMS-SA v0.4.7 Authorized Apply Packet Schema and Diff Manifest
+
+v0.4.7 defines the authorization packet and exact diff manifest that must exist before any future apply can be considered. It does not execute writes.
+
+```text
+No apply packet may authorize a repair unless it references a validated apply gate, includes a human authorization artifact, declares exact diff entries for every target write, binds rollback entries one-to-one with diff entries, preserves blocked actions, and passes pre-apply validation.
+```
+
+Starting threshold: `0.14 / 0.25 = 56%` of allowed drift budget, leaving `44%` headroom.
+
+Non-claim lock: Authorized apply packets and diff manifests are repository-bound authorization evidence and do not prove code correctness, truth, AGI, consciousness, production readiness, security, external validation, autonomous repair authority, or real-world correctness.
+
 ## Quick Start
 
 Run the local validation stack:
@@ -331,6 +385,8 @@ python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
 python scripts/loop/emit_authorized_repair_apply_gate_v0_4_6.py
 python scripts/validation/validate_authorized_repair_apply_gate_v0_4_6.py
+python scripts/loop/emit_authorized_apply_packet_diff_manifest_v0_4_7.py
+python scripts/validation/validate_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -526,7 +582,7 @@ Validation tells the agent whether the repository-bound checks agreed.
 | Shell | center |
 | Meridians | source, validation, evidence, safety, agent, runtime, memory |
 | Sector | rcc |
-| Version / TTL | CMS-RCC-N-v0.4.3 / 180 days |
+| Version / TTL | CMS-RCC-N-v0.4.7 / 180 days |
 | Last verified | 2026-06-02 |
 | Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
 
@@ -772,7 +828,7 @@ downgrade path, falsification condition, and non-claim lock.
 
 CMS is preparing for an eventual two-way API transmission process.
 
-API is not active in v0.4.3 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
+API is not active in v0.4.7 API work begins only after runtime decision, replay, dry-run, authorization, and negative-control gates are implemented after the multi-level geometric alignment lock.
 
 ```text
 external request -> intent packet -> route classification -> dry-run plan
@@ -858,6 +914,8 @@ python scripts/loop/emit_authorized_repair_dry_run_v0_4_5.py
 python scripts/validation/validate_authorized_repair_dry_run_v0_4_5.py
 python scripts/loop/emit_authorized_repair_apply_gate_v0_4_6.py
 python scripts/validation/validate_authorized_repair_apply_gate_v0_4_6.py
+python scripts/loop/emit_authorized_apply_packet_diff_manifest_v0_4_7.py
+python scripts/validation/validate_authorized_apply_packet_diff_manifest_v0_4_7.py
 python scripts/validation/validate_loop_repair_recommendations_v0_4_3.py
 python scripts/validation/validate_public_sync_v0_2b3.py
 python -m cms cycle --repo . --profile CMS-Core
@@ -1000,7 +1058,7 @@ Core rule:
 No feedback item is valid unless it can be located in repository geometry and tied to evidence, validators, and current public surfaces.
 ```
 
-API is not active in v0.4.3 This layer is internal runtime coherence only.
+API is not active in v0.4.7 This layer is internal runtime coherence only.
 
 Temporal alignment rule: Public sync registry/tag agreement is validated after commit/tag/push by the public-sync validator. Multi-level alignment requires the public-sync report surface to exist, but does not require it to already contain the new version before release.
 

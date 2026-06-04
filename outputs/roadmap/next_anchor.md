@@ -1,3 +1,3 @@
 # Next Anchor
 
-CMS-SA v0.4.7 - Authorized Apply Packet Schema and Diff Manifest
+CMS-SA v0.4.8 - Authorized Apply Executor Dry-Apply Sandbox

@@ -4,19 +4,20 @@
 |---|---|
 | schema | `CMS-SA-v0.3a2-reflective-git-geometry` |
 | node count | `12` |
-| current registry version | `v0.4.6` |
+| current registry version | `v0.4.7` |
 | stable geometry boundary | `true` |
 | report refresh commits excluded | `true` |
 | pure validation boundary | `true` |
 | emission validation split | `true` |
 | head/origin match | `true` |
-| release tag exists | `true` |
-| release tag ancestor | `true` |
+| release tag exists | `false` |
+| release tag ancestor | `false` |
 
 ## Commit Geometry Nodes
 
 | Commit | Tag | Shells | Meridians | Sectors | Message |
 |---|---|---|---|---|---|
+| `a46167a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.6 final postpush evidence |
 | `4490c74` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.6 postseal validation reports |
 | `25bfb08` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.6 authorized repair apply gate |
 | `4f0669e` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: commit CMS-SA v0.4.5 final postpush evidence |
@@ -28,7 +29,6 @@
 | `6807051` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.3 postseal validation reports |
 | `ad792fa` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: add CMS-SA v0.4.3 loop pressure repair recommendations |
 | `585f93a` | `` | `middle, outer` | `documentation, evidence` | `reports, unclassified` | docs: refresh CMS-SA v0.4.2 postseal validation reports |
-| `3dab44b` | `` | `center, inner, middle, outer` | `documentation, evidence, memory, release, runtime, source, validation` | `contract, core, injections, lineage, public, reports, schemas, seal, tests, unclassified, validator, versions` | feat: seal CMS-SA v0.4.2 registry-derived alignment geometry |
 
 ## Pure Validation Boundary
 

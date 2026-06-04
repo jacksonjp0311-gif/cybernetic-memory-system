@@ -1,7 +1,7 @@
 {
   "api_writes_performed": 0,
-  "apply_gate_count": 1,
-  "apply_gate_hash": "976ad0f5db6857c57a395169c622519bc90b0609c1c132a04300951bc4ae044e",
+  "apply_gate_count": 3,
+  "apply_gate_hash": "9342ef14dd77590dac93826a25cfe29d68509b1ecfb64544f6cc82b6b6d52201",
   "errors": 0,
   "findings": [],
   "git_commits_performed": 0,
@@ -10,8 +10,8 @@
   "passed": true,
   "primary_lock": "No repair apply may execute unless it references a validated dry-run id, carries explicit human authorization, declares exact target writes, includes rollback entries for every target, preserves blocked actions, and passes the required validation stack before and after apply.",
   "release_tags_created": 0,
-  "rollback_ledger_count": 1,
+  "rollback_ledger_count": 3,
   "schema": "CMS-SA-v0.4.6-authorized-repair-apply-gate-validation",
-  "source_pressure_state": "stable",
+  "source_pressure_state": "warning",
   "target_writes_performed": 0
 }

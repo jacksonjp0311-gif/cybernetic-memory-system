@@ -3,19 +3,41 @@
 | Field | Value |
 |---|---|
 | passed | `true` |
-| source pressure state | `stable` |
-| source plan count | `1` |
-| dry-run count | `1` |
+| source pressure state | `warning` |
+| source plan count | `3` |
+| dry-run count | `3` |
 | target writes performed | `0` |
 | api writes performed | `0` |
 | commits performed | `0` |
-| dry-run hash | `4f156de83f159dca0a335cfa17921561e7aafbfb70ec77fdfd0284c373ac2582` |
+| dry-run hash | `348ab78c55e1e85fe881d2795af17f2a17bc6b5e073a72925226b63d103f774f` |
 
 ## Primary Lock
 
 No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.
 
 ## Dry Runs
+
+### CMS-DRYRUN-eb1c78ada2
+
+- source plan: `CMS-PLAN-9cf10f4caa`
+- repair class: `REPORT_REFRESH`
+- execution mode: `dry_run_only`
+- write authority: `false`
+- target writes: `0`
+- touched surfaces: `outputs/*, reports/*`
+- required validation: `validate_public_sync, validate_multilevel_alignment, validate_loop_drift_pressure`
+- rollback path: `discard_dry_run_report_and_recompute_from_latest_validated_closure_plan`
+
+### CMS-DRYRUN-6abf369743
+
+- source plan: `CMS-PLAN-d6db1713fe`
+- repair class: `SURFACE_REPAIR`
+- execution mode: `dry_run_only`
+- write authority: `false`
+- target writes: `0`
+- touched surfaces: `README.md, configs/*/README.md, src/cms/*/README.md, scripts/*/README.md, outputs/*/README.md, reports/*/README.md`
+- required validation: `audit_readme_surface, validate_surface_alignment, emit_runtime_decision, validate_runtime_decision`
+- rollback path: `discard_dry_run_report_and_recompute_from_latest_validated_closure_plan`
 
 ### CMS-DRYRUN-c78d107b05
 
