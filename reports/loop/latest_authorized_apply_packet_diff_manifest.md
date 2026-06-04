@@ -12,7 +12,7 @@
 | git commits performed | `0` |
 | git pushes performed | `0` |
 | release tags created | `0` |
-| manifest hash | `91a06e2cf5c5312f10f4329f084bcb858857bbd9162034a4dcf9290ed680a1fd` |
+| manifest hash | `be0bf0b7636f39f8a522f28175913ccc572d4fe463aacec0d85b860afe2849cb` |
 
 ## Primary Lock
 

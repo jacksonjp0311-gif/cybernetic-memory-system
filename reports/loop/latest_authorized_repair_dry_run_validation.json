@@ -2,7 +2,7 @@
   "api_writes_performed": 0,
   "commits_performed": 0,
   "dry_run_count": 1,
-  "dry_run_hash": "4934437259b21049216b2dd96af111d806bb26c335d02a464196b7605346436e",
+  "dry_run_hash": "a6a9fabc7707fa942bf6ff431de235489742417adfbe3ae4568487ef34644019",
   "errors": 0,
   "findings": [],
   "non_claim_lock": "Authorized dry-run validation is repository-bound and does not prove code correctness.",

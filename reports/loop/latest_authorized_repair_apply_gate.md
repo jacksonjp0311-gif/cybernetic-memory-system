@@ -12,7 +12,7 @@
 | git commits performed | `0` |
 | git pushes performed | `0` |
 | release tags created | `0` |
-| apply gate hash | `4dfc93d7abde4625937a436d40cbcb1b1e97810af55262f77c992aa6cd4adff5` |
+| apply gate hash | `2d40ae8044396a92c5519c9294d0d1ee860268742b0b98df0b0848fae8507d3c` |
 
 ## Primary Lock
 

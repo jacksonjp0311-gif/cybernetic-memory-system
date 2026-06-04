@@ -1,9 +1,9 @@
 {
   "api_writes_performed": 0,
   "commits_performed": 0,
-  "created_at": "2026-06-04T04:38:01.258380+00:00",
+  "created_at": "2026-06-04T04:38:16.456193+00:00",
   "dry_run_count": 1,
-  "dry_run_hash": "4934437259b21049216b2dd96af111d806bb26c335d02a464196b7605346436e",
+  "dry_run_hash": "a6a9fabc7707fa942bf6ff431de235489742417adfbe3ae4568487ef34644019",
   "dry_runs": [
     {
       "blocked_actions_preserved": [
@@ -48,7 +48,7 @@
   "passed": true,
   "primary_lock": "No repair dry-run may write target surfaces unless explicit human authorization, dry-run diff, rollback path, touched-surface boundary, blocked-action preservation, and required validation evidence are declared.",
   "schema": "CMS-SA-v0.4.5-authorized-repair-dry-run-executor",
-  "source_closure_hash": "7d63ef413bcd4cdd1333be5da34ec5f895a96cc768b905994af24810cb16edf8",
+  "source_closure_hash": "d548777f6e10b7b0b88a8edc1354c2ff08dbecf83b439efdca7bdadd475ae6e0",
   "source_plan_count": 1,
   "source_pressure_state": "stable",
   "tags_created": 0,
